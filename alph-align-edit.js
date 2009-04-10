@@ -269,16 +269,42 @@ function FormSubmit(a_form)
 // function for handling key presses
 function Keypress(a_evt)
 {
-    // if this is '?'
-    if (s_selectedWord && (a_evt.which == 63))
+    // get event and keypress
+    var evt = a_evt ?
+                  a_evt :
+                  (window.event ?
+                      window.event :
+                      null);
+    if (!evt)
+        return;
+    var key = evt.charCode ?
+                  evt.charCode :
+                  (evt.keyCode ?
+                      evt.keyCode :
+                      (evt.which ?
+                          evt.which :
+                          0));
+
+    // if this is ESC
+    if (s_selectedWord && (key == 27))
+    {
+        // remove highlighting and unselect
+        SelectWord(null);
+        return;
+    }
+
+    // if this is '='
+    if (s_selectedWord && (key == 61))
     {
         var  comment = null;
 
-        // if not marked, query user for comment
+        // if word not marked, query user for comment
         if (!HasMark(s_selectedWord))
           comment = prompt("Enter comment:", "");
 
-        MarkWord(s_selectedWord, comment);
+        // add/remove mark on word
+        ToggleMark(s_selectedWord, comment);
+        return;
     }
 };
 
@@ -851,14 +877,16 @@ function HasMark(a_word)
 };
 
 // mark/unmark a word
-function MarkWord(a_word, a_mark)
+function ToggleMark(a_word, a_comment)
 {
     // turn corners on/off on rectangle
     var rect = GetHeadRect(a_word);
     if (!HasMark(a_word))
     {
         // save comment
-        a_word.setAttributeNS(s_xlinkns, "title", (a_mark ? a_mark : ""));
+        a_word.setAttributeNS(s_xlinkns,
+                              "title",
+                              (a_comment ? a_comment : ""));
 
         AddClass(rect, "marked");
         rect.setAttributeNS(null, "rx", s_fontSize / 2);
