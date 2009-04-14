@@ -306,9 +306,10 @@ function Keypress(a_evt)
                       (evt.which ?
                           evt.which :
                           0));
+    var addons = (evt.shiftKey || evt.altKey || evt.ctrlKey);
 
     // if this is ESC
-    if (s_selectedWord && (key == 27))
+    if (s_selectedWord && (key == 27) && !addons)
     {
         // remove highlighting and unselect
         SelectWord(null);
@@ -316,7 +317,7 @@ function Keypress(a_evt)
     }
 
     // if this is '='
-    if (s_selectedWord && (key == 61))
+    if (s_selectedWord && (key == 61) && !addons)
     {
         var  comment = null;
 
