@@ -23,10 +23,11 @@
 var s_ns = "http://www.w3.org/2000/svg";        // svg namespace
 var s_xlinkns = "http://www.w3.org/1999/xlink"; // xlink namespace
 var s_fontSize = 20;                            // regular font size
-var s_alignedFontSize = 15;                     // size of aligned words
+var s_interlinearFontSize = 15;                 // size of interlinear words
 var s_selectedWord = null;                      // word selected for editing
-var s_displayAligned = false;                   // whether aligned words are
-                                                // being displayed
+var s_currentWord = null;                       // word mouse is over
+var s_displayInterlinear = false;               // whether aligned words are
+                                                // being displayed below heads
 var s_history = Array();                        // editing history
 var s_historyCursor = 0;                        // position in history
 var s_saveCursor = 0;                           // position of last save
@@ -79,7 +80,7 @@ function Init(a_evt)
         var y = s_fontSize;
         for (var j = 0; j < aligned.length; ++j)
         {
-            y += s_alignedFontSize;
+            y += s_interlinearFontSize;
             aligned[j].setAttributeNS(null, "x", s_fontSize / 2);
             aligned[j].setAttributeNS(null, "y", y);
 
@@ -88,7 +89,8 @@ function Init(a_evt)
             aligned[j].setAttributeNS(null, "len", len);
         }
     }
-    document.getElementById("align-checkbox").checked = s_displayAligned;
+    document.getElementById("interlinear-checkbox").checked =
+                                                        s_displayInterlinear;
 
     // initialize unedited word counts in summary stats
     var sentL1 = svgRoot.getElementsByClassName("L1")[0];
@@ -105,7 +107,7 @@ function Init(a_evt)
     document.getElementById("save-button").setAttribute("disabled", "yes");
 
     // now position the pieces
-    DisplayAlignment(svgRoot, s_displayAligned);
+    DisplayInterlinear(svgRoot, s_displayInterlinear);
     Reposition(svgRoot);
 };
 
@@ -123,6 +125,7 @@ function EnterLeave(a_evt)
         HasClass(a_evt.target, "headwd"))
     {
         HighlightWord(a_evt.target.parentNode, focus);
+        s_currentWord = (focus ? a_evt.target.parentNode : null);
     }
 };
 
@@ -174,85 +177,43 @@ function ClickOnWord(a_tgt, a_record)
         return SelectWord(a_tgt);
     }
 
-    // clicked on word from different language:
-    // remove highlighting
-    HighlightWord(a_tgt, false);
-
-    // toggle alignment status of target word
-    var isAligned = HasClass(GetHeadWord(a_tgt), "aligned-focus");
-    HighlightHeadWord(a_tgt, !isAligned, "aligned-focus");
-
     // adjust sets of aligned words
+    var isAligned = IsAligned(s_selectedWord, a_tgt);
     if (isAligned)
     {
         // if aligned, we're now removing them
-        RemoveAlignedWord(s_selectedWord, a_tgt.getAttributeNS(null, "id"));
-        RemoveAlignedWord(a_tgt, s_selectedWord.getAttributeNS(null, "id"));
+        RemoveAlignments(s_selectedWord, a_tgt, a_record);
     }
     else
     {
         // if not aligned, we're now adding them
-        AddAlignedWord(s_selectedWord, a_tgt.getAttributeNS(null, "id"));
-        AddAlignedWord(a_tgt, s_selectedWord.getAttributeNS(null, "id"));
+        AddAlignments(s_selectedWord, a_tgt, a_record);
     }
 
     // if we're showing aligned words, we might need to adjust positions
-    if (s_displayAligned)
+    if (s_displayInterlinear)
         Reposition(document.documentElement);
-
-    // if we're recording history, remember what we've done
-    if (a_record)
-        PushHistory(s_selectedWord, a_tgt, !isAligned);
 };
 
 function ClickOnUndo(a_evt)
 {
-    // if history is empty, ignore the click
-    var event = PopHistory();
-    if (!event)
-        return;
-
-    SimulateAction(event[0], event[1]);
+    ReplayEvent(PopHistory(), false);
 }
 
 function ClickOnRedo(a_evt)
 {
-    // if redo history is empty, ignore the click
-    var event = RepushHistory();
-    if (!event)
-        return;
-
-    // simulate action
-    SimulateAction(event[0], event[1]);
+    ReplayEvent(RepushHistory(), true);
 };
 
 function ClickOnSave(a_evt)
 {
-  SaveContents();
+    SaveContents();
 };
 
-function SimulateAction(a_head, a_tgt)
-{
-    // get rid of any existing selection
-    SelectWord(null);
-
-    // simulate mouse-over, click, mouse-out on headword
-    HighlightWord(a_head, true);
-    ClickOnWord(a_head, false);
-    HighlightWord(a_head, false);
-
-    // simulate mouse-over, click on target, mouse-out
-    // since multiple clicks toggle alignment, this will redo the click
-    // and don't put it back in the history
-    HighlightWord(a_tgt, true);
-    ClickOnWord(a_tgt, false);
-    HighlightWord(a_tgt, false);
-};
-
-function ToggleAlignmentDisplay(a_evt)
+function ToggleInterlinearDisplay(a_evt)
 {
     var svgRoot = document.documentElement;
-    DisplayAlignment(svgRoot, !s_displayAligned);
+    DisplayInterlinear(svgRoot, !s_displayInterlinear);
     Reposition(svgRoot);
 };
 
@@ -357,16 +318,23 @@ function HighlightWord(a_word, a_on)
 
     // if browsing, set/unset focus on aligned words
     if (browsing)
+        HighlightAlignedWords(a_word, a_on, true);
+};
+
+// function to set highlight on words aligned with a given word
+function HighlightAlignedWords(a_word, a_on, a_recur)
+{
+    var aligned = GetAlignedWords(a_word);
+    for (var i = 0; i < aligned.length; ++i)
     {
-        var aligned = GetAlignedWords(a_word);
-        for (var i = 0; i < aligned.length; ++i)
-        {
-            var id = aligned[i].getAttributeNS(null, "idref");
-            HighlightHeadWord(
-                a_word.ownerDocument.getElementById(id),
-                a_on,
-                "aligned-focus");
-        }
+        var id = aligned[i].getAttributeNS(null, "idref");
+        var wd = a_word.ownerDocument.getElementById(id);
+        HighlightHeadWord(wd, a_on, "aligned-focus");
+
+        // if this is first call, set highlight on words
+        // that share this aligned word with original word
+        if (a_recur)
+            HighlightAlignedWords(wd, a_on, false);
     }
 };
 
@@ -390,6 +358,11 @@ function SelectWord(a_word)
     {
         HighlightHeadWord(s_selectedWord, true, "selected");
         HighlightWord(s_selectedWord, false);
+    }
+    // if no selected word, make sure current word gets browse focus
+    else
+    {
+        HighlightWord(s_currentWord, true);
     }
 };
 
@@ -415,97 +388,271 @@ function HighlightHeadWord(a_word, a_on, a_value)
 // aligned text
 //****************************************************************************
 
-// add aligned word to set
-function AddAlignedWord(a_word, a_id)
+// function to find out if two words are aligned
+function IsAligned(a_src, a_tgt)
 {
-    // create new word to be added
-    var word = GetHeadWord(a_word.ownerDocument.getElementById(a_id));
-    var newWord = word.cloneNode(true);
-    RemoveClass(newWord, null);
-    newWord.setAttributeNS(null, "idref", a_id);
-    var wordNum = Number(a_id.substr(a_id.search('-') + 1));
-
-    // find index of word to insert before
-    var insertWord = null;
-    var lastY = s_fontSize;
-    var aligned = GetAlignedWords(a_word);
+    var id = a_src.getAttributeNS(null, "id");
+    var aligned = GetAlignedWords(a_tgt);
     for (var i = 0; i < aligned.length; ++i)
     {
-        lastY = Number(aligned[i].getAttributeNS(null, "y"));
-
-        // if already found word
-        if (insertWord)
-        {
-            aligned[i].setAttributeNS(null, "y", lastY + s_alignedFontSize);
-            continue;
-        }
-
-        // get number of this word
-        var thisId = aligned[i].getAttributeNS(null, "idref");
-        var thisNum = Number(thisId.substr(thisId.search('-') + 1));
-
-        // if this is same as new word number, nothing to add
-        if (thisNum == wordNum)
-            return;
-
-        // if past new number, this is insert point
-        if (thisNum > wordNum)
-        {
-            insertWord = aligned[i];
-            newWord.setAttributeNS(null, "y", lastY);
-            aligned[i].setAttributeNS(null, "y", lastY + s_alignedFontSize);
-        }
+        // if target has aligned word pointing at src, they're aligned
+        if (aligned[i].getAttributeNS(null, "idref") == id)
+          return true;
     }
-    if (!insertWord)
-        newWord.setAttributeNS(null, "y", lastY + s_alignedFontSize);
 
-    // insert new word
-    GetAlignment(a_word).insertBefore(newWord, insertWord);
-    RemoveClass(GetHeadWord(a_word), "free");
+    // we assume words are always reciprocally aligned
+    // so there's no need to check the other direction
 
-    // save length so we can get it even when word is not in tree
-    var len = newWord.getComputedTextLength();
-    newWord.setAttributeNS(null, "len", len);
-};
+    // target doesn't point at source, so they're not aligned
+    return false;
+}
 
-// remove aligned word from set
-function RemoveAlignedWord(a_word, a_id)
+// add all alignment between two words
+function AddAlignments(a_src, a_tgt, a_record)
 {
-    // find index of word to remove
-    var aligned = GetAlignedWords(a_word);
-    var toRemove = -1;
-    for (var i = 0; i < aligned.length; ++i)
+    // record event for history
+    var  event = Array();
+
+    // get word sets containing source and target
+    // set[0][0] = a_src and its siblings
+    // set[0][1] = words aligned with a_tgt
+    // set[1][0] = a_tgt and its siblings
+    // set[1][1] = words aligned with a_src
+    var set = Array(GetWordSets(a_src, a_tgt), GetWordSets(a_tgt, a_src));
+
+    // cross-connect between the two sets
+    // set[0][0] and set[1][1] are already connected
+    // as are set[0][1] and set[1][0]
+    for (var i = 0; i < 2; ++i)
+        for (var j = 0; j < set[0][i].length; ++j)
+            for (var k = 0; k < set[1][i].length; ++k)
+                if (AddAlignment(set[0][i][j], set[1][i][k], true) && a_record)
+                    event.push(Array(set[0][i][j], set[1][i][k]));
+
+    // add to history
+    if (a_record)
+        PushHistory(Array(event, true));
+}
+
+// remove all alignment between two words
+function RemoveAlignments(a_src, a_tgt, a_record)
+{
+    // record event for history
+    var  event = Array();
+
+    // get word set containing source
+    var srcWordSet = GetWordSets(a_src, null)[0];
+
+    // remove target connections to source set
+    for (var i = 0; i < srcWordSet.length; ++i)
+        if (RemoveAlignment(srcWordSet[i], a_tgt, true) && a_record)
+            event.push(Array(srcWordSet[i], a_tgt));
+
+    // add to history
+    if (a_record)
+        PushHistory(Array(event, false));
+}
+
+// function to get sets of related words
+function GetWordSets(a_src, a_tgt)
+{
+    // start with the word itself
+    var srcSet = Array();
+    srcSet.push(a_src);
+
+    // for first aligned word of source
+    var wd = GetAlignedWords(a_src)[0];
+    if (wd)
     {
-        // if this is the one to remove, remember it
-        if (aligned[i].getAttributeNS(null, "idref") == a_id)
+        // get aligned words of that word
+        var id = wd.getAttributeNS(null, "idref");
+        var tgt = document.getElementById(id);
+        var wds = GetAlignedWords(tgt);
+
+        // add each word to set
+        for (var i = 0; i < wds.length; ++i)
         {
-            toRemove = i;
-            break;
+            // if this isn't original word
+            var id = wds[i].getAttributeNS(null, "idref");
+            var sibling = document.getElementById(id);
+            if (sibling != a_src)
+              srcSet.push(sibling);
         }
     }
 
-    if (toRemove >= 0)
+    // if target specified, get set of its aligned words
+    // we'll only get here if a_src and a_tgt are not already aligned
+    // so we know anything aligned with a_tgt is not already in the srcSet
+    var tgtSet = Array();
+    if (a_tgt)
     {
-        // if this is last aligned word, change status
-        if (aligned.length == 1)
-            AddClass(GetHeadWord(a_word), "free");
-
-        // adjust position of words after removal
-        for (var i = aligned.length - 1; i > toRemove; --i)
+        var wds = GetAlignedWords(a_tgt);
+        for (var i = 0; i < wds.length; ++i)
         {
-            aligned[i].
-                setAttributeNS(null,
-                               "y",
-                               aligned[i-1].getAttributeNS(null, "y"));
+            var id = wds[i].getAttributeNS(null, "idref");
+            var sibling = document.getElementById(id);
+            tgtSet.push(sibling);
         }
-
-        // discard child
-        GetAlignment(a_word).removeChild(aligned[toRemove]);
     }
+
+    return Array(srcSet, tgtSet);
+}
+
+// add connection between two words
+function AddAlignment(a_src, a_tgt, a_highlight)
+{
+    // for each direction
+    var  wd = Array(a_src, a_tgt)
+    for (var i = 0; i < 2; ++i)
+    {
+        var j = 1 - i;
+
+        // create new word to be added
+        var id = wd[j].getAttributeNS(null, "id");
+        var word = GetHeadWord(wd[j]);
+        var newWord = GetHeadWord(wd[j]).cloneNode(true);
+        RemoveClass(newWord, null);
+        newWord.setAttributeNS(null, "idref", id);
+        var wordNum = Number(id.substr(id.search('-') + 1));
+
+        // find index of word to insert before
+        var insertWord = null;
+        var lastY = s_fontSize;
+        var aligned = GetAlignedWords(wd[i]);
+        for (var k = 0; k < aligned.length; ++k)
+        {
+            lastY = Number(aligned[k].getAttributeNS(null, "y"));
+
+            // if already found word
+            if (insertWord)
+            {
+                aligned[k].setAttributeNS(null,
+                                          "y",
+                                          lastY + s_interlinearFontSize);
+                continue;
+            }
+
+            // get number of this word
+            var thisId = aligned[k].getAttributeNS(null, "idref");
+            var thisNum = Number(thisId.substr(thisId.search('-') + 1));
+
+            // if this is same as new word number, nothing to add
+            if (thisNum == wordNum)
+                return false;
+
+            // if past new number, this is insert point
+            if (thisNum > wordNum)
+            {
+                insertWord = aligned[k];
+                newWord.setAttributeNS(null, "y", lastY);
+                aligned[k].setAttributeNS(null,
+                                          "y",
+                                          lastY + s_interlinearFontSize);
+            }
+        }
+        if (!insertWord)
+            newWord.setAttributeNS(null, "y", lastY + s_interlinearFontSize);
+
+        // insert new word
+        if (aligned.length == 0)
+            RemoveClass(GetHeadWord(wd[i]), "free");
+        if (a_highlight)
+            HighlightHeadWord(wd[i], true, "aligned-focus");
+        GetAlignment(wd[i]).insertBefore(newWord, insertWord);
+
+        // save length so we can get it even when word is not in tree
+        var len = newWord.getComputedTextLength();
+        newWord.setAttributeNS(null, "len", len);
+    }
+    
+    // success
+    return true;
 };
 
-// change display of aligned text
-function DisplayAlignment(a_root, a_on)
+// remove connection between two words
+function RemoveAlignment(a_src, a_tgt, a_highlight)
+{
+    // for each direction
+    var  wd = Array(a_src, a_tgt)
+    for (var i = 0; i < 2; ++i)
+    {
+        var j = 1 - i;
+
+        // find index of word to remove
+        var id = wd[j].getAttributeNS(null, "id");
+        var aligned = GetAlignedWords(wd[i]);
+        var toRemove = -1;
+        for (var k = 0; k < aligned.length; ++k)
+        {
+            // if this is the one to remove, remember it
+            if (aligned[k].getAttributeNS(null, "idref") == id)
+            {
+                toRemove = k;
+                break;
+            }
+        }
+
+        // if word found
+        if (toRemove != -1)
+        {
+            // if this is last aligned word, change status
+            if (aligned.length == 1)
+            {
+                AddClass(GetHeadWord(wd[i]), "free");
+                if (a_highlight)
+                    HighlightHeadWord(wd[i], false, "aligned-focus");
+            }
+
+            // adjust position of words after removal
+            for (var k = aligned.length - 1; k > toRemove; --k)
+            {
+                aligned[k].
+                    setAttributeNS(null,
+                                   "y",
+                                   aligned[k - 1].getAttributeNS(null, "y"));
+            }
+
+            // discard child
+            GetAlignment(wd[i]).removeChild(aligned[toRemove]);
+        }
+        else
+        {
+            // alignment not found
+            return false;
+        }
+    }
+    
+    // success
+    return true;
+};
+
+// replay event from history
+function ReplayEvent(a_event, a_forward)
+{
+    // if no event, do nothing
+    if (!a_event)
+        return;
+
+    // get rid of any existing selection and highlighting
+    SelectWord(null);
+    ClickOnWord(s_currentWord, true);
+
+    // we're adding if the original event was an addition and we're replaying
+    // forward, or original event was a removal and we're replaying backwards
+    var  adding = (a_event[1] == a_forward);
+    var  words = a_event[0];
+    for (var i in words)
+    {
+        if (adding)
+            AddAlignment(words[i][0], words[i][1], false);
+        else
+            RemoveAlignment(words[i][0], words[i][1], false);
+    }
+
+};
+
+// change display of interlinear text
+function DisplayInterlinear(a_root, a_on)
 {
     var alignment = a_root.getElementsByClassName("alignment");
     for (var i = 0; i < alignment.length; ++i)
@@ -513,7 +660,7 @@ function DisplayAlignment(a_root, a_on)
         alignment[i].
             setAttributeNS(null, "visibility", (a_on ? "visible" : "hidden"));
     }
-    s_displayAligned = a_on;
+    s_displayInterlinear = a_on;
 };
 
 //****************************************************************************
@@ -573,10 +720,10 @@ function Reposition(a_root)
                         "translate(" + lineX + ", " + lineY + ")");
 
             // adjust for next line
-            lineY += maxWordY + (s_displayAligned ? s_fontSize : 0);
+            lineY += maxWordY + (s_displayInterlinear ? s_fontSize : 0);
             maxX = Math.max(maxX, wordX);
         }
-        if (s_displayAligned)
+        if (s_displayInterlinear)
             maxY += lineY;
         else
             maxY = Math.max(maxY, lineY);
@@ -590,7 +737,7 @@ function Reposition(a_root)
         // adjust for next sentence
         // if displaying alignment, place sentences vertically
         // if not displaying alignment, place sentences horizontally
-        if (s_displayAligned)
+        if (s_displayInterlinear)
             sentY += lineY;
         else
             sentX += maxX;
@@ -598,11 +745,11 @@ function Reposition(a_root)
         // position divider
         if (i == 0)
         {
-            if (!s_displayAligned)
+            if (!s_displayInterlinear)
                 sentX += s_fontSize;
             divX = sentX;
             divY = sentY;
-            if (s_displayAligned)
+            if (s_displayInterlinear)
                 sentY += s_fontSize;
             else
                 sentX += s_fontSize;
@@ -622,7 +769,7 @@ function Reposition(a_root)
     }
     divider.setAttributeNS(null, "x1", divX);
     divider.setAttributeNS(null, "y1", divY);
-    if (s_displayAligned)
+    if (s_displayInterlinear)
         divX += maxX;
     else
         divY += maxY;
@@ -643,7 +790,7 @@ function Reflow(a_root)
 
     // calculate max width for text
     var maxWidth = window.innerWidth;
-    if (!s_displayAligned)
+    if (!s_displayInterlinear)
         maxWidth = maxWidth / 2;
     maxWidth -= 2 * s_fontSize;
 
@@ -702,7 +849,7 @@ function Reflow(a_root)
 //****************************************************************************
 
 // add event to history
-function PushHistory(a_headWord, a_alignedWord, a_added)
+function PushHistory(a_event)
 {
     // destroy any redo history and adjust save points and buttons
     if (s_historyCursor < s_history.length)
@@ -719,10 +866,8 @@ function PushHistory(a_headWord, a_alignedWord, a_added)
         }
     }
 
-    // save ids of headword and aligned word plus alignment state
-    var headId = a_headWord.getAttribute("id");
-    var alignedId = a_alignedWord.getAttribute("id");
-    s_history.push(Array(headId, alignedId, a_added));
+    // save event plus alignment state
+    s_history.push(a_event);
     s_historyCursor++;
 
     // adjust buttons
@@ -733,7 +878,7 @@ function PushHistory(a_headWord, a_alignedWord, a_added)
       document.getElementById("save-button").removeAttribute("disabled");
 
     // update state
-    UpdateState(headId, alignedId, a_added, 1);
+    UpdateState(a_event, 1);
 }
 
 // get event from history
@@ -756,12 +901,10 @@ function PopHistory()
         document.getElementById("save-button").removeAttribute("disabled");
 
     // update state
-    UpdateState(event[0], event[1], event[2], -1);
+    UpdateState(event, -1);
 
     // convert ids back to words
-    return Array(document.getElementById(event[0]),
-                 document.getElementById(event[1]),
-                 event[2]);
+    return event;
 };
 
 // get event from redo history
@@ -784,57 +927,62 @@ function RepushHistory()
       document.getElementById("save-button").removeAttribute("disabled");
 
     // update state
-    UpdateState(event[0], event[1], event[2], 1);
+    UpdateState(event, 1);
 
     // convert ids back to words
-    return Array(document.getElementById(event[0]),
-                 document.getElementById(event[1]),
-                 event[2]);
+    return event;
 };
 
 // update state
-function UpdateState(a_id1, a_id2, a_added, a_inc)
+function UpdateState(a_event, a_inc)
 {
-    // get L1 and L2 ids
-    var idL1;
-    var idL2;
-    if (a_id1.substr(0, a_id1.search(':')) == "L1")
+    var  words = a_event[0];
+    var  added = a_event[1];
+
+    // for each pair of words
+    for (var i in words)
     {
-        idL1 = a_id1.substr(a_id1.search(':') + 1);
-        idL2 = a_id2.substr(a_id2.search(':') + 1);
+        // get L1 and L2 ids
+        var idL1 = words[i][0].getAttribute("id");
+        var idL2 = words[i][1].getAttribute("id");
+        if (idL1.substr(0, idL1.search(':')) == "L1")
+        {
+            idL1 = idL1.substr(idL1.search(':') + 1);
+            idL2 = idL2.substr(idL2.search(':') + 1);
+        }
+        else
+        {
+            idL1 = idL2.substr(idL2.search(':') + 1);
+            idL2 = idL1.substr(idL1.search(':') + 1);
+        }
+
+        // data for each word is:
+        //  [0] - number of words added during editing
+        //  [1] - number of words removed during editing
+        // summary date for each language is:
+        //  [0] - number of words with net aligned words decreased
+        //  [1] - number of words with net aligned words unchanged
+        //  [2] - number of words with net aligned words increased
+        //  [3] - number of unedited words
+
+        // make sure state for words exists
+        if (!s_stateL1[idL1])
+            s_stateL1[idL1] = [0, 0];
+        if (!s_stateL2[idL2])
+            s_stateL2[idL2] = [0, 0];
+
+        // remove from summary stats
+        s_summaryL1[SummaryIndex(s_stateL1[idL1])]--;
+        s_summaryL2[SummaryIndex(s_stateL2[idL2])]--;
+
+        // update state
+        s_stateL1[idL1][added ? 0 : 1] += a_inc;
+        s_stateL2[idL2][added ? 0 : 1] += a_inc;
+
+        // add to summary stats
+        s_summaryL1[SummaryIndex(s_stateL1[idL1])]++;
+        s_summaryL2[SummaryIndex(s_stateL2[idL2])]++;
     }
-    else
-    {
-        idL1 = a_id2.substr(a_id2.search(':') + 1);
-        idL2 = a_id1.substr(a_id1.search(':') + 1);
-    }
-
-    // data for each word is:
-    //  [0] - number of words added during editing
-    //  [1] - number of words removed during editing
-    // summary date for each language is:
-    //  [0] - number of words with net aligned words decreased
-    //  [1] - number of words with net aligned words unchanged
-    //  [2] - number of words with net aligned words increased
-    //  [3] - number of unedited words
-
-    // make sure state for words exists
-    if (!s_stateL1[idL1])
-        s_stateL1[idL1] = [0, 0];
-    if (!s_stateL2[idL2])
-        s_stateL2[idL2] = [0, 0];
-
-    // remove from summary stats
-    s_summaryL1[SummaryIndex(s_stateL1[idL1])]--;
-    s_summaryL2[SummaryIndex(s_stateL2[idL2])]--;
-
-    // update state
-    s_stateL1[idL1][a_added ? 0 : 1] += a_inc;
-    s_stateL2[idL2][a_added ? 0 : 1] += a_inc;
-
-    // add to summary stats
-    s_summaryL1[SummaryIndex(s_stateL1[idL1])]++;
-    s_summaryL2[SummaryIndex(s_stateL2[idL2])]++;
 
     // update display
     UpdateSummaryDisplay();
