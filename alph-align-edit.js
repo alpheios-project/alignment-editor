@@ -429,6 +429,11 @@ function AddAlignments(a_src, a_tgt, a_record)
                 if (AddAlignment(set[0][i][j], set[1][i][k], true) && a_record)
                     event.push(Array(set[0][i][j], set[1][i][k]));
 
+    // if set[1][1] is empty, we need to highlight set[0][1]
+    if (set[1][1].length == 0)
+        for (var i = 0; i < set[0][1].length; ++i)
+            HighlightHeadWord(set[0][1][i], true, "aligned-focus");
+        
     // add to history
     if (a_record)
         PushHistory(Array(event, true));
@@ -649,6 +654,9 @@ function ReplayEvent(a_event, a_forward)
             RemoveAlignment(words[i][0], words[i][1], false);
     }
 
+    // if we're showing aligned words, we might need to adjust positions
+    if (s_displayInterlinear)
+        Reposition(document.documentElement);
 };
 
 // change display of interlinear text
