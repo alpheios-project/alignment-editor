@@ -1,7 +1,7 @@
 /**
  * @fileoverview alph-align-edit - alignment editor
  *  
- * Copyright 2009 Cantus Foundation
+ * Copyright 2009-2010 Cantus Foundation
  * http://alpheios.net
  * 
  * This file is part of Alpheios.
@@ -20,21 +20,20 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-var s_ns = "http://www.w3.org/2000/svg";        // svg namespace
+var s_svgns = "http://www.w3.org/2000/svg";     // svg namespace
 var s_xlinkns = "http://www.w3.org/1999/xlink"; // xlink namespace
+var s_firefox = false;                          // in Firefox
 var s_fontSize = 20;                            // regular font size
 var s_interlinearFontSize = 15;                 // size of interlinear words
 var s_selectedWord = null;                      // word selected for editing
 var s_currentWord = null;                       // word mouse is over
 var s_displayInterlinear = false;               // whether aligned words are
                                                 // being displayed below heads
-var s_history = Array();                        // editing history
-var s_historyCursor = 0;                        // position in history
-var s_saveCursor = 0;                           // position of last save
 var s_stateL1 = Array();                        // change state for L1 words
 var s_stateL2 = Array();                        // change state for L2 words
 var s_summaryL1 = [0, 0, 0, 0];                 // summary stats for L1 words
 var s_summaryL2 = [0, 0, 0, 0];                 // summary stats for L2 words
+var s_param = [];                               // parameters and metadata
 
 //****************************************************************************
 // initialization
@@ -42,69 +41,113 @@ var s_summaryL2 = [0, 0, 0, 0];                 // summary stats for L2 words
 
 function Init(a_evt)
 {
+    // initialize internal params
+    s_param["firebug"] = "no";
+
+    // get parameters from html metadata of form
+    //  <meta name="alpheios-param-<name>" content="<value>"/>
+    var prefix = "alpheios-param-";
+    $("meta[name^='" + prefix + "']", document).each(
+    function ()
+    {
+        var name = $(this).attr("name").substr(prefix.length);
+        s_param[name] = $(this).attr("content");
+    });
+
+    // get parameters from call
+    // Note: processed after parameters in metadata, so that
+    // call parameters can override
+    var callParams = location.search.substr(1).split("&");
+    var numParams = callParams.length;
+    for (i in callParams)
+    {
+        s_param[i] = callParams[i].split("=");
+        s_param[s_param[i][0]] = s_param[i][1];
+    }
+    s_param["numParams"] = numParams;
+
+    // set state variables
+    if (navigator.userAgent.indexOf("Firefox") != -1)
+        s_firefox = true;
+
+    // clear undo/redo history
+    AlphEdit.clearHistory();
+
     // onresize doesn't work in firefox, so register it here
     window.addEventListener("resize", Resize, false);
+
+    // right-to-left doesn't seem to be working in firefox svg
+    // reverse strings by hand
+    if (s_firefox && (s_param["L1:direction"] == "rtl"))
+    {
+        AlphEdit.reverseText(
+                    $("g.L1 text.headwd, g.L2 g.alignment text", document),
+                    "form");
+    }
+    if (s_firefox && (s_param["L2:direction"] == "rtl"))
+    {
+        AlphEdit.reverseText(
+                    $("g.L2 text.headwd, g.L1 g.alignment text", document),
+                    "form");
+    }
 
     // one-time positioning:
     // set position of headwords
     var svgRoot = document.documentElement;
-    var headwds = svgRoot.getElementsByClassName("headwd");
-    for (var i = 0; i < headwds.length; ++i)
+    var headwds = $(".headwd", svgRoot);
+    headwds.each(
+    function()
     {
-        headwds[i].setAttributeNS(null, "x", s_fontSize / 2);
-        headwds[i].setAttributeNS(null, "y", s_fontSize);
-    }
+        this.setAttribute("x", s_fontSize / 2);
+        this.setAttribute("y", s_fontSize);
+    });
 
     // set size and attributes of highlighting rectangles
-    var rects = svgRoot.getElementsByClassName("headwd-bg");
-    for (var i = 0; i < rects.length; ++i)
+    var rects = $(".headwd-bg", svgRoot);
+    rects.each(
+    function()
     {
-        var rect = rects[i];
-        var text = GetHeadWord(rect.parentNode);
+        var text = GetHeadWord(this.parentNode);
         var len = text.getComputedTextLength() + s_fontSize;
-        rect.setAttributeNS(null, "width", len);
-        rect.setAttributeNS(null, "height", 5 * s_fontSize / 4);
-        if (rect.parentNode.hasAttributeNS(s_xlinkns, "title"))
+        this.setAttribute("width", len);
+        this.setAttribute("height", 5 * s_fontSize / 4);
+        if (this.parentNode.hasAttributeNS(s_xlinkns, "title"))
         {
-            AddClass(rect, "marked");
-            rect.setAttributeNS(null, "rx", s_fontSize / 2);
-            rect.setAttributeNS(null, "ry", s_fontSize / 2);
+            AlphEdit.addClass(this, "marked");
+            this.setAttribute("rx", s_fontSize / 2);
+            this.setAttribute("ry", s_fontSize / 2);
         }
-    }
+    });
 
     // set position of aligned words
-    var words = svgRoot.getElementsByClassName("word");
-    for (var i = 0; i < words.length; ++i)
+    var words = $(".word", svgRoot);
+    words.each(
+    function()
     {
-        var aligned = GetAlignedWords(words[i]);
         var y = s_fontSize;
-        for (var j = 0; j < aligned.length; ++j)
+        GetAlignedWords(this).each(
+        function()
         {
             y += s_interlinearFontSize;
-            aligned[j].setAttributeNS(null, "x", s_fontSize / 2);
-            aligned[j].setAttributeNS(null, "y", y);
+            this.setAttribute("x", s_fontSize / 2);
+            this.setAttribute("y", y);
 
             // save length so we can get it even when word is not in tree
-            var len = aligned[j].getComputedTextLength();
-            aligned[j].setAttributeNS(null, "len", len);
-        }
-    }
-    document.getElementById("interlinear-checkbox").checked =
-                                                        s_displayInterlinear;
+            var len = this.getComputedTextLength();
+            this.setAttribute("len", len);
+        });
+    });
+    $("#interlinear-checkbox", document).get(0).checked = s_displayInterlinear;
 
     // initialize unedited word counts in summary stats
-    var sentL1 = svgRoot.getElementsByClassName("L1")[0];
-    var wordsL1 = sentL1.getElementsByClassName("word");
-    s_summaryL1[3] = wordsL1.length;
-    var sentL2 = svgRoot.getElementsByClassName("L2")[0];
-    var wordsL2 = sentL2.getElementsByClassName("word");
-    s_summaryL2[3] = wordsL2.length;
+    s_summaryL1[3] = $(".L1 .word", svgRoot).size();
+    s_summaryL2[3] = $(".L2 .word", svgRoot).size();
     UpdateSummaryDisplay();
 
     // set/reset buttons
-    document.getElementById("undo-button").setAttribute("disabled", "yes");
-    document.getElementById("redo-button").setAttribute("disabled", "yes");
-    document.getElementById("save-button").setAttribute("disabled", "yes");
+    $("#undo-button", document).attr("disabled", "disabled");
+    $("#redo-button", document).attr("disabled", "disabled");
+    $("#save-button", document).attr("disabled", "disabled");
 
     // now position the pieces
     DisplayInterlinear(svgRoot, s_displayInterlinear);
@@ -121,8 +164,8 @@ function EnterLeave(a_evt)
     var focus = (a_evt.type == "mouseover");
 
     // if over headword
-    if (HasClass(a_evt.target, "headwd-bg") ||
-        HasClass(a_evt.target, "headwd"))
+    if ($(a_evt.target).hasClass("headwd-bg") ||
+        $(a_evt.target).hasClass("headwd"))
     {
         HighlightWord(a_evt.target.parentNode, focus);
         s_currentWord = (focus ? a_evt.target.parentNode : null);
@@ -133,8 +176,8 @@ function EnterLeave(a_evt)
 function Click(a_evt)
 {
     // if over headword
-    if (HasClass(a_evt.target, "headwd-bg") ||
-        HasClass(a_evt.target, "headwd"))
+    if ($(a_evt.target).hasClass("headwd-bg") ||
+        $(a_evt.target).hasClass("headwd"))
     {
         ClickOnWord(a_evt.target.parentNode, true);
     }
@@ -161,10 +204,10 @@ function ClickOnWord(a_tgt, a_record)
     // see if target and selected are the same language
     var selSentence = s_selectedWord.parentNode.parentNode;
     var tgtSentence = a_tgt.parentNode.parentNode;
-    var sameLanguage = (HasClass(selSentence, "L1") &&
-                        HasClass(tgtSentence, "L1")) ||
-                       (HasClass(selSentence, "L2") &&
-                        HasClass(tgtSentence, "L2"));
+    var sameLanguage = ($(selSentence).hasClass("L1") &&
+                        $(tgtSentence).hasClass("L1")) ||
+                       ($(selSentence).hasClass("L2") &&
+                        $(tgtSentence).hasClass("L2"));
 
     // if same language, change selection
     if (sameLanguage)
@@ -197,12 +240,12 @@ function ClickOnWord(a_tgt, a_record)
 
 function ClickOnUndo(a_evt)
 {
-    ReplayEvent(PopHistory(), false);
+    ReplayEvent(AlphEdit.popHistory(UpdateState), false);
 }
 
 function ClickOnRedo(a_evt)
 {
-    ReplayEvent(RepushHistory(), true);
+    ReplayEvent(AlphEdit.repushHistory(UpdateState), true);
 };
 
 function ClickOnSave(a_evt)
@@ -240,7 +283,7 @@ function FormSubmit(a_form)
     }
 
     // if there are unsaved changes
-    if (s_saveCursor != s_historyCursor)
+    if (AlphEdit.unsavedChanges())
     {
         if (confirm("Save changes before going to new sentence?"))
           SaveContents();
@@ -324,10 +367,10 @@ function HighlightWord(a_word, a_on)
 // function to set highlight on words aligned with a given word
 function HighlightAlignedWords(a_word, a_on, a_recur)
 {
-    var aligned = GetAlignedWords(a_word);
-    for (var i = 0; i < aligned.length; ++i)
+    GetAlignedWords(a_word).each(
+    function()
     {
-        var id = aligned[i].getAttributeNS(null, "idref");
+        var id = this.getAttribute("idref");
         var wd = a_word.ownerDocument.getElementById(id);
         HighlightHeadWord(wd, a_on, "aligned-focus");
 
@@ -335,7 +378,7 @@ function HighlightAlignedWords(a_word, a_on, a_recur)
         // that share this aligned word with original word
         if (a_recur)
             HighlightAlignedWords(wd, a_on, false);
-    }
+    });
 };
 
 // function to set/unset selected word
@@ -374,13 +417,13 @@ function HighlightHeadWord(a_word, a_on, a_value)
 
     if (a_on)
     {
-        AddClass(GetHeadRect(a_word), a_value);
-        AddClass(GetHeadWord(a_word), a_value);
+        AlphEdit.addClass(GetHeadRect(a_word), a_value);
+        AlphEdit.addClass(GetHeadWord(a_word), a_value);
     }
     else
     {
-        RemoveClass(GetHeadRect(a_word), a_value);
-        RemoveClass(GetHeadWord(a_word), a_value);
+        AlphEdit.removeClass(GetHeadRect(a_word), a_value);
+        AlphEdit.removeClass(GetHeadWord(a_word), a_value);
     }
 };
 
@@ -391,20 +434,23 @@ function HighlightHeadWord(a_word, a_on, a_value)
 // function to find out if two words are aligned
 function IsAligned(a_src, a_tgt)
 {
-    var id = a_src.getAttributeNS(null, "id");
-    var aligned = GetAlignedWords(a_tgt);
-    for (var i = 0; i < aligned.length; ++i)
+    var id = a_src.getAttribute("id");
+    var aligned = false;
+    GetAlignedWords(a_tgt).each(
+    function()
     {
         // if target has aligned word pointing at src, they're aligned
-        if (aligned[i].getAttributeNS(null, "idref") == id)
-          return true;
-    }
+        if (this.getAttribute("idref") == id)
+        {
+            aligned = true;
+            return false;
+        }
+    });
 
     // we assume words are always reciprocally aligned
     // so there's no need to check the other direction
 
-    // target doesn't point at source, so they're not aligned
-    return false;
+    return aligned;
 }
 
 // add all alignment between two words
@@ -433,10 +479,10 @@ function AddAlignments(a_src, a_tgt, a_record)
     if (set[1][1].length == 0)
         for (var i = 0; i < set[0][1].length; ++i)
             HighlightHeadWord(set[0][1][i], true, "aligned-focus");
-        
+
     // add to history
     if (a_record)
-        PushHistory(Array(event, true));
+        AlphEdit.pushHistory(Array(event, true), UpdateState);
 }
 
 // remove all alignment between two words
@@ -455,7 +501,7 @@ function RemoveAlignments(a_src, a_tgt, a_record)
 
     // add to history
     if (a_record)
-        PushHistory(Array(event, false));
+        AlphEdit.pushHistory(Array(event, false), UpdateState);
 }
 
 // function to get sets of related words
@@ -470,19 +516,19 @@ function GetWordSets(a_src, a_tgt)
     if (wd)
     {
         // get aligned words of that word
-        var id = wd.getAttributeNS(null, "idref");
+        var id = wd.getAttribute("idref");
         var tgt = document.getElementById(id);
-        var wds = GetAlignedWords(tgt);
 
         // add each word to set
-        for (var i = 0; i < wds.length; ++i)
+        GetAlignedWords(tgt).each(
+        function()
         {
             // if this isn't original word
-            var id = wds[i].getAttributeNS(null, "idref");
+            var id = this.getAttribute("idref");
             var sibling = document.getElementById(id);
             if (sibling != a_src)
               srcSet.push(sibling);
-        }
+        });
     }
 
     // if target specified, get set of its aligned words
@@ -491,13 +537,13 @@ function GetWordSets(a_src, a_tgt)
     var tgtSet = Array();
     if (a_tgt)
     {
-        var wds = GetAlignedWords(a_tgt);
-        for (var i = 0; i < wds.length; ++i)
+        GetAlignedWords(a_tgt).each(
+        function()
         {
-            var id = wds[i].getAttributeNS(null, "idref");
+            var id = this.getAttribute("idref");
             var sibling = document.getElementById(id);
             tgtSet.push(sibling);
-        }
+        });
     }
 
     return Array(srcSet, tgtSet);
@@ -513,61 +559,66 @@ function AddAlignment(a_src, a_tgt, a_highlight)
         var j = 1 - i;
 
         // create new word to be added
-        var id = wd[j].getAttributeNS(null, "id");
+        var id = wd[j].getAttribute("id");
         var word = GetHeadWord(wd[j]);
         var newWord = GetHeadWord(wd[j]).cloneNode(true);
-        RemoveClass(newWord, null);
-        newWord.setAttributeNS(null, "idref", id);
+        AlphEdit.removeClass(newWord, null);
+        newWord.setAttribute("idref", id);
         var wordNum = Number(id.substr(id.search('-') + 1));
 
         // find index of word to insert before
         var insertWord = null;
+        var foundWord = false;
         var lastY = s_fontSize;
         var aligned = GetAlignedWords(wd[i]);
-        for (var k = 0; k < aligned.length; ++k)
+        aligned.each(
+        function()
         {
-            lastY = Number(aligned[k].getAttributeNS(null, "y"));
+            lastY = Number(this.getAttribute("y"));
 
-            // if already found word
+            // if already found insert point
             if (insertWord)
             {
-                aligned[k].setAttributeNS(null,
-                                          "y",
-                                          lastY + s_interlinearFontSize);
-                continue;
+                this.setAttribute("y", lastY + s_interlinearFontSize);
+                return true;
             }
 
             // get number of this word
-            var thisId = aligned[k].getAttributeNS(null, "idref");
+            var thisId = this.getAttribute("idref");
             var thisNum = Number(thisId.substr(thisId.search('-') + 1));
 
             // if this is same as new word number, nothing to add
             if (thisNum == wordNum)
+            {
+                foundWord = true;
                 return false;
+            }
 
             // if past new number, this is insert point
             if (thisNum > wordNum)
             {
-                insertWord = aligned[k];
-                newWord.setAttributeNS(null, "y", lastY);
-                aligned[k].setAttributeNS(null,
-                                          "y",
-                                          lastY + s_interlinearFontSize);
+                insertWord = this;
+                newWord.setAttribute("y", lastY);
+                this.setAttribute("y", lastY + s_interlinearFontSize);
             }
-        }
+        });
+        // if word already there, we're done without doing anything
+        if (foundWord)
+            return false;
+        // if inserting at end
         if (!insertWord)
-            newWord.setAttributeNS(null, "y", lastY + s_interlinearFontSize);
+            newWord.setAttribute("y", lastY + s_interlinearFontSize);
 
         // insert new word
-        if (aligned.length == 0)
-            RemoveClass(GetHeadWord(wd[i]), "free");
+        if (aligned.size() == 0)
+            AlphEdit.removeClass(GetHeadWord(wd[i]), "free");
         if (a_highlight)
             HighlightHeadWord(wd[i], true, "aligned-focus");
         GetAlignment(wd[i]).insertBefore(newWord, insertWord);
 
         // save length so we can get it even when word is not in tree
         var len = newWord.getComputedTextLength();
-        newWord.setAttributeNS(null, "len", len);
+        newWord.setAttribute("len", len);
     }
     
     // success
@@ -584,13 +635,13 @@ function RemoveAlignment(a_src, a_tgt, a_highlight)
         var j = 1 - i;
 
         // find index of word to remove
-        var id = wd[j].getAttributeNS(null, "id");
-        var aligned = GetAlignedWords(wd[i]);
+        var id = wd[j].getAttribute("id");
+        var aligned = GetAlignedWords(wd[i]).get();
         var toRemove = -1;
         for (var k = 0; k < aligned.length; ++k)
         {
             // if this is the one to remove, remember it
-            if (aligned[k].getAttributeNS(null, "idref") == id)
+            if (aligned[k].getAttribute("idref") == id)
             {
                 toRemove = k;
                 break;
@@ -603,7 +654,7 @@ function RemoveAlignment(a_src, a_tgt, a_highlight)
             // if this is last aligned word, change status
             if (aligned.length == 1)
             {
-                AddClass(GetHeadWord(wd[i]), "free");
+                AlphEdit.addClass(GetHeadWord(wd[i]), "free");
                 if (a_highlight)
                     HighlightHeadWord(wd[i], false, "aligned-focus");
             }
@@ -611,10 +662,7 @@ function RemoveAlignment(a_src, a_tgt, a_highlight)
             // adjust position of words after removal
             for (var k = aligned.length - 1; k > toRemove; --k)
             {
-                aligned[k].
-                    setAttributeNS(null,
-                                   "y",
-                                   aligned[k - 1].getAttributeNS(null, "y"));
+                aligned[k].setAttribute("y", aligned[k - 1].getAttribute("y"));
             }
 
             // discard child
@@ -662,12 +710,11 @@ function ReplayEvent(a_event, a_forward)
 // change display of interlinear text
 function DisplayInterlinear(a_root, a_on)
 {
-    var alignment = a_root.getElementsByClassName("alignment");
-    for (var i = 0; i < alignment.length; ++i)
+    $(".alignment", a_root).each(
+    function()
     {
-        alignment[i].
-            setAttributeNS(null, "visibility", (a_on ? "visible" : "hidden"));
-    }
+        this.setAttribute("visibility", (a_on ? "visible" : "hidden"));
+    });
     s_displayInterlinear = a_on;
 };
 
@@ -678,10 +725,9 @@ function DisplayInterlinear(a_root, a_on)
 // reposition elements on screen
 function Reposition(a_root)
 {
-    Reflow(a_root);
+    var maxWidth = Reflow(a_root);
 
     // adjust word spacing
-    var sentences = a_root.getElementsByClassName("sentence");
     var sentX = 2;
     var sentY = 2;
     var maxX = 0;
@@ -690,57 +736,59 @@ function Reposition(a_root)
     var divY = 0;
 
     // for each sentence
-    for (var i = 0; i < sentences.length; ++i)
+    $(".sentence", a_root).each(
+    function(i)
     {
-        // get lines in sentence
-        var lines = sentences[i].getElementsByClassName("line");
+        var width = maxWidth[i];
+        var dir = s_param[$(this).attr("lnum") + ":direction"];
+
         var lineX = 0;
         var lineY = 0;
 
         // for each line
-        for (var j = 0; j < lines.length; ++j)
+        $(".line", this).each(
+        function()
         {
-            // get words in lines
-            var words = lines[j].getElementsByClassName("word");
             var wordX = 0;
             var wordY = 0;
             var maxWordY = 0;
 
             // for each word
-            for (var k = 0; k < words.length; ++k)
+            $(".word", this).each(
+            function()
             {
+                var xx = (dir == "rtl") ?
+                            (width - 
+                             wordX - 
+                             $(".headwd", this)[0].getComputedTextLength()) :
+                            wordX;
+
                 // set position of word
-                words[k].setAttributeNS(
-                            null,
-                            "transform",
-                            "translate(" + wordX + ", " + wordY + ")");
+                this.setAttribute("transform",
+                                  "translate(" + xx + ", " + wordY + ")");
 
                 // adjust for next word
-                var size = GetWordSize(words[k]);
+                var size = GetWordSize(this);
                 wordX += size[0];
                 maxWordY = Math.max(maxWordY, size[1]);
-            }
+            });
 
             // set position of line
-            lines[j].setAttributeNS(
-                        null,
-                        "transform",
-                        "translate(" + lineX + ", " + lineY + ")");
+            this.setAttribute("transform",
+                              "translate(" + lineX + ", " + lineY + ")");
 
             // adjust for next line
             lineY += maxWordY + (s_displayInterlinear ? s_fontSize : 0);
             maxX = Math.max(maxX, wordX);
-        }
+        });
         if (s_displayInterlinear)
             maxY += lineY;
         else
             maxY = Math.max(maxY, lineY);
 
         // set position of sentence
-        sentences[i].setAttributeNS(
-                        null,
-                        "transform",
-                        "translate(" + sentX + ", " + sentY + ")");
+        this.setAttribute("transform",
+                          "translate(" + sentX + ", " + sentY + ")");
 
         // adjust for next sentence
         // if displaying alignment, place sentences vertically
@@ -762,33 +810,33 @@ function Reposition(a_root)
             else
                 sentX += s_fontSize;
         }
-    }
+    });
 
     // position divider
-    var divider = a_root.getElementsByClassName("divider")[0];
+    var divider = $(".divider", a_root).get(0);
     if (!divider)
     {
         // if divider doesn't exist, create it
         var doc = a_root.ownerDocument;
-        divider = doc.createElementNS(s_ns, "line");
-        AddClass(divider, "divider");
-        var svg = a_root.getElementsByTagNameNS(s_ns, "svg")[0];
+        divider = doc.createElementNS(s_svgns, "line");
+        AlphEdit.addClass(divider, "divider");
+        var svg = a_root.getElementsByTagNameNS(s_svgns, "svg")[0];
         svg.appendChild(divider);
     }
-    divider.setAttributeNS(null, "x1", divX);
-    divider.setAttributeNS(null, "y1", divY);
+    divider.setAttribute("x1", divX);
+    divider.setAttribute("y1", divY);
     if (s_displayInterlinear)
         divX += maxX;
     else
         divY += maxY;
-    divider.setAttributeNS(null, "x2", divX);
-    divider.setAttributeNS(null, "y2", divY);
+    divider.setAttribute("x2", divX);
+    divider.setAttribute("y2", divY);
     maxY += s_fontSize;
 
     // reset svg size
-    var svg = a_root.getElementsByTagNameNS(s_ns, "svg")[0];
-    svg.setAttributeNS(null, "width", window.innerWidth);
-    svg.setAttributeNS(null, "height", window.innerHeight);
+    var svg = a_root.getElementsByTagNameNS(s_svgns, "svg")[0];
+    svg.setAttribute("width", window.innerWidth);
+    svg.setAttribute("height", window.innerHeight);
 };
 
 // function to reassign words to lines
@@ -801,24 +849,21 @@ function Reflow(a_root)
     if (!s_displayInterlinear)
         maxWidth = maxWidth / 2;
     maxWidth -= 2 * s_fontSize;
+    var width = [];
 
     // for each sentence
-    var sentences = a_root.getElementsByClassName("sentence");
-    for (var i = 0; i < sentences.length; ++i)
+    $(".sentence", a_root).each(
+    function(i)
     {
-        var sentence = sentences[i];
+        width[i] = 0;
 
         // remove all words and lines in sentence
-        var wordElts = sentence.getElementsByClassName("word");
         var words = Array();
-        for (var j = 0; j < wordElts.length; ++j)
-            words.push(wordElts[j]);
+        $(".word", this).each(function() { words.push(this); });
         for (var j in words)
             words[j].parentNode.removeChild(words[j]);
-        var lineElts = sentence.getElementsByClassName("line");
         var lines = Array();
-        for (var j = 0; j < lineElts.length; ++j)
-            lines.push(lineElts[j]);
+        $(".line", this).each(function() { lines.push(this); });
         for (var j in lines)
             lines[j].parentNode.removeChild(lines[j]);
 
@@ -830,9 +875,9 @@ function Reflow(a_root)
             // if we don't have a line, create one
             if (!curLine)
             {
-                curLine = doc.createElementNS(s_ns, "g");
-                AddClass(curLine, "line");
-                sentence.appendChild(curLine);
+                curLine = doc.createElementNS(s_svgns, "g");
+                AlphEdit.addClass(curLine, "line");
+                this.appendChild(curLine);
                 x = 0;
             }
 
@@ -847,99 +892,19 @@ function Reflow(a_root)
 
             // if past line width, we're done with line
             if (x >= maxWidth)
+            {
                 curLine = null;
+            }
         }
-    }
+        width[i] = Math.max(width[i], x);
+    });
+    
+    return width;
 };
 
 //****************************************************************************
-// history/state
+// state
 //****************************************************************************
-
-// add event to history
-function PushHistory(a_event)
-{
-    // destroy any redo history and adjust save points and buttons
-    if (s_historyCursor < s_history.length)
-    {
-        s_history.splice(s_historyCursor);
-        document.getElementById("redo-button").setAttribute("disabled", "yes");
-        
-        // if we just destroyed save point in history
-        if (s_saveCursor > s_historyCursor)
-        {
-          // remember that no point in history corresponds to last save
-          s_saveCursor = -1;
-          document.getElementById("save-button").removeAttribute("disabled");
-        }
-    }
-
-    // save event plus alignment state
-    s_history.push(a_event);
-    s_historyCursor++;
-
-    // adjust buttons
-    document.getElementById("undo-button").removeAttribute("disabled");
-    if (s_saveCursor == s_historyCursor)
-      document.getElementById("save-button").setAttribute("disabled", "yes");
-    else
-      document.getElementById("save-button").removeAttribute("disabled");
-
-    // update state
-    UpdateState(a_event, 1);
-}
-
-// get event from history
-function PopHistory()
-{
-    // fail if no history exists
-    if (s_historyCursor == 0)
-        return null;
-
-    // get event and disable undo button if it's last one
-    var event = s_history[--s_historyCursor];
-    if (s_historyCursor == 0)
-        document.getElementById("undo-button").setAttribute("disabled", "yes");
-
-    // adjust buttons
-    document.getElementById("redo-button").removeAttribute("disabled");
-    if (s_saveCursor == s_historyCursor)
-        document.getElementById("save-button").setAttribute("disabled", "yes");
-    else
-        document.getElementById("save-button").removeAttribute("disabled");
-
-    // update state
-    UpdateState(event, -1);
-
-    // convert ids back to words
-    return event;
-};
-
-// get event from redo history
-function RepushHistory()
-{
-    // fail if nothing to redo exists
-    if (s_historyCursor == s_history.length)
-        return null;
-
-    // get event and disable redo button if it's last one
-    var event = s_history[s_historyCursor++];
-    if (s_historyCursor == s_history.length)
-        document.getElementById("redo-button").setAttribute("disabled", "yes");
-
-    // adjust buttons
-    document.getElementById("undo-button").removeAttribute("disabled");
-    if (s_saveCursor == s_historyCursor)
-      document.getElementById("save-button").setAttribute("disabled", "yes");
-    else
-      document.getElementById("save-button").removeAttribute("disabled");
-
-    // update state
-    UpdateState(event, 1);
-
-    // convert ids back to words
-    return event;
-};
 
 // update state
 function UpdateState(a_event, a_inc)
@@ -1001,9 +966,9 @@ function UpdateSummaryDisplay()
 {
     // update summary values
     for (var i = 0; i < 4; ++i)
-        document.getElementById("L1:S" + i).innerHTML = s_summaryL1[i];
+        $("#L1:S" + i, document).html(s_summaryL1[i]);
     for (var i = 0; i < 4; ++i)
-        document.getElementById("L2:S" + i).innerHTML = s_summaryL2[i];
+        $("#L2:S" + i, document).html(s_summaryL1[i]);
 };
 
 // get index in summary data for state
@@ -1028,12 +993,12 @@ function SaveContents()
 {
   // if nothing has changed, do nothing
   // (shouldn't ever happen because save buttons should be disabled)
-  if (s_saveCursor == s_historyCursor)
+  if (!AlphEdit.unsavedChanges())
     return;
 
   // send synchronous request to save
   var req = new XMLHttpRequest();
-  var svg = document.getElementsByTagNameNS(s_ns, "svg")[0];
+  var svg = document.getElementsByTagNameNS(s_svgns, "svg")[0];
   req.open("POST", svg.getAttribute("alph-saveurl"), false);
   req.setRequestHeader("Content-Type", "application/xml");
   req.send(XMLSerializer().serializeToString(svg));
@@ -1041,8 +1006,7 @@ function SaveContents()
     alert(req.responseText ? req.responseText : req.statusText);
 
   // remember where we last saved and reset button
-  s_saveCursor = s_historyCursor;
-  document.getElementById("save-button").setAttribute("disabled", "yes");
+  AlphEdit.saved();
 };
 
 //****************************************************************************
@@ -1067,23 +1031,22 @@ function ToggleMark(a_word, a_comment)
                               "title",
                               (a_comment ? a_comment : ""));
 
-        AddClass(rect, "marked");
-        rect.setAttributeNS(null, "rx", s_fontSize / 2);
-        rect.setAttributeNS(null, "ry", s_fontSize / 2);
+        AlphEdit.addClass(rect, "marked");
+        rect.setAttribute("rx", s_fontSize / 2);
+        rect.setAttribute("ry", s_fontSize / 2);
     }
     else
     {
         // remove mark
         a_word.removeAttributeNS(s_xlinkns, "title");
 
-        RemoveClass(rect, "marked");
+        AlphEdit.removeClass(rect, "marked");
         rect.removeAttributeNS(null, "rx");
         rect.removeAttributeNS(null, "ry");
     }
     
     // make sure we save results
-    s_saveCursor = -1;
-    document.getElementById("save-button").removeAttribute("disabled");
+    AlphEdit.unsaved();
 };
 
 //****************************************************************************
@@ -1105,20 +1068,18 @@ function GetWordSize(a_word)
     // if aligned words are visible
     if (GetAlignment(a_word).getAttribute("visibility") == "visible")
     {
-        var aligned = GetAlignedWords(a_word);
-        for (var i = 0; i < aligned.length; ++i)
+        GetAlignedWords(a_word).each(
+        function()
         {
-            var word = aligned[i];
-
             // get right and bottom of this word
             // we should be able to just use last word's bottom,
             // but to be safe we take max of all words
-            var x = Number(word.getAttribute("x")) +
-                    Number(word.getAttribute("len"));
-            var y = Number(word.getAttribute("y"));
+            var x = Number(this.getAttribute("x")) +
+                    Number(this.getAttribute("len"));
+            var y = Number(this.getAttribute("y"));
             w = Math.max(w, x);
             h = Math.max(h, y);
-        }
+        });
     }
 
     return Array(w, h);
@@ -1145,77 +1106,5 @@ function GetAlignment(a_word)
 // get aligned words associated with word
 function GetAlignedWords(a_word)
 {
-    return GetAlignment(a_word).getElementsByTagNameNS(s_ns, "text");
-};
-
-//****************************************************************************
-// functions to manipulate multi-valued class attribute
-//****************************************************************************
-
-// get class attribute as array of strings
-function GetClass(a_elt)
-{
-    var attr = a_elt.getAttributeNS(null, "class");
-    return (attr ? attr.split(' ') : Array());
-};
-
-// check if class attribute contains a value
-function HasClass(a_elt, a_class)
-{
-    var classVals = GetClass(a_elt);
-    for (i in classVals)
-    {
-        if (classVals[i] == a_class)
-            return true;
-    }
-    return false;
-};
-
-// add value to class attribute
-function AddClass(a_elt, a_class)
-{
-    var classVals = GetClass(a_elt);
-    for (i in classVals)
-    {
-        // if class already there, nothing to do
-        if (classVals[i] == a_class)
-            return;
-    }
-    classVals.push(a_class);
-    a_elt.setAttributeNS(null, "class", classVals.join(' '));
-};
-
-// remove value from class attribute
-function RemoveClass(a_elt, a_class)
-{
-    // if no value specified, remove whole value
-    if (!a_class)
-    {
-        a_elt.removeAttributeNS(null, "class");
-        return;
-    }
-
-    var classVals = GetClass(a_elt);
-    for (i in classVals)
-    {
-        // if class there, remove it
-        if (classVals[i] == a_class)
-        {
-            classVals.splice(i, 1);
-            a_elt.setAttributeNS(null, "class", classVals.join(' '));
-            return;
-        }
-    }
-    // if not found, nothing to do
-};
-
-// toggle value in class attribute
-function ToggleClass(a_elt, a_class)
-{
-    // if value is present remove it
-    if (HasClass(a_elt, a_class))
-      RemoveClass(a_elt, a_class);
-    // if not present, add it
-    else
-      AddClass(a_elt, a_class);
+    return $(GetAlignment(a_word).getElementsByTagNameNS(s_svgns, "text"));
 };

@@ -1,0 +1,136 @@
+/*
+ * Style for alignment editor
+ *  
+ * Copyright 2009 Cantus Foundation
+ * http://alpheios.net
+ * 
+ * This file is part of Alpheios.
+ * 
+ * Alpheios is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * Alpheios is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+label {
+    margin: 2px;
+    color:black;
+    font-family:'trebuchet ms',helvetica,sans-serif;
+    font-size:84%;
+    font-weight:bold;
+}
+button {
+    margin: 2px;
+    background-color:#8795a2;
+    border-color:#1f3243 #4e6376 #4e6376 #1f3243;
+    border-style:solid;
+    border-width:1px;
+    color:black;
+    font-family:'trebuchet ms',helvetica,sans-serif;
+    font-size:84%;
+    font-weight:bold;
+}
+button:hover {
+    border-style: outset;
+    border-color: #72cedf;
+    background-color: #4e6376;
+    color: white;
+}
+button:active {
+    border-style: inset;
+    background-color: #8795a2;
+}
+button[disabled] {
+    background-color:#cccccc;
+    border-color:#9d9b99;
+    border-style: solid;
+    color: gray;
+}
+
+div.summary {
+    font-family: Georgia;
+    font-size: 15px;
+    border-style: solid;
+    width: 250px;
+    border-width: thin;
+}
+
+div.summary table {
+    border-collapse: collapse;
+}
+div.summary table td {
+    padding: 1px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-style: solid;
+    border-width: thin;
+}
+
+g text {
+    font-family: Georgia;
+    font-size: 20px;
+    fill: #333333;
+}
+text.headwd {
+    font-size: 20px;
+}
+g.alignment text {
+    font-size: 15px;
+}
+text.free {
+    fill: #FF3333;
+}
+text.edit-focus {
+    fill: black;
+}
+text.free.edit-focus {
+    fill: red;
+}
+text.browse-focus {
+    fill: black;
+}
+text.aligned-focus {
+    fill: black;
+}
+text.free.browse-focus {
+    fill: red;
+}
+
+line.divider {
+    stroke-width: 2px;
+    stroke: black;
+}
+
+g rect {
+    stroke-width: 0;
+    fill: none;
+}
+g rect.marked {
+    stroke-width: 1px;
+    stroke: gray;
+}
+g rect.browse-focus {
+    fill: #FFEE77;
+    stroke-width: 1px;
+    stroke: gray;
+}
+g rect.edit-focus {
+    fill: #F0F0F0;
+    stroke-width: 1px;
+    stroke: gray;
+}
+g rect.aligned-focus {
+    fill: #FFEE77;
+}
+g rect.selected {
+    fill: #FFEE77;
+    stroke-width: 1px;
+    stroke: black;
+}

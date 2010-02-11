@@ -1,0 +1,116 @@
+/*
+ * Style for alignment sentence list
+ * 
+ * Copyright 2009-2010 Cantus Foundation
+ * http://alpheios.net
+ * 
+ * This file is part of Alpheios.
+ * 
+ * Alpheios is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * Alpheios is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+label {
+    margin: 2px;
+    color:black;
+    font-family:'trebuchet ms',helvetica,sans-serif;
+    font-size:84%;
+    font-weight:bold;
+}
+button {
+    margin: 2px;
+    background-color:#8795a2;
+    border-color:#1f3243 #4e6376 #4e6376 #1f3243;
+    border-style:solid;
+    border-width:1px;
+    color:black;
+    font-family:'trebuchet ms',helvetica,sans-serif;
+    font-size:84%;
+    font-weight:bold;
+}
+button:hover {
+    border-style: outset;
+    border-color: #72cedf;
+    background-color: #4e6376;
+    color: white;
+}
+button:active {
+    border-style: inset;
+    background-color: #8795a2;
+}
+button[disabled] {
+    background-color:#cccccc;
+    border-color:#9d9b99;
+    border-style: solid;
+    color: gray;
+}
+
+div.sentence {
+    text-indent: 5px;
+    width: 90%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+a {
+    text-decoration: none;
+    color: #404040;
+}
+a:hover {
+    color: black;
+}
+div.sentence:hover {
+    border-width: 3px;
+    border-color: black;
+}
+
+div.words {
+    text-align: center;
+}
+
+div.marked {
+    background-color: #C0FFC0;
+}
+
+div.alph-marks {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 2px;
+    background-color: #C0FFC0;
+}
+div.alph-marks table {
+    border-style: solid;
+    border-width: thin;
+    border-collapse: collapse;
+}
+div.alph-marks table * {
+    padding: 1px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-style: solid;
+    border-width: thin;
+}
+div.alph-marks table th {
+    padding: 0px;
+    font-size: 80%;
+}
+
+body {
+    font-family: Arial;
+}
+ol {
+    font-family: Georgia;
+}
