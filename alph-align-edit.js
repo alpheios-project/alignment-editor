@@ -966,9 +966,9 @@ function UpdateSummaryDisplay()
 {
     // update summary values
     for (var i = 0; i < 4; ++i)
-        $("#L1:S" + i, document).html(s_summaryL1[i]);
+        $(document.getElementById("L1:S" + i)).text(s_summaryL1[i]);
     for (var i = 0; i < 4; ++i)
-        $("#L2:S" + i, document).html(s_summaryL1[i]);
+        $(document.getElementById("L2:S" + i)).text(s_summaryL2[i]);
 };
 
 // get index in summary data for state

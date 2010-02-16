@@ -45,21 +45,28 @@ declare function alsv:save-sentence(
     let $docName := concat($a_collection, $a_data/@alph-doc, ".xml")
     let $sentId := $a_data/@alph-sentid
     let $doc := doc($docName)
-    let $oldSent := subsequence($doc//*:sentence, $sentId, 1)
+    let $oldSentence := subsequence($doc//*:sentence, $sentId, 1)
     return
-    if ($oldSent)
+    if ($oldSentence)
     then
-      let $newSent := alut:svg-to-xml($a_data)
+      let $newData := alut:svg-to-xml($a_data)
       return
-      if ($newSent)
+      if ($newData)
       then
-        let $empty := update value $oldSent with $newSent/*
-        return
-          <message>Sentence saved</message>
+        (: build content in namespace of existing sentence :)
+        let $ns := namespace-uri($oldSentence)
+        let $newSentence :=
+          element { QName($ns, "sentence") }
+          {
+            $oldSentence/@*,
+            alut:set-default-namespace($newData/*, $ns)
+          }
+        let $empty := update replace $oldSentence with $newSentence
+        return element message { "Sentence saved" }
       else
-        <error>Error converting sentence</error>
+        element error { "Error converting sentence" }
     else
-      <error>Error retrieving sentence to update</error>
+      element error { "Error retrieving sentence to update" }
   else
-    <error>No data found</error>
+    element error { "No data found" }
 };

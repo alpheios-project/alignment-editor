@@ -266,3 +266,29 @@ declare function alut:svg-to-xml(
 
   else ()
 };
+
+(:
+  Function to convert namespace
+
+  Parameters:
+    $a_data         content to change namespace in
+    $a_ns           new namespace
+
+  Return value:
+    data with all elements in specified default namespace
+ :)
+declare function alut:set-default-namespace(
+  $a_data as node()*,
+  $a_ns as xs:string) as node()*
+{
+  for $node in $a_data
+  return
+    if ($node instance of element())
+    then
+    element { QName($a_ns, local-name($node)) }
+    {
+      $node/@*,
+      alut:set-default-namespace($node/node(), $a_ns)
+    }
+    else $node
+};
