@@ -620,7 +620,7 @@ function AddAlignment(a_src, a_tgt, a_highlight)
         var len = newWord.getComputedTextLength();
         newWord.setAttribute("len", len);
     }
-    
+
     // success
     return true;
 };
@@ -674,7 +674,7 @@ function RemoveAlignment(a_src, a_tgt, a_highlight)
             return false;
         }
     }
-    
+
     // success
     return true;
 };
@@ -758,8 +758,8 @@ function Reposition(a_root)
             function()
             {
                 var xx = (dir == "rtl") ?
-                            (width - 
-                             wordX - 
+                            (width -
+                             wordX -
                              $(".headwd", this)[0].getComputedTextLength()) :
                             wordX;
 
@@ -882,23 +882,31 @@ function Reflow(a_root)
             }
 
             // try to add this word to line
-            x += GetWordSize(words[j])[0];
-            if ((x < maxWidth) || !curLine.firstChild)
+            var thisX = GetWordSize(words[j])[0];
+            if ((x + thisX < maxWidth) || !curLine.firstChild)
             {
                 // if it fits or it's first word on line
+                x += thisX;
+                thisX = 0;
                 curLine.appendChild(words[j]);
                 ++j;
             }
 
             // if past line width, we're done with line
-            if (x >= maxWidth)
+            if (x + thisX >= maxWidth)
             {
+                width[i] = Math.max(width[i], x);
                 curLine = null;
             }
         }
         width[i] = Math.max(width[i], x);
+
+        // if first sentence and displaying horizontally,
+        // give any unused space to second sentence
+        if ((i == 0) && !s_displayInterlinear)
+            maxWidth += (maxWidth - width[i]);
     });
-    
+
     return width;
 };
 
@@ -1044,7 +1052,7 @@ function ToggleMark(a_word, a_comment)
         rect.removeAttributeNS(null, "rx");
         rect.removeAttributeNS(null, "ry");
     }
-    
+
     // make sure we save results
     AlphEdit.unsaved();
 };
