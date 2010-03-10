@@ -149,8 +149,6 @@ declare function alut:xml-to-svg(
           attribute class
           {
             "headwd",
-            (: if this is L2 word, don't show popup :)
-            if ($lang eq "L2") then "alpheios-ignore" else (),
             (: if this has no aligned words, flag it :)
             if (count($refs) eq 0) then "free" else ()
           },
@@ -160,12 +158,7 @@ declare function alut:xml-to-svg(
         (: aligned words :)
         element g
         {
-          attribute class
-          {
-            "alignment",
-            (: if this is L2 word, don't show popup :)
-            if ($otherLang eq "L2") then "alpheios-ignore" else ()
-          },
+          attribute class { "alignment", "alpheios-ignore" },
           for $n in $refs
           return
           element text
