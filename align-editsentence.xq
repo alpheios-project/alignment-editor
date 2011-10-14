@@ -33,6 +33,7 @@ declare option exist:serialize
 let $docStem := request:get-parameter("doc", ())
 let $docName := concat("/db/repository/alignment/", $docStem, ".xml")
 let $sentId := request:get-parameter("s", ())
+let $allowSave := xs:boolean(request:get-parameter("ed",false()))
 let $saveURL := "./align-savesentence.xq"
 let $listURL := "./align-getlist.xq"
 let $editURL := "./align-editsentence.xq"
@@ -53,4 +54,4 @@ return aled:get-edit-page($docName,
                           $saveURL,
                           $listURL,
                           $editURL,
-                          "s")
+                          "s",$allowSave)

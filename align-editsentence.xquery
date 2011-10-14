@@ -52,7 +52,8 @@ declare function aled:get-edit-page(
   $a_saveURL as xs:string,
   $a_listURL as xs:string,
   $a_editURL as xs:string,
-  $a_editParam as xs:string) as element()?
+  $a_editParam as xs:string,
+  $a_allowSave as xs:boolean) as element()?
 {
   let $doc := doc($a_docName)
   let $maxSentId := count($doc//*:sentence)
@@ -191,6 +192,7 @@ declare function aled:get-edit-page(
           attribute name { "sent-navigation-goto" },
 
           <input type="hidden" name="doc" value="{ $a_docStem }"/>,
+          <input type="hidden" name="ed" value="{ $a_allowSave }"/>,
           <input type="hidden"
                  name="maxSentId"
                  disabled="yes"
@@ -212,6 +214,7 @@ declare function aled:get-edit-page(
           attribute name { "sent-navigation-buttons" },
 
           <input type="hidden" name="doc" value="{ $a_docStem }"/>,
+          <input type="hidden" name="ed" value="{ $a_allowSave }"/>,
           <input type="hidden"
                  name="maxSentId"
                  disabled="yes"
@@ -281,6 +284,7 @@ declare function aled:get-edit-page(
           attribute name { "sent-navigation-list" },
 
           <input type="hidden" name="doc" value="{ $a_docStem }"/>,
+          <input type="hidden" name="ed" value="{ $a_allowSave }"/>,
 
           element button
           {
@@ -293,14 +297,15 @@ declare function aled:get-edit-page(
       )
       else (),
 
+      if ($a_allowSave) then (
       <button id="save-button"
               onclick="ClickOnSave(event)">Save sentence</button>,
       <button id="undo-button"
               onclick="ClickOnUndo(event)">&lt; Undo</button>,
       <button id="redo-button"
               disabled="yes"
-              onclick="ClickOnRedo(event)">Redo &gt;</button>,
-
+              onclick="ClickOnRedo(event)">Redo &gt;</button>)
+      else (),
       <form>
         <label for="interlinear-checkbox">Show interlinear text</label>
         <input id="interlinear-checkbox"

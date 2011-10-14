@@ -43,7 +43,8 @@ declare function alst:get-list-page(
   $a_docStem as xs:string,
   $a_queryBase as xs:string,
   $a_maxWords as xs:integer,
-  $a_maxSents as xs:integer) as element()?
+  $a_maxSents as xs:integer,
+  $a_allowSave as xs:boolean) as element()?
 {
   let $doc := doc($a_docName)
   let $sents := subsequence($doc//*:sentence, 1, $a_maxSents)
@@ -103,18 +104,21 @@ declare function alst:get-list-page(
       concat("Sentence list for document ", $docId, " [file ", $a_docName, "]")
     },
 
+    if ($a_allowSave) then 
     <div>
       <form name="backup" action="./align-backup.xq">
         <button type="submit">Backup/Restore</button>
         <input type="hidden" name="doc" value="{ $a_docStem }"/>
       </form>
-    </div>,
+    </div>
+    else (),
 
     element ol
     {
       (: for each sentence :)
       for $sent at $i in $sents
-      let $queryURL := concat($a_queryBase, $i)
+      let $saveparam := if ($a_allowSave) then '&amp;ed=1' else ''
+      let $queryURL := concat($a_queryBase, $i,$saveparam)
       let $l1Words := $sent/*:wds[@*:lnum="L1"]/*:w
       let $l2Words := $sent/*:wds[@*:lnum="L2"]/*:w
       let $marks :=

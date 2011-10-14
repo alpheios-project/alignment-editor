@@ -32,6 +32,7 @@ declare option exist:serialize "method=xhtml media-type=text/html";
 let $docStem := request:get-parameter("doc", ())
 let $collName := "/db/repository/alignment/"
 let $docName := concat($collName, $docStem, ".xml")
+let $allowSave := xs:boolean(request:get-parameter("ed",false()))
 let $editBase := concat("./align-editsentence.xq",
                         "?doc=",
                         encode-for-uri($docStem),
@@ -55,4 +56,4 @@ let $doRestore :=
   else ()
 
 (: now go get actual list :)
-return alst:get-list-page($docName, $docStem, $editBase, 25, 1000)
+return alst:get-list-page($docName, $docStem, $editBase, 25, 1000,$allowSave)

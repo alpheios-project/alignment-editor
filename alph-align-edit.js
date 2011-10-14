@@ -69,27 +69,28 @@ function Init(a_evt)
     // set state variables
     if (navigator.userAgent.indexOf("Firefox") != -1)
         s_firefox = true;
-
+    
     // clear undo/redo history
     AlphEdit.clearHistory();
 
     // onresize doesn't work in firefox, so register it here
     window.addEventListener("resize", Resize, false);
 
+    // this seems to be fixed in Firefox 7 -- leaving the code in place commented out for now.
     // right-to-left doesn't seem to be working in firefox svg
     // reverse strings by hand
-    if (s_firefox && (s_param["L1:direction"] == "rtl"))
-    {
-        AlphEdit.reverseText(
-                    $("g.L1 text.headwd, g.L2 g.alignment text", document),
-                    "form");
-    }
-    if (s_firefox && (s_param["L2:direction"] == "rtl"))
-    {
-        AlphEdit.reverseText(
-                    $("g.L2 text.headwd, g.L1 g.alignment text", document),
-                    "form");
-    }
+    //if (s_firefox && (s_param["L1:direction"] == "rtl"))
+    //{
+    //    AlphEdit.reverseText(
+    //                $("g.L1 text.headwd, g.L2 g.alignment text", document),
+    //                "form");
+    //}
+    //if (s_firefox && (s_param["L2:direction"] == "rtl"))
+    //{
+    //    AlphEdit.reverseText(
+    //                $("g.L2 text.headwd, g.L1 g.alignment text", document),
+    //                "form");
+    //}
 
     // one-time positioning:
     // set position of headwords
