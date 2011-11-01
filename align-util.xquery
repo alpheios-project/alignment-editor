@@ -31,6 +31,7 @@ declare namespace xlink="http://www.w3.org/1999/xlink";
 
   Parameters:
     $a_sent        alignment sentence
+    $a_dir         text direction instructions 
     $a_attrs       attributes to add to <svg> element
 
   Return value:
@@ -38,6 +39,7 @@ declare namespace xlink="http://www.w3.org/1999/xlink";
  :)
 declare function alut:xml-to-svg(
   $a_sent as element()?,
+  $a_dir as node()?,
   $a_attrs as attribute()*) as element()?
 {
   (: if no sentence, return nothing :)
@@ -68,6 +70,7 @@ declare function alut:xml-to-svg(
     let $wordSet := $a_sent/*:wds[@*:lnum eq $lang]
     let $words := $wordSet/*:w
     let $otherWords := $a_sent/*:wds[@*:lnum eq $otherLang]/*:w
+    let $direction := $a_dir/*:lang[@*:lnum eq $lang]/@*:direction
     let $tbrefs :=
       if ($lang eq "L1")
       then
@@ -78,8 +81,9 @@ declare function alut:xml-to-svg(
     {
       attribute class { "sentence", $lang },
       attribute lnum { $lang },
+      attribute direction { $direction },
       attribute xml:lang { $a_sent/../*:language[@*:lnum = $lang]/@xml:lang },
-
+    
       (: preserve any wordset-level comments :)
       if ($wordSet/*:comment)
       then

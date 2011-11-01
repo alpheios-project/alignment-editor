@@ -131,6 +131,7 @@ declare function albu:get-backup-page(
         <button type="submit">Backup</button>
         <div>
           <input type="hidden" name="doc" value="{ $a_docStem }"/>
+          <input type="hidden" name="ed" value="true"/>
           <input type="hidden" name="backup" value="y"/>
           <label for="usets">Include timestamp in name</label>
           <input type="checkbox" id="usets" name="usets" checked="yes"/>
@@ -147,6 +148,7 @@ declare function albu:get-backup-page(
         <button type="submit">Restore</button>
         <label>:</label>
         <input type="hidden" name="doc" value="{ $a_docStem }"/>
+        <input type="hidden" name="ed" value="true"/>
         <div>{
           for $stem at $i in $docStems
           let $id := concat("restore-", $i)
@@ -179,6 +181,7 @@ declare function albu:get-backup-page(
       <form name="return" action="./align-getlist.xq">
         <button type="submit">Return to sentence list</button>
         <input type="hidden" name="doc" value="{ $a_docStem }"/>
+        <input type="hidden" name="ed" value="true"/>
       </form>
     </div>
   }

@@ -60,6 +60,8 @@ declare function aled:get-edit-page(
   let $sent := ($doc//*:sentence)[$a_sentId]
   let $l1Lang := $sent/../*:language[@*:lnum = "L1"]/@xml:lang
   let $l2Lang := $sent/../*:language[@*:lnum = "L2"]/@xml:lang
+  let $l1Dir := if ($l1Lang = ("ara", "ar")) then "rtl" else "ltr"
+  let $l2Dir := if ($l2Lang = ("ara", "ar")) then "rtl" else "ltr"
 
   return
   <html xmlns="http://www.w3.org/1999/xhtml"
@@ -363,6 +365,7 @@ declare function aled:get-edit-page(
     (: svg of sentence :)
     alut:xml-to-svg(
       $sent,
+      <directions><lang lnum="L1" direction="{$l1Dir}"/><lang lnum="L2" direction="{$l2Dir}"/></directions>,
       (
         attribute alph-doc { $a_docStem },
         attribute alph-sentid { $a_sentId },
