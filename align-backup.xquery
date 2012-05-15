@@ -85,7 +85,8 @@ declare function local:get-doc-stems(
  :)
 declare function albu:get-backup-page(
   $a_collection as xs:string,
-  $a_docStem as xs:string) as element()?
+  $a_docStem as xs:string,
+  $a_uploaded as xs:string) as element()?
 {
   (: get potential restorable files :)
   let $docStems := local:get-doc-stems($a_collection,
@@ -136,6 +137,19 @@ declare function albu:get-backup-page(
           <label for="usets">Include timestamp in name</label>
           <input type="checkbox" id="usets" name="usets" checked="yes"/>
         </div>
+      </form>
+        <form name="upload" action="{concat('./align-upload.xq?doc=',$a_docStem)}" enctype="multipart/form-data" method="post">
+         <div class="message">{$a_uploaded}</div>
+         <button type="submit">Upload</button>
+         <input type="hidden" name="doc" value="{ $a_docStem }"/>
+         <input type="hidden" name="ed" value="true"/>
+         <input type="file" name="newfile"/>
+      </form>
+      <form name="download" action="./align-download.xq">
+        <button type="submit">Download</button>
+        <input type="hidden" name="download" value="y"/>
+        <input type="hidden" name="doc" value="{ $a_docStem }"/>
+        <input type="hidden" name="ed" value="true"/>
       </form>
       <hr align="left" width="50%"/>
     </div>,
@@ -238,3 +252,49 @@ declare function albu:do-restore(
   let $restore := doc($restoreName)
   return xmldb:store($a_collName, $docName, $restore)
 };
+
+
+(:
+  Function to upload an alignment 
+
+  Parameters:
+    a_collection      collection to look in
+    a_docStem         name of document to store
+    a_doc             the document itself
+
+  Return value:
+    path of stored document if successful, else empty
+ :)
+declare function albu:do-upload(
+  $a_collName as xs:string,
+  $a_docStem as xs:string,
+  $a_doc as node()) as xs:string?
+{
+  let $docName := concat($a_docStem, ".xml")
+  (: backup the current version first :)
+  return 
+    if (albu:do-backup($a_collName, $a_docStem, true()))
+    then xmldb:store($a_collName, $docName, $a_doc)
+    else concat("Unable to store ",$docName)
+};
+
+
+(:
+  Function to download an alignment 
+
+  Parameters:
+    a_collection      collection to look in
+    a_docStem         name of document to download
+  Return value:
+    the document
+ :)
+declare function albu:do-download(
+  $a_collName as xs:string,
+  $a_docStem as xs:string) as node()*
+{
+  let $docName := concat($a_docStem, ".xml")
+  
+  return doc(concat($a_collName, $a_docStem, ".xml"))
+};
+
+
