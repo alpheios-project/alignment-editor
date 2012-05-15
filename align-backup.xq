@@ -29,4 +29,4 @@ declare option exist:serialize "method=xhtml media-type=text/html";
 
 let $docStem := request:get-parameter("doc", ())[1]
 
-return albu:get-backup-page("/db/repository/alignment", $docStem)
+return albu:get-backup-page("/db/repository/alignment", $docStem,"")

@@ -140,10 +140,10 @@ declare function albu:get-backup-page(
       </form>
         <form name="upload" action="{concat('./align-upload.xq?doc=',$a_docStem)}" enctype="multipart/form-data" method="post">
          <div class="message">{$a_uploaded}</div>
-         <button type="submit">Upload</button>
          <input type="hidden" name="doc" value="{ $a_docStem }"/>
          <input type="hidden" name="ed" value="true"/>
          <input type="file" name="newfile"/>
+         <button type="submit">Upload</button>
       </form>
       <form name="download" action="./align-download.xq">
         <button type="submit">Download</button>
