@@ -254,6 +254,10 @@ function ClickOnSave(a_evt)
     SaveContents();
 };
 
+function ClickOnExport(a_evt) {
+    ExportContents();
+};
+
 function ToggleInterlinearDisplay(a_evt)
 {
     var svgRoot = document.documentElement;
@@ -1017,6 +1021,16 @@ function SaveContents()
   // remember where we last saved and reset button
   AlphEdit.saved();
 };
+
+// export contents to file
+function ExportContents()
+{
+    var svg = document.getElementsByTagNameNS(s_svgns, "svg")[0];
+    var input = $("#sentenceForExport");
+    input.val(XMLSerializer().serializeToString(svg));
+    $("#exportform").submit();
+}
+  
 
 //****************************************************************************
 // Marked words

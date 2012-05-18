@@ -72,6 +72,9 @@ div.summary table td {
     border-style: solid;
     border-width: thin;
 }
+#exportform {
+   display:inline;
+}
 
 g text {
     font-family: Georgia;

@@ -37,6 +37,7 @@ let $allowSave := xs:boolean(request:get-parameter("ed",false()))
 let $saveURL := "./align-savesentence.xq"
 let $listURL := "./align-getlist.xq"
 let $editURL := "./align-editsentence.xq"
+let $exportURL := "./align-export.xq"
 let $base := request:get-url()
 let $base := substring($base,
                        1,
@@ -54,4 +55,5 @@ return aled:get-edit-page($docName,
                           $saveURL,
                           $listURL,
                           $editURL,
+                          $exportURL,
                           "s",$allowSave)

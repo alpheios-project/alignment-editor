@@ -52,6 +52,7 @@ declare function aled:get-edit-page(
   $a_saveURL as xs:string,
   $a_listURL as xs:string,
   $a_editURL as xs:string,
+  $a_exportURL as xs:string,
   $a_editParam as xs:string,
   $a_allowSave as xs:boolean) as element()?
 {
@@ -308,6 +309,11 @@ declare function aled:get-edit-page(
               disabled="yes"
               onclick="ClickOnRedo(event)">Redo &gt;</button>)
       else (),
+      <form method="post" action="{concat($a_exportURL,'?doc=',$a_docStem)}" id="exportform">
+          <button id="export-button"
+              onclick="ClickOnExport(event)">Export</button>
+          <input type="hidden" name="sentenceForExport" id="sentenceForExport"/>
+      </form>,
       <form>
         <label for="interlinear-checkbox">Show interlinear text</label>
         <input id="interlinear-checkbox"
