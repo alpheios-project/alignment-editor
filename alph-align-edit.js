@@ -39,7 +39,7 @@ var s_param = [];                               // parameters and metadata
 // initialization
 //****************************************************************************
 
-function Init(a_evt)
+function Init(a_evt,a_isEdit)
 {
     // initialize internal params
     s_param["firebug"] = "no";
@@ -70,8 +70,10 @@ function Init(a_evt)
     if (navigator.userAgent.indexOf("Firefox") != -1)
         s_firefox = true;
     
-    // clear undo/redo history
-    AlphEdit.clearHistory();
+    if (a_isEdit) {
+        // clear undo/redo history
+        AlphEdit.clearHistory();
+    }
 
     // onresize doesn't work in firefox, so register it here
     window.addEventListener("resize", Resize, false);
@@ -140,15 +142,16 @@ function Init(a_evt)
     });
     $("#interlinear-checkbox", document).get(0).checked = s_displayInterlinear;
 
-    // initialize unedited word counts in summary stats
-    s_summaryL1[3] = $(".L1 .word", svgRoot).size();
-    s_summaryL2[3] = $(".L2 .word", svgRoot).size();
-    UpdateSummaryDisplay();
-
-    // set/reset buttons
-    $("#undo-button", document).attr("disabled", "disabled");
-    $("#redo-button", document).attr("disabled", "disabled");
-    $("#save-button", document).attr("disabled", "disabled");
+    if (a_isEdit) {
+        // initialize unedited word counts in summary stats
+        s_summaryL1[3] = $(".L1 .word", svgRoot).size();
+        s_summaryL2[3] = $(".L2 .word", svgRoot).size();
+        UpdateSummaryDisplay();
+        // set/reset buttons
+        $("#undo-button", document).attr("disabled", "disabled");
+        $("#redo-button", document).attr("disabled", "disabled");
+        $("#save-button", document).attr("disabled", "disabled");
+    }
 
     // now position the pieces
     DisplayInterlinear(svgRoot, s_displayInterlinear);
@@ -256,6 +259,10 @@ function ClickOnSave(a_evt)
 
 function ClickOnExport(a_evt) {
     ExportContents();
+};
+
+function ClickOnExportDisplay(a_evt) {
+    ExportDisplay();
 };
 
 function ToggleInterlinearDisplay(a_evt)
@@ -1029,6 +1036,15 @@ function ExportContents()
     var input = $("#sentenceForExport");
     input.val(XMLSerializer().serializeToString(svg));
     $("#exportform").submit();
+}
+
+// export display to file
+function ExportDisplay()
+{
+    var svg = document.getElementsByTagNameNS(s_svgns, "svg")[0];
+    var input = $("#sentenceForDisplay");
+    input.val(XMLSerializer().serializeToString(svg));
+    $("#exportdisplayform").submit();
 }
   
 

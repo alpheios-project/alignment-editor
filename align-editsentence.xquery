@@ -63,6 +63,7 @@ declare function aled:get-edit-page(
   let $l2Lang := $sent/../*:language[@*:lnum = "L2"]/@xml:lang
   let $l1Dir := if ($l1Lang = ("ara", "ar")) then "rtl" else "ltr"
   let $l2Dir := if ($l2Lang = ("ara", "ar")) then "rtl" else "ltr"
+  let $exportDisplayURL := replace($a_exportURL,'export','display')
 
   return
   <html xmlns="http://www.w3.org/1999/xhtml"
@@ -310,9 +311,14 @@ declare function aled:get-edit-page(
               onclick="ClickOnRedo(event)">Redo &gt;</button>)
       else (),
       <form method="post" action="{concat($a_exportURL,'?doc=',$a_docStem)}" id="exportform">
-          <button id="export-button"
-              onclick="ClickOnExport(event)">Export</button>
+          <button id="export-xml-button"
+              onclick="ClickOnExport(event)">Export XML</button>
           <input type="hidden" name="sentenceForExport" id="sentenceForExport"/>
+      </form>,
+      <form method="post" action="{concat($exportDisplayURL,'?doc=',$a_docStem)}" id="exportform">
+          <button id="export-display-button"
+              onclick="ClickOnExportDisplay(event)">Export Display</button>
+          <input type="hidden" name="sentenceForDisplay" id="sentenceForDisplay"/>
       </form>,
       <form>
         <label for="interlinear-checkbox">Show interlinear text</label>
@@ -376,7 +382,7 @@ declare function aled:get-edit-page(
         attribute alph-doc { $a_docStem },
         attribute alph-sentid { $a_sentId },
         attribute alph-saveurl { $a_saveURL },
-        attribute onload { "Init(evt)" },
+        attribute onload { "Init(evt,true)" },
         attribute onmouseover { "EnterLeave(evt)" },
         attribute onmouseout { "EnterLeave(evt)" },
         attribute onclick { "Click(evt)" }
@@ -385,3 +391,158 @@ declare function aled:get-edit-page(
 
   }</html>
 };
+
+(:
+  Function to create an HTML page for editing a sentence
+  from an aligned text document
+
+  Parameters:
+    $a_doc         the aligned document chunk
+    $a_base        base path to current request
+    $a_baseResUrl  base path to page resources (css, script, etc.)
+Return value:
+    HTML page with SVG for displaying sentence alignment
+ :)
+declare function aled:get-display-page(
+  $a_sent as node(),
+  $a_base as xs:string,
+  $a_baseResUrl as xs:string) as element()?
+{
+  let $sent := $a_sent
+  let $l1Lang := $sent/../*:language[@*:lnum = "L1"]/@xml:lang
+  let $l2Lang := $sent/../*:language[@*:lnum = "L2"]/@xml:lang
+  let $l1Dir := if ($l1Lang = ("ara", "ar")) then "rtl" else "ltr"
+  let $l2Dir := if ($l2Lang = ("ara", "ar")) then "rtl" else "ltr"
+
+  return
+  <html xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:svg="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        xml:lang="{if ($l1Lang='grc') then 'greek' else $l1Lang}"
+  >{
+
+  element head
+  {
+    element title
+    {
+      "Alpheios:Display Aligned Sentence",
+      data($sent/@*:document_id)
+    },
+
+     (: metadata :)
+    element meta
+    {
+      attribute name { "alpheios-param-L1:lang" },
+      attribute content { $l1Lang }
+    },
+    element meta
+    {
+      attribute name { "alpheios-param-L2:lang" },
+      attribute content { $l2Lang }
+    },
+    element meta
+    {
+      attribute name { "alpheios-param-L1:direction" },
+      attribute content { if ($l1Lang = ("ara", "ar")) then "rtl" else "ltr" }
+    },
+    element meta
+    {
+      attribute name { "alpheios-param-L2:direction" },
+      attribute content { if ($l2Lang = ("ara", "ar")) then "rtl" else "ltr" }
+    },
+    element meta
+    {
+      attribute id { "alpheios-pedagogical-text" },
+      attribute name { "alpheios-pedagogical-text" },
+      attribute content { "true" }
+    },
+    if ($a_sent//*:comment[@*:class = "tbref"])
+    then
+      let $docId := $a_sent//*:comment[@*:class = "tbref"]/@*:docid
+      return
+      (
+        element meta
+        {
+          attribute name { "alpheios-treebank-diagram-url" },
+          attribute content
+          {
+            concat($a_base, "/treebank-getsvg.xq",
+                   "?",
+                   "f=", $docId,
+                   "&amp;",
+                   "s=SENTENCE")
+          }
+        },
+        element meta
+        {
+          attribute name { "alpheios-treebank-url" },
+          attribute content
+          {
+            concat($a_base, "/treebank-getmorph.xq",
+                   "?",
+                   "f=", $docId,
+                   "&amp;",
+                   "w=WORD")
+          }
+        }
+      )
+    else (),
+
+    element link
+    {
+      attribute rel { "stylesheet" },
+      attribute type { "text/css" },
+      attribute href { concat($a_baseResUrl,"/css/alph-align-edit.css") }
+    },
+
+    element script
+    {
+      attribute language { "javascript" },
+      attribute type { "text/javascript" },
+      attribute src { concat($a_baseResUrl,"/script/alph-align-edit.js") }
+    },
+    element script
+    {
+      attribute language { "javascript" },
+      attribute type { "text/javascript" },
+      attribute src { concat($a_baseResUrl,"/script/alph-edit-utils.js") }
+    },
+    element script
+    {
+      attribute language { "javascript" },
+      attribute type { "text/javascript" },
+      attribute src { concat($a_baseResUrl,"/script/jquery-1.2.6-alph.js") }
+    }
+  },
+
+
+  element body
+  {
+    (: logo :)
+    <div class="alpheios-ignore">
+      <div id="alph-page-header">
+        <img src="{concat($a_baseResUrl,'/image/alpheios.png')}"/>
+      </div>
+    </div>,
+    <div class="controls alpheios-ignore">
+         <form>
+        <label for="interlinear-checkbox">Show interlinear text</label>
+        <input id="interlinear-checkbox"
+               type="checkbox"
+               onclick="ToggleInterlinearDisplay(event)"/>
+      </form>
+    </div>,
+        (: svg of sentence :)
+    alut:xml-to-svg(
+      $sent,
+      <directions><lang lnum="L1" direction="{$l1Dir}"/><lang lnum="L2" direction="{$l2Dir}"/></directions>,
+      (
+        attribute onload { "Init(evt,false)" },
+        attribute onmouseover { "EnterLeave(evt)" },
+        attribute onmouseout { "EnterLeave(evt)" }
+      ))
+  }
+  }
+  </html>
+};
+
