@@ -188,79 +188,91 @@ declare function alut:xml-to-svg(
     representation of sentence in alignment XML
  :)
 declare function alut:svg-to-xml(
-  $a_sent as element()?) as element()?
+  $a_sent as element()?,$a_includeParent as xs:boolean) as element()?
 {
   if ($a_sent)
   then
-  <sentence xmlns="http://alpheios.net/namespaces/aligned-text">
-  {
-    (: copy any comments :)
-    $a_sent/desc/*,
-
-    for $lang in ("L1", "L2")
-(: following has problems in eXist 1.2.5: :)
-(:  let $svgWordSet := $a_sent/*:g[tokenize(@*:class, ' ') = $lang] :)
-(: so instead do: :)
-    let $svgWordSet :=
-      for $g in $a_sent/*:g
-      return if (tokenize($g/@*:class, ' ') = $lang) then $g else ()
-    let $words := $svgWordSet/*:g/*:g
-    return
-    element wds
+    let $lang1 := $a_sent/*:g[@lnum="L1"]/@xml:lang
+    let $lang2 := $a_sent/*:g[@lnum="L2"]/@xml:lang
+    let $sentOut :=
+    <sentence xmlns="http://alpheios.net/namespaces/aligned-text">
     {
-      attribute lnum { $lang },
-
       (: copy any comments :)
-      $svgWordSet/*:desc/*,
-
-      for $word in $words
+      $a_sent/desc/*,
+  
+      for $lang in ("L1", "L2")
+  (: following has problems in eXist 1.2.5: :)
+  (:  let $svgWordSet := $a_sent/*:g[tokenize(@*:class, ' ') = $lang] :)
+  (: so instead do: :)
+      let $svgWordSet :=
+        for $g in $a_sent/*:g
+        return if (tokenize($g/@*:class, ' ') = $lang) then $g else ()
+      let $words := $svgWordSet/*:g/*:g
       return
-      element w
+      element wds
       {
-        (: id of this word :)
-        attribute n { substring-after($word/@*:id, ':') },
-
-        (: text of this word :)
-        element text
-        {
-          if ($word/*:text/@*:form)
-          then
-            string($word/*:text/@*:form)
-          else
-            $word/*:text/text()
-        },
-
-        (: copy mark, if any :)
-        if ($word/@xlink:title)
-        then
-          element comment
-          {
-            attribute class { "mark" },
-            data($word/@xlink:title)
-          }
-        else (),
-
-        (: copy any remaining comments :)
-        $word/*:desc/*,
-
-        (: references to aligned words :)
-        let $refs :=
-          for $aligned-word in $word/*:g/*:text
-          return
-            substring-after($aligned-word/@*:idref, ':')
+        attribute lnum { $lang },
+  
+        (: copy any comments :)
+        $svgWordSet/*:desc/*,
+  
+        for $word in $words
         return
-          if (count($refs) > 0)
+        element w
+        {
+          (: id of this word :)
+          attribute n { substring-after($word/@*:id, ':') },
+  
+          (: text of this word :)
+          element text
+          {
+            if ($word/*:text/@*:form)
+            then
+              string($word/*:text/@*:form)
+            else
+              $word/*:text/text()
+          },
+  
+          (: copy mark, if any :)
+          if ($word/@xlink:title)
           then
-            element refs
+            element comment
             {
-              attribute nrefs { string-join($refs, ' ') }
+              attribute class { "mark" },
+              data($word/@xlink:title)
             }
-          else ()
+          else (),
+  
+          (: copy any remaining comments :)
+          $word/*:desc/*,
+  
+          (: references to aligned words :)
+          let $refs :=
+            for $aligned-word in $word/*:g/*:text
+            return
+              substring-after($aligned-word/@*:idref, ':')
+          return
+            if (count($refs) > 0)
+            then
+              element refs
+              {
+                attribute nrefs { string-join($refs, ' ') }
+              }
+            else ()
+        }
       }
     }
-  }
-  </sentence>
-
+    </sentence>
+  return 
+    if ($a_includeParent) 
+    then
+        <aligned-text xmlns="http://alpheios.net/namespaces/aligned-text">
+            <language lnum="L1" xml:lang="{$lang1}"/>
+            <language lnum="L2" xml:lang="{$lang2}"/>
+            {$sentOut}
+        </aligned-text>
+    else
+        $sentOut
   else ()
 };
 

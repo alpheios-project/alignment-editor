@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright 2012 The Alpheios Project, Ltd.
+  http://alpheios.net
+  
+  This file is part of Alpheios.
+  
+  Alpheios is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+  
+  Alpheios is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+  
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head><title>Alpheios Alignment Editor - Align Text</title>
+  </head>
+  <body>
+    <div class="alpheios-ignore">
+      <div id="alph-page-header">
+        <img src="../image/alpheios.png" alt="Alpheios"/>
+      </div>
+    </div>
+    <div>
+      <form name="input-form" action="../xq/align-addsentence.xq" pnsubmit="EnterSentence(event)">
+        <fieldset>
+          <legend>Enter Text in Language 1:</legend>
+          <textarea name="l1text" rows="10" cols="80"
+            >ἄνδρα μοι ἔννεπε, μοῦσα, πολύτροπον, ὃς μάλα πολλὰ</textarea>
+          <label for="lang1">Language 1:</label>
+          <input type="text" id="l1" name="l1" value="grc"/>
+        </fieldset>
+        <fieldset>
+          <legend>Enter Text in Language 2:</legend>
+          <textarea name="l2text" rows="10" cols="80"
+            >Tell me, O Muse, of the man of many devices,</textarea>
+          <label for="lang1">Language 2:</label>
+          <input type="text" id="l2" name="l2" value="eng"/>
+        </fieldset>
+        <div><button type="submit">Align</button></div>
+      </form> 
+    </div>
+  </body>
+</html>

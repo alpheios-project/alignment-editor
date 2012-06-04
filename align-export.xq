@@ -34,6 +34,6 @@ declare option exist:serialize "method=xml media-type=application/xml";
 
 let $docName := request:get-parameter("doc","") 
 let $data := util:parse(request:get-parameter("sentenceForExport",""))
-let $newData := alut:svg-to-xml( $data/svg:svg )
+let $newData := alut:svg-to-xml( $data/svg:svg, true() )
 let $dispo := response:set-header("Content-disposition",concat("attachment; filename=",$docName,".xml"))
 return $newData

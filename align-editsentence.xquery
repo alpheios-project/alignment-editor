@@ -32,7 +32,7 @@ import module namespace alut="http://alpheios.net/namespaces/align-util"
   from an aligned text document
 
   Parameters:
-    $a_docName     name of aligned text document
+    $a_doc         aligned text document
     $a_docStem     document stem
     $a_base        base path to current request
     $a_sentId      id of sentence to edit
@@ -45,7 +45,7 @@ import module namespace alut="http://alpheios.net/namespaces/align-util"
     HTML page with SVG for editing sentence alignment
  :)
 declare function aled:get-edit-page(
-  $a_docName as xs:string,
+  $a_doc as node(),
   $a_docStem as xs:string,
   $a_base as xs:string,
   $a_sentId as xs:integer,
@@ -56,7 +56,7 @@ declare function aled:get-edit-page(
   $a_editParam as xs:string,
   $a_allowSave as xs:boolean) as element()?
 {
-  let $doc := doc($a_docName)
+  let $doc := $a_doc
   let $maxSentId := count($doc//*:sentence)
   let $sent := ($doc//*:sentence)[$a_sentId]
   let $l1Lang := $sent/../*:language[@*:lnum = "L1"]/@xml:lang

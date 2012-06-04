@@ -48,7 +48,7 @@ let $base := substring($base,
                        string-length($base) -
                        string-length(tokenize($base, '/')[last()]))
 
-return aled:get-edit-page($docName,
+return aled:get-edit-page(doc($docName),
                           $docStem,
                           $base,
                           number($sentId),

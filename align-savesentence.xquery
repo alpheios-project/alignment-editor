@@ -49,7 +49,7 @@ declare function alsv:save-sentence(
     return
     if ($oldSentence)
     then
-      let $newData := alut:svg-to-xml($a_data)
+      let $newData := alut:svg-to-xml($a_data, false())
       return
       if ($newData)
       then

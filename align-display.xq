@@ -38,7 +38,7 @@ declare option exist:serialize
 
 let $docName := request:get-parameter("doc","") 
 let $data := util:parse(request:get-parameter("sentenceForDisplay",""))
-let $doc := alut:svg-to-xml( $data/svg:svg )
+let $doc := alut:svg-to-xml( $data/svg:svg, true() )
 let $base := request:get-url()
 let $baseResUrl := replace($base,'/xq/.*','')
 let $base := substring($base,
@@ -50,4 +50,4 @@ let $base := substring($base,
                        string-length($base) -
                        string-length(tokenize($base, '/')[last()]))
 let $dispo := response:set-header("Content-disposition",concat("attachment; filename=",$docName,".xhtml"))                       
-return aled:get-display-page($doc,$base,$baseResUrl)
+return aled:get-display-page($doc/*:sentence,$base,$baseResUrl)
