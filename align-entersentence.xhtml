@@ -20,6 +20,8 @@
 -->
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head><title>Alpheios Alignment Editor - Align Text</title>
+    <script language="javascript" type="text/javascript" src="../script/jquery-1.2.6-alph.js"/>
+    <script language="javascript" type="text/javascript" src="../script/alph-align-entersentence.js"/>
   </head>
   <body>
     <div class="alpheios-ignore">
@@ -28,20 +30,40 @@
       </div>
     </div>
     <div>
-      <form name="input-form" action="../xq/align-addsentence.xq" pnsubmit="EnterSentence(event)">
+      <form name="input-form" action="../xq/align-addsentence.xq" onsubmit="return EnterSentence(event);">
+        <input type="hidden" name="l1"/>
+        <input type="hidden" name="l2"/>
         <fieldset>
           <legend>Enter Text in Language 1:</legend>
           <textarea name="l1text" rows="10" cols="80"
             >ἄνδρα μοι ἔννεπε, μοῦσα, πολύτροπον, ὃς μάλα πολλὰ</textarea>
           <label for="lang1">Language 1:</label>
-          <input type="text" id="l1" name="l1" value="grc"/>
+          <select name="select_l1" id="select_l1">
+            <option value="grc" selected="selected">Greek</option>
+            <option value="lat">Latin</option>
+            <option value="ara">Arabic</option>
+            <option value="eng">English</option>
+            <option value="zh">Chinese</option>
+            <option value="other">Other</option>
+          </select>
+          <label for="other_l1">Or Other Language:</label>
+          <input type="text" id="other_l1" name="other_l1" size="3"/>
         </fieldset>
         <fieldset>
           <legend>Enter Text in Language 2:</legend>
           <textarea name="l2text" rows="10" cols="80"
             >Tell me, O Muse, of the man of many devices,</textarea>
           <label for="lang1">Language 2:</label>
-          <input type="text" id="l2" name="l2" value="eng"/>
+          <select name="select_l2" id="select_l2">
+            <option value="grc">Greek</option>
+            <option value="lat">Latin</option>
+            <option value="ara">Arabic</option>
+            <option value="eng" selected="selected">English</option>
+            <option value="zh">Chinese</option>
+            <option value="other">Other</option>
+          </select>
+          <label for="other_l1">Or Other Language:</label>
+          <input type="text" id="other_l2" name="other_l2" size="3"/>
         </fieldset>
         <div><button type="submit">Align</button></div>
       </form> 

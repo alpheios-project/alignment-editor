@@ -47,7 +47,10 @@ import module namespace aled="http://alpheios.net/namespaces/align-edit"
 declare namespace align = "http://alpheios.net/namespaces/aligned-text";
 declare namespace oac="http://www.openannotation.org/ns/";
 
-declare option exist:serialize "method=xml media-type=text/xml";
+declare option exist:serialize
+        "method=xhtml media-type=application/xhtml+xml omit-xml-declaration=no indent=yes 
+        doctype-public=-//W3C//DTD&#160;XHTML&#160;1.0&#160;Transitional//EN
+        doctype-system=http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd";
 
 declare function local:createWords(
   $a_sent as xs:string,$a_s as xs:int, $a_i as xs:int) as element()*
