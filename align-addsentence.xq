@@ -82,7 +82,8 @@ declare function local:getSentence($a_data as node()) as element()* {
         then
             tan:get_OACAlignment($a_data)//align:aligned-text
         (: else if we've been sent unwrapped alignment xml, just use it :)
-        else if (name($a_data) = name($dummy))
+        (: name($a_data) doesn't work here if a prefix for the align namespace has been specified in the input doc :)
+        else if (local-name($a_data) = local-name($dummy) and namespace-uri($a_data) = namespace-uri($dummy))
         then
             $a_data
         else ()
@@ -92,14 +93,21 @@ declare function local:createSentence(
   $a_l1 as xs:string,
   $a_l2 as xs:string,
   $a_l1text as xs:string,
-  $a_l2text as xs:string) as element()*
+  $a_l2text as xs:string,
+  $a_l1urn as xs:string,
+  $a_l2urn as xs:string) as element()*
 {
+    let $l1comment := 
+        if ($a_l1urn) then <comment class="urn">{$a_l1urn}</comment> else ()
+    let $l2comment := 
+        if ($a_l1urn) then <comment class="urn">{$a_l2urn}</comment> else ()
+    return
 	<aligned-text xmlns="http://alpheios.net/namespaces/aligned-text">
         <language lnum="L1" xml:lang="{$a_l1}"/>
         <language lnum="L2" xml:lang="{$a_l2}"/>
         <sentence>
-            <wds lnum="L1">{ local:createWords($a_l1text,1,1) }</wds>
-            <wds lnum="L2">{ local:createWords($a_l2text,1,1) }</wds>
+            <wds lnum="L1">{ $l1comment,local:createWords($a_l1text,1,1) }</wds>
+            <wds lnum="L2">{ $l2comment,local:createWords($a_l2text,1,1) }</wds>
         </sentence>
      </aligned-text>
 };
@@ -118,6 +126,9 @@ let $saveURL := request:get-parameter('saveUrl','')
 let $allowSave := if ($saveURL) then true() else false()
 let $listURL := request:get-parameter('listUrl','')
 let $editURL := ""
+let $l1Urn := request:get-parameter('l1urn','')
+let $l2Urn := request:get-parameter('l2urn','')
+
 
 let $exportURL := "./align-export.xq"
 let $base := request:get-url()
@@ -134,7 +145,7 @@ let $newDoc :=
   then
     local:getSentence($data)
   else 
-    local:createSentence($l1,$l2,$l1text,$l2text)
+    local:createSentence($l1,$l2,$l1text,$l2text,$l1Urn,$l2Urn)
   
    return 
     aled:get-edit-page(
@@ -147,3 +158,4 @@ let $newDoc :=
                 $editURL,
                 $exportURL,
                 "s",$allowSave)
+    
