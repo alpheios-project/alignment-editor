@@ -1,0 +1,309 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>Alpheios Alignment Editor - Align Text (teste-local)</title>
+<script language="javascript" type="text/javascript" src="http://repos1.alpheios.net/exist/rest/db//script/jquery-1.2.6-alph.js"></script>
+<script language="javascript" type="text/javascript" src="http://repos1.alpheios.net/exist/rest/db//script/alph-align-entersentence.js"></script>
+</head>
+<body>
+<div class="alpheios-ignore">
+<div id="alph-page-header"> <img src="http://repos1.alpheios.net/exist/rest/db/image/alpheios.png"
+alt="Alpheios" /> </div>
+</div>
+<div>
+<form name="input-form" action="http://repos1.alpheios.net/exist/rest/db/xq/align-addsentence.xq"
+onsubmit="return EnterSentence(event);"> <input type="hidden"
+name="l1" /> <input type="hidden" name="l2" />
+<fieldset> <legend>Inserir Texto na Língua 1:</legend> <textarea
+name="l1text" rows="10" cols="80"></textarea>
+<div style="text-align:right;"> <label for="lang1">Língua
+1:</label>
+
+<select name="select_l1" id="select_l1">
+<option value="eng">Inglês</option>
+<option value="lat">Latim</option>
+<option selected="selected" value="grc">Grego (Antigo –1453)</option>
+<option value="ara">Arabic</option>
+<option value="zh">Chinese</option>
+<option value="afr">Afrikaans</option>
+<option value="akk">Akkadian</option>
+<option value="sqi">Albanian</option>
+<option value="amh">Amharic</option>
+<option value="arg">Aragonese</option>
+<option value="arc">Aramaic (Imperial- 700 BC–300 BC)</option>
+<option value="sam">Aramaic (Samaritan)</option>
+<option value="hye">Armenian</option>
+<option value="ast">Asturian (Bable, Leonese)</option>
+<option value="ave">Avestan</option>
+<option value="aze">Azerbaijani</option>
+<option value="eus">Basque</option>
+<option value="ben">Bengali</option>
+<option value="ber">Berber</option>
+<option value="bos">Bosnian</option>
+<option value="bre">Breton</option>
+<option value="bul">Bulgarian</option>
+<option value="chu">Bulgarian (Old, Old Church Slavonic)</option>
+<option value="mya">Burmese</option>
+<option value="cat">Catalan</option>
+<option value="chg">Chagatai</option>
+<option value="cop">Coptic</option>
+<option value="cor">Cornish</option>
+<option value="hrv">Croatian</option>
+<option value="ces">Czech</option>
+<option value="dan">Danish</option>
+<option value="nld">Dutch (Flemish)</option>
+<option value="dum">Dutch (Middle, 1050–1350)</option>
+<option value="egy">Egyptian (Ancient)</option>
+<option value="elx">Elamite</option>
+<option value="enm">English (Middle, 1100–1500)</option>
+<option value="ang">English (Old, 450–1100)</option>
+<option value="est">Estonian</option>
+<option value="fin">Finnish</option>
+<option value="fra">French</option>
+<option value="frm">French (Middle, 1400—1600)</option>
+<option value="fro">French (Old, 842—c. 1400)</option>
+<option value="gez">Ge'ez</option>
+<option value="kat">Georgian</option>
+<option value="nds">German (Low, Low Saxon)</option>
+<option value="gmh">German (Middle-High, 1050–1500)</option>
+<option value="goh">German (Old-High, 750–1050)</option>
+<option value="deu">German</option>
+<option value="got">Gothic</option>
+<option value="ell">Greek (Modern, 1453–)</option>
+<option value="guj">Gujarati</option>
+<option value="heb">Hebrew</option>
+<option value="hin">Hindi</option>
+<option value="hit">Hittite</option>
+<option value="hun">Hungarian</option>
+<option value="isl">Icelandic</option>
+<option value="ind">Indonesian</option>
+<option value="gle">Irish (Modern)</option>
+<option value="mga">Irish (Middle 900–1200)</option>
+<option value="sga">Irish (Old, to 900)</option>
+<option value="ita">Italian</option>
+<option value="jpn">Japanese</option>
+<option value="jav">Javanese</option>
+<option value="kan">Kannada</option>
+<option value="khm">Khmer (Central)</option>
+<option value="kor">Korean</option>
+<option value="kur">Kurdish</option>
+<option value="lad">Ladino</option>
+<option value="lit">Lithuanian</option>
+<option value="msa">Malay</option>
+<option value="mar">Marathi</option>
+<option value="new">Nepal Bhasa (Newari)</option>
+<option value="nep">Nepali</option>
+<option value="nwc">Newari (Classical)</option>
+<option value="non">Norse (Old)</option>
+<option value="nor">Norwegian</option>
+<option value="nob">Norwegian (Bokmål)</option>
+<option value="nno">Norwegian (Nynorsk)</option>
+<option value="oss">Ossetian</option>
+<option value="pal">Pahlavi (Middle Persian)</option>
+<option value="pli">Pali</option>
+<option value="pus">Pashto</option>
+<option value="fas">Persian (Farsi)</option>
+<option value="peo">Persian (Old, 600–400 BC)</option>
+<option value="phn">Phoenician</option>
+<option value="pol">Polish</option>
+<option value="por">Português</option>
+<option value="pra">Prakrit</option>
+<option value="pro">Provençal (Occitan, –1500)</option>
+<option value="pan">Punjabi (Panjabi)</option>
+<option value="raj">Rajasthani</option>
+<option value="ron">Romanian</option>
+<option value="rom">Romany</option>
+<option value="rus">Russian</option>
+<option value="san">Sanskrit</option>
+<option value="sco">Scots</option>
+<option value="gla">Scottish (Gaelic)</option>
+<option value="srp">Serbian</option>
+<option value="scn">Sicilian</option>
+<option value="snd">Sindhi</option>
+<option value="sin">Sinhalese (Sinhala)</option>
+<option value="slk">Slovak</option>
+<option value="slv">Slovenian</option>
+<option value="sog">Sogdian</option>
+<option value="spa">Spanish (Castilian)</option>
+<option value="sux">Sumerian</option>
+<option value="swa">Swahili</option>
+<option value="swe">Swedish</option>
+<option value="gsw">Swiss German (Alsatian)</option>
+<option value="syc">Syriac (Classical)</option>
+<option value="syr">Syriac (Northeastern, Neo-Aramaic)</option>
+<option value="tgl">Tagalog</option>
+<option value="tgk">Tajik</option>
+<option value="tam">Tamil</option>
+<option value="tat">Tatar</option>
+<option value="tel">Telugu</option>
+<option value="tha">Thai</option>
+<option value="bod">Tibetan</option>
+<option value="tur">Turkish (Modern)</option>
+<option value="ota">Turkish (Ottoman, 1500–1928 )</option>
+<option value="tuk">Turkmen</option>
+<option value="uga">Ugaritic</option>
+<option value="ukr">Ukainian</option>
+<option value="urd">Urdu</option>
+<option value="uzb">Uzbek</option>
+<option value="vie">Vietnamese</option>
+<option value="wln">Walloon</option>
+<option value="cym">Welsh</option>
+<option value="yid">Yiddish</option>
+</select>
+<br />
+<label for="other_l1">Ou Outra Língua*:</label> <input
+type="text" id="other_l1" name="other_l1" size="3"
+style="width:3em;" /> </div>
+</fieldset>
+<fieldset> <legend>Inserir Texto na Língua 2:</legend> <textarea
+name="l2text" rows="10" cols="80"></textarea>
+<div style="text-align:right;"> <label for="lang2">Language
+2:</label>
+<select name="select_l1" id="select_l1">
+
+<option value="eng">Inglês</option>
+<option value="lat">Latim</option>
+<option value="grc">Grego (Antigo –1453)</option>
+<option selected="selected" value="por">Português</option>
+<option value="ara">Arabic</option>
+<option value="zh">Chinese</option>
+<option value="afr">Afrikaans</option>
+<option value="akk">Akkadian</option>
+<option value="sqi">Albanian</option>
+<option value="amh">Amharic</option>
+<option value="arg">Aragonese</option>
+<option value="arc">Aramaic (Imperial- 700 BC–300 BC)</option>
+<option value="sam">Aramaic (Samaritan)</option>
+<option value="hye">Armenian</option>
+<option value="ast">Asturian (Bable, Leonese)</option>
+<option value="ave">Avestan</option>
+<option value="aze">Azerbaijani</option>
+<option value="eus">Basque</option>
+<option value="ben">Bengali</option>
+<option value="ber">Berber</option>
+<option value="bos">Bosnian</option>
+<option value="bre">Breton</option>
+<option value="bul">Bulgarian</option>
+<option value="chu">Bulgarian (Old, Old Church Slavonic)</option>
+<option value="mya">Burmese</option>
+<option value="cat">Catalan</option>
+<option value="chg">Chagatai</option>
+<option value="cop">Coptic</option>
+<option value="cor">Cornish</option>
+<option value="hrv">Croatian</option>
+<option value="ces">Czech</option>
+<option value="dan">Danish</option>
+<option value="nld">Dutch (Flemish)</option>
+<option value="dum">Dutch (Middle, 1050–1350)</option>
+<option value="egy">Egyptian (Ancient)</option>
+<option value="elx">Elamite</option>
+<option value="enm">English (Middle, 1100–1500)</option>
+<option value="ang">English (Old, 450–1100)</option>
+<option value="est">Estonian</option>
+<option value="fin">Finnish</option>
+<option value="fra">French</option>
+<option value="frm">French (Middle, 1400—1600)</option>
+<option value="fro">French (Old, 842—c. 1400)</option>
+<option value="gez">Ge'ez</option>
+<option value="kat">Georgian</option>
+<option value="nds">German (Low, Low Saxon)</option>
+<option value="gmh">German (Middle-High, 1050–1500)</option>
+<option value="goh">German (Old-High, 750–1050)</option>
+<option value="deu">German</option>
+<option value="got">Gothic</option>
+<option value="ell">Greek (Modern, 1453–)</option>
+<option value="guj">Gujarati</option>
+<option value="heb">Hebrew</option>
+<option value="hin">Hindi</option>
+<option value="hit">Hittite</option>
+<option value="hun">Hungarian</option>
+<option value="isl">Icelandic</option>
+<option value="ind">Indonesian</option>
+<option value="gle">Irish (Modern)</option>
+<option value="mga">Irish (Middle 900–1200)</option>
+<option value="sga">Irish (Old, to 900)</option>
+<option value="ita">Italian</option>
+<option value="jpn">Japanese</option>
+<option value="jav">Javanese</option>
+<option value="kan">Kannada</option>
+<option value="khm">Khmer (Central)</option>
+<option value="kor">Korean</option>
+<option value="kur">Kurdish</option>
+<option value="lad">Ladino</option>
+<option value="lit">Lithuanian</option>
+<option value="msa">Malay</option>
+<option value="mar">Marathi</option>
+<option value="new">Nepal Bhasa (Newari)</option>
+<option value="nep">Nepali</option>
+<option value="nwc">Newari (Classical)</option>
+<option value="non">Norse (Old)</option>
+<option value="nor">Norwegian</option>
+<option value="nob">Norwegian (Bokmål)</option>
+<option value="nno">Norwegian (Nynorsk)</option>
+<option value="oss">Ossetian</option>
+<option value="pal">Pahlavi (Middle Persian)</option>
+<option value="pli">Pali</option>
+<option value="pus">Pashto</option>
+<option value="fas">Persian (Farsi)</option>
+<option value="peo">Persian (Old, 600–400 BC)</option>
+<option value="phn">Phoenician</option>
+<option value="pol">Polish</option>
+
+<option value="pra">Prakrit</option>
+<option value="pro">Provençal (Occitan, –1500)</option>
+<option value="pan">Punjabi (Panjabi)</option>
+<option value="raj">Rajasthani</option>
+<option value="ron">Romanian</option>
+<option value="rom">Romany</option>
+<option value="rus">Russian</option>
+<option value="san">Sanskrit</option>
+<option value="sco">Scots</option>
+<option value="gla">Scottish (Gaelic)</option>
+<option value="srp">Serbian</option>
+<option value="scn">Sicilian</option>
+<option value="snd">Sindhi</option>
+<option value="sin">Sinhalese (Sinhala)</option>
+<option value="slk">Slovak</option>
+<option value="slv">Slovenian</option>
+<option value="sog">Sogdian</option>
+<option value="spa">Spanish (Castilian)</option>
+<option value="sux">Sumerian</option>
+<option value="swa">Swahili</option>
+<option value="swe">Swedish</option>
+<option value="gsw">Swiss German (Alsatian)</option>
+<option value="syc">Syriac (Classical)</option>
+<option value="syr">Syriac (Northeastern, Neo-Aramaic)</option>
+<option value="tgl">Tagalog</option>
+<option value="tgk">Tajik</option>
+<option value="tam">Tamil</option>
+<option value="tat">Tatar</option>
+<option value="tel">Telugu</option>
+<option value="tha">Thai</option>
+<option value="bod">Tibetan</option>
+<option value="tur">Turkish (Modern)</option>
+<option value="ota">Turkish (Ottoman, 1500–1928 )</option>
+<option value="tuk">Turkmen</option>
+<option value="uga">Ugaritic</option>
+<option value="ukr">Ukainian</option>
+<option value="urd">Urdu</option>
+<option value="uzb">Uzbek</option>
+<option value="vie">Vietnamese</option>
+<option value="wln">Walloon</option>
+<option value="cym">Welsh</option>
+<option value="yid">Yiddish</option>
+</select>
+<br />
+<label for="other_l1">Ou Outra Língua*:</label> <input
+type="text" id="other_l2" name="other_l2" size="3"
+style="width:3em;" /> </div>
+</fieldset>
+<div> <button type="submit" style="float: right; width:100px;
+font-weight:bold; background-color:#73Cdde; color:white;">Align</button>
+</div>
+<div style="font-size: smaller;">*Por favor, use código ISO 639-2 ou ISO
+639-3 de três letras para qualquer outra língua</div>
+</form>
+</div>
+</body>
+</html>
