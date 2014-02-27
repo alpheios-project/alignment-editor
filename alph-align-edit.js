@@ -77,7 +77,10 @@ function Init(a_evt,a_load)
     if (s_param["app"] == "viewer")
     {
         $("#edit-controls", document).hide();
-        $("#alph-page-header", document).hide();
+        $("#save-button",document).hide();
+        $("#undo-button",document).hide();
+        $(".summary",document).hide();
+        $("body", document).attr("alpheios-mode", "view");
     }
     if (!s_param["sentenceNavigation"] ||
         (s_param["sentenceNavigation"] == "no"))
@@ -371,6 +374,10 @@ function EnterLeave(a_evt)
 // event handler for mouse click
 function Click(a_evt)
 {
+    // ignore if in viewer
+    if (s_param["app"] == "viewer")
+        return true;
+        
     // if over headword
     if ($(a_evt.target).hasClass("headwd-bg") ||
         $(a_evt.target).hasClass("headwd"))
@@ -524,6 +531,11 @@ function ClickOnGoTo(a_event)
 // function for handling key presses
 function Keypress(a_evt)
 {
+
+    // ignore if in viewer
+    if (s_param["app"] == "viewer")
+        return true;
+        
     // get event and keypress
     var evt = a_evt ?
                   a_evt :
