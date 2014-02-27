@@ -29,7 +29,6 @@ import module namespace aled="http://alpheios.net/namespaces/align-edit"
 import module namespace util="http://exist-db.org/xquery/util";
 import module namespace alut="http://alpheios.net/namespaces/align-util"
               at "align-util.xquery";
-declare namespace svg="http://www.w3.org/2000/svg";
 
 declare option exist:serialize
         "method=xhtml media-type=application/xhtml+xml omit-xml-declaration=no indent=yes 
@@ -38,7 +37,7 @@ declare option exist:serialize
 
 let $docName := request:get-parameter("doc","") 
 let $data := util:parse(request:get-parameter("sentenceForDisplay",""))
-let $doc := alut:svg-to-xml( $data/svg:svg, true() )
+let $doc := alut:svg-to-xml( $data/*:svg, true() )
 let $base := request:get-url()
 let $baseResUrl := replace($base,'/xq/.*','')
 let $base := substring($base,
@@ -50,4 +49,4 @@ let $base := substring($base,
                        string-length($base) -
                        string-length(tokenize($base, '/')[last()]))
 let $dispo := response:set-header("Content-disposition",concat("attachment; filename=",$docName,".xhtml"))                       
-return aled:get-display-page($doc/*:sentence,$base,$baseResUrl)
+return aled:get-display-page($doc/*:sentence,$base,$baseResUrl,$data/*:svg)

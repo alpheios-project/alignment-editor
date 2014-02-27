@@ -31,4 +31,13 @@ declare option exist:serialize
         doctype-public=-//W3C//DTD&#160;XHTML&#160;1.0&#160;Transitional//EN
         doctype-system=http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd";
 
-alsv:save-sentence("/db/repository/alignment/", request:get-data())
+let $data := request:get-data()
+
+(: 
+   eXist 1.4.x interprets the put sentence element to be the root of the document 
+   eXist 2.x interprets the put sentence element to be the first child of the root
+:)
+let $sentence := if (local-name($data) = 'sentence') then $data 
+                 else if ($data/*:sentence) then $data/*:sentence
+                 else ()
+return alsv:save-sentence("/db/repository/alignment/", $sentence)

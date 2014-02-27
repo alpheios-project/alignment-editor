@@ -22,6 +22,10 @@
 
 var s_svgns = "http://www.w3.org/2000/svg";     // svg namespace
 var s_xlinkns = "http://www.w3.org/1999/xlink"; // xlink namespace
+
+var s_getSentenceURL = null;          // where to get treebank sentence from
+var s_putSentenceURL = null;          // where to put modified treebank sentence
+
 var s_firefox = false;                          // in Firefox
 var s_fontSize = 20;                            // regular font size
 var s_interlinearFontSize = 15;                 // size of interlinear words
@@ -39,10 +43,13 @@ var s_param = [];                               // parameters and metadata
 // initialization
 //****************************************************************************
 
-function Init(a_evt,a_isEdit)
+function Init(a_evt,a_load)
 {
+    $("body", document).show();
+
     // initialize internal params
     s_param["firebug"] = "no";
+    s_param["app"] = "editor";
 
     // get parameters from html metadata of form
     //  <meta name="alpheios-param-<name>" content="<value>"/>
@@ -66,38 +73,220 @@ function Init(a_evt,a_isEdit)
     }
     s_param["numParams"] = numParams;
 
+    // adjust html structure
+    if (s_param["app"] == "viewer")
+    {
+        $("#edit-controls", document).hide();
+        $("#alph-page-header", document).hide();
+    }
+    if (!s_param["sentenceNavigation"] ||
+        (s_param["sentenceNavigation"] == "no"))
+    {
+        $("div#sent-navigation", document).hide();
+    }
     // set state variables
     if (navigator.userAgent.indexOf("Firefox") != -1)
         s_firefox = true;
-    
-    if (a_isEdit) {
-        // clear undo/redo history
-        AlphEdit.clearHistory();
+ 
+    if (a_load) {       
+        // get svg transform
+        var req = new XMLHttpRequest();
+        if (req.overrideMimeType)
+            req.overrideMimeType('text/xml')
+        req.open("GET",
+            $("meta[name='alpheios-editTransformURL']",
+                document).attr("content"),
+                false);
+        req.send(null);
+        if (req.status != 200)
+        {
+            var msg = "Can't get SVG transform";
+            alert(msg);
+            throw(msg);
+        }
+        s_editTransformDoc = req.responseXML;
+        s_editTransform = new XSLTProcessor();
+        s_editTransform.importStylesheet(s_editTransformDoc);
     }
+    
+    // set various values in html
+    var exitForm = $("form[name='sent-navigation-exit']", document);
+    var exitURL = $("meta[name='alpheios-exitURL']", document);
+    if (exitURL.length > 0) {
+        var exitAction = exitURL.attr("content").replace(/DOC_REPLACE/,s_param["doc"]);
+        var exitLabel = $("meta[name='alpheios-exitLabel']", document);
+        exitForm.attr("action", exitAction);
+        $("input[name='doc']", exitForm).attr("value", s_param["doc"]);
+        $("button", exitForm).text(exitLabel.attr("content"));
+    }
+    
+    $("svg", document).attr("alph-doc", s_param["doc"]);
+
+    // get URLs from header
+    s_getSentenceURL =
+        $("meta[name='alpheios-getSentenceURL']", document).attr("content");
+    s_putSentenceURL =
+        $("meta[name='alpheios-putSentenceURL']", document).attr("content");
+
+    // go to new sentence
+    InitNewSentence(a_load);
+
+    $("body", document).show();
+
+    var evt = document.createEvent("Events");
+    evt.initEvent("AlpheiosAlignLoaded", false, true);
+    document.dispatchEvent(evt);    
+
 
     // onresize doesn't work in firefox, so register it here
     window.addEventListener("resize", Resize, false);
 
-    // this seems to be fixed in Firefox 7 -- leaving the code in place commented out for now.
-    // right-to-left doesn't seem to be working in firefox svg
-    // reverse strings by hand
-    //if (s_firefox && (s_param["L1:direction"] == "rtl"))
-    //{
-    //    AlphEdit.reverseText(
-    //                $("g.L1 text.headwd, g.L2 g.alignment text", document),
-    //                "form");
-    //}
-    //if (s_firefox && (s_param["L2:direction"] == "rtl"))
-    //{
-    //    AlphEdit.reverseText(
-    //                $("g.L2 text.headwd, g.L1 g.alignment text", document),
-    //                "form");
-    //}
+}
 
+/**
+ * Initialize new sentence
+ */
+function InitNewSentence(a_load)
+{
+    // clear undo/redo history
+    AlphEdit.clearHistory();
+
+    var params = [];
+            params["doc"] = s_param["doc"];
+            params["app"] = s_param["app"];
+            params["s"] = s_param["s"];
+    
+    if (a_load) {
+        var sentence = AlphEdit.getContents(s_getSentenceURL, params);
+        
+        if (sentence ==  null) {
+            return;
+        }
+        
+        if (typeof sentence =="string")
+        {
+            sentence = (new DOMParser()).parseFromString(sentence,"text/xml");
+        }
+        
+        var root = $(sentence.documentElement);
+        s_param["document_id"] = root.attr("document_id");
+        
+        // if we have the language elements and direction is set there, use it
+        $("language",root).each(
+            function() {
+                var dir = $(this).attr("dir");
+                var lnum = $(this).attr("lnum");
+                if (lnum && dir) {
+                    s_param[lnum + ":direction"] = dir;
+                }
+            }
+        );
+       
+        var sentId = root.attr("id");
+        s_editTransform.setParameter(null, "e_mode", "xml-to-svg");
+        s_editTransform.setParameter(null, "e_app", s_param["app"]);
+        s_editTransform.setParameter(null, "e_l1dir", s_param["L1:direction"]);
+        s_editTransform.setParameter(null, "e_l2dir", s_param["L2:direction"]);
+        var svg = s_editTransform.transformToDocument(sentence);
+        var svgRoot = svg.documentElement;
+        $("svg", document).empty().append($(svgRoot).children());
+    }
+    var svgDoc = $("svg",document);
+
+    // sentence id in <svg>
+    $("svg", document).attr("alph-s", s_param["s"]);
+    
+    // add the sentence document info to the display
+    $(".sentence").each(
+        function(i) {
+            var title = $("#L" + (i+1) +"title");
+            title.html($(this).attr("xlink:title"));
+        }
+    );
+    
+
+    // TODO not sure if these are needed - carry over from old code
+    // probably were used to support export of display and xml
+    $("svg", document).attr("alph-doc", s_param["doc"]);
+    $("svg", document).attr("alph-saveURL",s_putSentenceURL);
+    
+    // fix numeric sentence number
+    s_param["snum"] = Number(s_param["s"]);
+    if (isNaN(s_param["snum"]))
+        s_param["snum"] = 1;
+    else if (s_param["snum"] <= 0)
+        s_param["snum"] = 1;
+    if (s_param["snum"] > s_param["numSentences"])
+        s_param["snum"] = s_param["numSentences"];
+
+    var s = s_param["snum"];
+    var numSentences = s_param["numSentences"];
+
+    // first sentence button
+    var button = $("#first-button", document);
+    if (s <= 1)
+        button.attr("disabled", "disabled");
+    else
+        button.removeAttr("disabled");
+    button.attr("value", "1");
+    button.text("1" + "\u00A0\u25C2\u25C2");
+
+    // previous sentence button
+    button = $("#prev-button", document);
+    button.attr("value", s - 1);
+    if (s <= 1)
+        button.attr("disabled", "disabled");
+    else
+        button.removeAttr("disabled");
+    if (s <= 1)
+        button.text("1" + "\u00A0\u25C2");
+    else
+        button.text((s - 1) + "\u00A0\u25C2");
+    $("#current-label", document).text(s);
+
+    // next sentence button
+    button = $("#next-button", document);
+    button.attr("value", s + 1);
+    if (s >= numSentences)
+        button.attr("disabled", "disabled");
+    else
+        button.removeAttr("disabled");
+    if (s >= numSentences)
+        button.text("\u25B8\u00A0" + numSentences);
+    else
+        button.text("\u25B8\u00A0" + (s + 1));
+
+    // last sentence button
+    button = $("#last-button", document);
+    button.attr("value", numSentences);
+    if (s >= numSentences)
+        button.attr("disabled", "disabled");
+    else
+        button.removeAttr("disabled");
+    button.text("\u25B8\u25B8\u00A0" + numSentences);
+
+    // html fixes
+    var title_text = s_param["app"] == 'viewer' ? 'View Alignment' : 'Edit Alignment';
+    $("head title", document).text("Alpheios:" + title_text);
+    
+    // metadata from sentence
+    // TODO update treebank links
+    
+    // only display the alpheios trigger hint in viewer mode
+    if (s_param['app'] == 'viewer')
+    {
+        $(".alpheios-trigger-hint",document).css("display","block");
+    }
+    $("form[name='sent-navigation-exit'] input[name='s']",
+      document).attr("value", s_param["s"]);
+
+    // set initial state of controls
+    $("form[name='sent-navigation-goto'] input", document).removeAttr("value");
+    
     // one-time positioning:
     // set position of headwords
-    var svgRoot = document.documentElement;
-    var headwds = $(".headwd", svgRoot);
+   
+    var headwds = $("svg .headwd");
     headwds.each(
     function()
     {
@@ -106,7 +295,7 @@ function Init(a_evt,a_isEdit)
     });
 
     // set size and attributes of highlighting rectangles
-    var rects = $(".headwd-bg", svgRoot);
+    var rects = $("svg .headwd-bg");
     rects.each(
     function()
     {
@@ -123,7 +312,7 @@ function Init(a_evt,a_isEdit)
     });
 
     // set position of aligned words
-    var words = $(".word", svgRoot);
+    var words = $("svg .word");
     words.each(
     function()
     {
@@ -142,20 +331,23 @@ function Init(a_evt,a_isEdit)
     });
     $("#interlinear-checkbox", document).get(0).checked = s_displayInterlinear;
 
-    if (a_isEdit) {
-        // initialize unedited word counts in summary stats
-        s_summaryL1[3] = $(".L1 .word", svgRoot).size();
-        s_summaryL2[3] = $(".L2 .word", svgRoot).size();
-        UpdateSummaryDisplay();
-        // set/reset buttons
-        $("#undo-button", document).attr("disabled", "disabled");
-        $("#redo-button", document).attr("disabled", "disabled");
-        $("#save-button", document).attr("disabled", "disabled");
-    }
-
+    // initialize unedited word counts in summary stats
+    s_summaryL1[3] = $("svg .L1 .word").size();
+    s_summaryL2[3] = $("svg .L2 .word").size();
+    UpdateSummaryDisplay();
+    // set/reset buttons
+    $("#undo-button", document).attr("disabled", "disabled");
+    $("#redo-button", document).attr("disabled", "disabled");
+    $("#save-button", document).attr("disabled", "disabled");
+    AdjustButtons();
+    
+    $("svg",document).click(Click);
+    $("svg",document).mouseover(EnterLeave);
+    $("svg",document).mouseout(EnterLeave);
+    
     // now position the pieces
-    DisplayInterlinear(svgRoot, s_displayInterlinear);
-    Reposition(svgRoot);
+    DisplayInterlinear(s_displayInterlinear);
+    Reposition();
 };
 
 //****************************************************************************
@@ -239,7 +431,7 @@ function ClickOnWord(a_tgt, a_record)
 
     // if we're showing aligned words, we might need to adjust positions
     if (s_displayInterlinear)
-        Reposition(document.documentElement);
+        Reposition();
 };
 
 function ClickOnUndo(a_evt)
@@ -254,7 +446,7 @@ function ClickOnRedo(a_evt)
 
 function ClickOnSave(a_evt)
 {
-    SaveContents();
+    SaveContents(null);
 };
 
 function ClickOnExport(a_evt) {
@@ -262,46 +454,71 @@ function ClickOnExport(a_evt) {
 };
 
 function ClickOnExportDisplay(a_evt) {
-    ExportDisplay();
+    return ExportDisplay();
 };
 
 function ToggleInterlinearDisplay(a_evt)
 {
     var svgRoot = document.documentElement;
-    DisplayInterlinear(svgRoot, !s_displayInterlinear);
-    Reposition(svgRoot);
+    DisplayInterlinear(!s_displayInterlinear);
+    Reposition();
 };
 
 // event handler for window resize
 function Resize(a_evt)
 {
     // force full repositioning of elements
-    Reposition(document.documentElement);
+    Reposition();
 };
 
-// handler for form submission
-function FormSubmit(a_form)
+/**
+ * Event handler for exit form
+ * @param {Element} a_form the form
+ */
+function SubmitExit(a_form)
 {
-    // if this is not return to sentence list
-    if (a_form.name != "sent-navigation-list")
-    {
-        // if value is out of bounds
-        if ((Number(a_form.s.value) <= 0) ||
-            (Number(a_form.s.value) > Number(a_form.maxSentId.value)))
-        {
-          alert("Sentence must between 1 and " + a_form.maxSentId.value);
-          return false;
-        }
-    }
-
-    // if there are unsaved changes
-    if (AlphEdit.unsavedChanges())
-    {
-        if (confirm("Save changes before going to new sentence?"))
-          SaveContents();
-    }
-
+    // give user chance to save changes
+    SaveContents("Save changes before continuing?");
     return true;
+};
+
+/**
+ * Event handler for form submission of jump to new sentence
+ * @param a_form the form
+ */
+function SubmitGoTo(a_form)
+{
+    // if value is out of bounds
+    if ((Number(a_form.s.value) <= 0) ||
+        (Number(a_form.s.value) > s_param["numSentences"]))
+    {
+        alert("Sentence must between 1 and " + s_param["numSentences"]);
+        return false;
+    }
+
+    // give user chance to save changes
+    SaveContents("Save changes before going to new sentence?");
+
+    // go to new sentence
+    s_param["s"] = a_form.s.value;
+    InitNewSentence();
+
+    // always return false - we've already done the action
+    return false;
+};
+
+/**
+ * Event handler for button to go to new sentence
+ * @param {Event} a_event the event
+ */
+function ClickOnGoTo(a_event)
+{
+    // give user chance to save changes
+    SaveContents("Save changes before going to new sentence?");
+
+    // go to new sentence
+    s_param["s"] = AlphEdit.getEventTarget(a_event).value;
+    InitNewSentence();
 };
 
 // function for handling key presses
@@ -383,7 +600,7 @@ function HighlightAlignedWords(a_word, a_on, a_recur)
     function()
     {
         var id = this.getAttribute("idref");
-        var wd = a_word.ownerDocument.getElementById(id);
+        var wd = document.getElementById(id);
         HighlightHeadWord(wd, a_on, "aligned-focus");
 
         // if this is first call, set highlight on words
@@ -716,13 +933,13 @@ function ReplayEvent(a_event, a_forward)
 
     // if we're showing aligned words, we might need to adjust positions
     if (s_displayInterlinear)
-        Reposition(document.documentElement);
+        Reposition();
 };
 
 // change display of interlinear text
-function DisplayInterlinear(a_root, a_on)
+function DisplayInterlinear(a_on)
 {
-    $(".alignment", a_root).each(
+    $(".alignment").each(
     function()
     {
         this.setAttribute("visibility", (a_on ? "visible" : "hidden"));
@@ -735,9 +952,9 @@ function DisplayInterlinear(a_root, a_on)
 //****************************************************************************
 
 // reposition elements on screen
-function Reposition(a_root)
+function Reposition()
 {
-    var maxWidth = Reflow(a_root);
+    var maxWidth = Reflow();
 
     // adjust word spacing
     var sentX = 2;
@@ -748,7 +965,7 @@ function Reposition(a_root)
     var divY = 0;
 
     // for each sentence
-    $(".sentence", a_root).each(
+    $(".sentence").each(
     function(i)
     {
         var width = maxWidth[i];
@@ -756,7 +973,18 @@ function Reposition(a_root)
 
         var lineX = 0;
         var lineY = 0;
-
+        var title = $("#L" + (i+1) +"title");
+        if (title.length > 0) {
+            $(title).css("position","absolute");
+            $(title).css("top",'');
+            $(title).css("margin-top",'-1em')
+            $(title).css("left",sentX);
+            if (s_displayInterlinear && i == 1) {
+                var orig = $(title).offset();
+                $(title).css("top",orig.top+sentY)
+                $(title).css("margin-top","0em");
+            }
+        }
         // for each line
         $(".line", this).each(
         function()
@@ -764,7 +992,7 @@ function Reposition(a_root)
             var wordX = 0;
             var wordY = 0;
             var maxWordY = 0;
-
+        
             // for each word
             $(".word", this).each(
             function()
@@ -825,18 +1053,19 @@ function Reposition(a_root)
     });
 
     // position divider
-    var divider = $(".divider", a_root).get(0);
+    var divider = $(".divider").get(0);
     if (!divider)
     {
         // if divider doesn't exist, create it
-        var doc = a_root.ownerDocument;
+        var doc = document;
         divider = doc.createElementNS(s_svgns, "line");
         AlphEdit.addClass(divider, "divider");
-        var svg = a_root.getElementsByTagNameNS(s_svgns, "svg")[0];
-        svg.appendChild(divider);
+        $("svg").append(divider);
     }
     divider.setAttribute("x1", divX);
     divider.setAttribute("y1", divY);
+    
+
     if (s_displayInterlinear)
         divX += maxX;
     else
@@ -845,16 +1074,21 @@ function Reposition(a_root)
     divider.setAttribute("y2", divY);
     maxY += s_fontSize;
 
+        
     // reset svg size
-    var svg = a_root.getElementsByTagNameNS(s_svgns, "svg")[0];
-    svg.setAttribute("width", window.innerWidth);
-    svg.setAttribute("height", window.innerHeight);
+    try {
+        $("svg").get(0).setAttribute("width", window.innerWidth);
+        $("svg").get(0).setAttribute("height", window.innerHeight);
+    } catch (e) {
+        $("svg").attr("width", window.innerWidth);
+        $("svg").attr("height", window.innerHeight);
+    }
 };
 
 // function to reassign words to lines
-function Reflow(a_root)
+function Reflow()
 {
-    var doc = a_root.ownerDocument;
+    var doc = document;
 
     // calculate max width for text
     var maxWidth = window.innerWidth;
@@ -864,7 +1098,7 @@ function Reflow(a_root)
     var width = [];
 
     // for each sentence
-    $(".sentence", a_root).each(
+    $(".sentence", doc).each(
     function(i)
     {
         width[i] = 0;
@@ -984,11 +1218,13 @@ function UpdateState(a_event, a_inc)
 // update summary display
 function UpdateSummaryDisplay()
 {
-    // update summary values
-    for (var i = 0; i < 4; ++i)
-        $(document.getElementById("L1:S" + i)).text(s_summaryL1[i]);
-    for (var i = 0; i < 4; ++i)
-        $(document.getElementById("L2:S" + i)).text(s_summaryL2[i]);
+    if (s_param['app'] == 'editor') {
+        // update summary values
+        for (var i = 0; i < 4; ++i)
+            $(document.getElementById("L1:S" + i)).text(s_summaryL1[i]);
+        for (var i = 0; i < 4; ++i)
+            $(document.getElementById("L2:S" + i)).text(s_summaryL2[i]);
+     }
 };
 
 // get index in summary data for state
@@ -1009,24 +1245,37 @@ function SummaryIndex(a_state)
 };
 
 // save contents to database
-function SaveContents()
+function SaveContents(a_confirm)
 {
-  // if nothing has changed, do nothing
-  // (shouldn't ever happen because save buttons should be disabled)
-  if (!AlphEdit.unsavedChanges())
-    return;
+    // if need to confirm
+    if (a_confirm)
+    {
+        // do nothing if no unsaved changes
+        if (!AlphEdit.unsavedChanges())
+            return;
 
-  // send synchronous request to save
-  var req = new XMLHttpRequest();
-  var svg = document.getElementsByTagNameNS(s_svgns, "svg")[0];
-  req.open("POST", svg.getAttribute("alph-saveurl"), false);
-  req.setRequestHeader("Content-Type", "application/xml");
-  req.send(XMLSerializer().serializeToString(svg));
-  if (req.status != 200)
-    alert(req.responseText ? req.responseText : req.statusText);
+        // do nothing if action not confirmed
+        if (!confirm(a_confirm))
+            return;
+    }
 
-  // remember where we last saved and reset button
-  AlphEdit.saved();
+    // transform sentence
+    s_editTransform.setParameter(null, "e_mode", "svg-to-xml");
+    s_editTransform.setParameter(null, "e_app", s_param["app"]);
+    
+    var doc = document.implementation.createDocument("", "", null);
+    doc.appendChild(doc.importNode($("svg", document).get(0), true));
+    var xml = s_editTransform.transformToDocument(doc);
+
+    AlphEdit.putContents(xml.documentElement,
+                         s_putSentenceURL,
+                         s_param["doc"],
+                         s_param["s"]);
+
+    // remember where we last saved and fix buttons
+    AlphEdit.saved();
+    AdjustButtons();
+    return true;
 };
 
 // export contents to file
@@ -1035,6 +1284,7 @@ function ExportContents()
     var svg = document.getElementsByTagNameNS(s_svgns, "svg")[0];
     var input = $("#sentenceForExport");
     input.val(XMLSerializer().serializeToString(svg));
+    $("#exportform input[name='doc']").val(s_param['doc']);
     $("#exportform").submit();
 }
 
@@ -1043,7 +1293,9 @@ function ExportDisplay()
 {
     var svg = document.getElementsByTagNameNS(s_svgns, "svg")[0];
     var input = $("#sentenceForDisplay");
-    input.val(XMLSerializer().serializeToString(svg));
+    var output = XMLSerializer().serializeToString(svg);
+    input.val(output);
+    $("#exportdisplayform input[name='doc']").val(s_param['doc']);
     $("#exportdisplayform").submit();
 }
   
@@ -1146,4 +1398,17 @@ function GetAlignment(a_word)
 function GetAlignedWords(a_word)
 {
     return $(GetAlignment(a_word).getElementsByTagNameNS(s_svgns, "text"));
+};
+
+function AdjustButtons()
+{
+    var name = ["undo", "redo", "save"];
+    for (i in name)
+    {
+        var button = $("#" + name[i] + "-button", document);
+        $("img", button).attr("src",
+                              button.attr("base") +
+                              (button.attr("disabled") ? "-disabled" : "") +
+                              ".png");
+    }
 };

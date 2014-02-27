@@ -406,7 +406,8 @@ Return value:
 declare function aled:get-display-page(
   $a_sent as node(),
   $a_base as xs:string,
-  $a_baseResUrl as xs:string) as element()?
+  $a_baseResUrl as xs:string,
+  $a_svg as node()) as element()?
 {
   let $sent := $a_sent
   let $l1Lang := $sent/../*:language[@*:lnum = "L1"]/@xml:lang
@@ -428,8 +429,11 @@ declare function aled:get-display-page(
       "Alpheios:Display Aligned Sentence",
       data($sent/@*:document_id)
     },
-
      (: metadata :)
+    element meta {
+     attribute name {"alpheios-param-app"},
+     attribute content {"viewer"}
+    },
     element meta
     {
       attribute name { "alpheios-param-L1:lang" },
@@ -518,6 +522,8 @@ declare function aled:get-display-page(
 
   element body
   {
+    attribute onkeypress { "Keypress(event)"},
+    attribute onload {"Init(event,false)"},
     (: logo :)
     <div class="alpheios-ignore">
       <div id="alph-page-header">
@@ -533,16 +539,8 @@ declare function aled:get-display-page(
       </form>
     </div>,
         (: svg of sentence :)
-    alut:xml-to-svg(
-      $sent,
-      <directions><lang lnum="L1" direction="{$l1Dir}"/><lang lnum="L2" direction="{$l2Dir}"/></directions>,
-      (
-        attribute onload { "Init(evt,false)" },
-        attribute onmouseover { "EnterLeave(evt)" },
-        attribute onmouseout { "EnterLeave(evt)" }
-      ))
+    $a_svg
   }
-  }
-  </html>
+  }</html>
 };
 

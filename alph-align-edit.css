@@ -19,6 +19,11 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+ 
+body {
+    background-color: white;
+}
+
 label {
     margin: 2px;
     color:black;
@@ -136,4 +141,22 @@ g rect.selected {
     fill: #FFEE77;
     stroke-width: 1px;
     stroke: black;
+}
+
+.sentence_title {
+    margin-top: -1em;
+    margin-left: 1em;
+    font-style: italic;
+    color: #3E8D9C;
+    font-weight: 100;
+}
+
+#alpheios-put-notice {
+    text-align:center;
+    font-weight: bold;
+    color:green;
+}
+
+#alpheios-put-notice.error {
+    color:red;
 }
