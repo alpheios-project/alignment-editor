@@ -57,7 +57,7 @@ return
         element align:aligned-text
         {
             $doc/align:aligned-text/@*,
-            $doc/align:aligned-text/*[local-name(.) != sentence],
+            $doc/align:aligned-text/*[local-name(.) != 'sentence'],
             element align:sentence {
                 $sentence/@*,
                 for $e in $sentence/*

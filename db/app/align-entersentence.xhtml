@@ -22,6 +22,7 @@
   <head><title>Alpheios Alignment Editor - Align Text</title>
     <script language="javascript" type="text/javascript" src="../script/jquery-1.2.6-alph.js"/>
     <script language="javascript" type="text/javascript" src="../script/alph-align-entersentence.js"/>
+    <meta name="url" content="../xq/align-addsentence.xq"/>
   </head>
   <body>
     <div class="alpheios-ignore">
@@ -30,7 +31,7 @@
       </div>
     </div>
     <div>
-      <form name="input-form" action="../xq/align-addsentence.xq" onsubmit="return EnterSentence(event);">
+      <form name="input-form" action="">
         <input type="hidden" name="l1"/>
         <input type="hidden" name="l2"/>
         <fieldset>
@@ -174,6 +175,13 @@
           <label for="other_l1">Or Other Language*:</label>
           <input type="text" id="other_l1" name="other_l1" size="3" style="width:3em;"/>
           </div>
+          <div id="l1-dir-buttons">
+            <label>Text Direction:</label>
+            <input type="radio" id="l1-dir-ltr" name="l1-direction" value="ltr" checked="checked"/>
+            <label for="l1-dir-ltr">Left to Right</label>
+            <input type="radio" id="l1-dir-rtl" name="l1-direction" value="rtl"/>
+          <label for="l1-dir-rtl">Right to Left</label>
+          </div>
         </fieldset>
         <fieldset>
           <legend>Enter Text in Language 2:</legend>
@@ -313,13 +321,25 @@
             <option value="yid">Yiddish</option>
           </select>
           <br/>
-          <label for="other_l1">Or Other Language*:</label>
+          <label for="other_l2">Or Other Language*:</label>
           <input type="text" id="other_l2" name="other_l2" size="3" style="width:3em;"/>
           </div>
+          <div id="l2-dir-buttons">
+            <label>Text Direction:</label>
+            <input type="radio" id="l2-dir-ltr" name="l2-direction" value="ltr" checked="checked"/>
+            <label for="l2-dir-ltr">Left to Right</label>
+            <input type="radio" id="l2-dir-rtl" name="l2-direction" value="rtl"/>
+            <label for="l2-dir-rtl">Right to Left</label>
+          </div>
         </fieldset>
-        <div><button type="submit" style="float: right; width:100px; font-weight:bold; background-color:#73Cdde; color:white;">Align</button></div>
         <div style="font-size: smaller;">*Please use ISO 639-2 or ISO 639-3 three-letter codes for any other languages</div>
       </form> 
+      <form name="submit-form" action="align-editsentence.xhtml"
+        onsubmit="EnterSentence(event)">
+        <input type="hidden" name="doc"/>
+        <input type="hidden" name="s"/>
+        <div><button type="submit" style="float: right; width:100px; font-weight:bold; background-color:#73Cdde; color:white;">Align</button></div>
+      </form>
     </div>
   </body>
 </html>

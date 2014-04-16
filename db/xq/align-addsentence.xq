@@ -48,9 +48,7 @@ declare namespace align = "http://alpheios.net/namespaces/aligned-text";
 declare namespace oac="http://www.openannotation.org/ns/";
 
 declare option exist:serialize
-        "method=xhtml media-type=application/xhtml+xml omit-xml-declaration=no indent=yes 
-        doctype-public=-//W3C//DTD&#160;XHTML&#160;1.0&#160;Transitional//EN
-        doctype-system=http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd";
+        "method=xml";
 
 declare function local:createWords(
   $a_sent as xs:string,$a_s as xs:int, $a_i as xs:int) as element()*
@@ -95,7 +93,9 @@ declare function local:createSentence(
   $a_l1text as xs:string,
   $a_l2text as xs:string,
   $a_l1urn as xs:string,
-  $a_l2urn as xs:string) as element()*
+  $a_l2urn as xs:string,
+  $a_l1dir as xs:string,
+  $a_l2dir as xs:string) as element()*
 {
     let $l1comment := 
         if ($a_l1urn) then <comment class="urn">{$a_l1urn}</comment> else ()
@@ -103,9 +103,9 @@ declare function local:createSentence(
         if ($a_l1urn) then <comment class="urn">{$a_l2urn}</comment> else ()
     return
 	<aligned-text xmlns="http://alpheios.net/namespaces/aligned-text">
-        <language lnum="L1" xml:lang="{$a_l1}"/>
-        <language lnum="L2" xml:lang="{$a_l2}"/>
-        <sentence>
+        <language lnum="L1" xml:lang="{$a_l1}" dir="{$a_l1dir}"/>
+        <language lnum="L2" xml:lang="{$a_l2}" dir="{$a_l2dir}"/>
+        <sentence id="1">
             <wds lnum="L1">{ $l1comment,local:createWords($a_l1text,1,1) }</wds>
             <wds lnum="L2">{ $l2comment,local:createWords($a_l2text,1,1) }</wds>
         </sentence>
@@ -114,20 +114,25 @@ declare function local:createSentence(
 
 (: Text parameters :)
 let $data := request:get-data()
-let $l1text := normalize-space(request:get-parameter("l1text",""))
-let $l2text := normalize-space(request:get-parameter("l2text",""))
-let $l1 := request:get-parameter("l1","")
-let $l2 := request:get-parameter("l2","")
+let $l1text := $data//l1text
+let $l2text := $data//l2text
+let $l1 := $data//*:language[@lnum="L1"]/@xml:lang
+let $l2 := $data//*:language[@lnum="L2"]/@xml:lang
+let $l1dir := $data//*:language[@lnum="L1"]/@dir
+let $l2dir := $data//*:language[@lnum="L2"]/@dir
+
+
+let $collName := "/db/repository/alignment"
+
 
 (: API Parameters :)
-let $docId := request:get-parameter('doc','alignment')
-let $sentId := 1 (: only one sentence chunk allowed for now :)
 let $saveURL := request:get-parameter('saveUrl','')
 let $allowSave := if ($saveURL) then true() else false()
 let $listURL := request:get-parameter('listUrl','')
 let $editURL := ""
 let $l1Urn := request:get-parameter('l1urn','')
 let $l2Urn := request:get-parameter('l2urn','')
+
 
 
 let $exportURL := "./align-export.xq"
@@ -140,22 +145,33 @@ let $base := substring($base,
                        1,
                        string-length($base) -
                        string-length(tokenize($base, '/')[last()]))
+
+let $docId := replace(replace(replace(replace(current-dateTime(),'-',''),'T',''),':',''),'\.','')
+let $docName := concat($collName, '/user-', $docId, ".xml")
+
 let $newDoc :=                        
-  if ($data)
+  if ($data//align:aligned-text)
   then
     local:getSentence($data)
   else 
-    local:createSentence($l1,$l2,$l1text,$l2text,$l1Urn,$l2Urn)
-  
-   return 
-    aled:get-edit-page(
-                $newDoc,
-                $docId,
-                $base,
-                $sentId,
-                $saveURL,
-                $listURL,
-                $editURL,
-                $exportURL,
-                "s",$allowSave)
-    
+    local:createSentence($l1,$l2,$l1text,$l2text,$l1Urn,$l2Urn,$l1dir,$l2dir)
+
+let $error := 
+    let $stored := xmldb:store($collName, concat('/user-', $docId, ".xml"),$newDoc)
+       return
+        if (not($stored))
+        then
+            element error
+            {
+                concat("Alignment ", $docId, " could not be created")
+            }
+        else ()
+return 
+    if ($error)     
+    then $error
+    else
+        element args
+        {
+            attribute doc { concat('user-', $docId) },
+            attribute s { 1 }
+        }
