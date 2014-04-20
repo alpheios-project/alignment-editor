@@ -1,0 +1,7 @@
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db" owner="admin" group="dba" mode="777" created="2012-05-15T11:55:18-04:00" version="1">
+    <subcollection name="css" filename="css"/>
+    <subcollection name="script" filename="script"/>
+    <subcollection name="xslt" filename="xslt"/>
+    <subcollection name="app" filename="app"/>
+    <subcollection name="xq" filename="xq"/>
+</collection>

@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<collection xmlns="http://exist.sourceforge.net/NS/exist" name="/db/css" owner="admin" group="dba" mode="755" created="2013-02-15T07:37:21-05:00" version="1">
+    <resource type="BinaryResource" name="alph-align-edit.css" owner="admin" group="dba" mode="755" created="2013-02-15T07:37:22-05:00" modified="2013-02-15T07:37:22-05:00" filename="alph-align-edit.css" mimetype="text/css"/>
+    <resource type="BinaryResource" name="alph-align-list.css" owner="admin" group="dba" mode="755" created="2013-02-15T07:37:22-05:00" modified="2013-02-15T07:37:22-05:00" filename="alph-align-list.css" mimetype="text/css"/>
+</collection>
