@@ -1022,16 +1022,13 @@ function Reposition()
             var wordX = 0;
             var wordY = 0;
             var maxWordY = 0;
-            if (dir == "rtl") {
-                wordX = width;
-            }
-        
+         
             // for each word
             $(".word", this).each(
             function()
             {
                 var xx = (dir == "rtl") ?
-                            (wordX -
+                            (width - wordX -
                              $(".headwd", this)[0].getComputedTextLength()) :
                             wordX;
 
@@ -1041,11 +1038,7 @@ function Reposition()
 
                 // adjust for next word
                 var size = GetWordSize(this);
-                if (dir == "rtl") {
-                    wordX = wordX - size[0];
-                } else {
-                    wordX += size[0];
-                }
+                wordX += size[0];
                 maxWordY = Math.max(maxWordY, size[1]);
             });
 
