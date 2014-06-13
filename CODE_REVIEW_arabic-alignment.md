@@ -20,9 +20,9 @@ Error creating sentence:
 
 ## alph-edit-utils.js is easy to forget
 
-Perhaps it should be moved to the same directory as the rest of thte code.
+It might be a good idea to move it to the same directory as the rest of the code.
 
-Alternatively, we could consider writing documentation to point the user to alph-edit-utils.js. Otherwise, it's easy to forget to update the script, and the editor fails. 
+Another option would be writing documentation to point the user to alph-edit-utils.js. Otherwise, it's easy to forget to update the script, and the editor fails. 
 
 ##Punctuation tokenization incomplete
 
