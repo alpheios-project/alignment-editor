@@ -18,6 +18,24 @@ Error creating sentence:
 
 	</exception>
 
+Commenting out this portion as follows allows this portion of the code to run, but removes functionality:
+	return 
+        (: if we've been sent an oac:Annotation, get the treebank data from it :)
+        if ($a_data//oac:Annotation)
+        then
+
+	(:hack to try to debut the error with get_OACAlignment :)
+			$a_data
+
+	(:   tan:get_OACAlignment($a_data)//align:aligned-text:)
+	(: else if we've been sent unwrapped alignment xml, just use it :)
+        (: name($a_data) doesn't work here if a prefix for the align namespace has been specified in the input doc :)
+        else if (local-name($a_data) = local-name($dummy) and namespace-uri($a_data) = namespace-uri($dummy))
+        then
+            $a_data
+        else ()
+
+
 ## alph-edit-utils.js is easy to forget
 
 It might be a good idea to move it to the same directory as the rest of the code.
