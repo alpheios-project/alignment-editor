@@ -48,7 +48,7 @@ Commenting out this portion as follows allows it to run, but removes functionali
         else ()
 
 
-## alph-edit-utils.js is easy to forget
+## alph-edit-utils.js is easy to forget to install
 
 It might be a good idea to move it to the same directory as the rest of the code.
 
