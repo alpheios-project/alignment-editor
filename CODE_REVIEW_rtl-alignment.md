@@ -56,8 +56,6 @@ Another option would be writing documentation to point the user to alph-edit-uti
 
 ##Punctuation tokenization incomplete
 
-
-
 Current hack @6f5d28b ignores question marks, RTL punction, etc. 
 
 	'^[^ ",.:;\-—)"]+[",.:;\-—)"]'
@@ -69,6 +67,7 @@ Current hack @6f5d28b ignores question marks, RTL punction, etc.
 
 align-editsentence.xq?doc=TEST&s=1 raises error 'Can't get SVG transform'
 
+
 ##RTL punctuation gets flipped to beginning
 
 e.g.
@@ -77,9 +76,13 @@ e.g.
 
 becomes
 
-כִּי-הִנֵּה הַסְּתָו, עָבָר; הַגֶּשֶׁם, חָלַף הָלַךְ לוֹ.
+
+כִּי-הִנֵּה הַסְּתָו, עָבָר; הַגֶּשֶׁם, חָלַף הָלַךְ לו .
+
+Although as you can see, it still tokenizes the punctuation correctly!
 
 # Anticipated UI Issues
+
 
 ##Directionality Radio Buttons
 
