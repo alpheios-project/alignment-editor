@@ -19,6 +19,7 @@ Error creating sentence:
 	</exception>
 
 Commenting out this portion as follows allows this portion of the code to run, but removes functionality:
+	
 	return 
         (: if we've been sent an oac:Annotation, get the treebank data from it :)
         if ($a_data//oac:Annotation)
