@@ -63,7 +63,7 @@ Current hack @6f5d28b ignores question marks, RTL punction, etc.
 ...but this might not cause too many problems if it's only temporary.
 
 
-##Loading sentence generates error
+##Loading sentence from file raises error
 
 align-editsentence.xq?doc=TEST&s=1 raises error 'Can't get SVG transform'
 
