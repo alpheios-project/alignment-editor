@@ -71,7 +71,13 @@ align-editsentence.xq?doc=TEST&s=1 raises error 'Can't get SVG transform'
 
 ##RTL punctuation gets flipped to beginning
 
-e.g. .CBA becomes CBA.
+e.g.
+
+.כִּי-הִנֵּה הַסְּתָו, עָבָר; הַגֶּשֶׁם, חָלַף הָלַךְ לוֹ
+
+becomes
+
+כִּי-הִנֵּה הַסְּתָו, עָבָר; הַגֶּשֶׁם, חָלַף הָלַךְ לוֹ.
 
 # Anticipated UI Issues
 
@@ -79,7 +85,45 @@ e.g. .CBA becomes CBA.
 
 It's easy to miss them, and if you don't select the directionality correctly, the old reversal problem re-occurs. This could perhaps be remedied with a reminder within the sentence entry interface. 
 
-##Interpolation
+##Single-word Interpolation
 
 Adding an LTR word in the midst of RTL script messes up the directonality in the sentence entry form, but it self-corrects upon entry into the editing UI. This could become a source of confusion. 
+
+e.g.
+
+اگر آن تريک شيرازي بدست آرد دل مارا
+
+when interpolated with a single LTR word, becomes 
+
+اگر آن تريک شيرازي (Shirazi) بدست آرد دل مارارد دل مارا
+
+...in the entry form, but reverts to
+
+تريک (Shirazi) شيرازي
+
+...in the editing environment.
+
+##Multi-word Interpolation
+
+However, adding multiple LTR words in the midst of RTL script messes up the directonality in both the sentence entry form as well as in the editing UI. There is no way to specify multiple directionalities within one passage. This should be added to the list of long-term desiderata.
+
+e.g.
+
+گر آن تريک شيرازي بدست آرد دل مارا
+
+when interpolated with multiple LTR words, becomes
+
+اگر آن تريک شيرازي(person from Shiraz) بدست آرد دل مارا
+
+...in the entry form, and
+
+
+بدست (Shiraz from person)شيرازي 
+
+...in the editing environment.
+
+
+
+
+
 
