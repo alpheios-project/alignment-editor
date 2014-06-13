@@ -83,7 +83,7 @@ becomes
 
 ##Directionality Radio Buttons
 
-It's easy to miss them, and if you don't select the directionality correctly, the old reversal problem re-occurs. This could perhaps be remedied with a reminder within the sentence entry interface. 
+It's easy to forget to select the right directionality button below your input, and if you don't select the directionality correctly, the old reversal problem re-occurs. This could perhaps be improved were there a strong reminder within the sentence entry interface. 
 
 ##Single-word Interpolation
 
