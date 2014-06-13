@@ -99,7 +99,7 @@ when interpolated with a single LTR word, becomes
 
 ...in the entry form, but reverts to
 
-تريک (Shirazi) شيرازي
+بدست (Shirazi) شيرازي
 
 ...in the editing environment.
 
