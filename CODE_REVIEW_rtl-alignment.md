@@ -91,11 +91,11 @@ Adding an LTR word in the midst of RTL script messes up the directonality in the
 
 e.g.
 
-اگر آن تريک شيرازي بدست آرد دل مارا
+آن تريک شيرازي بدست آرد دل ماراآرد دل مارا
 
 when interpolated with a single LTR word, becomes 
 
-اگر آن تريک شيرازي (Shirazi) بدست آرد دل مارارد دل مارا
+آن تريک شيرازي(Shirazi) بدست آرد دل مارا مارارد دل مارا
 
 ...in the entry form, but reverts to
 
@@ -109,14 +109,13 @@ However, adding multiple LTR words in the midst of RTL script messes up the dire
 
 e.g.
 
-گر آن تريک شيرازي بدست آرد دل مارا
+آن تريک شيرازي بدست آرد دل مارارد دل مارا
 
 when interpolated with multiple LTR words, becomes
 
-اگر آن تريک شيرازي(person from Shiraz) بدست آرد دل مارا
+آن تريک شيرازي(person from Shiraz) بدست آرد دل مارا
 
 ...in the entry form, and
-
 
 بدست (Shiraz from person)شيرازي 
 
