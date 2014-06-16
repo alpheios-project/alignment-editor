@@ -96,7 +96,13 @@ Although as you can see, it still tokenizes the punctuation correctly!
 
 ### BMA response 2014-06-16
 
-This this may be solved by adding the dir attribute on the wrapping g element for the sentence. Will try that.
+This this may be solved by adding the dir attribute on the wrapping g element for the sentence. Will try that. 
+Actually, dir attribute was already there -- this is a problem with the textarea on the input form not having the direction set properly 
+(it tries to do the right thing based on the character set but most punctuation is not rtl by default).  I have tried to address
+this now by:
+
+1. adding a click handler on the text direction radio buttons which sets the dir attribute of the corresponding textarea on the input form
+2. moving the text direction radio buttons to just above the text input to try to guide the user to set them first before entering text, because if text is entered before the direction on the textarea is set it doesn't seem to do the right thing.
 
 # Anticipated UI Issues
 
@@ -107,7 +113,7 @@ It's easy to forget to select the right directionality button below your input, 
 
 ### BMA response 2014-06-16
 
-We really should try to autodetect this. I will enter a separate issue for it.
+We really should try to autodetect this. I will enter a separate issue for it.  But see also above changes.
 
 ##Single-word Interpolation
 
