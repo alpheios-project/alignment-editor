@@ -45,7 +45,6 @@ import module namespace tan  = "http://alpheios.net/namespaces/text-analysis"
 import module namespace aled="http://alpheios.net/namespaces/align-edit"
               at "align-editsentence.xquery";    
 declare namespace align = "http://alpheios.net/namespaces/aligned-text";
-declare namespace oac="http://www.openannotation.org/ns/";
 
 declare option exist:serialize
         "method=xml";
@@ -67,7 +66,7 @@ declare function local:createWords(
         replace($a_sent, '^([^ ",.:;\-—)"]+)([",.:;\-—)"])', concat('$1',' ', '$2'))
       else if (matches($a_sent, '^[",.:;\-—)"][^ ]+'))
       then
-        replace($a_sent, '^([",.:;\-—)"])([^ ]+)', concat('$1',' ', '$2'))
+        replace($a_sent, '^([",.:;\-—)\?"])([^ ]+)', concat('$1',' ', '$2'))
       else
         $a_sent
     let $word :=
@@ -90,13 +89,7 @@ declare function local:createWords(
 declare function local:getSentence($a_data as node()) as element()* {
     let $dummy := element {QName("http://alpheios.net/namespaces/aligned-text","aligned-text")} {}
     return 
-        (: if we've been sent an oac:Annotation, get the treebank data from it :)
-        if ($a_data//oac:Annotation)
-        then
-            tan:get_OACAlignment($a_data)//align:aligned-text
-        (: else if we've been sent unwrapped alignment xml, just use it :)
-        (: name($a_data) doesn't work here if a prefix for the align namespace has been specified in the input doc :)
-        else if (local-name($a_data) = local-name($dummy) and namespace-uri($a_data) = namespace-uri($dummy))
+        if (local-name($a_data) = local-name($dummy) and namespace-uri($a_data) = namespace-uri($dummy))
         then
             $a_data
         else ()

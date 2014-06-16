@@ -23,6 +23,12 @@
     <script language="javascript" type="text/javascript" src="../script/jquery-1.2.6-alph.js"/>
     <script language="javascript" type="text/javascript" src="../script/alph-align-entersentence.js"/>
     <meta name="url" content="../xq/align-addsentence.xq"/>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("input[name='l1-direction']").click(SetTextDir);
+        $("input[name='l2-direction']").click(SetTextDir);
+      });
+    </script>
   </head>
   <body>
     <div class="alpheios-ignore">
@@ -36,6 +42,13 @@
         <input type="hidden" name="l2"/>
         <fieldset>
           <legend>Enter Text in Language 1:</legend>
+          <div id="l1-dir-buttons">
+            <label>Text Direction:</label>
+            <input type="radio" id="l1-dir-ltr" name="l1-direction" value="ltr" checked="checked"/>
+            <label for="l1-dir-ltr">Left to Right</label>
+              <input type="radio" id="l1-dir-rtl" name="l1-direction" value="rtl"/>
+            <label for="l1-dir-rtl">Right to Left</label>
+          </div>
           <textarea name="l1text" rows="10" cols="80"
             ></textarea>
           <div style="text-align:right;">
@@ -175,16 +188,16 @@
           <label for="other_l1">Or Other Language*:</label>
           <input type="text" id="other_l1" name="other_l1" size="3" style="width:3em;"/>
           </div>
-          <div id="l1-dir-buttons">
-            <label>Text Direction:</label>
-            <input type="radio" id="l1-dir-ltr" name="l1-direction" value="ltr" checked="checked"/>
-            <label for="l1-dir-ltr">Left to Right</label>
-            <input type="radio" id="l1-dir-rtl" name="l1-direction" value="rtl"/>
-          <label for="l1-dir-rtl">Right to Left</label>
-          </div>
         </fieldset>
         <fieldset>
           <legend>Enter Text in Language 2:</legend>
+          <div id="l2-dir-buttons">
+            <label>Text Direction:</label>
+            <input type="radio" id="l2-dir-ltr" name="l2-direction" value="ltr" checked="checked"/>
+            <label for="l2-dir-ltr">Left to Right</label>
+            <input type="radio" id="l2-dir-rtl" name="l2-direction" value="rtl"/>
+            <label for="l2-dir-rtl">Right to Left</label>
+          </div>
           <textarea name="l2text" rows="10" cols="80"
             ></textarea>
           <div style="text-align:right;">
@@ -323,13 +336,6 @@
           <br/>
           <label for="other_l2">Or Other Language*:</label>
           <input type="text" id="other_l2" name="other_l2" size="3" style="width:3em;"/>
-          </div>
-          <div id="l2-dir-buttons">
-            <label>Text Direction:</label>
-            <input type="radio" id="l2-dir-ltr" name="l2-direction" value="ltr" checked="checked"/>
-            <label for="l2-dir-ltr">Left to Right</label>
-            <input type="radio" id="l2-dir-rtl" name="l2-direction" value="rtl"/>
-            <label for="l2-dir-rtl">Right to Left</label>
           </div>
         </fieldset>
         <div style="font-size: smaller;">*Please use ISO 639-2 or ISO 639-3 three-letter codes for any other languages</div>
