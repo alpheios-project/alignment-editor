@@ -199,6 +199,7 @@ declare function alut:svg-to-xml(
     {
       (: copy any comments :)
       $a_sent/desc/*,
+      attribute n { string($a_sent/@alph-s) },
   
       for $lang in ("L1", "L2")
   (: following has problems in eXist 1.2.5: :)

@@ -33,7 +33,7 @@ let $docStem := request:get-parameter("doc", ())
 let $collName := "/db/repository/alignment/"
 let $docName := concat($collName, $docStem, ".xml")
 let $allowSave := xs:boolean(request:get-parameter("ed",false()))
-let $editBase := concat("./align-editsentence.xq",
+let $editBase := concat("./align-editsentence.xhtml",
                         "?doc=",
                         encode-for-uri($docStem),
                         "&amp;s=")

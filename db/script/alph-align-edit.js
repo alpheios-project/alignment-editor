@@ -293,7 +293,13 @@ function InitNewSentence(a_load)
     headwds.each(
     function()
     {
-        this.setAttribute("x", s_fontSize / 2);
+        var len = this.getComputedTextLength() + s_fontSize;
+        var dir = GetTextDirection(this);
+        if (dir == "rtl") {
+            this.setAttribute("x", len - (s_fontSize /2)); 
+        } else {
+            this.setAttribute("x", s_fontSize /2);
+        }
         this.setAttribute("y", s_fontSize);
     });
 
@@ -304,12 +310,17 @@ function InitNewSentence(a_load)
     {
         var text = GetHeadWord(this.parentNode);
         var len = text.getComputedTextLength() + s_fontSize;
+        var dir = GetTextDirection(text);
         this.setAttribute("width", len);
         this.setAttribute("height", 5 * s_fontSize / 4);
         if (this.parentNode.hasAttributeNS(s_xlinkns, "title"))
         {
             AlphEdit.addClass(this, "marked");
-            this.setAttribute("rx", s_fontSize / 2);
+            if (dir == "rtl") {
+                this.setAttribute("rx", len - (s_fontSize / 2)); 
+            } else {
+                this.setAttribute("rx", s_fontSize / 2);
+            }
             this.setAttribute("ry", s_fontSize / 2);
         }
     });
@@ -323,12 +334,19 @@ function InitNewSentence(a_load)
         GetAlignedWords(this).each(
         function()
         {
+            var len = this.getComputedTextLength();
+            var dir = GetTextDirection(this);
+
             y += s_interlinearFontSize;
-            this.setAttribute("x", s_fontSize / 2);
+            if (dir == "rtl") {
+                this.setAttribute("x", len - (s_fontSize /2));
+            } else {
+                this.setAttribute("x", s_fontSize /2);
+            }
             this.setAttribute("y", y);
 
             // save length so we can get it even when word is not in tree
-            var len = this.getComputedTextLength();
+           
             this.setAttribute("len", len);
         });
     });
@@ -1004,14 +1022,13 @@ function Reposition()
             var wordX = 0;
             var wordY = 0;
             var maxWordY = 0;
-        
+         
             // for each word
             $(".word", this).each(
             function()
             {
                 var xx = (dir == "rtl") ?
-                            (width -
-                             wordX -
+                            (width - wordX -
                              $(".headwd", this)[0].getComputedTextLength()) :
                             wordX;
 
@@ -1295,7 +1312,7 @@ function ExportContents()
 {
     var svg = document.getElementsByTagNameNS(s_svgns, "svg")[0];
     var input = $("#sentenceForExport");
-    input.val(XMLSerializer().serializeToString(svg));
+    input.val(new XMLSerializer().serializeToString(svg));
     $("#exportform input[name='doc']").val(s_param['doc']);
     $("#exportform").submit();
 }
@@ -1305,7 +1322,7 @@ function ExportDisplay()
 {
     var svg = document.getElementsByTagNameNS(s_svgns, "svg")[0];
     var input = $("#sentenceForDisplay");
-    var output = XMLSerializer().serializeToString(svg);
+    var output = new XMLSerializer().serializeToString(svg);
     input.val(output);
     $("#exportdisplayform input[name='doc']").val(s_param['doc']);
     $("#exportdisplayform").submit();
@@ -1327,6 +1344,8 @@ function ToggleMark(a_word, a_comment)
 {
     // turn corners on/off on rectangle
     var rect = GetHeadRect(a_word);
+    var dir = s_param[$(this).attr("lnum") + ":direction"];
+
     if (!HasMark(a_word))
     {
         // save comment
@@ -1335,7 +1354,13 @@ function ToggleMark(a_word, a_comment)
                               (a_comment ? a_comment : ""));
 
         AlphEdit.addClass(rect, "marked");
-        rect.setAttribute("rx", s_fontSize / 2);
+        var text = GetHeadWord(a_word);
+        var len = text.getComputedTextLength() + s_fontSize;
+        if (dir == "rtl") {
+            rect.setAttribute("rx", len - (s_fontSize / 2)); 
+        } else {
+            rect.setAttribute("rx", s_fontSize / 2);
+        }
         rect.setAttribute("ry", s_fontSize / 2);
     }
     else
@@ -1424,3 +1449,8 @@ function AdjustButtons()
                               ".png");
     }
 };
+
+// get the text direction of a word
+function GetTextDirection(a_word) {
+    return $(a_word).parents(".sentence").attr("direction");
+}

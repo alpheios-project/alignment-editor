@@ -45,7 +45,6 @@ import module namespace tan  = "http://alpheios.net/namespaces/text-analysis"
 import module namespace aled="http://alpheios.net/namespaces/align-edit"
               at "align-editsentence.xquery";    
 declare namespace align = "http://alpheios.net/namespaces/aligned-text";
-declare namespace oac="http://www.openannotation.org/ns/";
 
 declare option exist:serialize
         "method=xml";
@@ -55,12 +54,27 @@ declare function local:createWords(
 {
   if (string-length($a_sent) eq 0) then ()
   else
-    let $word :=
-      if (contains($a_sent, ' '))
+    (: this is a ridiculous hack to try to pull punctuation out of the word 
+       it should be handled better via a tokenization service when we switch to that
+       so this is just a shortterm workarouund -- it checks for punctuation not surrounded
+       by spaces and adds spaces to it, since the tokenization algorithm is very simple here 
+       and only tokenizes on space 
+    :)
+    let $sentfix :=
+      if (matches($a_sent, '^[^ ",.:;\-—)"]+[",.:;\-—)"]')) 
+      then 
+        replace($a_sent, '^([^ ",.:;\-—)"]+)([",.:;\-—)"])', concat('$1',' ', '$2'))
+      else if (matches($a_sent, '^[",.:;\-—)"][^ ]+'))
       then
-        substring-before($a_sent, ' ')
+        replace($a_sent, '^([",.:;\-—)\?"])([^ ]+)', concat('$1',' ', '$2'))
       else
         $a_sent
+    let $word :=
+        if (contains($sentfix, ' '))
+        then
+            substring-before($sentfix, ' ')
+        else
+        $sentfix
     return
     (
       <w xmlns="http://alpheios.net/namespaces/aligned-text">
@@ -68,20 +82,14 @@ declare function local:createWords(
         attribute n { concat($a_s,'-',$a_i) },
         <text>{$word}</text>
       }</w>,
-      local:createWords(substring-after($a_sent, ' '), $a_s, $a_i + 1)
+      local:createWords(substring-after($sentfix, ' '), $a_s, $a_i + 1)
     )
 };
 
 declare function local:getSentence($a_data as node()) as element()* {
     let $dummy := element {QName("http://alpheios.net/namespaces/aligned-text","aligned-text")} {}
     return 
-        (: if we've been sent an oac:Annotation, get the treebank data from it :)
-        if ($a_data//oac:Annotation)
-        then
-            tan:get_OACAlignment($a_data)//align:aligned-text
-        (: else if we've been sent unwrapped alignment xml, just use it :)
-        (: name($a_data) doesn't work here if a prefix for the align namespace has been specified in the input doc :)
-        else if (local-name($a_data) = local-name($dummy) and namespace-uri($a_data) = namespace-uri($dummy))
+        if (local-name($a_data) = local-name($dummy) and namespace-uri($a_data) = namespace-uri($dummy))
         then
             $a_data
         else ()
