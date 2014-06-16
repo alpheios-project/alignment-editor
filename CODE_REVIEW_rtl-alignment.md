@@ -47,12 +47,19 @@ Commenting out this portion as follows allows it to run, but removes functionali
             $a_data
         else ()
 
+### BMA response 2014-06-16
+
+I completely forgot about this dependency because I always have the textanalysis-utils.xquery in my eXist repo. It can be found in the old Alpheios sourceforge repo at https://svn.code.sf.net/p/alpheios/code/xml_ctl_files/xquery/trunk/textanalysis-utils.xquery. I do want to support upload of an OA annotation but I would do it differently than previously coded here (especially since that uses an obsolete version of the OA specification). I think for now I will just remove this functionality and add an issue to add it back in at some point.
 
 ## alph-edit-utils.js is easy to forget to install
 
 It might be a good idea to move it to the same directory as the rest of the code.
 
 Another option would be writing documentation to point the user to alph-edit-utils.js. Otherwise, it's easy to forget to update the script, and the editor fails. 
+
+### BMA response 2014-06-16
+
+Agreed. We should handle this differently. For now I will add installation instructions to the README and include this step as @LFDM did for treebank editor at https://github.com/alpheios-project/treebank-editor/commit/837d32438f7b8be8aee4ae1493958ff17d02ced4
 
 ##Punctuation tokenization incomplete
 
@@ -62,11 +69,17 @@ Current hack @6f5d28b ignores question marks, RTL punction, etc.
 
 ...but this might not cause too many problems if it's only temporary.
 
+### BMA response 2014-06-16
+
+Absolutely not a long term solution. I will add at least the ? for now though.
 
 ##Loading sentence from file raises error
 
 align-editsentence.xq?doc=TEST&s=1 raises error 'Can't get SVG transform'
 
+### BMA response 2014-06-16
+
+align-editsentence.xq has now been completely superceded by align-editsentence.xhtml.  i.e. align-editsentence.xhtml?doc=TEST&s=1 should work. I will delete the xq file.
 
 ##RTL punctuation gets flipped to beginning
 
@@ -81,12 +94,20 @@ becomes
 
 Although as you can see, it still tokenizes the punctuation correctly!
 
+### BMA response 2014-06-16
+
+This this may be solved by adding the dir attribute on the wrapping g element for the sentence. Will try that.
+
 # Anticipated UI Issues
 
 
 ##Directionality Radio Buttons
 
 It's easy to forget to select the right directionality button below your input, and if you don't select the directionality correctly, the old reversal problem re-occurs. This could perhaps be improved were there a strong reminder within the sentence entry interface. 
+
+### BMA response 2014-06-16
+
+We really should try to autodetect this. I will enter a separate issue for it.
 
 ##Single-word Interpolation
 
@@ -106,6 +127,11 @@ when interpolated with a single LTR word, becomes
 
 ...in the editing environment.
 
+### BMA response 2014-06-16
+
+I will enter a separate issue for this.
+
+
 ##Multi-word Interpolation
 
 However, adding multiple LTR words in the midst of RTL script messes up the directonality in both the sentence entry form as well as in the editing UI. There is no way to specify multiple directionalities within one passage. This should be added to the list of long-term desiderata.
@@ -124,6 +150,9 @@ when interpolated with multiple LTR words, becomes
 
 ...in the editing environment.
 
+### BMA response 2014-06-16
+
+I will enter a separate issue for it.
 
 
 
