@@ -36,7 +36,7 @@ Commenting out this portion as follows allows it to run, but removes functionali
         if ($a_data//oac:Annotation)
         then
 
-	(:hack to try to debut the error with get_OACAlignment :)
+	(:hack to try to debug the error with get_OACAlignment :)
 			$a_data
 
 	(:   tan:get_OACAlignment($a_data)//align:aligned-text:)
@@ -63,7 +63,7 @@ Agreed. We should handle this differently. For now I will add installation instr
 
 ##Punctuation tokenization incomplete
 
-Current hack @6f5d28b ignores question marks, RTL punction, etc. 
+Current hack @6f5d28b ignores question marks, RTL punctuation, etc. 
 
 	'^[^ ",.:;\-—)"]+[",.:;\-—)"]'
 
