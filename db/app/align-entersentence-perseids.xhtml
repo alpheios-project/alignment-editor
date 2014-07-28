@@ -30,10 +30,10 @@
     <meta name="alpheios-sessionHeaderName" content="X-CSRF-Token"/>
     
     <!-- url to ping the server to set/refresh the CSRF cookie -->
-    <meta name="pingurl" content="http://localhost/dmm_api/ping"/>
+    <meta name="pingurl" content="http://sosol.perseids.org/sosol/dmm_api/ping"/>
     
     <!-- url to POST to to create store a new treebank template -->
-    <meta name="url" content="http://localhost/dmm_api/create/item/AlignmentCite/DOC_REPLACE"/>
+    <meta name="url" content="http://sosol.perseids.org/sosol/dmm_api/create/item/AlignmentCite/DOC_REPLACE"/>
     
     <script type="text/javascript">
       $(document).ready(function() {
@@ -360,7 +360,7 @@
           <input placeholder="Enter a title for your annotation" type="text" id="docname" name="docname"></input>
         </div>
       </form> 
-      <form name="submit-form" action="align-editsentence-perseids-test.xhtml"
+      <form name="submit-form" action="align-editsentence-perseids.xhtml"
         onsubmit="EnterSentence(event)">
         <input type="hidden" name="doc"/>
         <input type="hidden" name="s"/>

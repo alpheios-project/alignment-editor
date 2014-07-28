@@ -25,8 +25,8 @@ var s_params = {};
 $(document).ready(function() {
 
     // try to load text from the supplied uri
-    $("input[name='l1_uri']").change(function() { load_text('l1'); });
-    $("input[name='l2_uri']").change(function() { load_text('l2'); });
+    $("input[name='l1uri']").change(function() { load_text('l1'); });
+    $("input[name='l2uri']").change(function() { load_text('l2'); });
 
     // get parameters from call
     var callParams = location.search.substr(1).split("&");
@@ -37,12 +37,12 @@ $(document).ready(function() {
             s_params[pair[0]] = pair[1];
         }
         // right now the only parameter we support in the query string to the form is the l1 and l2 uri
-        if (s_params['l1_uri']) {
-            $("input[name='l1_uri']").val(decodeURIComponent(s_params['l1_uri']));
+        if (s_params['l1uri']) {
+            $("input[name='l1uri']").val(decodeURIComponent(s_params['l1uri']));
             load_text('l1');
         }
-        if (s_params['l2_uri']) {
-            $("input[name='l2_uri']").val(decodeURIComponent(s_params['l2_uri']));
+        if (s_params['l2uri']) {
+            $("input[name='l2uri']").val(decodeURIComponent(s_params['l2uri']));
             load_text('l2');
         }
     }
@@ -52,8 +52,12 @@ $(document).ready(function() {
  * Handler for the text_uri input to try to load the text
  */
 function load_text(lnum) {
-    $("textarea[name='l1text']").attr("placeholder","loading...");
-    var uri = $("input[name='" + lnum + "_uri']").val();
+    var uri = $("input[name='" + lnum + "uri']").val();
+    if (! uri.match(/^http/)) {
+       /** allow non-url identifiers to just pass through **/
+        return;
+    }
+    $("textarea[name='" + lnum + "text']").attr("placeholder","loading...");
     if (uri.match(/^http/)) {
         $.ajax({
             url: uri,
