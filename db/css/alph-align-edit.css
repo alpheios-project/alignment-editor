@@ -160,3 +160,8 @@ g rect.selected {
 #alpheios-put-notice.error {
     color:red;
 }
+
+#align-enter-title {
+    text-align: right;
+
+}
