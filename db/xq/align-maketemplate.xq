@@ -87,9 +87,9 @@ declare function local:createSentence(
   $a_docid as xs:string) as element()*
 {
     let $l1comment := 
-        if ($a_l1uri) then <comment xmlns="http://alpheios.net/namespaces/aligned-text" class="urn">{$a_l1uri}</comment> else ()
+        if ($a_l1uri) then <comment xmlns="http://alpheios.net/namespaces/aligned-text" class="uri">{$a_l1uri}</comment> else ()
     let $l2comment := 
-        if ($a_l2uri) then <comment xmlns="http://alpheios.net/namespaces/aligned-text" class="urn">{$a_l2uri}</comment> else ()
+        if ($a_l2uri) then <comment xmlns="http://alpheios.net/namespaces/aligned-text" class="uri">{$a_l2uri}</comment> else ()
     return
 	<aligned-text xmlns="http://alpheios.net/namespaces/aligned-text">
         <language lnum="L1" xml:lang="{$a_l1}" dir="{$a_l1dir}"/>

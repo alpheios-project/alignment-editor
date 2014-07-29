@@ -233,7 +233,7 @@
         <xsl:attribute name="document_id"><xsl:value-of select="$sentence/@document_id"/></xsl:attribute>
         <xsl:attribute name="direction"><xsl:value-of select="$direction"/></xsl:attribute>
         <xsl:attribute name="xml:lang"><xsl:value-of select="$sentence/../align:language[@lnum=$lang]/@xml:lang"/></xsl:attribute>
-        <xsl:attribute name="xlink:title"><xsl:value-of select="exsl:node-set($wordSet)/align:comment[@class='uri']"/></xsl:attribute>
+        <xsl:attribute name="title" namespace="http://www.w3.org/1999/xlink"><xsl:value-of select="exsl:node-set($wordSet)/align:comment[@class='uri']"/></xsl:attribute>
         <xsl:if test="exsl:node-set($wordSet)/align:comment">
           <desc xmlns="http://alpheios.net/namespaces/aligned-text">
             <xsl:copy-of select="exsl:node-set($wordSet)/align:comment"/>
@@ -274,10 +274,10 @@
               </xsl:attribute>
             </xsl:if>
             <xsl:if test="align:mark">
-              <xsl:attribute name="xlink:title"><xsl:value-of select="align:mark/text()"/></xsl:attribute>
+              <xsl:attribute name="title" namespace="http://www.w3.org/1999/xlink"><xsl:value-of select="align:mark/text()"/></xsl:attribute>
             </xsl:if>
             <xsl:if test="align:comment[@class='mark']">
-              <xsl:attribute name="xlink:title"><xsl:value-of select="align:comment[@class = 'mark']/text()"/></xsl:attribute>
+              <xsl:attribute name="title" namespace="http://www.w3.org/1999/xlink"><xsl:value-of select="align:comment[@class = 'mark']/text()"/></xsl:attribute>
             </xsl:if>
             <!-- preserve any word-level comments that aren't marks -->
             <xsl:if test="align:comment[@class != 'mark']">
