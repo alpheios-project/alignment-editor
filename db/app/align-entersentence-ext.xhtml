@@ -52,6 +52,12 @@
       <form name="input-form" action="">
         <input type="hidden" name="l1"/>
         <input type="hidden" name="l2"/>
+        <fieldset id="align-enter-title">
+          <legend>Enter Metadata:</legend>
+          <label for="docname">Alignment title:</label>
+          <input placeholder="Enter a short title for your annotation" type="text" id="docname" name="docname" pattern="[\w \d-_\.]+" maxlength="100" size="100"></input>
+          <p class="hint">e.g. "Alignment of Thuc. 1.1 in French and English"<br/>(100 chars max restricted to alphanumerics and '.','_' and '-').</p>
+        </fieldset>
         <fieldset>
           <legend>Enter Text in Language 1:</legend>
           <div id="l1-dir-buttons">
@@ -63,8 +69,10 @@
           </div>
           <textarea name="l1text" rows="10" cols="80"
             ></textarea>
-          <label for="l1uri">Text URI</label>
-          <input placeholder="URI Identifer for this text. If a URL, text will be loaded from there. Plain text only supported." type="text" id="l1uri" name="l1uri" size="100"></input>
+          <div>
+            <label for="l1uri">Text URI</label>
+            <input placeholder="URI Identifer for this text. If a URL, text will be loaded from there. Plain text only supported." type="url" id="l1uri" name="l1uri" size="100"></input>
+          </div>
           <div style="text-align:right;">
           <label for="select_l1">Language 1:</label>
           <select name="select_l1" id="select_l1">
@@ -214,8 +222,10 @@
           </div>
           <textarea name="l2text" rows="10" cols="80"
             ></textarea>
-          <label for="l2uri">Text URI</label>
-          <input placeholder="URI Identifer for this text. If a URL, text will be loaded from there. Plain text only supported." type="text" id="l2uri" name="l2uri" size="100"></input>
+          <div>
+            <label for="l2uri">Text URI</label>
+            <input placeholder="URI Identifer for this text. If a URL, text will be loaded from there. Plain text only supported." type="url" id="l2uri" name="l2uri" size="100"></input>
+          </div>
           <div style="text-align:right;">
           <label for="select_l2">Language 2:</label>
           <select name="select_l2" id="select_l2">
@@ -355,10 +365,6 @@
           </div>
         </fieldset>
         <div style="font-size: smaller;">*Please use ISO 639-2 or ISO 639-3 three-letter codes for any other languages</div>
-        <div id="align-enter-title">
-          <label for="docname">Alignment Title:</label>
-          <input placeholder="Enter a title for your annotation" type="text" id="docname" name="docname"></input>
-        </div>
       </form> 
       <form name="submit-form" action="align-editsentence-perseids-test.xhtml"
         onsubmit="EnterSentence(event)">
