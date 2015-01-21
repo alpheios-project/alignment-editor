@@ -22,7 +22,7 @@ function EnterSentence() {
     var url = $("meta[name='url']", document).attr("content");
     var l1dir = $("#l1-dir-buttons input:checked",form).val();
     var l2dir = $("#l2-dir-buttons input:checked",form).val();
-
+    
     var data = "<data>" + 
         "<l1text>" + $('textarea[name="l1text"]',form).val() + '</l1text><l2text>' + $('textarea[name="l2text"]',form).val() + '</l2text>' +
         '<language lnum="L1" xml:lang="' + $('input[name="l1"]').val() + '" dir="' + l1dir + '"/>' +
@@ -49,3 +49,14 @@ function EnterSentence() {
     $("input[name='s']", form).attr("value", root.attr("s"));
     return true;
 }
+
+/**
+ * Click handler responds to a selection of the text direction input item
+ * to set the text direction of the corresponding text entry box
+ */
+function SetTextDir() {
+   var l = $(this).attr('name').substr(1,1);
+   var dir = $(this).val();
+   $("textarea[name='l" + l + "text']").attr("dir",dir);
+}
+   

@@ -160,3 +160,9 @@ g rect.selected {
 #alpheios-put-notice.error {
     color:red;
 }
+
+.hint {
+    font-style: italic;
+    font-size: smaller;
+
+}

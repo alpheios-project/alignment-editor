@@ -1,0 +1,199 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Alpheios:Edit Aligned Sentence</title>
+        <meta name="alpheios-editTransformURL" content="../xslt/align-svg-edit.xsl"/>
+       <!-- Parameters controlling behavior of the editor
+         All names are prefixed in the <meta> tags with "alpheios-param-".
+         All can be overridden by parameters supplied at invocation time to
+         the url, using the names below without the "alpheios-param-" prefix.
+            app: [editor|viewer]
+              Whether we're editing or just viewing the alignment.
+              If set to "viewer", other parameters controlling editing
+              behavior will be ignored.
+            numSentences: integer > 0
+              Number of sentences in the document.  Only needed if sentence
+              navigation is enabled (sentenceNavigation = "yes").
+            L1:lang:
+              L1 Language of the sentence.
+            L1:direction: [ltr|rtl]
+              L1 Direction of text flow.
+            L2:lang:
+              L1 Language of the sentence.
+            L2:direction: [ltr|rtl]
+              L2 Direction of text flow.
+            sentenceNavigation: [yes|no]
+              If "yes", include controls to allow navigation between sentences
+              within the editor.  For this to work, the sentence ids must be
+              integers running from 1 to maxSentId, where maxSentId is obtained
+              either from invoking the alpheios-getInfoURL or from the
+              numSentences parameter.
+        -->
+        <meta name="alpheios-param-app" content="editor"/>
+        <meta name="alpheios-param-numSentences" content="1"/>
+        <meta name="alpheios-param-L1:lang" content=""/>
+        <meta name="alpheios-param-L2:lang" content=""/>
+        <meta name="alpheios-param-L1:direction" content="ltr"/>
+        <meta name="alpheios-param-L2:direction" content="ltr"/>
+        <meta name="alpheios-param-sentenceNavigation" content="yes"/>
+
+        <!-- alpheios metadata -->
+        <meta name="alpheios-pedagogical-text" content="true"/>
+        <meta name="alpheios-treebank-diagram-url" content=""/>
+        <meta name="alpheios-treebank-url" content=""/>
+        
+        <!-- a session cookie and HTTP header name can be supplied for session sharing with a server on the same domain
+         the content of the alpheios-sessionTokenName attribute should be the name of the cookie set by the server
+         the content of the alpheios-sessionHeaderName attribute should be the name of the HTTP header to send the token back to the server in -->
+        <meta name="alpheios-sessionTokenName" content="csrftoken"/>
+        <meta name="alpheios-sessionHeaderName" content="X-CSRF-Token"/>
+        
+        <!-- URLs to get and put a single sentence in alignment XML -->
+        <!-- The urls should contain the following placeholders which will be filled by 
+         the application:
+         DOC_REPLACE : gets replaced with the document identifier
+         S_REPLACE : gets replaced with the sentence identifier
+        -->
+        <meta name="alpheios-getSentenceURL" content="http://sosol.perseids.org/sosol/dmm_api/item/AlignmentCite/DOC_REPLACE/partial?q=s%3DS_REPLACE"/>
+        <meta name="alpheios-putSentenceURL" content="http://sosol.perseids.org/sosol/dmm_api/item/AlignmentCite/DOC_REPLACE/partial?q=s%3DS_REPLACE"/>
+        
+        <!-- URL to call when exiting and label to use on exit button -->
+        <!-- The url should contain the following placeholders which will be filled by 
+         the application:
+         DOC_REPLACE : gets replaced with the document identifier
+        -->
+        <meta name="alpheios-exitURL" content="http://sosol.perseids.org/sosol/dmm_api/item/AlignmentCite/DOC_REPLACE/return/edit"/>
+        <meta name="alpheios-exitLabel" content="Sentence&#160;list"/>
+        <link rel="stylesheet" type="text/css" href="../css/alph-align-edit.css"/>
+        <script type="text/javascript" src="../script/jquery-1.2.6-alph.js"/>
+        <script type="text/javascript" src="../script/alph-align-edit.js"/>
+        <script type="text/javascript" src="../script/alph-edit-utils.js"/>
+    </head>
+    <body onkeypress="Keypress(event)" onload="Init(event,true)" style="display:none">
+        <div id="align-title">
+            <span class="alpheios-document-id"/>
+        </div>
+        <div class="alpheios-ignore">
+            <div id="alph-page-header">
+                <img src="../image/alpheios.png" alt="Alpheios Logo"/>
+            </div>
+        </div>
+        <table style="border:none; padding:0; width:100%">
+            <tr>
+                <td>
+                    <div class="controls alpheios-ignore" id="edit-controls">
+                        <table style="border:none; padding:0">
+                            <tr>
+                                <td>
+                                    <div id="sent-navigation">
+                                        <table style="border:1px solid black; padding:0">
+                                            <tr>
+                                                <td>
+                                                    <button id="first-button" onclick="ClickOnGoTo(event)">&#160;</button>
+                                                </td>
+                                                <td>
+                                                    <button id="prev-button" onclick="ClickOnGoTo(event)">&#160;</button>
+                                                </td>
+                                                <td>
+                                                    <label id="current-label">&#160;</label>
+                                                </td>
+                                                <td>
+                                                    <button id="next-button" onclick="ClickOnGoTo(event)">&#160;</button>
+                                                </td>
+                                                <td>
+                                                    <button id="last-button" onclick="ClickOnGoTo(event)">&#160;</button>
+                                                </td>
+                                                <td>
+                                                    <form onsubmit="return SubmitGoTo(this)" name="sent-navigation-goto">
+                                                        <label>&#160;&#160;Go&#160;to&#160;sentence&#160;number</label>
+                                                        <input type="text" name="s" size="5"/>
+                                                    </form>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
+                                <td>
+                                    <form onsubmit="return SubmitExit(this)" name="sent-navigation-exit">
+                                        <input type="hidden" name="doc"/>
+                                        <input type="hidden" name="s"/>
+                                        <button type="submit">Exit</button>
+                                    </form>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!-- TODO hide if not allow save -->
+                    <button id="save-button" onclick="ClickOnSave(event)">Save sentence</button>
+                    <button id="undo-button" onclick="ClickOnUndo(event)">&lt; Undo</button>
+                    <button id="redo-button" disabled="yes" onclick="ClickOnRedo(event)">Redo &gt;</button>
+                    <form method="post" action="../xq/align-export.xq" id="exportform">
+                        <button id="export-xml-button" onclick="ClickOnExport(event)">Export XML</button>
+                        <input type="hidden" name="doc" value=""/>
+                        <input type="hidden" name="sentenceForExport" id="sentenceForExport"/>
+                    </form>
+                    <form method="post" action="../xq/align-display.xq" id="exportdisplayform">
+                        <button id="export-display-button" onclick="return ClickOnExportDisplay(event);">Export Display</button>
+                        <input type="hidden" name="doc" value=""/>
+                        <input type="hidden" name="sentenceForDisplay" id="sentenceForDisplay"/>
+                    </form>
+                    <form>
+                        <label for="interlinear-checkbox">Show interlinear text</label>
+                        <input id="interlinear-checkbox" type="checkbox" onclick="ToggleInterlinearDisplay(event)"/>
+                    </form>
+                </td>
+            </tr>
+        </table>
+        <div class="summary alpheios-ignore">
+            <table>
+                <tr>
+              <!-- TODO javascript L1 -->
+                    <th>L1</th>
+                    <td>
+                        <span class="heading">&#160;&#160;&lt;</span>
+                        <span id="L1:S0">0</span>
+                    </td>
+                    <td>
+                        <span class="heading">&#160;&#160;=</span>
+                        <span id="L1:S1">0</span>
+                    </td>
+                    <td>
+                        <span class="heading">&#160;&#160;&gt;</span>
+                        <span id="L1:S2">0</span>
+                    </td>
+                    <td>
+                        <span class="heading">&#160;&#160;Ø</span>
+                        <span id="L1:S3">0</span>
+                    </td>
+                </tr>
+                <tr>
+              <!-- TODO javascript L2 -->
+                    <th>L2</th>
+                    <td>
+                        <span class="heading">&#160;&#160;&lt;</span>
+                        <span id="L2:S0">0</span>
+                    </td>
+                    <td>
+                        <span class="heading">&#160;&#160;=</span>
+                        <span id="L2:S1">0</span>
+                    </td>
+                    <td>
+                        <span class="heading">&#160;&#160;&gt;</span>
+                        <span id="L2:S2">0</span>
+                    </td>
+                    <td>
+                        <span class="heading">&#160;&#160;Ø</span>
+                        <span id="L2:S3">0</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br/>
+        <div id="alpheios-trigger-hint" class="alpheios-ignore alpheios-trigger-hint alpheios-hint"/>
+        <div id="alpheios-put-notice"/>
+        <svg xmlns="http://www.w3.org/2000/svg"/>
+    </body>
+</html>

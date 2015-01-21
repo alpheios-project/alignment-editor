@@ -1,5 +1,5 @@
 (:
-  Copyright 2012 The Alpheios Project, Ltd.
+  Copyright 2014 The Alpheios Project, Ltd.
   http://alpheios.net
 
   This file is part of Alpheios.
@@ -19,23 +19,9 @@
  :)
 
 (:
-  Query to send a set of parallel text chunks for alignment
+  Query to create a template of parallel text chunks for alignment
 
-  Request data holds new chunks to align in one of 
-    OAC wrapped annotation
-    alignment xml
-    Plain text
-  Where
-    doc = an identifier for the supplied text (Optional)
-    saveUrl = a url to which to post the aligned chunk (Optional)
-    listUrl = a url at which you can list chunks for alignment (optional)
-    if XML is sent, it should be POSTED as form data
-    if plain text is sent use parameters:
-    l1 = language code for language 1
-    l1text = language 1 text string
-    l2 = language code for language 2
-    l2text = language 2 text string
- :)
+:)
 
 import module namespace request="http://exist-db.org/xquery/request";
 import module namespace xmldb="http://exist-db.org/xquery/xmldb";
@@ -45,6 +31,9 @@ import module namespace tan  = "http://alpheios.net/namespaces/text-analysis"
 import module namespace aled="http://alpheios.net/namespaces/align-edit"
               at "align-editsentence.xquery";    
 declare namespace align = "http://alpheios.net/namespaces/aligned-text";
+declare namespace rdf ="http://www.w3.org/1999/02/22-rdf-syntax-ns#";
+declare namespace prov="http://www.w3.org/ns/prov#";
+declare namespace cnt="http://www.w3.org/2008/content#";
 
 declare option exist:serialize
         "method=xml";
@@ -86,34 +75,26 @@ declare function local:createWords(
     )
 };
 
-declare function local:getSentence($a_data as node()) as element()* {
-    let $dummy := element {QName("http://alpheios.net/namespaces/aligned-text","aligned-text")} {}
-    return 
-        if (local-name($a_data) = local-name($dummy) and namespace-uri($a_data) = namespace-uri($dummy))
-        then
-            $a_data
-        else ()
-};
-
 declare function local:createSentence(
   $a_l1 as xs:string,
   $a_l2 as xs:string,
   $a_l1text as xs:string,
   $a_l2text as xs:string,
-  $a_l1urn as xs:string,
-  $a_l2urn as xs:string,
+  $a_l1uri as xs:string,
+  $a_l2uri as xs:string,
   $a_l1dir as xs:string,
-  $a_l2dir as xs:string) as element()*
+  $a_l2dir as xs:string,
+  $a_docid as xs:string) as element()*
 {
     let $l1comment := 
-        if ($a_l1urn) then <comment class="urn">{$a_l1urn}</comment> else ()
+        if ($a_l1uri) then <comment xmlns="http://alpheios.net/namespaces/aligned-text" class="uri">{$a_l1uri}</comment> else ()
     let $l2comment := 
-        if ($a_l1urn) then <comment class="urn">{$a_l2urn}</comment> else ()
+        if ($a_l2uri) then <comment xmlns="http://alpheios.net/namespaces/aligned-text" class="uri">{$a_l2uri}</comment> else ()
     return
 	<aligned-text xmlns="http://alpheios.net/namespaces/aligned-text">
         <language lnum="L1" xml:lang="{$a_l1}" dir="{$a_l1dir}"/>
         <language lnum="L2" xml:lang="{$a_l2}" dir="{$a_l2dir}"/>
-        <sentence id="1">
+        <sentence id="1" document_id="{$a_docid}">
             <wds lnum="L1">{ $l1comment,local:createWords($a_l1text,1,1) }</wds>
             <wds lnum="L2">{ $l2comment,local:createWords($a_l2text,1,1) }</wds>
         </sentence>
@@ -129,57 +110,29 @@ let $l2 := $data//*:language[@lnum="L2"]/@xml:lang
 let $l1dir := $data//*:language[@lnum="L1"]/@dir
 let $l2dir := $data//*:language[@lnum="L2"]/@dir
 
+let $l1Uri := $l1text/@uri
+let $l2Uri := $l2text/@uri
+let $collection := $data/@uri
+let $inlineid := util:uuid()
+let $docid := if ($data/@name) then $data/@name else $inlineid 
+    
+let $doc := local:createSentence($l1,$l2,$l1text,$l2text,$l1Uri,$l2Uri,$l1dir,$l2dir,$docid)
 
-let $collName := "/db/repository/alignment"
+return
+ <RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <Annotation xmlns="http://www.w3.org/ns/oa#">
+        <memberOf xmlns="http://purl.org/dc/dcam/" rdf:resource="{$collection}"/>
+        <hasTarget xmlns="http://www.w3.org/ns/oa#" rdf:resource="{$l1Uri}"/>
+        <hasTarget xmlns="http://www.w3.org/ns/oa#" rdf:resource="{$l2Uri}"/>
+        <hasBody xmlns="http://www.w3.org/ns/oa#" rdf:resource="{$inlineid}"/>
+        <isMotivatedBy xmlns="http://www.w3.org/ns/oa#" rdf:resource="oa:linking_translation"/>
+        <ContentAsXML xmlns="http://www.w3.org/ns/oa#" rdf:about="{$inlineid}">
+            <cnt:rest rdf:parseType="Literal">
+                {$doc}
+            </cnt:rest>
+        </ContentAsXML>
+    </Annotation>
+</RDF>
+        
+        
 
-
-(: API Parameters :)
-let $saveURL := request:get-parameter('saveUrl','')
-let $allowSave := if ($saveURL) then true() else false()
-let $listURL := request:get-parameter('listUrl','')
-let $editURL := ""
-let $l1Urn := request:get-parameter('l1urn','')
-let $l2Urn := request:get-parameter('l2urn','')
-
-
-
-let $exportURL := "./align-export.xq"
-let $base := request:get-url()
-let $base := substring($base,
-                       1,
-                       string-length($base) - 
-                       string-length(request:get-path-info()))
-let $base := substring($base,
-                       1,
-                       string-length($base) -
-                       string-length(tokenize($base, '/')[last()]))
-
-let $docId := replace(replace(replace(replace(current-dateTime(),'-',''),'T',''),':',''),'\.','')
-let $docName := concat($collName, '/user-', $docId, ".xml")
-
-let $newDoc :=                        
-  if ($data//align:aligned-text)
-  then
-    local:getSentence($data)
-  else 
-    local:createSentence($l1,$l2,$l1text,$l2text,$l1Urn,$l2Urn,$l1dir,$l2dir)
-
-let $error := 
-    let $stored := xmldb:store($collName, concat('/user-', $docId, ".xml"),$newDoc)
-       return
-        if (not($stored))
-        then
-            element error
-            {
-                concat("Alignment ", $docId, " could not be created")
-            }
-        else ()
-return 
-    if ($error)     
-    then $error
-    else
-        element args
-        {
-            attribute doc { concat('user-', $docId) },
-            attribute s { 1 }
-        }

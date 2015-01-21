@@ -5,6 +5,14 @@ Alpheios Alignment Editor
 
 (ported from SourceForge https://svn.code.sf.net/p/alpheios/code/utilities/alignment-editor/)
 
+### Installation
+
+- Install [eXist 1.4.2 or eXist 2.x](http://exist-db.org/exist/apps/doc/)
+- Download this repository as a [zip file](https://github.com/alpheios-project/alignment-editor/archive/master.zip)
+- Use this zip file to restore your database from within the eXist client 
+  interface
+- Make sure you also use the latest version of the [editor
+  utilities](https://github.com/alpheios-project/edit-utils)
 
 Copyright 2009 Cantus Foundation
 http://alpheios.net
