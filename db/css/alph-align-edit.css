@@ -81,7 +81,24 @@ div.summary table td {
    display:inline;
 }
 
-g text {
+/*Hack to change fonts for Arabic
+-this should eventually be replaced with variables
+to change fonts by language */
+
+g[direction=rtl] g g text {
+    font-family:LateefRegular;
+    font-size: 20px;
+    fill: #333333;
+}
+
+
+g[direction=rtl] g g text {
+    font-family:LateefRegular;
+    font-size: 20px;
+    fill: #333333;
+}
+
+g[direction=ltr] g g text {
     font-family: Georgia;
     font-size: 20px;
     fill: #333333;
@@ -143,18 +160,6 @@ g rect.selected {
     stroke: black;
 }
 
-/*Hack to change fonts for Arabic
--this should eventually be replaced with variables
-to change fonts by language */
-
-g[xml:lang="ara"] g g text {
-    font-family:LateefRegular;
-}
-
-
-g[xml:lang="ar"] g g text {
-    font-family:LateefRegular;
-}
 
 .sentence_title {
     margin-top: -1em;
