@@ -143,7 +143,15 @@ declare function aled:get-edit-page(
     {
       attribute rel { "stylesheet" },
       attribute type { "text/css" },
+      attribute media {"screen"},
       attribute href { "../css/alph-align-edit.css" }
+    },
+
+      element link
+    {
+      attribute rel { "stylesheet" },
+      attribute type { "text/css" },
+      attribute href { "http://openfontlibrary.org/face/lateef" }
     },
 
     element script
@@ -497,6 +505,13 @@ declare function aled:get-display-page(
       attribute rel { "stylesheet" },
       attribute type { "text/css" },
       attribute href { concat($a_baseResUrl,"/css/alph-align-edit.css") }
+    },
+
+    element link
+    {
+      attribute rel { "stylesheet" },
+      attribute type { "text/css" },
+      attribute href { "http://openfontlibrary.org/face/lateef" }
     },
 
     element script
