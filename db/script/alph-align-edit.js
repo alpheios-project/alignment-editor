@@ -526,7 +526,7 @@ function SubmitGoTo(a_form)
 
     // go to new sentence
     s_param["s"] = a_form.s.value;
-    InitNewSentence();
+    InitNewSentence(true);
 
     // always return false - we've already done the action
     return false;
@@ -543,7 +543,7 @@ function ClickOnGoTo(a_event)
 
     // go to new sentence
     s_param["s"] = AlphEdit.getEventTarget(a_event).value;
-    InitNewSentence();
+    InitNewSentence(true);
 };
 
 // function for handling key presses
