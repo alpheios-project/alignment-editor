@@ -152,6 +152,8 @@ function EnterSentence() {
  * POST the data to the backend storage service
  */
 function put_data(data) {
+    console.log(data);
+    return false;
     // a bit of a hack -- may need to ping the api get the cookie
     // not actually needed at runtime when we come from there
     // but was useful for testing
