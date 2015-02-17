@@ -20,11 +20,27 @@
 -->
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head><title>Alpheios Alignment Editor - Align Text</title>
-    <link rel="stylesheet" type="text/css" href="../css/alph-align-edit.css"/>
-    <script language="javascript" type="text/javascript" src="../script/jquery-1.2.6-alph.js"/>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/foundation/5.5.0/css/foundation.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/alph-align-edit-new.css"/>
+
+    <link rel="stylesheet" type="text/css" href="../css/jquery.cts.typeahead.css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"/>
+    <script type="text/javascript" src="../script/typeahead.bundle.min.js"></script>
+    <script type="text/javascript" src="../script/handlebars.min.js"></script>
+
+    <script type="text/javascript" src="../script/cts.js"/>
+    <script type="text/javascript" src="../script/jquery.cts.typeahead.js"/>
+    <script type="text/javascript" src="../script/jquery.cts.service.js"/>
+    <script type="text/javascript" src="../script/jquery.cts.xslt.js"/>
+
     <script language="javascript" type="text/javascript" src="../script/alph-align-enter-ext.js"/>
     <script language="javascript" type="text/javascript" src="../script/alph-edit-utils.js"/>
-    <meta name="templateurl" content="../xq/align-maketemplate.xq"/>
+    <meta name="cts_repos_url" content="http://localhost:8080/exist/rest/db/xq/CTS.xq?"/>
+    <meta name="textizing_service" data-transform="../xslt/passage-to-text.xsl"/>
+    <meta name="tokenization_service" content="http://services2.perseids.org/llt/segtok" data-params="xml inline split-tokens|splitting merge-tokens|merging shift-tokens|shifting l1text|text remove_node[] go_to_root ns" data-transform="../xslt/segtok_to_align.xsl"/>
+    
+
+
     <!-- cookie and header name for CSRF session token  -->
     <meta name="alpheios-sessionTokenName" content="csrftoken"/>
     <meta name="alpheios-sessionHeaderName" content="X-CSRF-Token"/>
@@ -48,35 +64,44 @@
   <body>
     <div class="alpheios-ignore">
       <div id="alph-page-header">
-        <img src="../image/alpheios.png" alt="Alpheios"/>
+        <img src="../image/alpheios-transparent.png" alt="Alpheios"/>
       </div>
     </div>
     <div>
       <form name="input-form" action="">
         <input type="hidden" name="l1"/>
         <input type="hidden" name="l2"/>
-        <fieldset id="align-enter-title">
+        <div class="row">
+        <fieldset id="align-enter-title"  class="large-6 columns">
           <legend>Enter Metadata:</legend>
           <label for="docname">Alignment title:</label>
           <input placeholder="Enter a short title for your annotation" type="text" id="docname" name="docname" pattern="[\w \d-_\.]+" maxlength="100" size="100"></input>
           <p class="hint">e.g. "Alignment of Thuc. 1.1 in French and English"<br/>(100 chars max restricted to alphanumerics and '.','_' and '-').</p>
         </fieldset>
-        <fieldset>
+        </div>
+        <div class="row">
+        <fieldset class="large-6 columns">
           <legend>Enter Text in Language 1:</legend>
           <div id="l1-dir-buttons">
-            <label>Text Direction:</label>
+            <label class="columns">Text Direction:</label>
             <input type="radio" id="l1-dir-ltr" name="l1-direction" value="ltr" checked="checked"/>
             <label for="l1-dir-ltr">Left to Right</label>
               <input type="radio" id="l1-dir-rtl" name="l1-direction" value="rtl"/>
             <label for="l1-dir-rtl">Right to Left</label>
           </div>
-          <textarea name="l1text" rows="10" cols="80"
+          <div>
+            <textarea id="l1text" name="l1text" rows="10" cols="80" data-lnum="l1"
             ></textarea>
+            <small class="error" id="l1texterror" style="display:none;">Invalid entry</small>
+          </div>
+          <div class="textdriver" id="l1textdriver" data-lnum="l1"></div>
           <div>
             <label for="l1uri">Text URI</label>
-            <input placeholder="URI Identifer for this text. If a URL, text will be loaded from there. Plain text only supported." type="url" id="l1uri" name="l1uri" size="100"></input>
+            <input placeholder="URI Identifer for this text. If a URL, text will be loaded from there. Plain text only supported." type="url" id="l1uri" name="l1uri" size="100" class="texturi" data-lnum="l1"></input>
           </div>
-          <div style="text-align:right;">
+          </fieldset>
+          <fieldset class="large-6 columns">
+          <div class="row">
           <label for="select_l1">Language 1:</label>
           <select name="select_l1" id="select_l1">
             <option value="eng">English</option>
@@ -213,7 +238,10 @@
           <label for="other_l1">Or Other Language*:</label>
           <input type="text" id="other_l1" name="other_l1" size="3" style="width:3em;"/>
           </div>
+          <small id="l1-advanced-options-toggle" class="toggle_hint">Click  to toggle advanced options...</small>
+          <div id="advanced-options-l1" class="advanced-options" style="display: none;" data-lnum="l1"></div>
         </fieldset>
+        </div>
         <fieldset>
           <legend>Enter Text in Language 2:</legend>
           <div id="l2-dir-buttons">
@@ -223,11 +251,13 @@
             <input type="radio" id="l2-dir-rtl" name="l2-direction" value="rtl"/>
             <label for="l2-dir-rtl">Right to Left</label>
           </div>
-          <textarea name="l2text" rows="10" cols="80"
+          <textarea id="l2text" name="l2text" rows="10" cols="80" data-lnum="l2"
             ></textarea>
+          <small class="error" id="l2texterror" style="display:none;">Invalid entry</small>
+          <div class="textdriver" id="l2textdriver" data-lnum="l2"></div>
           <div>
             <label for="l2uri">Text URI</label>
-            <input placeholder="URI Identifer for this text. If a URL, text will be loaded from there. Plain text only supported." type="url" id="l2uri" name="l2uri" size="100"></input>
+            <input placeholder="URI Identifer for this text. If a URL, text will be loaded from there. Plain text only supported." type="url" id="l2uri" name="l2uri" size="100" class="texturi" data-lnum="l2"></input>
           </div>
           <div style="text-align:right;">
           <label for="select_l2">Language 2:</label>
@@ -366,14 +396,16 @@
           <label for="other_l2">Or Other Language*:</label>
           <input type="text" id="other_l2" name="other_l2" size="3" style="width:3em;"/>
           </div>
+          <small id="l1-advanced-options-toggle" class="toggle_hint">Click  to toggle advanced options...</small>
+          <div id="advanced-options-l2" class="advanced-options" style="display: none;" data-lnum="l1"></div>
         </fieldset>
-        <div style="font-size: smaller;">*Please use ISO 639-2 or ISO 639-3 three-letter codes for any other languages</div>
+        <div style="font-size: smaller;"><p class="hint">*Please use ISO 639-2 or ISO 639-3 three-letter codes for any other languages</p></div>
       </form> 
       <form name="submit-form" action="align-editsentence-perseids-test.xhtml"
         onsubmit="EnterSentence(event)">
         <input type="hidden" name="doc"/>
         <input type="hidden" name="s"/>
-        <div><button type="submit" style="float: right; width:100px; font-weight:bold; background-color:#73Cdde; color:white;">Align</button></div>
+        <div><button type="submit" style="float: right; width:100px;">Align</button></div>
       </form>
     </div>
   </body>

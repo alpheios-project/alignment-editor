@@ -1,16 +1,84 @@
 input[value=ara] {
 
  font-family:LateefRegular;
+ color:#505050;
 
 }
 
 input[value=ar] {
 
  font-family:LateefRegular;
+ color:#505050;
 	
 }
 
 input {
 
-	font-family:Georgia;
+	font-family: Bodoni,serif;
+	color:#505050;
 }
+
+
+
+fieldset {
+  margin: 0;
+  padding:0.5rem;
+}
+
+legend {
+
+	font-family: Bodoni,serif;
+  background-color:transparent;
+	color:#505050;
+}
+
+label.columns {
+  margin:0;
+  font-weight:normal;
+}
+
+.cts-selector-passage-container > * {
+  box-sizing: border-box !important;
+  display: inline-block !important;
+  height: 21px !important;
+  line-height: 21px !important;
+  margin: 0 !important;
+  padding: 2px !important;
+  vertical-align: top!important;
+  font-size: 11px !important;
+}
+
+select {
+
+	 font-family:Futura,Verdana,sans-serif;
+	 color:#505050;
+
+}
+
+option {
+
+	 font-family:Futura,Verdana,sans-serif;
+	 color:#505050;
+
+}
+
+p.hint {
+
+	 font-family: Bodoni,serif;
+	 font-size:10px;
+	 color:#505050;
+
+}
+
+
+
+p.cts_selector_hint {
+
+	 font-family: Bodoni,serif;
+	 font-size:10px;
+	 color:#505050;
+	 font-style:italic;
+	 font-size:10px;
+
+}
+

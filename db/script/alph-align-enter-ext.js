@@ -50,63 +50,77 @@ $(document).ready(function() {
         }
     }
 
-    // retrieve the l1 text
-    $("#l1uri").ctsTypeahead({
-      "endpoint" : $("meta[name='cts_repos_url']").attr("content"),
-      "version" : 3,
-      "inventories": {
-        "annotsrc" : "Perseids Sources"
-       },
-      "retrieve" : "#l1text"
+    // create the typeahead widget for each language 
+    $(".texturi").each(function() {
+      var lnum = $(this).attr("data-lnum");
+      $(this).ctsTypeahead({
+        "endpoint" : $("meta[name='cts_repos_url']").attr("content"),
+        "version" : 3,
+        "inventories": {
+          "annotsrc" : "Perseids Sources"
+         },
+        "retrieve" : "#" + lnum + "text"
+      });
     });
 
-    //  transform l1 xml to plain text
-    $("#l1text").ctsXSLT("cts.passage_to_text", {
+    //  transform retrieved cts xml to plain text
+    $(".textdriver").each(function() {
+      var lnum = $(this).attr("data-lnum");
+      $(this).ctsXSLT("cts.passage_to_text", {
         "endpoint" : $("meta[name='textizing_service']").attr("data-transform"),
-        "xml" : $("#l1text"),
+        "xml" : $("#"+lnum+"text"),
         "driver" : { },
-        "trigger" : "language-detected"
+        "trigger" : "parse-text",
+        "callback" : function(data) {
+	  $("#"+lnum+"text").val($(data).text());
+          detect_language_and_type($("#l1text").get(0));
+	}
+      });
     });
   
 
-    // set the l1 tokenization options
-    $("#advanced-options-l1").ctsService("llt.tokenizer", {
+    // set the tokenization options
+    $(".advanced-options").each(function() {
+      var lnum = $(this).attr("data-lnum");
+      $(this).ctsService("llt.tokenizer", {
         "endpoint" : "http://services2.perseids.org/llt/segtok",
         "driver" : {
-            "text" : $("#l1text")
+            "text" : $("#"+lnum+"text"),
         },
         "trigger" : "llt-tokenize",
         "callback" : function(data) {
-            $("#l1text").val(data);
+	   $("#"+lnum+"text").val($(data).text());
         },
-        "show" : "toggle-llt-tokenizer",
+        "show" : "show-options",
         "css" : {
             "field-container" : ["row"],
             "field-label" : ["columns", "large-6", "small-6"],
             "field-input-container" : ["columns", "large-6", "small-6"]
         },
         "names" : {
-            "xml" : "l1isxml"
+            "xml" : lnum+"isxml"
         }
     }); 
 
     // transform l1 tokenized output to alignment template
-    $("#advanced-options-l1").ctsXSLT("llt.segtok_to_align", {
+    $(".advanced-options").each(function() {
+      var lnum = $(this).attr("data-lnum");
+      $(this).ctsXSLT("llt.segtok_to_align", {
         "endpoint" : $("meta[name='tokenization_service']").attr("data-transform"),
-        "xml" : $("#l1text"),
+        "xml" : $("#"+lnum+"text"),
         "driver" : {
             "e_lang" : "input[name='lang']:checked",
             "e_dir" : "input[name='direction']:checked",
             "e_docuri" : "input[name='text_uri']",
             "e_appuri" : "input[name='appuri']",
             "e_includepunc" : function() {
-              return $("input#l1includepunc").is(":checked");
+              return $("input#" + lnum + "includepunc").is(":checked");
             }
         },
         "trigger" : "llt-transform",
         "callback" : function(data) {
-            $("#l1text").val(data);
-            $("#l1text").attr("data-tokenized",true);
+            $("#" + lnum + "text").val(data);
+            $("#" + lnum + "text").attr("data-tokenized",true);
             return make_data();
         },
         "css" : {
@@ -114,79 +128,39 @@ $(document).ready(function() {
             "field-label" : ["columns", "large-6", "small-6"],
             "field-input-container" : ["columns", "large-6", "small-6"]
         }
+      });
     });
-
-    // retrieve the l2 text
-    $("#l2uri").ctsTypeahead({
-      "endpoint" : $("meta[name='cts_repos_url']").attr("content"),
-      "version" : 3,
-      "inventories": {
-        "annotsrc" : "Perseids Sources"
-       },
-      "retrieve" : "#l2text"
-   });
-
-    //  transform l2 xml to plain text
-    $("#l2uri").ctsXSLT("cts.passage_to_text", {
-        "endpoint" : $("meta[name='textizing_service']").attr("data-transform"),
-        "xml" : $("#l1text"),
-        "driver" : { },
-        "trigger" : "language-detected"
-    });
-
-
 
     //UI
-    $("#advanced-options-l1-toggle").click(function(){$("#advanced-options-l1").toggle();});
+    $(".advanced-options-toggle").click(
+      function(e){
+        e.preventDefault();
+        var lnum = $(this).attr("data-lnum");
+        $(".advanced-options[data-lnum='" + lnum +"']").trigger("show-options");
+      }
+    );
 
-    // set the l2 tokenization options
-    $("#advanced-options-l2").ctsService("llt.tokenizer", {
-        "endpoint" : "http://services2.perseids.org/llt/segtok",
-        "driver" : {
-            "text" : $("#l1text")
-        },
-        "trigger" : "llt-tokenize",
-        "callback" : function(data) {
-            $("#l1text").val(data);
-        },
-        "show" : "toggle-llt-tokenizer",
-        "css" : {
-            "field-container" : ["row"],
-            "field-label" : ["columns", "large-6", "small-6"],
-            "field-input-container" : ["columns", "large-6", "small-6"]
-        },
-        "names" : {
-            "xml" : "l1isxml"
-        }
-    }); 
 
     //Trigger queue
     $(".advanced-options").on("cts-service:llt.tokenizer:done", function() {
         $(this).trigger("llt-transform");
     });
-    $("textarea").blur(detect_language_and_type);
-    $("#l1uri").on("cts-passage:retrieved",
-       function() {
-         debugger;
-         detect_language_and_type();
-         $(this).trigger("language-detected");
-    }
+    $("textarea").on("cts-passage:retrieved",
+       function(event) {
+         var lnum = $(event.currentTarget).attr("data-lnum");
+         $("#" + lnum + "textdriver").trigger("parse-text");
+      }
     );
 
     //Error handling
-    $("textarea[name='l1text']").on("cts-passage:passage-error", function() {
-        CTSError("The passage does not exist",'l1');
+    $("textarea").on("cts-passage:passage-error", function() {
+        CTSError("The passage does not exist",$(this).attr("data-lnum"));
     });
-    $("textarea[name='l1text']").on("cts-passage:retrieving-error", function() {
-        CTSError("Unable to contact the server. Please try again.",'l1');
-    });
-    $("textarea[name='l2text']").on("cts-passage:passage-error", function() {
-        CTSError("The passage does not exist",'#l1text','l1');
-    });
-    $("textarea[name='l2text']").on("cts-passage:retrieving-error", function() {
-        CTSError("Unable to contact the server. Please try again.",'l1');
+    $("textarea").on("cts-passage:retrieving-error", function() {
+        CTSError("Unable to contact the server. Please try again.",$(this).attr("data-lnum"));
     });
 
+    $("textarea").blur(detect_language_and_type);
 
 });
 
@@ -399,8 +373,7 @@ function SetTextDir() {
 /**
  * Handler for inputtext change to detect the language and mimetype of the text
  */
-function detect_language_and_type(a_event) {
-    var textarea = a_event.currentTarget;
+function detect_language_and_type(textarea) {
     var lnum = $(textarea).attr('data-lnum');
     
     CTSError(null,lnum);
