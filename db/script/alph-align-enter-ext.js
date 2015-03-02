@@ -73,7 +73,7 @@ $(document).ready(function() {
         "trigger" : "parse-text",
         "callback" : function(data) {
 	  $("#"+lnum+"text").val($(data).text());
-          detect_language_and_type($("#l1text").get(0));
+          detect_language_and_type($("#"+lnum+"text").get(0));
 	}
       });
     });
@@ -85,7 +85,7 @@ $(document).ready(function() {
       $(this).ctsService("llt.tokenizer", {
         "endpoint" : "http://services2.perseids.org/llt/segtok",
         "driver" : {
-            "text" : $("#"+lnum+"text"),
+            "text" : $("#"+lnum+"text")
         },
         "trigger" : "llt-tokenize",
         "callback" : function(data) {
@@ -100,7 +100,8 @@ $(document).ready(function() {
         "names" : {
             "xml" : lnum+"isxml"
         }
-    }); 
+      }); 
+    });
 
     // transform l1 tokenized output to alignment template
     $(".advanced-options").each(function() {

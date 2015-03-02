@@ -28,7 +28,7 @@ fieldset {
 legend {
 
 	font-family: Bodoni,serif;
-  background-color:transparent;
+    background-color:transparent !important;
 	color:#505050;
 }
 
