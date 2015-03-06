@@ -82,3 +82,10 @@ p.cts_selector_hint {
 
 }
 
+.advanced-options-toggle {
+  color: #4183C4;
+  font-size: smaller;
+  font-style: italic;
+  cursor: pointer;
+  margin-left: 1em;
+}

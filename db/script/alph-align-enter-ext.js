@@ -137,7 +137,7 @@ $(document).ready(function() {
       function(e){
         e.preventDefault();
         var lnum = $(this).attr("data-lnum");
-        $(".advanced-options[data-lnum='" + lnum +"']").trigger("show-options");
+        $(".advanced-options[data-lnum='" + lnum +"']").toggle();
       }
     );
 
