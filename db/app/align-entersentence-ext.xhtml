@@ -20,11 +20,11 @@
 -->
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head><title>Alpheios Alignment Editor - Align Text</title>
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/foundation/5.5.0/css/foundation.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/foundation.min.css" />
     <link rel="stylesheet" type="text/css" href="../css/alph-align-edit-new.css"/>
 
     <link rel="stylesheet" type="text/css" href="../css/jquery.cts.typeahead.css" />
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"/>
+    <script type="text/javascript" src="../script/jquery-1.7.2.min.js"/>
     <script type="text/javascript" src="../script/typeahead.bundle.min.js"></script>
     <script type="text/javascript" src="../script/handlebars.min.js"></script>
 
@@ -37,7 +37,7 @@
     <script language="javascript" type="text/javascript" src="../script/alph-edit-utils.js"/>
     <meta name="cts_repos_url" content="http://localhost:8080/exist/rest/db/xq/CTS.xq?"/>
     <meta name="textizing_service" data-transform="../xslt/passage-to-text.xsl"/>
-    <meta name="tokenization_service" content="http://services2.perseids.org/llt/segtok" data-params="xml inline split-tokens|splitting merge-tokens|merging shift-tokens|shifting l1text|text remove_node[] go_to_root ns" data-transform="../xslt/segtok_to_align.xsl"/>
+    <meta name="tokenization_service" content="http://localhost/llt/segtok" data-params="xml inline split-tokens|splitting merge-tokens|merging shift-tokens|shifting l1text|text remove_node[] go_to_root ns" data-transform="../xslt/segtok_to_align.xsl"/>
     
 
 
@@ -413,8 +413,8 @@
         </div>
         <div class="row" style="font-size: smaller;"><p class="hint">*Please use ISO 639-2 or ISO 639-3 three-letter codes for any other languages</p></div>
       </form> 
-      <form name="submit-form" action="align-editsentence-perseids-test.xhtml"
-        onsubmit="EnterSentence(event)">
+      <form name="submit-form" action=""
+        onsubmit="EnterSentence(event); return false;">
         <input type="hidden" name="doc"/>
         <input type="hidden" name="s"/>
         <div><button type="submit" style="float: right; width:100px;">Align</button></div>

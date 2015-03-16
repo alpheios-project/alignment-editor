@@ -83,9 +83,13 @@ $(document).ready(function() {
     $(".advanced-options").each(function() {
       var lnum = $(this).attr("data-lnum");
       $(this).ctsService("llt.tokenizer", {
-        "endpoint" : "http://services2.perseids.org/llt/segtok",
+        "endpoint" : $("meta[name='tokenization_service']").attr("content"),
         "driver" : {
-            "text" : $("#"+lnum+"text")
+            "text" : function() { 
+              var text = encodeURIComponent($("#"+lnum+"text").val()); 
+              console.log("Text="+text);
+              return text;
+            }
         },
         "trigger" : "llt-tokenize",
         "callback" : function(data) {
@@ -161,7 +165,7 @@ $(document).ready(function() {
         CTSError("Unable to contact the server. Please try again.",$(this).attr("data-lnum"));
     });
 
-    $("textarea").blur(detect_language_and_type);
+    $("textarea").blur(function(){detect_language_and_type($(this))});
 
 });
 
@@ -212,24 +216,31 @@ function load_text(lnum) {
  * Submit handler for the text entry form
  */
 function EnterSentence() {
+    var l1 = $('#select_l1');
+    var l2 = $('#select_l2');
 
     if (l1.val() == 'other' || $('input[name="other_l1"]').val()) {
-        $('input[name="l1"]').val($('input[name="other_l1"]').val())
+        $('input[name="l1"]').val($('input[name="other_l1"]').val());
     } else {
-        $('input[name="l1"]').val(l1.val())
+        $('input[name="l1"]').val(l1.val());
     }
     if (l2.val() == 'other' || $('input[name="other_l2"]').val()) {
-        $('input[name="l2"]').val($('input[name="other_l2"]').val())
+        $('input[name="l2"]').val($('input[name="other_l2"]').val());
     }
     else {
-       $('input[name="l2"]').val(l2.val())
+       $('input[name="l2"]').val(l2.val());
     } 
     if ($('input[name="l1"]').val() == '' || $('input[name="l2"]').val()  == '') {
         alert('You must specify a valid language code for both sentences.');
         return false;
     } 
     // trigger the tokenization
-    $(".advanced-options").trigger("llt-tokenize");
+    try { 
+      $(".advanced-options").trigger("llt-tokenize");
+    } catch(e) {
+      console.log(e);
+    }
+    return false;
 }
 
 
