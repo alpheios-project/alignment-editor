@@ -37,7 +37,7 @@
     <script language="javascript" type="text/javascript" src="../script/alph-edit-utils.js"/>
     <meta name="cts_repos_url" content="http://localhost:8080/exist/rest/db/xq/CTS.xq?"/>
     <meta name="textizing_service" data-transform="../xslt/passage-to-text.xsl"/>
-    <meta name="tokenization_service" content="http://localhost/llt/segtok" data-params="xml inline split-tokens|splitting merge-tokens|merging shift-tokens|shifting l1text|text remove_node[] go_to_root ns" data-transform="../xslt/segtok_to_align.xsl"/>
+    <meta name="tokenization_service" content="http://services2.perseids.org/llt/segtok" data-params="xml inline split-tokens|splitting merge-tokens|merging shift-tokens|shifting l1text|text remove_node[] go_to_root ns" data-transform="../xslt/segtok_to_align.xsl"/>
     
 
 
@@ -71,6 +71,7 @@
       <form name="input-form" action="">
         <input type="hidden" name="l1"/>
         <input type="hidden" name="l2"/>
+        <input type="hidden" name="collection" value="urn:cite:perseus:align"/>
         <div class="row">
         <fieldset id="align-enter-title"  class="large-9 columns">
           <legend>Enter Metadata:</legend>
@@ -412,6 +413,7 @@
           </fieldset>
         </div>
         <div class="row" style="font-size: smaller;"><p class="hint">*Please use ISO 639-2 or ISO 639-3 three-letter codes for any other languages</p></div>
+        
       </form> 
       <form name="submit-form" action=""
         onsubmit="EnterSentence(event); return false;">

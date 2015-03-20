@@ -32,6 +32,7 @@
     <xsl:param name="e_datetime"/>
     <xsl:param name="e_includepunc" select="true()"/>
     <xsl:param name="e_mergesentences" select="true()"/>
+    <xsl:param name="e_collection" select="'urn:cite:perseus:align'"/>
     
     <xsl:output indent="yes"></xsl:output>
     <xsl:key name="segments" match="tei:w|tei:pc|w|pc" use="@s_n" />
@@ -42,6 +43,9 @@
         <xsl:variable name="bodyid" select="concat('urn:uuid',generate-id(//llt-segtok))"/>
         <xsl:element name="RDF" namespace="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
             <xsl:element name="Annotation" namespace="http://www.w3.org/ns/oa#">
+                <xsl:element name="memberOf" xmlns="http://purl.org/dc/dcam/">
+                    <xsl:attribute name="rdf:resource"><xsl:value-of select="$e_collection"/></xsl:attribute>
+                </xsl:element>
                 <xsl:element name="hasTarget" namespace="http://www.w3.org/ns/oa#">
                     <xsl:attribute name="rdf:resource"><xsl:value-of select="$e_docuri"/></xsl:attribute>
                 </xsl:element>
@@ -100,7 +104,7 @@
                     <xsl:attribute name="document_id"><xsl:value-of select="$e_docuri"/></xsl:attribute>
                     <xsl:call-template name="make_bead">
                         <xsl:with-param name="num" select="'*'"/>
-                    </xsl:call-template>                
+                    </xsl:call-template>
                 </xsl:element>
             </xsl:when>
             <xsl:otherwise>
@@ -120,11 +124,11 @@
     <xsl:template name="make_bead">
         <xsl:param name="num"/>
         <xsl:element name="wds" namespace="http://alpheios.net/namespaces/aligned-text">
+            <xsl:attribute name="lnum"><xsl:value-of select="$e_lnum"/></xsl:attribute>
             <xsl:element name="comment" xmlns="http://alpheios.net/namespaces/aligned-text">
                 <xsl:attribute name="class">uri</xsl:attribute>
                 <xsl:value-of select="$e_docuri"/>
             </xsl:element>
-            <xsl:attribute name="lnum"><xsl:value-of select="$e_lnum"/></xsl:attribute>
             <xsl:choose>
                 <xsl:when test="$num='*'">
                     <xsl:apply-templates select="//*[@s_n]"></xsl:apply-templates>

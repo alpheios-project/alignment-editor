@@ -24,6 +24,7 @@ var s_params = {};
 var wait_retries = 0;
 var max_wait_retries = 20;
 var wait_time = 2000;
+var transform_done = { 'l1' : false, 'l2':false };
 
 $(document).ready(function() {
 
@@ -86,14 +87,13 @@ $(document).ready(function() {
         "endpoint" : $("meta[name='tokenization_service']").attr("content"),
         "driver" : {
             "text" : function() { 
-              var text = encodeURIComponent($("#"+lnum+"text").val()); 
-              console.log("Text="+text);
+              var text = $("#"+lnum+"text").val(); 
               return text;
             }
         },
         "trigger" : "llt-tokenize",
         "callback" : function(data) {
-	   $("#"+lnum+"text").val($(data).text());
+	   $("#"+lnum+"text").val(data);
         },
         "show" : "show-options",
         "css" : {
@@ -114,19 +114,21 @@ $(document).ready(function() {
         "endpoint" : $("meta[name='tokenization_service']").attr("data-transform"),
         "xml" : $("#"+lnum+"text"),
         "driver" : {
-            "e_lang" : "input[name='lang']:checked",
-            "e_dir" : "input[name='direction']:checked",
-            "e_docuri" : "input[name='text_uri']",
+            "e_lang" : "input[name='" + lnum + "']",
+            "e_lnum" : function() { return lnum.toUpperCase() },
+            "e_dir" : "input[name='" + lnum + "-direction']:checked",
+            "e_docuri" : "input[name='" + lnum + "uri']",
             "e_appuri" : "input[name='appuri']",
+            "e_collection" :  "input[name='collection']",
             "e_includepunc" : function() {
               return $("input#" + lnum + "includepunc").is(":checked");
             }
         },
         "trigger" : "llt-transform",
         "callback" : function(data) {
+            transform_done[lnum] = true;
             $("#" + lnum + "text").val(data);
-            $("#" + lnum + "text").attr("data-tokenized",true);
-            return make_data();
+            $("#" + lnum + "text").trigger("llt-transform-done");
         },
         "css" : {
             "field-container" : ["row"],
@@ -148,6 +150,8 @@ $(document).ready(function() {
 
     //Trigger queue
     $(".advanced-options").on("cts-service:llt.tokenizer:done", function() {
+        var lnum = $(this).attr("data-lnum");
+        transform_done[lnum] = false;
         $(this).trigger("llt-transform");
     });
     $("textarea").on("cts-passage:retrieved",
@@ -156,6 +160,7 @@ $(document).ready(function() {
          $("#" + lnum + "textdriver").trigger("parse-text");
       }
     );
+    $("textarea").on("llt-transform-done", make_data);
 
     //Error handling
     $("textarea").on("cts-passage:passage-error", function() {
@@ -248,29 +253,22 @@ function EnterSentence() {
  * POST the data to the backend storage service
  */
 function make_data() {
-  // we need to wait for both language text chunks to be tokenized
-  // but we don't want to wait forever...
-  while (wait_tries++ < max_wait_retries) {
-    if (! ($("l1text").attr("tokenized") && $("l2text").attr("tokenized"))) {
-      console.log("Waiting for tokenization...(" + wait_tries + ")");
-      timeout(wait_time);
-    }
-  }
-  if (! ($("l1text").attr("tokenized") && $("l2text").attr("tokenized"))) {
-    alert("Timed out waiting for tokenization to complete.");
+  if (transform_done['l1'] == false || transform_done['l2'] == false) {
+    console.log("transform pending");
     return;
   }
 
   // okay now we merge the two templates
-  var l1 = (new DOMParser()).parseFromString($("#l1text").val());
-  var l2 = (new DOMParser()).parseFromString($("#l2text").val());
+  var l1 = (new DOMParser()).parseFromString($("#l1text").val(),"text/xml");
+  var l2 = (new DOMParser()).parseFromString($("#l2text").val(),"text/xml");
   
   // we merge language and wds from l2 into l1
-  var l2lang = $("language",$l2).clone();
-  var l2wds = $("language",$l2).clone();
+  var l2lang = $("language",l2).clone();
+  var l2wds = $("wds",l2).clone();
 
   $("language",l1).after(l2lang);
   $("wds",l1).after(l2wds);
+  debugger;
   put_data(l1);
 }
 
@@ -387,6 +385,7 @@ function SetTextDir() {
  */
 function detect_language_and_type(textarea) {
     var lnum = $(textarea).attr('data-lnum');
+    transform_done[lnum] = false;
     
     CTSError(null,lnum);
     // first detect language
