@@ -30,6 +30,7 @@
     <xsl:param name="e_lnum"/>
     <xsl:param name="e_appuri"/>
     <xsl:param name="e_datetime"/>
+    <xsl:param name="e_title"/>
     <xsl:param name="e_includepunc" select="true()"/>
     <xsl:param name="e_mergesentences" select="true()"/>
     <xsl:param name="e_collection" select="'urn:cite:perseus:align'"/>
@@ -69,6 +70,9 @@
                     <xsl:attribute name="rdf:parseType">Literal</xsl:attribute>
                     <aligned-text xmlns="http://alpheios.net/namespaces/aligned-text">
                         <language lnum="{$e_lnum}" xml:lang="{$e_lang}" dir="{$e_dir}"/>
+                        <xsl:if test="$e_title != ''">
+                            <comment class="title"><xsl:value-of select="$e_title"/></comment>    
+                        </xsl:if>
                             <xsl:apply-templates/>
                     </aligned-text>
                 </xsl:element>

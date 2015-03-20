@@ -64,28 +64,15 @@ $(document).ready(function() {
       });
     });
 
-    //  transform retrieved cts xml to plain text
-    $(".textdriver").each(function() {
-      var lnum = $(this).attr("data-lnum");
-      $(this).ctsXSLT("cts.passage_to_text", {
-        "endpoint" : $("meta[name='textizing_service']").attr("data-transform"),
-        "xml" : $("#"+lnum+"text"),
-        "driver" : { },
-        "trigger" : "parse-text",
-        "callback" : function(data) {
-	  $("#"+lnum+"text").val($(data).text());
-          detect_language_and_type($("#"+lnum+"text").get(0));
-	}
-      });
-    });
-  
-
     // set the tokenization options
     $(".advanced-options").each(function() {
       var lnum = $(this).attr("data-lnum");
       $(this).ctsService("llt.tokenizer", {
         "endpoint" : $("meta[name='tokenization_service']").attr("content"),
         "driver" : {
+            "splitting" : function() { return false;},
+            "merging" : function() { return false;},
+            "shifting" : function() { return false;},
             "text" : function() { 
               var text = $("#"+lnum+"text").val(); 
               return text;
@@ -119,6 +106,7 @@ $(document).ready(function() {
             "e_dir" : "input[name='" + lnum + "-direction']:checked",
             "e_docuri" : "input[name='" + lnum + "uri']",
             "e_appuri" : "input[name='appuri']",
+            "e_title" : "input[name='docname']",
             "e_collection" :  "input[name='collection']",
             "e_includepunc" : function() {
               return $("input#" + lnum + "includepunc").is(":checked");
@@ -155,9 +143,10 @@ $(document).ready(function() {
         $(this).trigger("llt-transform");
     });
     $("textarea").on("cts-passage:retrieved",
-       function(event) {
+       function(event,data) {
          var lnum = $(event.currentTarget).attr("data-lnum");
-         $("#" + lnum + "textdriver").trigger("parse-text");
+	 $("#"+lnum+"text").val($.trim(data.getText().replace(/(\r\n|\n|\r)/gm,"").replace(/\s+/gm," ")));
+         detect_language_and_type($("#"+lnum+"text").get(0));
       }
     );
     $("textarea").on("llt-transform-done", make_data);
@@ -268,7 +257,6 @@ function make_data() {
 
   $("language",l1).after(l2lang);
   $("wds",l1).after(l2wds);
-  debugger;
   put_data(l1);
 }
 
