@@ -52,6 +52,7 @@
     
     <!-- url to POST to to create store a new treebank template -->
     <meta name="url" content="http://localhost/dmm_api/create/item/AlignmentCite/DOC_REPLACE"/>
+    <meta name="editorurl" content="http://localhost/exist/rest/db/app/align-editsentence-perseids-test.xhtml?doc=REPLACE_DOC&amp;s=1"/>
     <!--Arabic fonts-->
         <link rel="stylesheet" media="screen" href="http://openfontlibrary.org/face/lateef" type="text/css"/>
 
@@ -417,10 +418,7 @@
         <div class="row" style="font-size: smaller;"><p class="hint">*Please use ISO 639-2 or ISO 639-3 three-letter codes for any other languages</p></div>
         
       </form> 
-      <form name="submit-form" action=""
-        onsubmit="EnterSentence(event); return false;">
-        <input type="hidden" name="doc"/>
-        <input type="hidden" name="s"/>
+      <form name="submit-form" action="" onsubmit="EnterSentence(event); return false;">
         <div><button type="submit" style="float: right; width:100px;">Align</button></div>
       </form>
     </div>
