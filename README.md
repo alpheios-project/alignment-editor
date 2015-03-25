@@ -13,6 +13,7 @@ Alpheios Alignment Editor
   interface
 - Make sure you also use the latest version of the [editor
   utilities](https://github.com/alpheios-project/edit-utils)
+-Make sure you install [all material from the xq folder] (https://github.com/alpheios-project/cts-api/tree/master/db/xq) of [the cts-api repo](https://github.com/alpheios-project/cts-api)
 
 Copyright 2009 Cantus Foundation
 http://alpheios.net
