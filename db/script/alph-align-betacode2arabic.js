@@ -1,3 +1,5 @@
+//This script will run if the direction is marked as LTR and the language is marked as Arabic
+
 $(window).load(function () {
     
     var betaCodeDict = {
@@ -356,4 +358,4 @@ $(window).load(function () {
     testBeta.appendChild(textNode);
     
     document.getElementsByTagName("body")[0].appendChild(testBeta);
-})
+});

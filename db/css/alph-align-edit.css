@@ -108,6 +108,10 @@ div.summary table td {
    display:inline;
 }
 
+g {
+    pointer-events:all;
+}
+
 /*Hack to change fonts for Arabic
 -this should eventually be replaced with variables
 to change fonts by language */
@@ -157,7 +161,7 @@ line.divider {
 g rect {
     stroke-width: 0;
     fill: none;
-    
+
 }
 
 g rect.marked {
