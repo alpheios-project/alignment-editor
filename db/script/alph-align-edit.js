@@ -360,6 +360,7 @@ function InitNewSentence(a_load)
     $("#undo-button", document).attr("disabled", "disabled");
     $("#redo-button", document).attr("disabled", "disabled");
     $("#save-button", document).attr("disabled", "disabled");
+	$("#comment-button", document).attr("disabled", "disabled");
     AdjustButtons();
     
     $("svg",document).click(Click);
@@ -467,6 +468,19 @@ function ClickOnUndo(a_evt)
 function ClickOnRedo(a_evt)
 {
     ReplayEvent(AlphEdit.repushHistory(UpdateState), true);
+};
+
+function ClickOnComment(a_evt)
+{
+   var  comment = null;
+
+    // if word not marked, query user for comment
+    if (!HasMark(s_selectedWord))
+      comment = prompt("Enter comment:", "");
+
+    // add/remove mark on word
+    ToggleMark(s_selectedWord, comment);
+    return;
 };
 
 function ClickOnSave(a_evt)
@@ -660,12 +674,16 @@ function SelectWord(a_word)
     {
         HighlightHeadWord(s_selectedWord, true, "selected");
         HighlightWord(s_selectedWord, false);
+        $("#comment-button", document).removeAttr("disabled");
     }
+		
     // if no selected word, make sure current word gets browse focus
     else
     {
         HighlightWord(s_currentWord, true);
+	$("#comment-button", document).attr("disabled","disabled");
     }
+    ToggleCommentButton(a_word);
 };
 
 // function to set attribute on word
@@ -1339,6 +1357,14 @@ function HasMark(a_word)
   return a_word.hasAttributeNS(s_xlinkns, "title");
 };
 
+function ToggleCommentButton(a_word) {
+    if (HasMark(a_word))
+	$("#comment-button", document).text("Remove Comment");
+    else {
+	$("#comment-button", document).text("Add Comment");
+    }
+}
+
 // mark/unmark a word
 function ToggleMark(a_word, a_comment)
 {
@@ -1372,7 +1398,7 @@ function ToggleMark(a_word, a_comment)
         rect.removeAttributeNS(null, "rx");
         rect.removeAttributeNS(null, "ry");
     }
-
+    ToggleCommentButton(a_word);
     // make sure we save results
     AlphEdit.unsaved();
 };
@@ -1439,7 +1465,7 @@ function GetAlignedWords(a_word)
 
 function AdjustButtons()
 {
-    var name = ["undo", "redo", "save"];
+    var name = ["undo", "redo", "save", "comment"];
     for (i in name)
     {
         var button = $("#" + name[i] + "-button", document);
