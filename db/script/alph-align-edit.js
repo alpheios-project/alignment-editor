@@ -674,15 +674,16 @@ function SelectWord(a_word)
     {
         HighlightHeadWord(s_selectedWord, true, "selected");
         HighlightWord(s_selectedWord, false);
-		("#comment-button", document).removeAttr("disabled");
+        $("#comment-button", document).removeAttr("disabled");
     }
 		
     // if no selected word, make sure current word gets browse focus
     else
     {
         HighlightWord(s_currentWord, true);
-		("#comment-button", document).attr("disabled","disabled");
+	$("#comment-button", document).attr("disabled","disabled");
     }
+    ToggleCommentButton(a_word);
 };
 
 // function to set attribute on word
@@ -1356,6 +1357,14 @@ function HasMark(a_word)
   return a_word.hasAttributeNS(s_xlinkns, "title");
 };
 
+function ToggleCommentButton(a_word) {
+    if (HasMark(a_word))
+	$("#comment-button", document).text("Remove Comment");
+    else {
+	$("#comment-button", document).text("Add Comment");
+    }
+}
+
 // mark/unmark a word
 function ToggleMark(a_word, a_comment)
 {
@@ -1379,7 +1388,6 @@ function ToggleMark(a_word, a_comment)
             rect.setAttribute("rx", s_fontSize / 2);
         }
         rect.setAttribute("ry", s_fontSize / 2);
-		$("#comment-button", document).text("...");
     }
     else
     {
@@ -1390,7 +1398,7 @@ function ToggleMark(a_word, a_comment)
         rect.removeAttributeNS(null, "rx");
         rect.removeAttributeNS(null, "ry");
     }
-
+    ToggleCommentButton(a_word);
     // make sure we save results
     AlphEdit.unsaved();
 };
