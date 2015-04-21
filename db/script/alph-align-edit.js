@@ -360,6 +360,7 @@ function InitNewSentence(a_load)
     $("#undo-button", document).attr("disabled", "disabled");
     $("#redo-button", document).attr("disabled", "disabled");
     $("#save-button", document).attr("disabled", "disabled");
+	$("#comment-button", document).attr("disabled", "disabled");
     AdjustButtons();
     
     $("svg",document).click(Click);
@@ -467,6 +468,19 @@ function ClickOnUndo(a_evt)
 function ClickOnRedo(a_evt)
 {
     ReplayEvent(AlphEdit.repushHistory(UpdateState), true);
+};
+
+function ClickOnComment(a_evt)
+{
+   var  comment = null;
+
+    // if word not marked, query user for comment
+    if (!HasMark(s_selectedWord))
+      comment = prompt("Enter comment:", "");
+
+    // add/remove mark on word
+    ToggleMark(s_selectedWord, comment);
+    return;
 };
 
 function ClickOnSave(a_evt)
@@ -660,11 +674,14 @@ function SelectWord(a_word)
     {
         HighlightHeadWord(s_selectedWord, true, "selected");
         HighlightWord(s_selectedWord, false);
+		("#comment-button", document).removeAttr("disabled");
     }
+		
     // if no selected word, make sure current word gets browse focus
     else
     {
         HighlightWord(s_currentWord, true);
+		("#comment-button", document).attr("disabled","disabled");
     }
 };
 
@@ -1362,6 +1379,7 @@ function ToggleMark(a_word, a_comment)
             rect.setAttribute("rx", s_fontSize / 2);
         }
         rect.setAttribute("ry", s_fontSize / 2);
+		$("#comment-button", document).text("...");
     }
     else
     {
@@ -1439,7 +1457,7 @@ function GetAlignedWords(a_word)
 
 function AdjustButtons()
 {
-    var name = ["undo", "redo", "save"];
+    var name = ["undo", "redo", "save", "comment"];
     for (i in name)
     {
         var button = $("#" + name[i] + "-button", document);
