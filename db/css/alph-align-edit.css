@@ -21,50 +21,77 @@
  */
  
 body {
-    background-color: white;
+    background-color: #e0e0e0;
+}
+
+svg {
+    background-color: whitesmoke;
+   
+}
+
+
+label[for=interlinear-checkbox] {
+    margin: 2px;
+    color:#505050;
+    font-family:Futura,Verdana,sans-serif;
+    font-size:75%;
+    float:right;
 }
 
 label {
     margin: 2px;
-    color:black;
-    font-family:'trebuchet ms',helvetica,sans-serif;
-    font-size:84%;
-    font-weight:bold;
+    color:#505050;
+    font-family:Futura,Verdana,sans-serif;
+    font-size:75%;
+   
 }
+
+#interlinear-checkbox {
+    float:right;
+
+}
+
 button {
     margin: 2px;
-    background-color:#8795a2;
-    border-color:#1f3243 #4e6376 #4e6376 #1f3243;
+    background-color: #6a9fb5;
+    border-color:#505050;
     border-style:solid;
     border-width:1px;
-    color:black;
-    font-family:'trebuchet ms',helvetica,sans-serif;
-    font-size:84%;
-    font-weight:bold;
+    color:#e0e0e0;
+    font-family:Futura, sans-serif;
+    font-size:75%;
+    border-radius: 5px;
+    float:left;
 }
 button:hover {
     border-style: outset;
-    border-color: #72cedf;
-    background-color: #4e6376;
-    color: white;
+    border-color: #6a9fb5;
+    background-color:#90a959;
+    color: black;
 }
 button:active {
     border-style: inset;
     background-color: #8795a2;
 }
 button[disabled] {
-    background-color:#cccccc;
-    border-color:#9d9b99;
+    background-color:#e0e0e0;
+    border-color:#505050;
     border-style: solid;
-    color: gray;
+    border-radius: 5px;
+    color: whitesmoke;
 }
 
+
 div.summary {
-    font-family: Georgia;
+    font-family:Futura,sans-serif;
     font-size: 15px;
     border-style: solid;
     width: 250px;
     border-width: thin;
+    border-radius: 5px;
+    color:#505050;
+    display:none;
+ 
 }
 
 div.summary table {
@@ -81,6 +108,10 @@ div.summary table td {
    display:inline;
 }
 
+g {
+    pointer-events:all;
+}
+
 /*Hack to change fonts for Arabic
 -this should eventually be replaced with variables
 to change fonts by language */
@@ -88,17 +119,14 @@ to change fonts by language */
 g[direction=rtl] g g text {
     font-family:LateefRegular;
     font-size: 20px;
+   /* fill: #303030;*/
 }
 
-
-g[direction=rtl] g g text {
-    font-family:LateefRegular;
-    font-size: 20px;
-}
 
 g[direction=ltr] g g text {
-    font-family: Georgia;
+    font-family: Bodoni,serif;
     font-size: 20px;
+  /*  fill: #303030;*/
 }
 text.headwd {
     font-size: 20px;
@@ -107,22 +135,22 @@ g.alignment text {
     font-size: 15px;
 }
 text.free {
-    fill: #FF3333;
+    fill: #90a959;
 }
 text.edit-focus {
     fill: black;
 }
 text.free.edit-focus {
-    fill: red;
+    fill: white;
 }
 text.browse-focus {
-    fill: black;
+    fill: white;
 }
 text.aligned-focus {
-    fill: black;
+    fill: white;
 }
 text.free.browse-focus {
-    fill: red;
+    fill: white;
 }
 
 line.divider {
@@ -133,28 +161,30 @@ line.divider {
 g rect {
     stroke-width: 0;
     fill: none;
+
 }
+
 g rect.marked {
     stroke-width: 1px;
-    stroke: gray;
+    stroke: #75b5aa;
 }
 g rect.browse-focus {
-    fill: #FFEE77;
+    fill: #aa759f;
     stroke-width: 1px;
-    stroke: gray;
+    stroke: #75b5aa;
 }
 g rect.edit-focus {
-    fill: #F0F0F0;
+    fill: #aa759f;
     stroke-width: 1px;
-    stroke: gray;
+    stroke: #75b5aa;
 }
 g rect.aligned-focus {
-    fill: #FFEE77;
+    fill: #aa759f;
 }
 g rect.selected {
-    fill: #FFEE77;
+    fill: #aa759f;
     stroke-width: 1px;
-    stroke: black;
+    stroke: #75b5aa;
 }
 
 
@@ -169,11 +199,11 @@ g rect.selected {
 #alpheios-put-notice {
     text-align:center;
     font-weight: bold;
-    color:green;
+    color:#90a959;
 }
 
 #alpheios-put-notice.error {
-    color:red;
+    color:#ac4142;
 }
 
 .hint {
