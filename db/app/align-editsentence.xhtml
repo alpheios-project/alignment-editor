@@ -69,12 +69,10 @@
         
         
         <link rel="stylesheet" type="text/css" href="../css/alph-align-edit.css"/>
-        
         <link rel="stylesheet" media="screen" href="http://openfontlibrary.org/face/lateef" type="text/css"/>
         <script type="text/javascript" src="../script/jquery-1.2.6-alph.js"></script>
         <script type="text/javascript" src="../script/alph-align-edit.js"></script>
         <script type="text/javascript" src="../script/alph-edit-utils.js"></script>
-        
         
     </head>
     <body onkeypress="Keypress(event)" onload="Init(event,true)" style="display:none">
@@ -83,7 +81,7 @@
         
         <div class="alpheios-ignore">
           <div id="alph-page-header">
-            <img src="../image/alpheios.png" alt="Alpheios Logo"/>
+            <img src="../image/alpheios-transparent.png" alt="Alpheios Logo"/>
           </div>
         </div>
            
@@ -145,7 +143,8 @@
                     <!-- TODO hide if not allow save -->
                 <button id="save-button" onclick="ClickOnSave(event)" style="display:none;">Save sentence</button>
                 <button id="undo-button" onclick="ClickOnUndo(event)">&lt; Undo</button>
-                <button id="redo-button" disabled="yes" onclick="ClickOnRedo(event)">Redo &gt;</button>
+				<button id="redo-button" disabled="yes" onclick="ClickOnRedo(event)">Redo &gt;</button>
+				<button id="comment-button" onclick="ClickOnComment(event)">Add Comment</button>
             
                 <form method="post" action="../xq/align-export.xq" id="exportform">
                       <button id="export-xml-button"
@@ -217,6 +216,5 @@
         <div id="alpheios-put-notice"/>    
 
         <svg xmlns="http://www.w3.org/2000/svg"/>
-        <script type="text/javascript" src="../script/alph-align-betacode2arabic.js"></script>
     </body>
 </html>
