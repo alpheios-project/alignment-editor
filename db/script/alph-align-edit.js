@@ -675,6 +675,7 @@ function SelectWord(a_word)
         HighlightHeadWord(s_selectedWord, true, "selected");
         HighlightWord(s_selectedWord, false);
         $("#comment-button", document).removeAttr("disabled");
+        ToggleCommentButton(s_selectedWord);
     }
 		
     // if no selected word, make sure current word gets browse focus
@@ -683,7 +684,6 @@ function SelectWord(a_word)
         HighlightWord(s_currentWord, true);
 	$("#comment-button", document).attr("disabled","disabled");
     }
-    ToggleCommentButton(a_word);
 };
 
 // function to set attribute on word
