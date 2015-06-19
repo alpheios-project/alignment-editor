@@ -1,10 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <title>Alpheios:Edit Aligned Sentence</title>
-        
-        <meta name="alpheios-editTransformURL"
-            content="../xslt/align-svg-edit.xsl"/>
+        <meta name="alpheios-editTransformURL" content="../xslt/align-svg-edit.xsl"/>
        <!-- Parameters controlling behavior of the editor
          All names are prefixed in the <meta> tags with "alpheios-param-".
          All can be overridden by parameters supplied at invocation time to
@@ -66,155 +63,137 @@
         -->
         <meta name="alpheios-exitURL" content="../xq/align-getlist.xqdoc=DOC_REPLACE&amp;s=S_REPLACE"/>
         <meta name="alpheios-exitLabel" content="Sentence&#160;list"/>
-        
-        
         <link rel="stylesheet" type="text/css" href="../css/alph-align-edit.css"/>
-        <link rel="stylesheet" media="screen" href="http://openfontlibrary.org/face/lateef" type="text/css"/>
-        <script type="text/javascript" src="../script/jquery-1.2.6-alph.js"></script>
-        <script type="text/javascript" src="../script/alph-align-edit.js"></script>
-        <script type="text/javascript" src="../script/alph-edit-utils.js"></script>
-        
+        <script type="text/javascript" src="../script/jquery-1.2.6-alph.js"/>
+        <script type="text/javascript" src="../script/alph-align-edit.js"/>
+        <script type="text/javascript" src="../script/alph-edit-utils.js"/>
     </head>
     <body onkeypress="Keypress(event)" onload="Init(event,true)" style="display:none">
-        
-        <div id="align-title"><span class="alpheios-document-id"/></div>    
-        
-        <div class="alpheios-ignore">
-          <div id="alph-page-header">
-            <img src="../image/alpheios-transparent.png" alt="Alpheios Logo"/>
-          </div>
+        <div id="align-title">
+            <span class="alpheios-document-id"/>
         </div>
-           
-       <table style="border:none; padding:0; width:100%">
-        <tr>
-            <td>
-                <div class="controls alpheios-ignore" id="edit-controls" style="display:none;">
-                    <table style="border:none; padding:0">
-                        <tr>
-                            <td>
-                                <div id="sent-navigation">
-                                    <table style="border:1px solid black; padding:0">
-                                        <tr>
-                                            <td>
-                                                <button id="first-button" onclick="ClickOnGoTo(event)"
-                                                    >&#160;</button>
-                                            </td>
-                                            <td>
-                                                <button id="prev-button" onclick="ClickOnGoTo(event)"
-                                                    >&#160;</button>
-                                            </td>
-                                            <td>
-                                                <label id="current-label">&#160;</label>
-                                            </td>
-                                            <td>
-                                                <button id="next-button" onclick="ClickOnGoTo(event)"
-                                                    >&#160;</button>
-                                            </td>
-                                            <td>
-                                                <button id="last-button" onclick="ClickOnGoTo(event)"
-                                                    >&#160;</button>
-                                            </td>
-                                            <td>
-                                                <form onsubmit="return SubmitGoTo(this)"
-                                                    name="sent-navigation-goto">
-                                                    <label>&#160;&#160;Go&#160;to&#160;sentence&#160;number</label>
-                                                    <input type="text" name="s" size="5"/>
-                                                </form>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </td>
-                            <td>
-                                <form onsubmit="return SubmitExit(this)" name="sent-navigation-exit">
-                                    <input type="hidden" name="doc"/>
-                                    <input type="hidden" name="s"/>
-                                    <button type="submit">Exit</button>
-                                </form>
-                            </td>
-                        </tr>
-                    </table>
-                    
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>
+        <div class="alpheios-ignore">
+            <div id="alph-page-header">
+                <img src="../image/alpheios.png" alt="Alpheios Logo"/>
+            </div>
+        </div>
+        <table style="border:none; padding:0; width:100%">
+            <tr>
+                <td>
+                    <div class="controls alpheios-ignore" id="edit-controls" style="display:none;">
+                        <table style="border:none; padding:0">
+                            <tr>
+                                <td>
+                                    <div id="sent-navigation">
+                                        <table style="border:1px solid black; padding:0">
+                                            <tr>
+                                                <td>
+                                                    <button id="first-button" onclick="ClickOnGoTo(event)">&#160;</button>
+                                                </td>
+                                                <td>
+                                                    <button id="prev-button" onclick="ClickOnGoTo(event)">&#160;</button>
+                                                </td>
+                                                <td>
+                                                    <label id="current-label">&#160;</label>
+                                                </td>
+                                                <td>
+                                                    <button id="next-button" onclick="ClickOnGoTo(event)">&#160;</button>
+                                                </td>
+                                                <td>
+                                                    <button id="last-button" onclick="ClickOnGoTo(event)">&#160;</button>
+                                                </td>
+                                                <td>
+                                                    <form onsubmit="return SubmitGoTo(this)" name="sent-navigation-goto">
+                                                        <label>&#160;&#160;Go&#160;to&#160;sentence&#160;number</label>
+                                                        <input type="text" name="s" size="5"/>
+                                                    </form>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
+                                <td>
+                                    <form onsubmit="return SubmitExit(this)" name="sent-navigation-exit">
+                                        <input type="hidden" name="doc"/>
+                                        <input type="hidden" name="s"/>
+                                        <button type="submit">Exit</button>
+                                    </form>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
                     <!-- TODO hide if not allow save -->
-                <button id="save-button" onclick="ClickOnSave(event)" style="display:none;">Save sentence</button>
-                <button id="undo-button" onclick="ClickOnUndo(event)">&lt; Undo</button>
-				<button id="redo-button" disabled="yes" onclick="ClickOnRedo(event)">Redo &gt;</button>
-				<button id="comment-button" onclick="ClickOnComment(event)">Add Comment</button>
-            
-                <form method="post" action="../xq/align-export.xq" id="exportform">
-                      <button id="export-xml-button"
-                          onclick="ClickOnExport(event)">Export XML</button>
-                    <input type="hidden" name="doc" value=""/>
-                    <input type="hidden" name="sentenceForExport" id="sentenceForExport"/>
-                </form>
-                <form method="post" action="../xq/align-display.xq" id="exportdisplayform">
-                      <button id="export-display-button"
-                          onclick="return ClickOnExportDisplay(event);">Export Display</button>
-                      <input type="hidden" name="doc" value=""/>
-                      <input type="hidden" name="sentenceForDisplay" id="sentenceForDisplay"/>
-                  </form>
-                  <form>
-                    <label for="interlinear-checkbox">Show interlinear text</label>
-                    <input id="interlinear-checkbox"
-                           type="checkbox"
-                           onclick="ToggleInterlinearDisplay(event)"/>
-                  </form>
-               </td>
-           </tr>
-       </table>
+                    <button id="save-button" onclick="ClickOnSave(event)" style="display:none;">Save sentence</button>
+                    <button id="undo-button" onclick="ClickOnUndo(event)">&lt; Undo</button>
+                    <button id="redo-button" disabled="yes" onclick="ClickOnRedo(event)">Redo &gt;</button>
+                    <form method="post" action="../xq/align-export.xq" id="exportform">
+                        <button id="export-xml-button" onclick="ClickOnExport(event)">Export XML</button>
+                        <input type="hidden" name="doc" value=""/>
+                        <input type="hidden" name="sentenceForExport" id="sentenceForExport"/>
+                    </form>
+                    <form method="post" action="../xq/align-display.xq" id="exportdisplayform">
+                        <button id="export-display-button" onclick="return ClickOnExportDisplay(event);">Export Display</button>
+                        <input type="hidden" name="doc" value=""/>
+                        <input type="hidden" name="sentenceForDisplay" id="sentenceForDisplay"/>
+                    </form>
+                    <form>
+                        <label for="interlinear-checkbox">Show interlinear text</label>
+                        <input id="interlinear-checkbox" type="checkbox" onclick="ToggleInterlinearDisplay(event)"/>
+                    </form>
+                </td>
+            </tr>
+        </table>
         <div class="summary alpheios-ignore">
-          <table>
-            <tr>
+            <table>
+                <tr>
               <!-- TODO javascript L1 -->
-              <th>L1</th>
-              <td>
-                <span class="heading">&#xA0;&#xA0;&lt;</span>
-                <span id="L1:S0">0</span>
-              </td>
-              <td>
-                <span class="heading">&#xA0;&#xA0;=</span>
-                <span id="L1:S1">0</span>
-              </td>
-              <td>
-                <span class="heading">&#xA0;&#xA0;&gt;</span>
-                <span id="L1:S2">0</span>
-              </td>
-              <td>
-                <span class="heading">&#xA0;&#xA0;&#xD8;</span>
-                <span id="L1:S3">0</span>
-              </td>
-            </tr>
-            <tr>
+                    <th>L1</th>
+                    <td>
+                        <span class="heading">&#160;&#160;&lt;</span>
+                        <span id="L1:S0">0</span>
+                    </td>
+                    <td>
+                        <span class="heading">&#160;&#160;=</span>
+                        <span id="L1:S1">0</span>
+                    </td>
+                    <td>
+                        <span class="heading">&#160;&#160;&gt;</span>
+                        <span id="L1:S2">0</span>
+                    </td>
+                    <td>
+                        <span class="heading">&#160;&#160;Ø</span>
+                        <span id="L1:S3">0</span>
+                    </td>
+                </tr>
+                <tr>
               <!-- TODO javascript L2 -->
-              <th>L2</th>
-              <td>
-                <span class="heading">&#xA0;&#xA0;&lt;</span>
-                <span id="L2:S0">0</span>
-              </td>
-              <td>
-                <span class="heading">&#xA0;&#xA0;=</span>
-                <span id="L2:S1">0</span>
-              </td>
-              <td>
-                <span class="heading">&#xA0;&#xA0;&gt;</span>
-                <span id="L2:S2">0</span>
-              </td>
-              <td>
-                <span class="heading">&#xA0;&#xA0;&#xD8;</span>
-                <span id="L2:S3">0</span>
-              </td>
-            </tr>
-          </table>
+                    <th>L2</th>
+                    <td>
+                        <span class="heading">&#160;&#160;&lt;</span>
+                        <span id="L2:S0">0</span>
+                    </td>
+                    <td>
+                        <span class="heading">&#160;&#160;=</span>
+                        <span id="L2:S1">0</span>
+                    </td>
+                    <td>
+                        <span class="heading">&#160;&#160;&gt;</span>
+                        <span id="L2:S2">0</span>
+                    </td>
+                    <td>
+                        <span class="heading">&#160;&#160;Ø</span>
+                        <span id="L2:S3">0</span>
+                    </td>
+                </tr>
+            </table>
         </div>
         <br/>
         <div id="alpheios-trigger-hint" class="alpheios-ignore alpheios-trigger-hint alpheios-hint"/>
-        <div id="alpheios-put-notice"/>    
-
+        <div id="alpheios-put-notice"/>
         <div id="alpheios-svg-wrapper">
           <svg xmlns="http://www.w3.org/2000/svg"/>
         </div>

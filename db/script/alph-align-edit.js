@@ -360,7 +360,6 @@ function InitNewSentence(a_load)
     $("#undo-button", document).attr("disabled", "disabled");
     $("#redo-button", document).attr("disabled", "disabled");
     $("#save-button", document).attr("disabled", "disabled");
-	$("#comment-button", document).attr("disabled", "disabled");
     AdjustButtons();
     
     $("svg",document).click(Click);
@@ -470,19 +469,6 @@ function ClickOnRedo(a_evt)
     ReplayEvent(AlphEdit.repushHistory(UpdateState), true);
 };
 
-function ClickOnComment(a_evt)
-{
-   var  comment = null;
-
-    // if word not marked, query user for comment
-    if (!HasMark(s_selectedWord))
-      comment = prompt("Enter comment:", "");
-
-    // add/remove mark on word
-    ToggleMark(s_selectedWord, comment);
-    return;
-};
-
 function ClickOnSave(a_evt)
 {
     SaveContents(null);
@@ -540,7 +526,7 @@ function SubmitGoTo(a_form)
 
     // go to new sentence
     s_param["s"] = a_form.s.value;
-    InitNewSentence(true);
+    InitNewSentence();
 
     // always return false - we've already done the action
     return false;
@@ -557,7 +543,7 @@ function ClickOnGoTo(a_event)
 
     // go to new sentence
     s_param["s"] = AlphEdit.getEventTarget(a_event).value;
-    InitNewSentence(true);
+    InitNewSentence();
 };
 
 // function for handling key presses
@@ -674,15 +660,11 @@ function SelectWord(a_word)
     {
         HighlightHeadWord(s_selectedWord, true, "selected");
         HighlightWord(s_selectedWord, false);
-        $("#comment-button", document).removeAttr("disabled");
-        ToggleCommentButton(s_selectedWord);
     }
-		
     // if no selected word, make sure current word gets browse focus
     else
     {
         HighlightWord(s_currentWord, true);
-	$("#comment-button", document).attr("disabled","disabled");
     }
 };
 
@@ -1130,7 +1112,6 @@ function Reposition()
         if (maxY > window.innerHeight) {
           $("#alpheios-svg-wrapper").css("overflow","scroll");
         }
-        
     } catch (e) {
         $("svg").attr("width", window.innerWidth);
         $("svg").attr("height", maxY);
@@ -1366,14 +1347,6 @@ function HasMark(a_word)
   return a_word.hasAttributeNS(s_xlinkns, "title");
 };
 
-function ToggleCommentButton(a_word) {
-    if (HasMark(a_word))
-	$("#comment-button", document).text("Remove Comment");
-    else {
-	$("#comment-button", document).text("Add Comment");
-    }
-}
-
 // mark/unmark a word
 function ToggleMark(a_word, a_comment)
 {
@@ -1407,7 +1380,7 @@ function ToggleMark(a_word, a_comment)
         rect.removeAttributeNS(null, "rx");
         rect.removeAttributeNS(null, "ry");
     }
-    ToggleCommentButton(a_word);
+
     // make sure we save results
     AlphEdit.unsaved();
 };
@@ -1474,7 +1447,7 @@ function GetAlignedWords(a_word)
 
 function AdjustButtons()
 {
-    var name = ["undo", "redo", "save", "comment"];
+    var name = ["undo", "redo", "save"];
     for (i in name)
     {
         var button = $("#" + name[i] + "-button", document);
