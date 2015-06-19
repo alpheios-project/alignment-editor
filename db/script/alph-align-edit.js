@@ -1125,10 +1125,19 @@ function Reposition()
     // reset svg size
     try {
         $("svg").get(0).setAttribute("width", window.innerWidth);
-        $("svg").get(0).setAttribute("height", window.innerHeight);
+        $("svg").get(0).setAttribute("height", maxY);
+        $("#alpheios-svg-wrapper").css("height",window.innerHeight);
+        if (maxY > window.innerHeight) {
+          $("#alpheios-svg-wrapper").css("overflow","scroll");
+        }
+        
     } catch (e) {
         $("svg").attr("width", window.innerWidth);
-        $("svg").attr("height", window.innerHeight);
+        $("svg").attr("height", maxY);
+        $("#alpheios-svg-wrapper").css("height",window.innerHeight);
+        if (maxY > window.innerHeight) {
+          $("#alpheios-svg-wrapper").css("overflow","scroll");
+        }
     }
 };
 
