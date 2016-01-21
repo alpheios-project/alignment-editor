@@ -32,8 +32,8 @@
         <meta name="alpheios-param-numSentences" content="1"/>
         <meta name="alpheios-param-L1:lang" content=""/>
         <meta name="alpheios-param-L2:lang" content=""/>
-        <meta name="alpheios-param-L1:direction" content="ltr"/>
-        <meta name="alpheios-param-L2:direction" content="ltr"/>
+        <meta name="alpheios-param-L1:direction" content=""/>
+        <meta name="alpheios-param-L2:direction" content=""/>
         <meta name="alpheios-param-sentenceNavigation" content="yes"/>
 
         <!-- alpheios metadata -->
@@ -63,6 +63,7 @@
         -->
         <meta name="alpheios-exitURL" content="../xq/align-getlist.xqdoc=DOC_REPLACE&amp;s=S_REPLACE"/>
         <meta name="alpheios-exitLabel" content="Sentence&#160;list"/>
+        <link rel="stylesheet" media="screen" href="http://openfontlibrary.org/face/lateef" type="text/css"/>
         <link rel="stylesheet" type="text/css" href="../css/alph-align-edit.css"/>
         <script type="text/javascript" src="../script/jquery-1.2.6-alph.js"/>
         <script type="text/javascript" src="../script/alph-align-edit.js"/>
@@ -74,7 +75,7 @@
         </div>
         <div class="alpheios-ignore">
             <div id="alph-page-header">
-                <img src="../image/alpheios.png" alt="Alpheios Logo"/>
+                <img src="../image/alpheios-transparent.png" alt="Alpheios Logo"/>
             </div>
         </div>
         <table style="border:none; padding:0; width:100%">
@@ -135,11 +136,13 @@
                         <input type="hidden" name="doc" value=""/>
                         <input type="hidden" name="sentenceForExport" id="sentenceForExport"/>
                     </form>
+                    <!--
                     <form method="post" action="../xq/align-display.xq" id="exportdisplayform">
                         <button id="export-display-button" onclick="return ClickOnExportDisplay(event);">Export Display</button>
                         <input type="hidden" name="doc" value=""/>
                         <input type="hidden" name="sentenceForDisplay" id="sentenceForDisplay"/>
                     </form>
+                    -->
                     <form>
                         <label for="interlinear-checkbox">Show interlinear text</label>
                         <input id="interlinear-checkbox" type="checkbox" onclick="ToggleInterlinearDisplay(event)"/>

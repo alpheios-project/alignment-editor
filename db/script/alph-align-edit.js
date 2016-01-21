@@ -362,7 +362,9 @@ function InitNewSentence(a_load)
     $("#save-button", document).attr("disabled", "disabled");
     AdjustButtons();
     
-    $("svg",document).click(Click);
+    if (s_param['app' == 'editor']) {
+        $("svg",document).click(Click);
+    }
     $("svg",document).mouseover(EnterLeave);
     $("svg",document).mouseout(EnterLeave);
     
