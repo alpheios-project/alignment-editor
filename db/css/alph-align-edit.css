@@ -21,13 +21,13 @@
  */
  
 body {
-    background-color: #e0e0e0;
+    background-color: white;
 }
 
 /* 1) THIS IS THE BACKGROUND COLOR THAT THE ALIGNMENT TEXT APPEARS ON*/
 
 svg {
-    background-color: #F8F8F8;
+    background-color: white
    
 }
 
@@ -48,13 +48,13 @@ label {
 }
 
 #interlinear-checkbox {
-    float:right;
+    float: right;
 
 }
 
 button {
     margin: 2px;
-    background-color: #6a9fb5;
+    background-color: #46788d;
     border-color:#505050;
     border-style:solid;
     border-width:1px;
@@ -72,10 +72,10 @@ button:hover {
 }
 button:active {
     border-style: inset;
-    background-color: #8795a2;
+    background-color: #292f34;
 }
 button[disabled] {
-    background-color:#e0e0e0;
+    background-color: #6e6e6e;
     border-color:#505050;
     border-style: solid;
     border-radius: 5px;
@@ -122,15 +122,16 @@ to change fonts by language */
 g[direction=rtl] g g text {
     font-family:LateefRegular;
     font-size: 20px;
-   /* fill: #303030;*/
+    fill: #282828;
 }
 
 
 g[direction=ltr] g g text {
     font-family: Bodoni,serif;
     font-size: 20px;
-  /*  fill: #303030;*/
+    fill: #282828;
 }
+
 text.headwd {
     font-size: 20px;
 }
@@ -140,29 +141,29 @@ g.alignment text {
 
 /* 3) THIS IS THE COLOR OF UN-ALIGNED TEXT */
 
-text.free {
-    fill: #d28445;
+text.free {   /* sets the displayed color of unaligned words */ 
+    fill: #ae0000;
 }
 
-/*4) THIS IS THE COLOR OF ALIGNED TEXT */
+/*4) THIS IS THE COLOR OF ALIGNED TEXT- BUT ONLY WHEN A NEW ANCHOR IS ACTIVE */
 
-text.edit-focus {
+text.edit-focus {   /* controls color of already aligned text only when a new anchor is active */
     fill: black;
 }
 
 /* 5) THIS IS THE COLOR OF TEXT WHEN YOU HOVER OVER IT */
 
-text.free.edit-focus {
-    fill: white;
+text.free.edit-focus {   /* the color of unaligned text when moused over while a new anchor link is active  */
+    fill: #810000;   /* very dark red */
 }
-text.browse-focus {
-    fill: white;
+text.browse-focus {   /* not sure what this does - nothing I can see */
+    fill: black;
 }
-text.aligned-focus {
-    fill: white;
+text.aligned-focus {  /* the color of aligned text when it is moused over with no active anchors */
+    fill: black;
 }
-text.free.browse-focus {
-    fill: white;
+text.free.browse-focus {  /* color of unaligned text when moused over with no active anchors */
+    fill: #810000;
 }
 
 line.divider {
@@ -179,27 +180,28 @@ g rect {
 g rect.marked {
     stroke-width: 1px;
     stroke: #75b5aa;
+    stroke: gray;
 }
 
 /* 6) THE 'FILL' HERE IS THE COLOR OF THE BOXES THAT DO THE HOVERING OVER */
 
-g rect.browse-focus {
-    fill: #aa759f;
+g rect.browse-focus {   /* background (light yellow) of unaligned text when moused over */
+    fill: #fffee0;
     stroke-width: 1px;
-    stroke: #75b5aa;
+    stroke: gray;
 }
-g rect.edit-focus {
-    fill: #aa759f;
+g rect.edit-focus {  /* the background color of both aligned and unaligned text when moused over with an open anchor link */
+    fill: #F0F0F0;  
     stroke-width: 1px;
-    stroke: #75b5aa;
+    stroke: gray;
 }
-g rect.aligned-focus {
-    fill: #aa759f;
+g rect.aligned-focus {  /* the background color of aligned text when moused over with no active anchor link */
+    fill: #FFd740;
 }
-g rect.selected {
-    fill: #aa759f;
-    stroke-width: 1px;
-    stroke: #75b5aa;
+g rect.selected {   /* background color when an unaligned word is selected to be a new anchor link */
+    fill: #c8ff40;    /* light green matching the amber hue of the established link */
+    stroke-width: 2px;
+    stroke: black;
 }
 
 
@@ -226,3 +228,4 @@ g rect.selected {
     font-size: smaller;
 
 }
+
