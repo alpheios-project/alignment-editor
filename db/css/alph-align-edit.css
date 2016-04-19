@@ -122,14 +122,16 @@ to change fonts by language */
 g[direction=rtl] g g text {
     font-family:LateefRegular;
     font-size: 20px;
-    fill: #282828;
 }
 
 
 g[direction=ltr] g g text {
     font-family: Bodoni,serif;
     font-size: 20px;
-    fill: #282828;
+}
+
+g text {
+    fill: #282828;    
 }
 
 text.headwd {
