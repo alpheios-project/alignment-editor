@@ -21,13 +21,13 @@
  */
  
 body {
-    background-color: white;
+    background-color: #e0e0e0;
 }
 
 /* 1) THIS IS THE BACKGROUND COLOR THAT THE ALIGNMENT TEXT APPEARS ON*/
 
 svg {
-    background-color: white
+    background-color: #F8F8F8;
    
 }
 
