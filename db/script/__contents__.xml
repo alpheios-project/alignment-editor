@@ -3,4 +3,6 @@
     <resource type="BinaryResource" name="alph-align-edit.js" owner="admin" group="dba" mode="755" created="2013-02-15T07:37:21-05:00" modified="2013-02-15T07:37:21-05:00" filename="alph-align-edit.js" mimetype="application/x-javascript"/>
     <resource type="BinaryResource" name="alph-align-entersentence.js" owner="admin" group="dba" mode="755" created="2013-02-15T07:37:22-05:00" modified="2013-02-15T07:37:22-05:00" filename="alph-align-entersentence.js" mimetype="application/x-javascript"/>
     <resource type="BinaryResource" name="alph-align-list.js" owner="admin" group="dba" mode="755" created="2013-02-15T07:37:22-05:00" modified="2013-02-15T07:37:22-05:00" filename="alph-align-list.js" mimetype="application/x-javascript"/>
+    <resource type="BinaryResource" name="jquery-1.2.6-alph.js" owner="admin" group="dba" mode="755" created="2013-02-15T07:37:22-05:00" modified="2013-02-15T07:37:22-05:00" filename="jquery-1.2.6-alph.js" mimetype="application/x-javascript"/>
+    <resource type="BinaryResource" name="alph-align-betacode2arabic.js" owner="admin" group="dba" mode="755" created="2013-02-15T07:37:22-05:00" modified="2013-02-15T07:37:22-05:00" filename="alph-align-betacode2arabic.js" mimetype="application/x-javascript"/>
 </collection>
