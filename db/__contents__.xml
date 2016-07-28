@@ -4,4 +4,5 @@
     <subcollection name="xslt" filename="xslt"/>
     <subcollection name="app" filename="app"/>
     <subcollection name="xq" filename="xq"/>
+    <subcollection name="image" filename="image"/>
 </collection>
