@@ -7,4 +7,5 @@
     <resource type="XMLResource" name="align-editsentence-perseids-stage.xhtml" owner="admin" group="dba" mode="755" created="2013-02-15T07:42:44-05:00" modified="2013-02-15T07:42:44-05:00" filename="align-editsentence-perseids-stage.xhtml" mimetype="application/xhtml+xml"/>
     <resource type="XMLResource" name="align-entersentence-ext.xhtml" owner="admin" group="dba" mode="755" created="2013-02-15T07:42:44-05:00" modified="2013-02-15T07:42:44-05:00" filename="align-entersentence-ext.xhtml" mimetype="application/xhtml+xml"/>
     <resource type="XMLResource" name="align-entersentence-perseids.xhtml" owner="admin" group="dba" mode="755" created="2013-02-15T07:42:44-05:00" modified="2013-02-15T07:42:44-05:00" filename="align-entersentence-perseids.xhtml" mimetype="application/xhtml+xml"/>
+    <resource type="XMLResource" name="align-viewsentence.xhtml" owner="admin" group="dba" mode="755" created="2013-02-15T07:42:44-05:00" modified="2013-02-15T07:42:44-05:00" filename="align-viewsentence.xhtml" mimetype="application/xhtml+xml"/>
 </collection>
