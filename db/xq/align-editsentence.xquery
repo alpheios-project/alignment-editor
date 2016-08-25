@@ -542,7 +542,7 @@ declare function aled:get-display-page(
     (: logo :)
     <div class="alpheios-ignore">
       <div id="alph-page-header">
-        <img src="{concat($a_baseResUrl,'/image/alpheios.png')}"/>
+        <img src="{concat($a_baseResUrl,'/image/alpheios-transparent.png')}"/>
       </div>
     </div>,
     <div class="controls alpheios-ignore">
