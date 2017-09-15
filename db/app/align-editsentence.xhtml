@@ -58,6 +58,9 @@
         -->
         <meta name="alpheios-getSentenceURL" content="../xq/align-getsentence.xq?doc=DOC_REPLACE&amp;s=S_REPLACE"/>
         <meta name="alpheios-putSentenceURL" content="../xq/align-savesentence.xq?doc=DOC_REPLACE&amp;s=S_REPLACE"/>
+ 
+        <!-- URL to serve as the base for resources in the exported display -->
+        <meta name="alpheios-baseResURL" content=""/>
         
         <!-- URL to call when exiting and label to use on exit button -->
         <!-- The url should contain the following placeholders which will be filled by 
@@ -157,6 +160,7 @@
                           onclick="return ClickOnExportDisplay(event);">Export Display</button>
                       <input type="hidden" name="doc" value=""/>
                       <input type="hidden" name="sentenceForDisplay" id="sentenceForDisplay"/>
+                      <input type="hidden" name="baseResUrl" value=""/>
                   </form>
                   <form>
                     <label for="interlinear-checkbox">Show interlinear text</label>

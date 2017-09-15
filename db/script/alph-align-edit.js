@@ -1347,11 +1347,13 @@ function ExportContents()
 // export display to file
 function ExportDisplay()
 {
+    var resURL = $("meta[name='alpheios-baseResURL']", document).attr("content");
     var svg = document.getElementsByTagNameNS(s_svgns, "svg")[0];
     var input = $("#sentenceForDisplay");
     var output = new XMLSerializer().serializeToString(svg);
     input.val(output);
     $("#exportdisplayform input[name='doc']").val(s_param['doc']);
+    $("#exportdisplayform input[name='baseResUrl']").val(resURL);
     $("#exportdisplayform").submit();
 }
   

@@ -56,6 +56,9 @@
         <meta name="alpheios-getSentenceURL" content="http://sosol.perseids.org/sosol/dmm_api/item/AlignmentCite/DOC_REPLACE/partial?q=s%3DS_REPLACE"/>
         <meta name="alpheios-putSentenceURL" content="http://sosol.perseids.org/sosol/dmm_api/item/AlignmentCite/DOC_REPLACE/partial?q=s%3DS_REPLACE"/>
         
+        <!-- URL to serve as the base for resources in the exported display -->
+        <meta name="alpheios-baseResURL" content="http://sosol.perseids.org/alpheios/"/>
+
         <!-- URL to call when exiting and label to use on exit button -->
         <!-- The url should contain the following placeholders which will be filled by 
          the application:
@@ -142,6 +145,7 @@
                         <button id="export-display-button" onclick="return ClickOnExportDisplay(event);">Export Display</button>
                         <input type="hidden" name="doc" value=""/>
                         <input type="hidden" name="sentenceForDisplay" id="sentenceForDisplay"/>
+                        <input type="hidden" name="baseResUrl" value=""/>
                     </form>
                     <form>
                         <label for="interlinear-checkbox">Show interlinear text</label>

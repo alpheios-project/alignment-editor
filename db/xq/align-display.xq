@@ -38,9 +38,9 @@ declare option exist:serialize
 let $docName := request:get-parameter("doc","") 
 let $data := util:parse(request:get-parameter("sentenceForDisplay",""))
 let $doc := alut:svg-to-xml( $data/*:svg, true() )
-(:let $base := request:get-url():)
-let $base := "http://sosol.perseids.org/alpheios"
-let $baseResUrl := replace($base,'/xq/.*','')
+let $reqBase := request:get-parameter("baseResUrl","")
+let $base := request:get-url()
+let $baseResUrl := if ($reqBase eq "") then replace($base,'/xq/.*','') else $reqBase
 let $base := substring($base,
                        1,
                        string-length($base) - 
