@@ -8,6 +8,12 @@
 <title>Alpheios Alignment Editor - Align Text (teste-local)</title>
 <script language="javascript" type="text/javascript" src="../script/jquery-1.2.6-alph.js"></script>
 <script language="javascript" type="text/javascript" src="../script/alph-align-entersentence.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("input[name='l1-direction']").click(SetTextDir);
+        $("input[name='l2-direction']").click(SetTextDir);
+      });
+    </script>
 </head>
 <body>
 <div class="alpheios-ignore">
@@ -15,9 +21,9 @@
 alt="Alpheios" /> </div>
 </div>
 <div>
-<form name="input-form" action="../xq/align-addsentence.xq"
-onsubmit="return EnterSentence(event);"> <input type="hidden"
-name="l1" /> <input type="hidden" name="l2" />
+<form name="input-form" action=""> 
+  <input type="hidden" name="l1" />
+  <input type="hidden" name="l2" />
 <fieldset> <legend>Inserir Texto na Língua 1:</legend> <textarea
 name="l1text" rows="10" cols="80"></textarea>
 <div style="text-align:right;"> <label for="lang1">Língua
@@ -163,7 +169,7 @@ style="width:3em;" /> </div>
 name="l2text" rows="10" cols="80"></textarea>
 <div style="text-align:right;"> <label for="lang2">Language
 2:</label>
-<select name="select_l1" id="select_l1">
+<select name="select_l2" id="select_l2">
 
 <option value="eng">Inglês</option>
 <option value="lat">Latim</option>
@@ -297,16 +303,19 @@ name="l2text" rows="10" cols="80"></textarea>
 <option value="yid">Yiddish</option>
 </select>
 <br />
-<label for="other_l1">Ou Outra Língua*:</label> <input
+<label for="other_l2">Ou Outra Língua*:</label> <input
 type="text" id="other_l2" name="other_l2" size="3"
 style="width:3em;" /> </div>
 </fieldset>
-<div> <button type="submit" style="float: right; width:100px;
-font-weight:bold; background-color:#73Cdde; color:white;">Align</button>
-</div>
 <div style="font-size: smaller;">*Por favor, use código ISO 639-2 ou ISO
 639-3 de três letras para qualquer outra língua</div>
 </form>
+  <form name="submit-form" action="align-editsentence.xhtml"
+        onsubmit="EnterSentence(event)">
+        <input type="hidden" name="doc"/>
+        <input type="hidden" name="s"/>
+        <div><button type="submit" style="float: right; width:100px; font-weight:bold; background-color:#73Cdde; color:white;">Align</button></div>
+      </form>
 </div>
 </body>
 </html>
