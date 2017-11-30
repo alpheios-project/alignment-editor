@@ -5,4 +5,5 @@
     <subcollection name="app" filename="app"/>
     <subcollection name="xq" filename="xq"/>
     <subcollection name="image" filename="image"/>
+    <subcollection name="repository" filename="repository"/>
 </collection>
