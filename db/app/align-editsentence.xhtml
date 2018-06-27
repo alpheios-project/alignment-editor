@@ -67,7 +67,7 @@
          the application:
          DOC_REPLACE : gets replaced with the document identifier
         -->
-        <meta name="alpheios-exitURL" content="../xq/align-getlist.xqdoc=DOC_REPLACE&amp;s=S_REPLACE"/>
+        <meta name="alpheios-exitURL" content="../xq/align-getlist.xq?doc=DOC_REPLACE&amp;s=S_REPLACE"/>
         <meta name="alpheios-exitLabel" content="Sentence&#160;list"/>
         
         
@@ -155,14 +155,19 @@
                     <input type="hidden" name="doc" value=""/>
                     <input type="hidden" name="sentenceForExport" id="sentenceForExport"/>
                 </form>
-                <form method="post" action="../xq/align-display.xq" id="exportdisplayform">
+                <form method="post" action="../xq/align-display.xq" id="exportdisplayform" style="display:inline;>
                       <button id="export-display-button"
                           onclick="return ClickOnExportDisplay(event);">Export Display</button>
                       <input type="hidden" name="doc" value=""/>
                       <input type="hidden" name="sentenceForDisplay" id="sentenceForDisplay"/>
                       <input type="hidden" name="baseResUrl" value=""/>
                   </form>
-                  <form>
+                <form onsubmit="return SubmitExit(this)" name="sent-navigation-exit" style="display:inline;">
+                    <input type="hidden" name="doc"/>
+                    <input type="hidden" name="s"/>
+                    <button type="submit">Exit</button>
+                </form>
+                  <form style="display:inline;">
                     <label for="interlinear-checkbox">Show interlinear text</label>
                     <input id="interlinear-checkbox"
                            type="checkbox"

@@ -118,8 +118,9 @@ declare function alst:get-list-page(
     {
       (: for each sentence :)
       for $sent at $i in $sents
+      let $id := $sent/@id
       let $saveparam := if ($a_allowSave) then '&amp;ed=1' else ''
-      let $queryURL := concat($a_queryBase, $i,$saveparam)
+      let $queryURL := concat($a_queryBase, $id,$saveparam)
       let $l1Words := $sent/*:wds[@*:lnum="L1"]/*:w
       let $l2Words := $sent/*:wds[@*:lnum="L2"]/*:w
       let $marks :=
@@ -138,7 +139,7 @@ declare function alst:get-list-page(
       (
         element li
         {
-          attribute value { $i },
+          attribute value { $id },
           element a
           {
             attribute href { $queryURL },
