@@ -1,0 +1,4612 @@
+<aligned-text xmlns="http://alpheios.net/namespaces/aligned/text">
+    <language xml:lang="grc" lnum="L1"/>
+    <language xml:lang="la" lnum="L2"/>
+    <sentence id="10201" document_id="NT:MATT_2:1">
+        <wds lnum="L1">
+            <w n="10201-1">
+                <text>Τοῦ</text>
+                <comment class="proiel-id">267188</comment>
+            </w>
+            <w n="10201-2">
+                <text>δὲ</text>
+                <comment class="proiel-id">267189</comment>
+                <refs nrefs="10201-2"/>
+            </w>
+            <w n="10201-3">
+                <text>Ἰησοῦ</text>
+                <comment class="proiel-id">267190</comment>
+                <refs nrefs="10201-5"/>
+            </w>
+            <w n="10201-4">
+                <text>γεννηθέντος</text>
+                <comment class="proiel-id">267191</comment>
+                <refs nrefs="10201-3"/>
+            </w>
+            <w n="10201-5">
+                <text>ἐν</text>
+                <comment class="proiel-id">267192</comment>
+                <refs nrefs="10201-6"/>
+            </w>
+            <w n="10201-6">
+                <text>Βηθλέεμ</text>
+                <comment class="proiel-id">267193</comment>
+                <refs nrefs="10201-7"/>
+            </w>
+            <w n="10201-7">
+                <text>τῆς</text>
+                <comment class="proiel-id">267194</comment>
+            </w>
+            <w n="10201-8">
+                <text>Ἰουδαίας</text>
+                <comment class="proiel-id">267195</comment>
+                <refs nrefs="10201-8"/>
+            </w>
+            <w n="10201-9">
+                <text>ἐν</text>
+                <comment class="proiel-id">267196</comment>
+                <refs nrefs="10201-9"/>
+            </w>
+            <w n="10201-10">
+                <text>ἡμέραις</text>
+                <comment class="proiel-id">267197</comment>
+                <refs nrefs="10201-10"/>
+            </w>
+            <w n="10201-11">
+                <text>Ἡρῴδου</text>
+                <comment class="proiel-id">267198</comment>
+                <refs nrefs="10201-11"/>
+            </w>
+            <w n="10201-12">
+                <text>τοῦ</text>
+                <comment class="proiel-id">267199</comment>
+            </w>
+            <w n="10201-13">
+                <text>βασιλέως</text>
+                <comment class="proiel-id">267200</comment>
+                <refs nrefs="10201-12"/>
+            </w>
+            <w n="10201-14">
+                <text>,</text>
+            </w>
+            <w n="10201-15">
+                <text>ἰδοὺ</text>
+                <comment class="proiel-id">267202</comment>
+                <refs nrefs="10201-13"/>
+            </w>
+            <w n="10201-16">
+                <text>μάγοι</text>
+                <comment class="proiel-id">267203</comment>
+                <refs nrefs="10201-14"/>
+            </w>
+            <w n="10201-17">
+                <text>ἀπὸ</text>
+                <comment class="proiel-id">267204</comment>
+                <refs nrefs="10201-15"/>
+            </w>
+            <w n="10201-18">
+                <text>ἀνατολῶν</text>
+                <comment class="proiel-id">267205</comment>
+                <refs nrefs="10201-16"/>
+            </w>
+            <w n="10201-19">
+                <text>παρεγένοντο</text>
+                <comment class="proiel-id">267206</comment>
+                <refs nrefs="10201-17"/>
+            </w>
+            <w n="10201-20">
+                <text>εἰς</text>
+                <comment class="proiel-id">267207</comment>
+            </w>
+            <w n="10201-21">
+                <text>Ἱεροσόλυμα</text>
+                <comment class="proiel-id">267208</comment>
+                <refs nrefs="10201-18"/>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="10201-1">
+                <text>cum</text>
+                <comment class="proiel-id">250398</comment>
+            </w>
+            <w n="10201-2">
+                <text>ergo</text>
+                <comment class="proiel-id">250399</comment>
+                <refs nrefs="10201-2"/>
+            </w>
+            <w n="10201-3">
+                <text>natus</text>
+                <comment class="proiel-id">250400</comment>
+                <refs nrefs="10201-4"/>
+            </w>
+            <w n="10201-4">
+                <text>esset</text>
+                <comment class="proiel-id">250401</comment>
+            </w>
+            <w n="10201-5">
+                <text>Iesus</text>
+                <comment class="proiel-id">250402</comment>
+                <refs nrefs="10201-3"/>
+            </w>
+            <w n="10201-6">
+                <text>in</text>
+                <comment class="proiel-id">250403</comment>
+                <refs nrefs="10201-5"/>
+            </w>
+            <w n="10201-7">
+                <text>Bethleem</text>
+                <comment class="proiel-id">250404</comment>
+                <refs nrefs="10201-6"/>
+            </w>
+            <w n="10201-8">
+                <text>Iudaeae</text>
+                <comment class="proiel-id">250405</comment>
+                <refs nrefs="10201-8"/>
+            </w>
+            <w n="10201-9">
+                <text>in</text>
+                <comment class="proiel-id">250406</comment>
+                <refs nrefs="10201-9"/>
+            </w>
+            <w n="10201-10">
+                <text>diebus</text>
+                <comment class="proiel-id">250407</comment>
+                <refs nrefs="10201-10"/>
+            </w>
+            <w n="10201-11">
+                <text>Herodis</text>
+                <comment class="proiel-id">250408</comment>
+                <refs nrefs="10201-11"/>
+            </w>
+            <w n="10201-12">
+                <text>regis</text>
+                <comment class="proiel-id">250409</comment>
+                <refs nrefs="10201-13"/>
+            </w>
+            <w n="10201-13">
+                <text>ecce</text>
+                <comment class="proiel-id">250410</comment>
+                <refs nrefs="10201-15"/>
+            </w>
+            <w n="10201-14">
+                <text>magi</text>
+                <comment class="proiel-id">250411</comment>
+                <refs nrefs="10201-16"/>
+            </w>
+            <w n="10201-15">
+                <text>ab</text>
+                <comment class="proiel-id">250412</comment>
+                <refs nrefs="10201-17"/>
+            </w>
+            <w n="10201-16">
+                <text>oriente</text>
+                <comment class="proiel-id">250413</comment>
+                <refs nrefs="10201-18"/>
+            </w>
+            <w n="10201-17">
+                <text>venerunt</text>
+                <comment class="proiel-id">250414</comment>
+                <refs nrefs="10201-19"/>
+            </w>
+            <w n="10201-18">
+                <text>Hierosolymam</text>
+                <comment class="proiel-id">250415</comment>
+                <refs nrefs="10201-21"/>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="10202" document_id="NT:MATT_2:2">
+        <wds lnum="L1">
+            <w n="10202-1">
+                <comment class="proiel-id">267209</comment>
+                <refs nrefs="10202-1"/>
+                <text>λέγοντες</text>
+            </w>
+            <w n="10202-2">
+                <text>,</text>
+            </w>
+            <w n="10202-3">
+                <comment class="proiel-id">267211</comment>
+                <refs nrefs="10202-2"/>
+                <text>ποῦ</text>
+            </w>
+            <w n="10202-4">
+                <comment class="proiel-id">267212</comment>
+                <refs nrefs="10202-3"/>
+                <text>ἐστιν</text>
+            </w>
+            <w n="10202-5">
+                <comment class="proiel-id">267213</comment>
+                <text>ὁ</text>
+            </w>
+            <w n="10202-6">
+                <comment class="proiel-id">267214</comment>
+                <refs nrefs="10202-5"/>
+                <text>τεχθεὶς</text>
+            </w>
+            <w n="10202-7">
+                <comment class="proiel-id">267215</comment>
+                <refs nrefs="10202-7"/>
+                <text>βασιλεὺς</text>
+            </w>
+            <w n="10202-8">
+                <comment class="proiel-id">267216</comment>
+                <text>τῶν</text>
+            </w>
+            <w n="10202-9">
+                <comment class="proiel-id">267217</comment>
+                <refs nrefs="10202-8"/>
+                <text>Ἰουδαίων</text>
+            </w>
+            <w n="10202-10">
+                <text>;</text>
+            </w>
+            <w n="10202-11">
+                <comment class="proiel-id">267219</comment>
+                <refs nrefs="10202-9"/>
+                <text>εἴδομεν</text>
+            </w>
+            <w n="10202-12">
+                <comment class="proiel-id">267220</comment>
+                <refs nrefs="10202-10"/>
+                <text>γὰρ</text>
+            </w>
+            <w n="10202-13">
+                <comment class="proiel-id">267221</comment>
+                <refs nrefs="10202-12"/>
+                <text>αὐτοῦ</text>
+            </w>
+            <w n="10202-14">
+                <comment class="proiel-id">267222</comment>
+                <text>τὸν</text>
+            </w>
+            <w n="10202-15">
+                <comment class="proiel-id">267223</comment>
+                <refs nrefs="10202-11"/>
+                <text>ἀστέρα</text>
+            </w>
+            <w n="10202-16">
+                <comment class="proiel-id">267224</comment>
+                <refs nrefs="10202-13"/>
+                <text>ἐν</text>
+            </w>
+            <w n="10202-17">
+                <comment class="proiel-id">267225</comment>
+                <text>τῇ</text>
+            </w>
+            <w n="10202-18">
+                <comment class="proiel-id">267226</comment>
+                <refs nrefs="10202-14"/>
+                <text>ἀνατολῇ</text>
+            </w>
+            <w n="10202-19">
+                <comment class="proiel-id">267227</comment>
+                <refs nrefs="10202-15"/>
+                <text>καὶ</text>
+            </w>
+            <w n="10202-20">
+                <comment class="proiel-id">267228</comment>
+                <refs nrefs="10202-16"/>
+                <text>ἤλθομεν</text>
+            </w>
+            <w n="10202-21">
+                <comment class="proiel-id">267229</comment>
+                <refs nrefs="10202-17"/>
+                <text>προσκυνῆσαι</text>
+            </w>
+            <w n="10202-22">
+                <comment class="proiel-id">267230</comment>
+                <refs nrefs="10202-18"/>
+                <text>αὐτῷ</text>
+            </w>
+            <w n="10202-23">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="10202-1">
+                <comment class="proiel-id">250416</comment>
+                <refs nrefs="10202-1"/>
+                <text>dicentes</text>
+            </w>
+            <w n="10202-2">
+                <comment class="proiel-id">250417</comment>
+                <refs nrefs="10202-3"/>
+                <text>ubi</text>
+            </w>
+            <w n="10202-3">
+                <comment class="proiel-id">250418</comment>
+                <refs nrefs="10202-4"/>
+                <text>est</text>
+            </w>
+            <w n="10202-4">
+                <comment class="proiel-id">250419</comment>
+                <text>qui</text>
+            </w>
+            <w n="10202-5">
+                <comment class="proiel-id">250420</comment>
+                <refs nrefs="10202-6"/>
+                <text>natus</text>
+            </w>
+            <w n="10202-6">
+                <comment class="proiel-id">250421</comment>
+                <text>est</text>
+            </w>
+            <w n="10202-7">
+                <comment class="proiel-id">250422</comment>
+                <refs nrefs="10202-7"/>
+                <text>rex</text>
+            </w>
+            <w n="10202-8">
+                <comment class="proiel-id">250423</comment>
+                <refs nrefs="10202-9"/>
+                <text>Iudaeorum</text>
+            </w>
+            <w n="10202-9">
+                <comment class="proiel-id">250424</comment>
+                <refs nrefs="10202-11"/>
+                <text>vidimus</text>
+            </w>
+            <w n="10202-10">
+                <comment class="proiel-id">250425</comment>
+                <refs nrefs="10202-12"/>
+                <text>enim</text>
+            </w>
+            <w n="10202-11">
+                <comment class="proiel-id">250426</comment>
+                <refs nrefs="10202-15"/>
+                <text>stellam</text>
+            </w>
+            <w n="10202-12">
+                <comment class="proiel-id">250427</comment>
+                <refs nrefs="10202-13"/>
+                <text>eius</text>
+            </w>
+            <w n="10202-13">
+                <comment class="proiel-id">250428</comment>
+                <refs nrefs="10202-16"/>
+                <text>in</text>
+            </w>
+            <w n="10202-14">
+                <comment class="proiel-id">250429</comment>
+                <refs nrefs="10202-18"/>
+                <text>oriente</text>
+            </w>
+            <w n="10202-15">
+                <comment class="proiel-id">250430</comment>
+                <refs nrefs="10202-19"/>
+                <text>et</text>
+            </w>
+            <w n="10202-16">
+                <comment class="proiel-id">250431</comment>
+                <refs nrefs="10202-20"/>
+                <text>venimus</text>
+            </w>
+            <w n="10202-17">
+                <comment class="proiel-id">250432</comment>
+                <refs nrefs="10202-21"/>
+                <text>adorare</text>
+            </w>
+            <w n="10202-18">
+                <comment class="proiel-id">250433</comment>
+                <refs nrefs="10202-22"/>
+                <text>eum</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="10203" document_id="NT:MATT_2:3">
+        <wds lnum="L1">
+            <w n="10203-1">
+                <text>ἀκούσας</text>
+                <comment class="proiel-id">267232</comment>
+                <refs nrefs="10203-1"/>
+            </w>
+            <w n="10203-2">
+                <text>δὲ</text>
+                <comment class="proiel-id">267233</comment>
+                <refs nrefs="10203-2"/>
+            </w>
+            <w n="10203-3">
+                <text>ὁ</text>
+                <comment class="proiel-id">267234</comment>
+            </w>
+            <w n="10203-4">
+                <text>βασιλεὺς</text>
+                <comment class="proiel-id">267235</comment>
+                <refs nrefs="10203-4"/>
+            </w>
+            <w n="10203-5">
+                <text>Ἡρῴδης</text>
+                <comment class="proiel-id">267236</comment>
+                <refs nrefs="10203-3"/>
+            </w>
+            <w n="10203-6">
+                <text>ἐταράχθη</text>
+                <comment class="proiel-id">267237</comment>
+                <refs nrefs="10203-5 10203-6"/>
+            </w>
+            <w n="10203-7">
+                <text>καὶ</text>
+                <comment class="proiel-id">267238</comment>
+                <refs nrefs="10203-7"/>
+            </w>
+            <w n="10203-8">
+                <text>πᾶσα</text>
+                <comment class="proiel-id">267239</comment>
+                <refs nrefs="10203-8"/>
+            </w>
+            <w n="10203-9">
+                <text>Ἱεροσόλυμα</text>
+                <comment class="proiel-id">267240</comment>
+                <refs nrefs="10203-9"/>
+            </w>
+            <w n="10203-10">
+                <text>μετ’</text>
+                <comment class="proiel-id">267241</comment>
+                <refs nrefs="10203-10"/>
+            </w>
+            <w n="10203-11">
+                <text>αὐτοῦ</text>
+                <comment class="proiel-id">267242</comment>
+                <refs nrefs="10203-11"/>
+            </w>
+            <w n="10203-12">
+                <text>,</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="10203-1">
+                <text>audiens</text>
+                <comment class="proiel-id">250434</comment>
+                <refs nrefs="10203-1"/>
+            </w>
+            <w n="10203-2">
+                <text>autem</text>
+                <comment class="proiel-id">250435</comment>
+                <refs nrefs="10203-2"/>
+            </w>
+            <w n="10203-3">
+                <text>Herodes</text>
+                <comment class="proiel-id">250436</comment>
+                <refs nrefs="10203-5"/>
+            </w>
+            <w n="10203-4">
+                <text>rex</text>
+                <comment class="proiel-id">250437</comment>
+                <refs nrefs="10203-4"/>
+            </w>
+            <w n="10203-5">
+                <text>turbatus</text>
+                <comment class="proiel-id">250438</comment>
+                <refs nrefs="10203-6"/>
+            </w>
+            <w n="10203-6">
+                <text>est</text>
+                <comment class="proiel-id">250439</comment>
+                <refs nrefs="10203-6"/>
+            </w>
+            <w n="10203-7">
+                <text>et</text>
+                <comment class="proiel-id">250440</comment>
+                <refs nrefs="10203-7"/>
+            </w>
+            <w n="10203-8">
+                <text>omnis</text>
+                <comment class="proiel-id">250441</comment>
+                <refs nrefs="10203-8"/>
+            </w>
+            <w n="10203-9">
+                <text>Hierosolyma</text>
+                <comment class="proiel-id">250442</comment>
+                <refs nrefs="10203-9"/>
+            </w>
+            <w n="10203-10">
+                <text>cum</text>
+                <comment class="proiel-id">250443</comment>
+                <refs nrefs="10203-10"/>
+            </w>
+            <w n="10203-11">
+                <text>illo</text>
+                <comment class="proiel-id">250444</comment>
+                <refs nrefs="10203-11"/>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="10204" document_id="NT:MATT_2:4">
+        <wds lnum="L1">
+            <w n="10204-1">
+                <text>καὶ</text>
+                <comment class="proiel-id">267244</comment>
+                <refs nrefs="10204-1"/>
+            </w>
+            <w n="10204-2">
+                <text>συναγαγὼν</text>
+                <comment class="proiel-id">267245</comment>
+                <refs nrefs="10204-2"/>
+            </w>
+            <w n="10204-3">
+                <text>πάντας</text>
+                <comment class="proiel-id">267246</comment>
+                <refs nrefs="10204-3"/>
+            </w>
+            <w n="10204-4">
+                <text>τοὺς</text>
+                <comment class="proiel-id">267247</comment>
+            </w>
+            <w n="10204-5">
+                <text>ἀρχιερεῖς</text>
+                <comment class="proiel-id">267248</comment>
+                <refs nrefs="10204-4 10204-5"/>
+            </w>
+            <w n="10204-6">
+                <text>καὶ</text>
+                <comment class="proiel-id">267249</comment>
+                <refs nrefs="10204-6"/>
+            </w>
+            <w n="10204-7">
+                <text>γραμματεῖς</text>
+                <comment class="proiel-id">267250</comment>
+                <refs nrefs="10204-7"/>
+            </w>
+            <w n="10204-8">
+                <text>τοῦ</text>
+                <comment class="proiel-id">267251</comment>
+            </w>
+            <w n="10204-9">
+                <text>λαοῦ</text>
+                <comment class="proiel-id">267252</comment>
+                <refs nrefs="10204-8"/>
+            </w>
+            <w n="10204-10">
+                <text>ἐπυνθάνετο</text>
+                <comment class="proiel-id">267253</comment>
+                <refs nrefs="10204-9"/>
+            </w>
+            <w n="10204-11">
+                <text>παρ’</text>
+                <comment class="proiel-id">267254</comment>
+                <refs nrefs="10204-10"/>
+            </w>
+            <w n="10204-12">
+                <text>αὐτῶν</text>
+                <comment class="proiel-id">267255</comment>
+                <refs nrefs="10204-11"/>
+            </w>
+            <w n="10204-13">
+                <text>ποῦ</text>
+                <comment class="proiel-id">267256</comment>
+                <refs nrefs="10204-12"/>
+            </w>
+            <w n="10204-14">
+                <text>ὁ</text>
+                <comment class="proiel-id">267257</comment>
+            </w>
+            <w n="10204-15">
+                <text>Χριστὸς</text>
+                <comment class="proiel-id">267258</comment>
+                <refs nrefs="10204-13"/>
+            </w>
+            <w n="10204-16">
+                <text>γεννᾶται</text>
+                <comment class="proiel-id">267259</comment>
+                <refs nrefs="10204-14"/>
+            </w>
+            <w n="10204-17">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="10204-1">
+                <text>et</text>
+                <comment class="proiel-id">250445</comment>
+                <refs nrefs="10204-1"/>
+            </w>
+            <w n="10204-2">
+                <text>congregans</text>
+                <comment class="proiel-id">250446</comment>
+                <refs nrefs="10204-2"/>
+            </w>
+            <w n="10204-3">
+                <text>omnes</text>
+                <comment class="proiel-id">250447</comment>
+                <refs nrefs="10204-3"/>
+            </w>
+            <w n="10204-4">
+                <text>principes</text>
+                <comment class="proiel-id">250448</comment>
+                <refs nrefs="10204-5"/>
+            </w>
+            <w n="10204-5">
+                <text>sacerdotum</text>
+                <comment class="proiel-id">250449</comment>
+                <refs nrefs="10204-5"/>
+            </w>
+            <w n="10204-6">
+                <text>et</text>
+                <comment class="proiel-id">250450</comment>
+                <refs nrefs="10204-6"/>
+            </w>
+            <w n="10204-7">
+                <text>scribas</text>
+                <comment class="proiel-id">250451</comment>
+                <refs nrefs="10204-7"/>
+            </w>
+            <w n="10204-8">
+                <text>populi</text>
+                <comment class="proiel-id">250452</comment>
+                <refs nrefs="10204-9"/>
+            </w>
+            <w n="10204-9">
+                <text>sciscitabatur</text>
+                <comment class="proiel-id">250453</comment>
+                <refs nrefs="10204-10"/>
+            </w>
+            <w n="10204-10">
+                <text>ab</text>
+                <comment class="proiel-id">250454</comment>
+                <refs nrefs="10204-11"/>
+            </w>
+            <w n="10204-11">
+                <text>eis</text>
+                <comment class="proiel-id">250455</comment>
+                <refs nrefs="10204-12"/>
+            </w>
+            <w n="10204-12">
+                <text>ubi</text>
+                <comment class="proiel-id">250456</comment>
+                <refs nrefs="10204-13"/>
+            </w>
+            <w n="10204-13">
+                <text>Christus</text>
+                <comment class="proiel-id">250457</comment>
+                <refs nrefs="10204-15"/>
+            </w>
+            <w n="10204-14">
+                <text>nasceretur</text>
+                <comment class="proiel-id">250458</comment>
+                <refs nrefs="10204-16"/>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="10205" document_id="NT:MATT_2:5">
+        <wds lnum="L1">
+            <w n="10205-1">
+                <text>οἱ</text>
+                <comment class="proiel-id">267261</comment>
+                <refs nrefs="10205-2"/>
+            </w>
+            <w n="10205-2">
+                <text>δὲ</text>
+                <comment class="proiel-id">267262</comment>
+                <refs nrefs="10205-1"/>
+            </w>
+            <w n="10205-3">
+                <text>εἶπαν</text>
+                <comment class="proiel-id">267263</comment>
+                <refs nrefs="10205-3"/>
+            </w>
+            <w n="10205-4">
+                <text>αὐτῷ</text>
+                <comment class="proiel-id">267264</comment>
+                <refs nrefs="10205-4"/>
+            </w>
+            <w n="10205-5">
+                <text>,</text>
+            </w>
+            <w n="10205-6">
+                <text>ἐν</text>
+                <comment class="proiel-id">267266</comment>
+                <refs nrefs="10205-5"/>
+            </w>
+            <w n="10205-7">
+                <text>Βηθλέεμ</text>
+                <comment class="proiel-id">267267</comment>
+                <refs nrefs="10205-6"/>
+            </w>
+            <w n="10205-8">
+                <text>τῆς</text>
+                <comment class="proiel-id">267268</comment>
+            </w>
+            <w n="10205-9">
+                <text>Ἰουδαίας</text>
+                <comment class="proiel-id">267269</comment>
+                <refs nrefs="10205-7"/>
+            </w>
+            <w n="10205-10">
+                <text>·</text>
+            </w>
+            <w n="10205-11">
+                <text>οὕτως</text>
+                <comment class="proiel-id">267271</comment>
+                <refs nrefs="10205-8"/>
+            </w>
+            <w n="10205-12">
+                <text>γὰρ</text>
+                <comment class="proiel-id">267272</comment>
+                <refs nrefs="10205-9"/>
+            </w>
+            <w n="10205-13">
+                <text>γέγραπται</text>
+                <comment class="proiel-id">267273</comment>
+                <refs nrefs="10205-10 10205-11"/>
+            </w>
+            <w n="10205-14">
+                <text>διὰ</text>
+                <comment class="proiel-id">267274</comment>
+                <refs nrefs="10205-12"/>
+            </w>
+            <w n="10205-15">
+                <text>τοῦ</text>
+                <comment class="proiel-id">267275</comment>
+            </w>
+            <w n="10205-16">
+                <text>προφήτου</text>
+                <comment class="proiel-id">267276</comment>
+                <refs nrefs="10205-13"/>
+            </w>
+            <w n="10205-17">
+                <text>·</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="10205-1">
+                <text>at</text>
+                <comment class="proiel-id">250459</comment>
+                <refs nrefs="10205-2"/>
+            </w>
+            <w n="10205-2">
+                <text>illi</text>
+                <comment class="proiel-id">250460</comment>
+                <refs nrefs="10205-1"/>
+            </w>
+            <w n="10205-3">
+                <text>dixerunt</text>
+                <comment class="proiel-id">250461</comment>
+                <refs nrefs="10205-3"/>
+            </w>
+            <w n="10205-4">
+                <text>ei</text>
+                <comment class="proiel-id">250462</comment>
+                <refs nrefs="10205-4"/>
+            </w>
+            <w n="10205-5">
+                <text>in</text>
+                <comment class="proiel-id">250463</comment>
+                <refs nrefs="10205-6"/>
+            </w>
+            <w n="10205-6">
+                <text>Bethleem</text>
+                <comment class="proiel-id">250464</comment>
+                <refs nrefs="10205-7"/>
+            </w>
+            <w n="10205-7">
+                <text>Iudaeae</text>
+                <comment class="proiel-id">250465</comment>
+                <refs nrefs="10205-9"/>
+            </w>
+            <w n="10205-8">
+                <text>sic</text>
+                <comment class="proiel-id">250466</comment>
+                <refs nrefs="10205-11"/>
+            </w>
+            <w n="10205-9">
+                <text>enim</text>
+                <comment class="proiel-id">250467</comment>
+                <refs nrefs="10205-12"/>
+            </w>
+            <w n="10205-10">
+                <text>scriptum</text>
+                <comment class="proiel-id">250468</comment>
+                <refs nrefs="10205-13"/>
+            </w>
+            <w n="10205-11">
+                <text>est</text>
+                <comment class="proiel-id">250469</comment>
+                <refs nrefs="10205-13"/>
+            </w>
+            <w n="10205-12">
+                <text>per</text>
+                <comment class="proiel-id">250470</comment>
+                <refs nrefs="10205-14"/>
+            </w>
+            <w n="10205-13">
+                <text>prophetam</text>
+                <comment class="proiel-id">250471</comment>
+                <refs nrefs="10205-16"/>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="10206" document_id="NT:MATT_2:6">
+        <wds lnum="L1">
+            <w n="10206-1">
+                <text>καὶ</text>
+                <comment class="proiel-id">267278</comment>
+                <refs nrefs="10206-1"/>
+            </w>
+            <w n="10206-2">
+                <text>σύ</text>
+                <comment class="proiel-id">267279</comment>
+                <refs nrefs="10206-2"/>
+            </w>
+            <w n="10206-3">
+                <text>,</text>
+            </w>
+            <w n="10206-4">
+                <text>Βηθλέεμ</text>
+                <comment class="proiel-id">267281</comment>
+                <refs nrefs="10206-3"/>
+            </w>
+            <w n="10206-5">
+                <text>γῆ</text>
+                <comment class="proiel-id">267282</comment>
+                <refs nrefs="10206-4"/>
+            </w>
+            <w n="10206-6">
+                <text>Ἰούδα</text>
+                <comment class="proiel-id">267283</comment>
+                <refs nrefs="10206-5"/>
+            </w>
+            <w n="10206-7">
+                <text>,</text>
+            </w>
+            <w n="10206-8">
+                <text>οὐδαμῶς</text>
+                <comment class="proiel-id">267285</comment>
+                <refs nrefs="10206-6"/>
+            </w>
+            <w n="10206-9">
+                <text>ἐλαχίστη</text>
+                <comment class="proiel-id">267286</comment>
+                <refs nrefs="10206-7"/>
+            </w>
+            <w n="10206-10">
+                <text>εἶ</text>
+                <comment class="proiel-id">267287</comment>
+                <refs nrefs="10206-8"/>
+            </w>
+            <w n="10206-11">
+                <text>ἐν</text>
+                <comment class="proiel-id">267288</comment>
+                <refs nrefs="10206-9"/>
+            </w>
+            <w n="10206-12">
+                <text>τοῖς</text>
+                <comment class="proiel-id">267289</comment>
+            </w>
+            <w n="10206-13">
+                <text>ἡγεμόσιν</text>
+                <comment class="proiel-id">267290</comment>
+                <refs nrefs="10206-10"/>
+            </w>
+            <w n="10206-14">
+                <text>Ἰούδα</text>
+                <comment class="proiel-id">267291</comment>
+                <refs nrefs="10206-11"/>
+            </w>
+            <w n="10206-15">
+                <text>·</text>
+            </w>
+            <w n="10206-16">
+                <text>ἐκ</text>
+                <comment class="proiel-id">267293</comment>
+                <refs nrefs="10206-12"/>
+            </w>
+            <w n="10206-17">
+                <text>σοῦ</text>
+                <comment class="proiel-id">267294</comment>
+                <refs nrefs="10206-13"/>
+            </w>
+            <w n="10206-18">
+                <text>γὰρ</text>
+                <comment class="proiel-id">267295</comment>
+                <refs nrefs="10206-14"/>
+            </w>
+            <w n="10206-19">
+                <text>ἐξελεύσεται</text>
+                <comment class="proiel-id">267296</comment>
+                <refs nrefs="10206-15"/>
+            </w>
+            <w n="10206-20">
+                <text>ἡγούμενος</text>
+                <comment class="proiel-id">267297</comment>
+                <refs nrefs="10206-16"/>
+            </w>
+            <w n="10206-21">
+                <text>,</text>
+            </w>
+            <w n="10206-22">
+                <text>ὅστις</text>
+                <comment class="proiel-id">267299</comment>
+                <refs nrefs="10206-17"/>
+            </w>
+            <w n="10206-23">
+                <text>ποιμανεῖ</text>
+                <comment class="proiel-id">267300</comment>
+                <refs nrefs="10206-18"/>
+            </w>
+            <w n="10206-24">
+                <text>τὸν</text>
+                <comment class="proiel-id">267301</comment>
+            </w>
+            <w n="10206-25">
+                <text>λαόν</text>
+                <comment class="proiel-id">267302</comment>
+                <refs nrefs="10206-19"/>
+            </w>
+            <w n="10206-26">
+                <text>μου</text>
+                <comment class="proiel-id">267303</comment>
+                <refs nrefs="10206-20"/>
+            </w>
+            <w n="10206-27">
+                <text>τὸν</text>
+                <comment class="proiel-id">267304</comment>
+            </w>
+            <w n="10206-28">
+                <text>Ἰσραήλ</text>
+                <comment class="proiel-id">267305</comment>
+                <refs nrefs="10206-21"/>
+            </w>
+            <w n="10206-29">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="10206-1">
+                <text>et</text>
+                <comment class="proiel-id">250472</comment>
+                <refs nrefs="10206-1"/>
+            </w>
+            <w n="10206-2">
+                <text>tu</text>
+                <comment class="proiel-id">250473</comment>
+                <refs nrefs="10206-2"/>
+            </w>
+            <w n="10206-3">
+                <text>Bethleem</text>
+                <comment class="proiel-id">250474</comment>
+                <refs nrefs="10206-4"/>
+            </w>
+            <w n="10206-4">
+                <text>terra</text>
+                <comment class="proiel-id">250475</comment>
+                <refs nrefs="10206-5"/>
+            </w>
+            <w n="10206-5">
+                <text>Iuda</text>
+                <comment class="proiel-id">250476</comment>
+                <refs nrefs="10206-6"/>
+            </w>
+            <w n="10206-6">
+                <text>nequaquam</text>
+                <comment class="proiel-id">250477</comment>
+                <refs nrefs="10206-8"/>
+            </w>
+            <w n="10206-7">
+                <text>minima</text>
+                <comment class="proiel-id">250478</comment>
+                <refs nrefs="10206-9"/>
+            </w>
+            <w n="10206-8">
+                <text>es</text>
+                <comment class="proiel-id">250479</comment>
+                <refs nrefs="10206-10"/>
+            </w>
+            <w n="10206-9">
+                <text>in</text>
+                <comment class="proiel-id">250480</comment>
+                <refs nrefs="10206-11"/>
+            </w>
+            <w n="10206-10">
+                <text>principibus</text>
+                <comment class="proiel-id">250481</comment>
+                <refs nrefs="10206-13"/>
+            </w>
+            <w n="10206-11">
+                <text>Iuda</text>
+                <comment class="proiel-id">250482</comment>
+                <refs nrefs="10206-14"/>
+            </w>
+            <w n="10206-12">
+                <text>ex</text>
+                <comment class="proiel-id">250483</comment>
+                <refs nrefs="10206-16"/>
+            </w>
+            <w n="10206-13">
+                <text>te</text>
+                <comment class="proiel-id">250484</comment>
+                <refs nrefs="10206-17"/>
+            </w>
+            <w n="10206-14">
+                <text>enim</text>
+                <comment class="proiel-id">250485</comment>
+                <refs nrefs="10206-18"/>
+            </w>
+            <w n="10206-15">
+                <text>exiet</text>
+                <comment class="proiel-id">250486</comment>
+                <refs nrefs="10206-19"/>
+            </w>
+            <w n="10206-16">
+                <text>dux</text>
+                <comment class="proiel-id">250487</comment>
+                <refs nrefs="10206-20"/>
+            </w>
+            <w n="10206-17">
+                <text>qui</text>
+                <comment class="proiel-id">250488</comment>
+                <refs nrefs="10206-22"/>
+            </w>
+            <w n="10206-18">
+                <text>reget</text>
+                <comment class="proiel-id">250489</comment>
+                <refs nrefs="10206-23"/>
+            </w>
+            <w n="10206-19">
+                <text>populum</text>
+                <comment class="proiel-id">250490</comment>
+                <refs nrefs="10206-25"/>
+            </w>
+            <w n="10206-20">
+                <text>meum</text>
+                <comment class="proiel-id">250491</comment>
+                <refs nrefs="10206-26"/>
+            </w>
+            <w n="10206-21">
+                <text>Israhel</text>
+                <comment class="proiel-id">250492</comment>
+                <refs nrefs="10206-28"/>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="10207" document_id="NT:MATT_2:7">
+        <wds lnum="L1">
+            <w n="10207-1">
+                <text>τότε</text>
+                <comment class="proiel-id">267307</comment>
+                <refs nrefs="10207-1"/>
+            </w>
+            <w n="10207-2">
+                <text>Ἡρῴδης</text>
+                <comment class="proiel-id">267308</comment>
+                <refs nrefs="10207-2"/>
+            </w>
+            <w n="10207-3">
+                <text>λάθρᾳ</text>
+                <comment class="proiel-id">267309</comment>
+                <refs nrefs="10207-3"/>
+            </w>
+            <w n="10207-4">
+                <text>καλέσας</text>
+                <comment class="proiel-id">267310</comment>
+                <refs nrefs="10207-4"/>
+            </w>
+            <w n="10207-5">
+                <text>τοὺς</text>
+                <comment class="proiel-id">267311</comment>
+            </w>
+            <w n="10207-6">
+                <text>μάγους</text>
+                <comment class="proiel-id">267312</comment>
+                <refs nrefs="10207-5"/>
+            </w>
+            <w n="10207-7">
+                <text>ἠκρίβωσεν</text>
+                <comment class="proiel-id">267313</comment>
+                <refs nrefs="10207-6 10207-7"/>
+            </w>
+            <w n="10207-8">
+                <text>παρ’</text>
+                <comment class="proiel-id">267314</comment>
+                <refs nrefs="10207-8"/>
+            </w>
+            <w n="10207-9">
+                <text>αὐτῶν</text>
+                <comment class="proiel-id">267315</comment>
+                <refs nrefs="10207-9"/>
+            </w>
+            <w n="10207-10">
+                <text>τὸν</text>
+                <comment class="proiel-id">267316</comment>
+            </w>
+            <w n="10207-11">
+                <text>χρόνον</text>
+                <comment class="proiel-id">267317</comment>
+                <refs nrefs="10207-10"/>
+            </w>
+            <w n="10207-12">
+                <text>τοῦ</text>
+                <comment class="proiel-id">267318</comment>
+            </w>
+            <w n="10207-13">
+                <text>φαινομένου</text>
+                <comment class="proiel-id">267319</comment>
+                <refs nrefs="10207-13"/>
+            </w>
+            <w n="10207-14">
+                <text>ἀστέρος</text>
+                <comment class="proiel-id">267320</comment>
+                <refs nrefs="10207-11"/>
+            </w>
+            <w n="10207-15">
+                <text>,</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="10207-1">
+                <text>tunc</text>
+                <comment class="proiel-id">250493</comment>
+                <refs nrefs="10207-1"/>
+            </w>
+            <w n="10207-2">
+                <text>Herodes</text>
+                <comment class="proiel-id">250494</comment>
+                <refs nrefs="10207-2"/>
+            </w>
+            <w n="10207-3">
+                <text>clam</text>
+                <comment class="proiel-id">250495</comment>
+                <refs nrefs="10207-3"/>
+            </w>
+            <w n="10207-4">
+                <text>vocatis</text>
+                <comment class="proiel-id">250496</comment>
+                <refs nrefs="10207-4"/>
+            </w>
+            <w n="10207-5">
+                <text>magis</text>
+                <comment class="proiel-id">250497</comment>
+                <refs nrefs="10207-6"/>
+            </w>
+            <w n="10207-6">
+                <text>diligenter</text>
+                <comment class="proiel-id">250498</comment>
+                <refs nrefs="10207-7"/>
+            </w>
+            <w n="10207-7">
+                <text>didicit</text>
+                <comment class="proiel-id">250499</comment>
+                <refs nrefs="10207-7"/>
+            </w>
+            <w n="10207-8">
+                <text>ab</text>
+                <comment class="proiel-id">250500</comment>
+                <refs nrefs="10207-8"/>
+            </w>
+            <w n="10207-9">
+                <text>eis</text>
+                <comment class="proiel-id">250501</comment>
+                <refs nrefs="10207-9"/>
+            </w>
+            <w n="10207-10">
+                <text>tempus</text>
+                <comment class="proiel-id">250502</comment>
+                <refs nrefs="10207-11"/>
+            </w>
+            <w n="10207-11">
+                <text>stellae</text>
+                <comment class="proiel-id">250503</comment>
+                <refs nrefs="10207-14"/>
+            </w>
+            <w n="10207-12">
+                <text>quae</text>
+                <comment class="proiel-id">250504</comment>
+            </w>
+            <w n="10207-13">
+                <text>apparuit</text>
+                <comment class="proiel-id">250505</comment>
+                <refs nrefs="10207-13"/>
+            </w>
+            <w n="10207-14">
+                <text>eis</text>
+                <comment class="proiel-id">250506</comment>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="10208" document_id="NT:MATT_2:8">
+        <wds lnum="L1">
+            <w n="10208-1">
+                <text>καὶ</text>
+                <comment class="proiel-id">267322</comment>
+                <refs nrefs="10208-1"/>
+            </w>
+            <w n="10208-2">
+                <text>πέμψας</text>
+                <comment class="proiel-id">267323</comment>
+                <refs nrefs="10208-2"/>
+            </w>
+            <w n="10208-3">
+                <text>αὐτοὺς</text>
+                <comment class="proiel-id">267324</comment>
+                <refs nrefs="10208-3"/>
+            </w>
+            <w n="10208-4">
+                <text>εἰς</text>
+                <comment class="proiel-id">267325</comment>
+                <refs nrefs="10208-4"/>
+            </w>
+            <w n="10208-5">
+                <text>Βηθλέεμ</text>
+                <comment class="proiel-id">267326</comment>
+                <refs nrefs="10208-5"/>
+            </w>
+            <w n="10208-6">
+                <text>εἶπεν</text>
+                <comment class="proiel-id">267327</comment>
+                <refs nrefs="10208-6"/>
+            </w>
+            <w n="10208-7">
+                <text>,</text>
+            </w>
+            <w n="10208-8">
+                <text>πορευθέντες</text>
+                <comment class="proiel-id">267329</comment>
+                <refs nrefs="10208-7"/>
+            </w>
+            <w n="10208-9">
+                <text>ἐξετάσατε</text>
+                <comment class="proiel-id">267330</comment>
+                <refs nrefs="10208-9"/>
+            </w>
+            <w n="10208-10">
+                <text>ἀκριβῶς</text>
+                <comment class="proiel-id">267331</comment>
+                <refs nrefs="10208-10"/>
+            </w>
+            <w n="10208-11">
+                <text>περὶ</text>
+                <comment class="proiel-id">267332</comment>
+                <refs nrefs="10208-11"/>
+            </w>
+            <w n="10208-12">
+                <text>τοῦ</text>
+                <comment class="proiel-id">267333</comment>
+            </w>
+            <w n="10208-13">
+                <text>παιδίου</text>
+                <comment class="proiel-id">267334</comment>
+                <refs nrefs="10208-12"/>
+            </w>
+            <w n="10208-14">
+                <text>·</text>
+            </w>
+            <w n="10208-15">
+                <text>ἐπὰν</text>
+                <comment class="proiel-id">267336</comment>
+                <refs nrefs="10208-14"/>
+            </w>
+            <w n="10208-16">
+                <text>δὲ</text>
+                <comment class="proiel-id">267337</comment>
+                <refs nrefs="10208-13"/>
+            </w>
+            <w n="10208-17">
+                <text>εὕρητε</text>
+                <comment class="proiel-id">267338</comment>
+                <refs nrefs="10208-15"/>
+            </w>
+            <w n="10208-18">
+                <text>ἀπαγγείλατέ</text>
+                <comment class="proiel-id">267339</comment>
+                <refs nrefs="10208-16"/>
+            </w>
+            <w n="10208-19">
+                <text>μοι</text>
+                <comment class="proiel-id">267340</comment>
+                <refs nrefs="10208-17"/>
+            </w>
+            <w n="10208-20">
+                <text>,</text>
+            </w>
+            <w n="10208-21">
+                <text>ὅπως</text>
+                <comment class="proiel-id">267342</comment>
+                <refs nrefs="10208-18"/>
+            </w>
+            <w n="10208-22">
+                <text>καὶ</text>
+                <comment class="proiel-id">267343</comment>
+                <refs nrefs="10208-19"/>
+            </w>
+            <w n="10208-23">
+                <text>ἐγώ</text>
+                <comment class="proiel-id">267344</comment>
+                <refs nrefs="10208-20"/>
+            </w>
+            <w n="10208-24">
+                <text>ἐλθὼν</text>
+                <comment class="proiel-id">267345</comment>
+                <refs nrefs="10208-21"/>
+            </w>
+            <w n="10208-25">
+                <text>προσκυνήσω</text>
+                <comment class="proiel-id">267346</comment>
+                <refs nrefs="10208-22"/>
+            </w>
+            <w n="10208-26">
+                <text>αὐτῷ</text>
+                <comment class="proiel-id">267347</comment>
+                <refs nrefs="10208-23"/>
+            </w>
+            <w n="10208-27">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="10208-1">
+                <text>et</text>
+                <comment class="proiel-id">250507</comment>
+                <refs nrefs="10208-1"/>
+            </w>
+            <w n="10208-2">
+                <text>mittens</text>
+                <comment class="proiel-id">250508</comment>
+                <refs nrefs="10208-2"/>
+            </w>
+            <w n="10208-3">
+                <text>illos</text>
+                <comment class="proiel-id">250509</comment>
+                <refs nrefs="10208-3"/>
+            </w>
+            <w n="10208-4">
+                <text>in</text>
+                <comment class="proiel-id">250510</comment>
+                <refs nrefs="10208-4"/>
+            </w>
+            <w n="10208-5">
+                <text>Bethleem</text>
+                <comment class="proiel-id">250511</comment>
+                <refs nrefs="10208-5"/>
+            </w>
+            <w n="10208-6">
+                <text>dixit</text>
+                <comment class="proiel-id">250512</comment>
+                <refs nrefs="10208-6"/>
+            </w>
+            <w n="10208-7">
+                <text>ite</text>
+                <comment class="proiel-id">250513</comment>
+                <refs nrefs="10208-8"/>
+            </w>
+            <w n="10208-8">
+                <text>et</text>
+                <comment class="proiel-id">250514</comment>
+            </w>
+            <w n="10208-9">
+                <text>interrogate</text>
+                <comment class="proiel-id">250515</comment>
+                <refs nrefs="10208-9"/>
+            </w>
+            <w n="10208-10">
+                <text>diligenter</text>
+                <comment class="proiel-id">250516</comment>
+                <refs nrefs="10208-10"/>
+            </w>
+            <w n="10208-11">
+                <text>de</text>
+                <comment class="proiel-id">250517</comment>
+                <refs nrefs="10208-11"/>
+            </w>
+            <w n="10208-12">
+                <text>puero</text>
+                <comment class="proiel-id">250518</comment>
+                <refs nrefs="10208-13"/>
+            </w>
+            <w n="10208-13">
+                <text>et</text>
+                <comment class="proiel-id">250519</comment>
+                <refs nrefs="10208-16"/>
+            </w>
+            <w n="10208-14">
+                <text>cum</text>
+                <comment class="proiel-id">250520</comment>
+                <refs nrefs="10208-15"/>
+            </w>
+            <w n="10208-15">
+                <text>inveneritis</text>
+                <comment class="proiel-id">250521</comment>
+                <refs nrefs="10208-17"/>
+            </w>
+            <w n="10208-16">
+                <text>renuntiate</text>
+                <comment class="proiel-id">250522</comment>
+                <refs nrefs="10208-18"/>
+            </w>
+            <w n="10208-17">
+                <text>mihi</text>
+                <comment class="proiel-id">250523</comment>
+                <refs nrefs="10208-19"/>
+            </w>
+            <w n="10208-18">
+                <text>ut</text>
+                <comment class="proiel-id">250524</comment>
+                <refs nrefs="10208-21"/>
+            </w>
+            <w n="10208-19">
+                <text>et</text>
+                <comment class="proiel-id">250525</comment>
+                <refs nrefs="10208-22"/>
+            </w>
+            <w n="10208-20">
+                <text>ego</text>
+                <comment class="proiel-id">250526</comment>
+                <refs nrefs="10208-23"/>
+            </w>
+            <w n="10208-21">
+                <text>veniens</text>
+                <comment class="proiel-id">250527</comment>
+                <refs nrefs="10208-24"/>
+            </w>
+            <w n="10208-22">
+                <text>adorem</text>
+                <comment class="proiel-id">250528</comment>
+                <refs nrefs="10208-25"/>
+            </w>
+            <w n="10208-23">
+                <text>eum</text>
+                <comment class="proiel-id">250529</comment>
+                <refs nrefs="10208-26"/>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="10209" document_id="NT:MATT_2:9">
+        <wds lnum="L1">
+            <w n="10209-1">
+                <text>οἱ</text>
+                <comment class="proiel-id">267349</comment>
+                <refs nrefs="10209-1"/>
+            </w>
+            <w n="10209-2">
+                <text>δὲ</text>
+                <comment class="proiel-id">267350</comment>
+            </w>
+            <w n="10209-3">
+                <text>ἀκούσαντες</text>
+                <comment class="proiel-id">267351</comment>
+                <refs nrefs="10209-3"/>
+            </w>
+            <w n="10209-4">
+                <text>τοῦ</text>
+                <comment class="proiel-id">267352</comment>
+            </w>
+            <w n="10209-5">
+                <text>βασιλέως</text>
+                <comment class="proiel-id">267353</comment>
+                <refs nrefs="10209-4"/>
+            </w>
+            <w n="10209-6">
+                <text>ἐπορεύθησαν</text>
+                <comment class="proiel-id">267354</comment>
+                <refs nrefs="10209-5"/>
+            </w>
+            <w n="10209-7">
+                <text>,</text>
+            </w>
+            <w n="10209-8">
+                <text>καὶ</text>
+                <comment class="proiel-id">267356</comment>
+                <refs nrefs="10209-6"/>
+            </w>
+            <w n="10209-9">
+                <text>ἰδοὺ</text>
+                <comment class="proiel-id">267357</comment>
+                <refs nrefs="10209-7"/>
+            </w>
+            <w n="10209-10">
+                <text>ὁ</text>
+                <comment class="proiel-id">267358</comment>
+            </w>
+            <w n="10209-11">
+                <text>ἀστὴρ</text>
+                <comment class="proiel-id">267359</comment>
+                <refs nrefs="10209-8"/>
+            </w>
+            <w n="10209-12">
+                <text>ὃν</text>
+                <comment class="proiel-id">267360</comment>
+                <refs nrefs="10209-9"/>
+            </w>
+            <w n="10209-13">
+                <text>εἶδον</text>
+                <comment class="proiel-id">267361</comment>
+                <refs nrefs="10209-10"/>
+            </w>
+            <w n="10209-14">
+                <text>ἐν</text>
+                <comment class="proiel-id">267362</comment>
+                <refs nrefs="10209-11"/>
+            </w>
+            <w n="10209-15">
+                <text>τῇ</text>
+                <comment class="proiel-id">267363</comment>
+            </w>
+            <w n="10209-16">
+                <text>ἀνατολῇ</text>
+                <comment class="proiel-id">267364</comment>
+                <refs nrefs="10209-12"/>
+            </w>
+            <w n="10209-17">
+                <text>προῆγεν</text>
+                <comment class="proiel-id">267365</comment>
+                <refs nrefs="10209-13"/>
+            </w>
+            <w n="10209-18">
+                <text>αὐτοὺς</text>
+                <comment class="proiel-id">267366</comment>
+                <refs nrefs="10209-14"/>
+            </w>
+            <w n="10209-19">
+                <text>ἕως</text>
+                <comment class="proiel-id">267367</comment>
+                <refs nrefs="10209-15"/>
+            </w>
+            <w n="10209-20">
+                <text>ἐλθὼν</text>
+                <comment class="proiel-id">267368</comment>
+                <refs nrefs="10209-17"/>
+            </w>
+            <w n="10209-21">
+                <text>ἐστάθη</text>
+                <comment class="proiel-id">267369</comment>
+                <refs nrefs="10209-18"/>
+            </w>
+            <w n="10209-22">
+                <text>ἐπάνω</text>
+                <comment class="proiel-id">267370</comment>
+                <refs nrefs="10209-19"/>
+            </w>
+            <w n="10209-23">
+                <text>οὗ</text>
+                <comment class="proiel-id">267371</comment>
+                <refs nrefs="10209-20"/>
+            </w>
+            <w n="10209-24">
+                <text>ἦν</text>
+                <comment class="proiel-id">267372</comment>
+                <refs nrefs="10209-21"/>
+            </w>
+            <w n="10209-25">
+                <text>τὸ</text>
+                <comment class="proiel-id">267373</comment>
+            </w>
+            <w n="10209-26">
+                <text>παιδίον</text>
+                <comment class="proiel-id">267374</comment>
+                <refs nrefs="10209-22"/>
+            </w>
+            <w n="10209-27">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="10209-1">
+                <text>qui</text>
+                <comment class="proiel-id">250530</comment>
+                <refs nrefs="10209-1"/>
+            </w>
+            <w n="10209-2">
+                <text>cum</text>
+                <comment class="proiel-id">250531</comment>
+            </w>
+            <w n="10209-3">
+                <text>audissent</text>
+                <comment class="proiel-id">250532</comment>
+                <refs nrefs="10209-3"/>
+            </w>
+            <w n="10209-4">
+                <text>regem</text>
+                <comment class="proiel-id">250533</comment>
+                <refs nrefs="10209-5"/>
+            </w>
+            <w n="10209-5">
+                <text>abierunt</text>
+                <comment class="proiel-id">250534</comment>
+                <refs nrefs="10209-6"/>
+            </w>
+            <w n="10209-6">
+                <text>et</text>
+                <comment class="proiel-id">250535</comment>
+                <refs nrefs="10209-8"/>
+            </w>
+            <w n="10209-7">
+                <text>ecce</text>
+                <comment class="proiel-id">250536</comment>
+                <refs nrefs="10209-9"/>
+            </w>
+            <w n="10209-8">
+                <text>stella</text>
+                <comment class="proiel-id">250537</comment>
+                <refs nrefs="10209-11"/>
+            </w>
+            <w n="10209-9">
+                <text>quam</text>
+                <comment class="proiel-id">250538</comment>
+                <refs nrefs="10209-12"/>
+            </w>
+            <w n="10209-10">
+                <text>viderant</text>
+                <comment class="proiel-id">250539</comment>
+                <refs nrefs="10209-13"/>
+            </w>
+            <w n="10209-11">
+                <text>in</text>
+                <comment class="proiel-id">250540</comment>
+                <refs nrefs="10209-14"/>
+            </w>
+            <w n="10209-12">
+                <text>oriente</text>
+                <comment class="proiel-id">250541</comment>
+                <refs nrefs="10209-16"/>
+            </w>
+            <w n="10209-13">
+                <text>antecedebat</text>
+                <comment class="proiel-id">250542</comment>
+                <refs nrefs="10209-17"/>
+            </w>
+            <w n="10209-14">
+                <text>eos</text>
+                <comment class="proiel-id">250543</comment>
+                <refs nrefs="10209-18"/>
+            </w>
+            <w n="10209-15">
+                <text>usque</text>
+                <comment class="proiel-id">250544</comment>
+                <refs nrefs="10209-19"/>
+            </w>
+            <w n="10209-16">
+                <text>dum</text>
+                <comment class="proiel-id">250545</comment>
+            </w>
+            <w n="10209-17">
+                <text>veniens</text>
+                <comment class="proiel-id">250546</comment>
+                <refs nrefs="10209-20"/>
+            </w>
+            <w n="10209-18">
+                <text>staret</text>
+                <comment class="proiel-id">250547</comment>
+                <refs nrefs="10209-21"/>
+            </w>
+            <w n="10209-19">
+                <text>supra</text>
+                <comment class="proiel-id">250548</comment>
+                <refs nrefs="10209-22"/>
+            </w>
+            <w n="10209-20">
+                <text>ubi</text>
+                <comment class="proiel-id">250549</comment>
+                <refs nrefs="10209-23"/>
+            </w>
+            <w n="10209-21">
+                <text>erat</text>
+                <comment class="proiel-id">250550</comment>
+                <refs nrefs="10209-24"/>
+            </w>
+            <w n="10209-22">
+                <text>puer</text>
+                <comment class="proiel-id">250551</comment>
+                <refs nrefs="10209-26"/>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="10210" document_id="NT:MATT_2:10">
+        <wds lnum="L1">
+            <w n="10210-1">
+                <text>ἰδόντες</text>
+                <comment class="proiel-id">267376</comment>
+                <refs nrefs="10210-1"/>
+            </w>
+            <w n="10210-2">
+                <text>δὲ</text>
+                <comment class="proiel-id">267377</comment>
+                <refs nrefs="10210-2"/>
+            </w>
+            <w n="10210-3">
+                <text>τὸν</text>
+                <comment class="proiel-id">267378</comment>
+            </w>
+            <w n="10210-4">
+                <text>ἀστέρα</text>
+                <comment class="proiel-id">267379</comment>
+                <refs nrefs="10210-3"/>
+            </w>
+            <w n="10210-5">
+                <text>ἐχάρησαν</text>
+                <comment class="proiel-id">267380</comment>
+                <refs nrefs="10210-4 10210-5"/>
+            </w>
+            <w n="10210-6">
+                <text>χαρὰν</text>
+                <comment class="proiel-id">267381</comment>
+                <refs nrefs="10210-6"/>
+            </w>
+            <w n="10210-7">
+                <text>μεγάλην</text>
+                <comment class="proiel-id">267382</comment>
+                <refs nrefs="10210-7"/>
+            </w>
+            <w n="10210-8">
+                <text>σφόδρα</text>
+                <comment class="proiel-id">267383</comment>
+                <refs nrefs="10210-8"/>
+            </w>
+            <w n="10210-9">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="10210-1">
+                <text>videntes</text>
+                <comment class="proiel-id">250552</comment>
+                <refs nrefs="10210-1"/>
+            </w>
+            <w n="10210-2">
+                <text>autem</text>
+                <comment class="proiel-id">250553</comment>
+                <refs nrefs="10210-2"/>
+            </w>
+            <w n="10210-3">
+                <text>stellam</text>
+                <comment class="proiel-id">250554</comment>
+                <refs nrefs="10210-4"/>
+            </w>
+            <w n="10210-4">
+                <text>gavisi</text>
+                <comment class="proiel-id">250555</comment>
+                <refs nrefs="10210-5"/>
+            </w>
+            <w n="10210-5">
+                <text>sunt</text>
+                <comment class="proiel-id">250556</comment>
+                <refs nrefs="10210-5"/>
+            </w>
+            <w n="10210-6">
+                <text>gaudio</text>
+                <comment class="proiel-id">250557</comment>
+                <refs nrefs="10210-6"/>
+            </w>
+            <w n="10210-7">
+                <text>magno</text>
+                <comment class="proiel-id">250558</comment>
+                <refs nrefs="10210-7"/>
+            </w>
+            <w n="10210-8">
+                <text>valde</text>
+                <comment class="proiel-id">250559</comment>
+                <refs nrefs="10210-8"/>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="10211" document_id="NT:MATT_2:11">
+        <wds lnum="L1">
+            <w n="10211-1">
+                <text>καὶ</text>
+                <comment class="proiel-id">267385</comment>
+                <refs nrefs="10211-1"/>
+            </w>
+            <w n="10211-2">
+                <text>ἐλθόντες</text>
+                <comment class="proiel-id">267386</comment>
+                <refs nrefs="10211-2"/>
+            </w>
+            <w n="10211-3">
+                <text>εἰς</text>
+                <comment class="proiel-id">267387</comment>
+                <refs nrefs="10211-2"/>
+            </w>
+            <w n="10211-4">
+                <text>τὴν</text>
+                <comment class="proiel-id">267388</comment>
+            </w>
+            <w n="10211-5">
+                <text>οἰκίαν</text>
+                <comment class="proiel-id">267389</comment>
+                <refs nrefs="10211-3"/>
+            </w>
+            <w n="10211-6">
+                <text>εἶδον</text>
+                <comment class="proiel-id">267390</comment>
+                <refs nrefs="10211-4"/>
+            </w>
+            <w n="10211-7">
+                <text>τὸ</text>
+                <comment class="proiel-id">267391</comment>
+            </w>
+            <w n="10211-8">
+                <text>παιδίον</text>
+                <comment class="proiel-id">267392</comment>
+                <refs nrefs="10211-5"/>
+            </w>
+            <w n="10211-9">
+                <text>μετὰ</text>
+                <comment class="proiel-id">267393</comment>
+                <refs nrefs="10211-6"/>
+            </w>
+            <w n="10211-10">
+                <text>Μαρίας</text>
+                <comment class="proiel-id">267394</comment>
+                <refs nrefs="10211-7"/>
+            </w>
+            <w n="10211-11">
+                <text>τῆς</text>
+                <comment class="proiel-id">267395</comment>
+            </w>
+            <w n="10211-12">
+                <text>μητρὸς</text>
+                <comment class="proiel-id">267396</comment>
+                <refs nrefs="10211-8"/>
+            </w>
+            <w n="10211-13">
+                <text>αὐτοῦ</text>
+                <comment class="proiel-id">267397</comment>
+                <refs nrefs="10211-9"/>
+            </w>
+            <w n="10211-14">
+                <text>,</text>
+            </w>
+            <w n="10211-15">
+                <text>καὶ</text>
+                <comment class="proiel-id">267399</comment>
+                <refs nrefs="10211-10"/>
+            </w>
+            <w n="10211-16">
+                <text>πεσόντες</text>
+                <comment class="proiel-id">267400</comment>
+                <refs nrefs="10211-11"/>
+            </w>
+            <w n="10211-17">
+                <text>προσεκύνησαν</text>
+                <comment class="proiel-id">267401</comment>
+                <refs nrefs="10211-12"/>
+            </w>
+            <w n="10211-18">
+                <text>αὐτῷ</text>
+                <comment class="proiel-id">267402</comment>
+                <refs nrefs="10211-13"/>
+            </w>
+            <w n="10211-19">
+                <text>,</text>
+            </w>
+            <w n="10211-20">
+                <text>καὶ</text>
+                <comment class="proiel-id">267404</comment>
+                <refs nrefs="10211-14"/>
+            </w>
+            <w n="10211-21">
+                <text>ἀνοίξαντες</text>
+                <comment class="proiel-id">267405</comment>
+                <refs nrefs="10211-15"/>
+            </w>
+            <w n="10211-22">
+                <text>τοὺς</text>
+                <comment class="proiel-id">267406</comment>
+            </w>
+            <w n="10211-23">
+                <text>θησαυροὺς</text>
+                <comment class="proiel-id">267407</comment>
+                <refs nrefs="10211-16"/>
+            </w>
+            <w n="10211-24">
+                <text>αὐτῶν</text>
+                <comment class="proiel-id">267408</comment>
+                <refs nrefs="10211-17"/>
+            </w>
+            <w n="10211-25">
+                <text>προσήνεγκαν</text>
+                <comment class="proiel-id">267409</comment>
+                <refs nrefs="10211-18"/>
+            </w>
+            <w n="10211-26">
+                <text>αὐτῷ</text>
+                <comment class="proiel-id">267410</comment>
+                <refs nrefs="10211-19"/>
+            </w>
+            <w n="10211-27">
+                <text>δῶρα</text>
+                <comment class="proiel-id">267411</comment>
+                <refs nrefs="10211-20"/>
+            </w>
+            <w n="10211-28">
+                <text>,</text>
+            </w>
+            <w n="10211-29">
+                <text>χρυσὸν</text>
+                <comment class="proiel-id">267413</comment>
+                <refs nrefs="10211-21"/>
+            </w>
+            <w n="10211-30">
+                <text>καὶ</text>
+                <comment class="proiel-id">267414</comment>
+            </w>
+            <w n="10211-31">
+                <text>λίβανον</text>
+                <comment class="proiel-id">267415</comment>
+                <refs nrefs="10211-22"/>
+            </w>
+            <w n="10211-32">
+                <text>καὶ</text>
+                <comment class="proiel-id">267416</comment>
+                <refs nrefs="10211-23"/>
+            </w>
+            <w n="10211-33">
+                <text>σμύρναν</text>
+                <comment class="proiel-id">267417</comment>
+                <refs nrefs="10211-24"/>
+            </w>
+            <w n="10211-34">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="10211-1">
+                <text>et</text>
+                <comment class="proiel-id">250560</comment>
+                <refs nrefs="10211-1"/>
+            </w>
+            <w n="10211-2">
+                <text>intrantes</text>
+                <comment class="proiel-id">250561</comment>
+                <refs nrefs="10211-2 10211-3"/>
+            </w>
+            <w n="10211-3">
+                <text>domum</text>
+                <comment class="proiel-id">250562</comment>
+                <refs nrefs="10211-5"/>
+            </w>
+            <w n="10211-4">
+                <text>invenerunt</text>
+                <comment class="proiel-id">250563</comment>
+                <refs nrefs="10211-6"/>
+            </w>
+            <w n="10211-5">
+                <text>puerum</text>
+                <comment class="proiel-id">250564</comment>
+                <refs nrefs="10211-8"/>
+            </w>
+            <w n="10211-6">
+                <text>cum</text>
+                <comment class="proiel-id">250565</comment>
+                <refs nrefs="10211-9"/>
+            </w>
+            <w n="10211-7">
+                <text>Maria</text>
+                <comment class="proiel-id">250566</comment>
+                <refs nrefs="10211-10"/>
+            </w>
+            <w n="10211-8">
+                <text>matre</text>
+                <comment class="proiel-id">250567</comment>
+                <refs nrefs="10211-12"/>
+            </w>
+            <w n="10211-9">
+                <text>eius</text>
+                <comment class="proiel-id">250568</comment>
+                <refs nrefs="10211-13"/>
+            </w>
+            <w n="10211-10">
+                <text>et</text>
+                <comment class="proiel-id">250569</comment>
+                <refs nrefs="10211-15"/>
+            </w>
+            <w n="10211-11">
+                <text>procidentes</text>
+                <comment class="proiel-id">250570</comment>
+                <refs nrefs="10211-16"/>
+            </w>
+            <w n="10211-12">
+                <text>adoraverunt</text>
+                <comment class="proiel-id">250571</comment>
+                <refs nrefs="10211-17"/>
+            </w>
+            <w n="10211-13">
+                <text>eum</text>
+                <comment class="proiel-id">250572</comment>
+                <refs nrefs="10211-18"/>
+            </w>
+            <w n="10211-14">
+                <text>et</text>
+                <comment class="proiel-id">250573</comment>
+                <refs nrefs="10211-20"/>
+            </w>
+            <w n="10211-15">
+                <text>apertis</text>
+                <comment class="proiel-id">250574</comment>
+                <refs nrefs="10211-21"/>
+            </w>
+            <w n="10211-16">
+                <text>thesauris</text>
+                <comment class="proiel-id">250575</comment>
+                <refs nrefs="10211-23"/>
+            </w>
+            <w n="10211-17">
+                <text>suis</text>
+                <comment class="proiel-id">250576</comment>
+                <refs nrefs="10211-24"/>
+            </w>
+            <w n="10211-18">
+                <text>obtulerunt</text>
+                <comment class="proiel-id">250577</comment>
+                <refs nrefs="10211-25"/>
+            </w>
+            <w n="10211-19">
+                <text>ei</text>
+                <comment class="proiel-id">250578</comment>
+                <refs nrefs="10211-26"/>
+            </w>
+            <w n="10211-20">
+                <text>munera</text>
+                <comment class="proiel-id">250579</comment>
+                <refs nrefs="10211-27"/>
+            </w>
+            <w n="10211-21">
+                <text>aurum</text>
+                <comment class="proiel-id">250580</comment>
+                <refs nrefs="10211-29"/>
+            </w>
+            <w n="10211-22">
+                <text>tus</text>
+                <comment class="proiel-id">250581</comment>
+                <refs nrefs="10211-31"/>
+            </w>
+            <w n="10211-23">
+                <text>et</text>
+                <comment class="proiel-id">250582</comment>
+                <refs nrefs="10211-32"/>
+            </w>
+            <w n="10211-24">
+                <text>murram</text>
+                <comment class="proiel-id">250583</comment>
+                <refs nrefs="10211-33"/>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="10212" document_id="NT:MATT_2:12">
+        <wds lnum="L1">
+            <w n="10212-1">
+                <text>καὶ</text>
+                <comment class="proiel-id">267419</comment>
+                <refs nrefs="10212-1"/>
+            </w>
+            <w n="10212-2">
+                <text>χρηματισθέντες</text>
+                <comment class="proiel-id">267420</comment>
+                <refs nrefs="10212-2 10212-3"/>
+            </w>
+            <w n="10212-3">
+                <text>κατ’</text>
+                <comment class="proiel-id">267421</comment>
+                <refs nrefs="10212-4"/>
+            </w>
+            <w n="10212-4">
+                <text>ὄναρ</text>
+                <comment class="proiel-id">267422</comment>
+                <refs nrefs="10212-5"/>
+            </w>
+            <w n="10212-5">
+                <text>μὴ</text>
+                <comment class="proiel-id">267423</comment>
+                <refs nrefs="10212-6"/>
+            </w>
+            <w n="10212-6">
+                <text>ἀνακάμψαι</text>
+                <comment class="proiel-id">267424</comment>
+                <refs nrefs="10212-7"/>
+            </w>
+            <w n="10212-7">
+                <text>πρὸς</text>
+                <comment class="proiel-id">267425</comment>
+                <refs nrefs="10212-8"/>
+            </w>
+            <w n="10212-8">
+                <text>Ἡρῴδην</text>
+                <comment class="proiel-id">267426</comment>
+                <refs nrefs="10212-9"/>
+            </w>
+            <w n="10212-9">
+                <text>,</text>
+            </w>
+            <w n="10212-10">
+                <text>δι’</text>
+                <comment class="proiel-id">267428</comment>
+                <refs nrefs="10212-10"/>
+            </w>
+            <w n="10212-11">
+                <text>ἄλλης</text>
+                <comment class="proiel-id">267429</comment>
+                <refs nrefs="10212-11"/>
+            </w>
+            <w n="10212-12">
+                <text>ὁδοῦ</text>
+                <comment class="proiel-id">267430</comment>
+                <refs nrefs="10212-12"/>
+            </w>
+            <w n="10212-13">
+                <text>ἀνεχώρησαν</text>
+                <comment class="proiel-id">267431</comment>
+                <refs nrefs="10212-13 10212-14"/>
+            </w>
+            <w n="10212-14">
+                <text>εἰς</text>
+                <comment class="proiel-id">267432</comment>
+                <refs nrefs="10212-15"/>
+            </w>
+            <w n="10212-15">
+                <text>τὴν</text>
+                <comment class="proiel-id">267433</comment>
+            </w>
+            <w n="10212-16">
+                <text>χώραν</text>
+                <comment class="proiel-id">267434</comment>
+                <refs nrefs="10212-16"/>
+            </w>
+            <w n="10212-17">
+                <text>αὐτῶν</text>
+                <comment class="proiel-id">267435</comment>
+                <refs nrefs="10212-17"/>
+            </w>
+            <w n="10212-18">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="10212-1">
+                <text>et</text>
+                <comment class="proiel-id">250584</comment>
+                <refs nrefs="10212-1"/>
+            </w>
+            <w n="10212-2">
+                <text>responso</text>
+                <comment class="proiel-id">250585</comment>
+                <refs nrefs="10212-2"/>
+            </w>
+            <w n="10212-3">
+                <text>accepto</text>
+                <comment class="proiel-id">250586</comment>
+                <refs nrefs="10212-2"/>
+            </w>
+            <w n="10212-4">
+                <text>in</text>
+                <comment class="proiel-id">250587</comment>
+                <refs nrefs="10212-3"/>
+            </w>
+            <w n="10212-5">
+                <text>somnis</text>
+                <comment class="proiel-id">250588</comment>
+                <refs nrefs="10212-4"/>
+            </w>
+            <w n="10212-6">
+                <text>ne</text>
+                <comment class="proiel-id">250589</comment>
+                <refs nrefs="10212-5"/>
+            </w>
+            <w n="10212-7">
+                <text>redirent</text>
+                <comment class="proiel-id">250590</comment>
+                <refs nrefs="10212-6"/>
+            </w>
+            <w n="10212-8">
+                <text>ad</text>
+                <comment class="proiel-id">250591</comment>
+                <refs nrefs="10212-7"/>
+            </w>
+            <w n="10212-9">
+                <text>Herodem</text>
+                <comment class="proiel-id">250592</comment>
+                <refs nrefs="10212-8"/>
+            </w>
+            <w n="10212-10">
+                <text>per</text>
+                <comment class="proiel-id">250593</comment>
+                <refs nrefs="10212-10"/>
+            </w>
+            <w n="10212-11">
+                <text>aliam</text>
+                <comment class="proiel-id">250594</comment>
+                <refs nrefs="10212-11"/>
+            </w>
+            <w n="10212-12">
+                <text>viam</text>
+                <comment class="proiel-id">250595</comment>
+                <refs nrefs="10212-12"/>
+            </w>
+            <w n="10212-13">
+                <text>reversi</text>
+                <comment class="proiel-id">250596</comment>
+                <refs nrefs="10212-13"/>
+            </w>
+            <w n="10212-14">
+                <text>sunt</text>
+                <comment class="proiel-id">250597</comment>
+                <refs nrefs="10212-13"/>
+            </w>
+            <w n="10212-15">
+                <text>in</text>
+                <comment class="proiel-id">250598</comment>
+                <refs nrefs="10212-14"/>
+            </w>
+            <w n="10212-16">
+                <text>regionem</text>
+                <comment class="proiel-id">250599</comment>
+                <refs nrefs="10212-16"/>
+            </w>
+            <w n="10212-17">
+                <text>suam</text>
+                <comment class="proiel-id">250600</comment>
+                <refs nrefs="10212-17"/>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="10213" document_id="NT:MATT_2:13">
+        <wds lnum="L1">
+            <w n="10213-1">
+                <text>Ἀναχωρησάντων</text>
+                <comment class="proiel-id">267437</comment>
+                <refs nrefs="10213-3"/>
+            </w>
+            <w n="10213-2">
+                <text>δὲ</text>
+                <comment class="proiel-id">267438</comment>
+            </w>
+            <w n="10213-3">
+                <text>αὐτῶν</text>
+                <comment class="proiel-id">267439</comment>
+                <refs nrefs="10213-1"/>
+            </w>
+            <w n="10213-4">
+                <text>ἰδοὺ</text>
+                <comment class="proiel-id">267440</comment>
+                <refs nrefs="10213-4"/>
+            </w>
+            <w n="10213-5">
+                <text>ἄγγελος</text>
+                <comment class="proiel-id">267441</comment>
+                <refs nrefs="10213-5"/>
+            </w>
+            <w n="10213-6">
+                <text>κυρίου</text>
+                <comment class="proiel-id">267442</comment>
+                <refs nrefs="10213-6"/>
+            </w>
+            <w n="10213-7">
+                <text>φαίνεται</text>
+                <comment class="proiel-id">267443</comment>
+                <refs nrefs="10213-7"/>
+            </w>
+            <w n="10213-8">
+                <text>κατ’</text>
+                <comment class="proiel-id">267444</comment>
+                <refs nrefs="10213-8"/>
+            </w>
+            <w n="10213-9">
+                <text>ὄναρ</text>
+                <comment class="proiel-id">267445</comment>
+                <refs nrefs="10213-9"/>
+            </w>
+            <w n="10213-10">
+                <text>τῷ</text>
+                <comment class="proiel-id">267446</comment>
+            </w>
+            <w n="10213-11">
+                <text>Ἰωσὴφ</text>
+                <comment class="proiel-id">267447</comment>
+                <refs nrefs="10213-10"/>
+            </w>
+            <w n="10213-12">
+                <text>λέγων</text>
+                <comment class="proiel-id">267448</comment>
+                <refs nrefs="10213-11"/>
+            </w>
+            <w n="10213-13">
+                <text>,</text>
+            </w>
+            <w n="10213-14">
+                <text>ἐγερθεὶς</text>
+                <comment class="proiel-id">267450</comment>
+                <refs nrefs="10213-12"/>
+            </w>
+            <w n="10213-15">
+                <text>παράλαβε</text>
+                <comment class="proiel-id">267451</comment>
+                <refs nrefs="10213-14"/>
+            </w>
+            <w n="10213-16">
+                <text>τὸ</text>
+                <comment class="proiel-id">267452</comment>
+            </w>
+            <w n="10213-17">
+                <text>παιδίον</text>
+                <comment class="proiel-id">267453</comment>
+                <refs nrefs="10213-15"/>
+            </w>
+            <w n="10213-18">
+                <text>καὶ</text>
+                <comment class="proiel-id">267454</comment>
+                <refs nrefs="10213-16"/>
+            </w>
+            <w n="10213-19">
+                <text>τὴν</text>
+                <comment class="proiel-id">267455</comment>
+            </w>
+            <w n="10213-20">
+                <text>μητέρα</text>
+                <comment class="proiel-id">267456</comment>
+                <refs nrefs="10213-17"/>
+            </w>
+            <w n="10213-21">
+                <text>αὐτοῦ</text>
+                <comment class="proiel-id">267457</comment>
+                <refs nrefs="10213-18"/>
+            </w>
+            <w n="10213-22">
+                <text>καὶ</text>
+                <comment class="proiel-id">267458</comment>
+                <refs nrefs="10213-19"/>
+            </w>
+            <w n="10213-23">
+                <text>φεῦγε</text>
+                <comment class="proiel-id">267459</comment>
+                <refs nrefs="10213-20"/>
+            </w>
+            <w n="10213-24">
+                <text>εἰς</text>
+                <comment class="proiel-id">267460</comment>
+                <refs nrefs="10213-21"/>
+            </w>
+            <w n="10213-25">
+                <text>Αἴγυπτον</text>
+                <comment class="proiel-id">267461</comment>
+                <refs nrefs="10213-22"/>
+            </w>
+            <w n="10213-26">
+                <text>,</text>
+            </w>
+            <w n="10213-27">
+                <text>καὶ</text>
+                <comment class="proiel-id">267463</comment>
+                <refs nrefs="10213-23"/>
+            </w>
+            <w n="10213-28">
+                <text>ἴσθι</text>
+                <comment class="proiel-id">267464</comment>
+                <refs nrefs="10213-24"/>
+            </w>
+            <w n="10213-29">
+                <text>ἐκεῖ</text>
+                <comment class="proiel-id">267465</comment>
+                <refs nrefs="10213-25"/>
+            </w>
+            <w n="10213-30">
+                <text>ἕως</text>
+                <comment class="proiel-id">267466</comment>
+                <refs nrefs="10213-26"/>
+            </w>
+            <w n="10213-31">
+                <text>ἂν</text>
+                <comment class="proiel-id">267467</comment>
+            </w>
+            <w n="10213-32">
+                <text>εἴπω</text>
+                <comment class="proiel-id">267468</comment>
+                <refs nrefs="10213-28"/>
+            </w>
+            <w n="10213-33">
+                <text>σοι</text>
+                <comment class="proiel-id">267469</comment>
+                <refs nrefs="10213-29"/>
+            </w>
+            <w n="10213-34">
+                <text>·</text>
+            </w>
+            <w n="10213-35">
+                <text>μέλλει</text>
+                <comment class="proiel-id">267471</comment>
+                <refs nrefs="10213-30 10213-31"/>
+            </w>
+            <w n="10213-36">
+                <text>γὰρ</text>
+                <comment class="proiel-id">267472</comment>
+                <refs nrefs="10213-32"/>
+            </w>
+            <w n="10213-37">
+                <text>Ἡρώδης</text>
+                <comment class="proiel-id">267473</comment>
+                <refs nrefs="10213-34"/>
+            </w>
+            <w n="10213-38">
+                <text>ζητεῖν</text>
+                <comment class="proiel-id">267474</comment>
+                <refs nrefs="10213-35"/>
+            </w>
+            <w n="10213-39">
+                <text>τὸ</text>
+                <comment class="proiel-id">267475</comment>
+            </w>
+            <w n="10213-40">
+                <text>παιδίον</text>
+                <comment class="proiel-id">267476</comment>
+                <refs nrefs="10213-36"/>
+            </w>
+            <w n="10213-41">
+                <text>τοῦ</text>
+                <comment class="proiel-id">267477</comment>
+            </w>
+            <w n="10213-42">
+                <text>ἀπολέσαι</text>
+                <comment class="proiel-id">267478</comment>
+                <refs nrefs="10213-38"/>
+            </w>
+            <w n="10213-43">
+                <text>αὐτό</text>
+                <comment class="proiel-id">267479</comment>
+                <refs nrefs="10213-39"/>
+            </w>
+            <w n="10213-44">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="10213-1">
+                <text>qui</text>
+                <comment class="proiel-id">250601</comment>
+                <refs nrefs="10213-3"/>
+            </w>
+            <w n="10213-2">
+                <text>cum</text>
+                <comment class="proiel-id">250602</comment>
+            </w>
+            <w n="10213-3">
+                <text>recessissent</text>
+                <comment class="proiel-id">250603</comment>
+                <refs nrefs="10213-1"/>
+            </w>
+            <w n="10213-4">
+                <text>ecce</text>
+                <comment class="proiel-id">250604</comment>
+                <refs nrefs="10213-4"/>
+            </w>
+            <w n="10213-5">
+                <text>angelus</text>
+                <comment class="proiel-id">250605</comment>
+                <refs nrefs="10213-5"/>
+            </w>
+            <w n="10213-6">
+                <text>Domini</text>
+                <comment class="proiel-id">250606</comment>
+                <refs nrefs="10213-6"/>
+            </w>
+            <w n="10213-7">
+                <text>apparuit</text>
+                <comment class="proiel-id">250607</comment>
+                <refs nrefs="10213-7"/>
+            </w>
+            <w n="10213-8">
+                <text>in</text>
+                <comment class="proiel-id">250608</comment>
+                <refs nrefs="10213-8"/>
+            </w>
+            <w n="10213-9">
+                <text>somnis</text>
+                <comment class="proiel-id">250609</comment>
+                <refs nrefs="10213-9"/>
+            </w>
+            <w n="10213-10">
+                <text>Ioseph</text>
+                <comment class="proiel-id">250610</comment>
+                <refs nrefs="10213-11"/>
+            </w>
+            <w n="10213-11">
+                <text>dicens</text>
+                <comment class="proiel-id">250611</comment>
+                <refs nrefs="10213-12"/>
+            </w>
+            <w n="10213-12">
+                <text>surge</text>
+                <comment class="proiel-id">250612</comment>
+                <refs nrefs="10213-14"/>
+            </w>
+            <w n="10213-13">
+                <text>et</text>
+                <comment class="proiel-id">250613</comment>
+            </w>
+            <w n="10213-14">
+                <text>accipe</text>
+                <comment class="proiel-id">250614</comment>
+                <refs nrefs="10213-15"/>
+            </w>
+            <w n="10213-15">
+                <text>puerum</text>
+                <comment class="proiel-id">250615</comment>
+                <refs nrefs="10213-17"/>
+            </w>
+            <w n="10213-16">
+                <text>et</text>
+                <comment class="proiel-id">250616</comment>
+                <refs nrefs="10213-18"/>
+            </w>
+            <w n="10213-17">
+                <text>matrem</text>
+                <comment class="proiel-id">250617</comment>
+                <refs nrefs="10213-20"/>
+            </w>
+            <w n="10213-18">
+                <text>eius</text>
+                <comment class="proiel-id">250618</comment>
+                <refs nrefs="10213-21"/>
+            </w>
+            <w n="10213-19">
+                <text>et</text>
+                <comment class="proiel-id">250619</comment>
+                <refs nrefs="10213-22"/>
+            </w>
+            <w n="10213-20">
+                <text>fuge</text>
+                <comment class="proiel-id">250620</comment>
+                <refs nrefs="10213-23"/>
+            </w>
+            <w n="10213-21">
+                <text>in</text>
+                <comment class="proiel-id">250621</comment>
+                <refs nrefs="10213-24"/>
+            </w>
+            <w n="10213-22">
+                <text>Aegyptum</text>
+                <comment class="proiel-id">250622</comment>
+                <refs nrefs="10213-25"/>
+            </w>
+            <w n="10213-23">
+                <text>et</text>
+                <comment class="proiel-id">250623</comment>
+                <refs nrefs="10213-27"/>
+            </w>
+            <w n="10213-24">
+                <text>esto</text>
+                <comment class="proiel-id">250624</comment>
+                <refs nrefs="10213-28"/>
+            </w>
+            <w n="10213-25">
+                <text>ibi</text>
+                <comment class="proiel-id">250625</comment>
+                <refs nrefs="10213-29"/>
+            </w>
+            <w n="10213-26">
+                <text>usque</text>
+                <comment class="proiel-id">250626</comment>
+                <refs nrefs="10213-30"/>
+            </w>
+            <w n="10213-27">
+                <text>dum</text>
+                <comment class="proiel-id">250627</comment>
+            </w>
+            <w n="10213-28">
+                <text>dicam</text>
+                <comment class="proiel-id">250628</comment>
+                <refs nrefs="10213-32"/>
+            </w>
+            <w n="10213-29">
+                <text>tibi</text>
+                <comment class="proiel-id">250629</comment>
+                <refs nrefs="10213-33"/>
+            </w>
+            <w n="10213-30">
+                <text>futurum</text>
+                <comment class="proiel-id">250630</comment>
+                <refs nrefs="10213-35"/>
+            </w>
+            <w n="10213-31">
+                <text>est</text>
+                <comment class="proiel-id">250631</comment>
+                <refs nrefs="10213-35"/>
+            </w>
+            <w n="10213-32">
+                <text>enim</text>
+                <comment class="proiel-id">250632</comment>
+                <refs nrefs="10213-36"/>
+            </w>
+            <w n="10213-33">
+                <text>ut</text>
+                <comment class="proiel-id">250633</comment>
+            </w>
+            <w n="10213-34">
+                <text>Herodes</text>
+                <comment class="proiel-id">250634</comment>
+                <refs nrefs="10213-37"/>
+            </w>
+            <w n="10213-35">
+                <text>quaerat</text>
+                <comment class="proiel-id">250635</comment>
+                <refs nrefs="10213-38"/>
+            </w>
+            <w n="10213-36">
+                <text>puerum</text>
+                <comment class="proiel-id">250636</comment>
+                <refs nrefs="10213-40"/>
+            </w>
+            <w n="10213-37">
+                <text>ad</text>
+                <comment class="proiel-id">250637</comment>
+            </w>
+            <w n="10213-38">
+                <text>perdendum</text>
+                <comment class="proiel-id">250638</comment>
+                <refs nrefs="10213-42"/>
+            </w>
+            <w n="10213-39">
+                <text>eum</text>
+                <comment class="proiel-id">250639</comment>
+                <refs nrefs="10213-43"/>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="10214" document_id="NT:MATT_2:14">
+        <wds lnum="L1">
+            <w n="10214-1">
+                <text>ὁ</text>
+                <comment class="proiel-id">793927</comment>
+                <refs nrefs="10214-1"/>
+            </w>
+            <w n="10214-2">
+                <text>δὲ</text>
+                <comment class="proiel-id">793928</comment>
+            </w>
+            <w n="10214-3">
+                <text>ἐγερθεὶς</text>
+                <comment class="proiel-id">793929</comment>
+                <refs nrefs="10214-2"/>
+            </w>
+            <w n="10214-4">
+                <text>παρέλαβεν</text>
+                <comment class="proiel-id">793930</comment>
+                <refs nrefs="10214-3"/>
+            </w>
+            <w n="10214-5">
+                <text>τὸ</text>
+                <comment class="proiel-id">793931</comment>
+            </w>
+            <w n="10214-6">
+                <text>παιδίον</text>
+                <comment class="proiel-id">793932</comment>
+                <refs nrefs="10214-4"/>
+            </w>
+            <w n="10214-7">
+                <text>καὶ</text>
+                <comment class="proiel-id">793933</comment>
+                <refs nrefs="10214-5"/>
+            </w>
+            <w n="10214-8">
+                <text>τὴν</text>
+                <comment class="proiel-id">793934</comment>
+            </w>
+            <w n="10214-9">
+                <text>μητέρα</text>
+                <comment class="proiel-id">793935</comment>
+                <refs nrefs="10214-6"/>
+            </w>
+            <w n="10214-10">
+                <text>αὐτοῦ</text>
+                <comment class="proiel-id">793936</comment>
+                <refs nrefs="10214-7"/>
+            </w>
+            <w n="10214-11">
+                <text>νυκτὸς</text>
+                <comment class="proiel-id">793937</comment>
+                <refs nrefs="10214-8"/>
+            </w>
+            <w n="10214-12">
+                <text>καὶ</text>
+                <comment class="proiel-id">793938</comment>
+                <refs nrefs="10214-9"/>
+            </w>
+            <w n="10214-13">
+                <text>ἀνεχώρησεν</text>
+                <comment class="proiel-id">793939</comment>
+                <refs nrefs="10214-10"/>
+            </w>
+            <w n="10214-14">
+                <text>εἰς</text>
+                <comment class="proiel-id">793940</comment>
+                <refs nrefs="10214-11"/>
+            </w>
+            <w n="10214-15">
+                <text>Αἴγυπτον</text>
+                <comment class="proiel-id">793941</comment>
+                <refs nrefs="10214-12"/>
+            </w>
+            <w n="10214-16">
+                <text>,</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="10214-1">
+                <text>qui</text>
+                <comment class="proiel-id">250640</comment>
+                <refs nrefs="10214-1"/>
+            </w>
+            <w n="10214-2">
+                <text>consurgens</text>
+                <comment class="proiel-id">250641</comment>
+                <refs nrefs="10214-3"/>
+            </w>
+            <w n="10214-3">
+                <text>accepit</text>
+                <comment class="proiel-id">250642</comment>
+                <refs nrefs="10214-4"/>
+            </w>
+            <w n="10214-4">
+                <text>puerum</text>
+                <comment class="proiel-id">250643</comment>
+                <refs nrefs="10214-6"/>
+            </w>
+            <w n="10214-5">
+                <text>et</text>
+                <comment class="proiel-id">250644</comment>
+                <refs nrefs="10214-7"/>
+            </w>
+            <w n="10214-6">
+                <text>matrem</text>
+                <comment class="proiel-id">250645</comment>
+                <refs nrefs="10214-9"/>
+            </w>
+            <w n="10214-7">
+                <text>eius</text>
+                <comment class="proiel-id">250646</comment>
+                <refs nrefs="10214-10"/>
+            </w>
+            <w n="10214-8">
+                <text>nocte</text>
+                <comment class="proiel-id">250647</comment>
+                <refs nrefs="10214-11"/>
+            </w>
+            <w n="10214-9">
+                <text>et</text>
+                <comment class="proiel-id">250648</comment>
+                <refs nrefs="10214-12"/>
+            </w>
+            <w n="10214-10">
+                <text>recessit</text>
+                <comment class="proiel-id">250649</comment>
+                <refs nrefs="10214-13"/>
+            </w>
+            <w n="10214-11">
+                <text>in</text>
+                <comment class="proiel-id">250650</comment>
+                <refs nrefs="10214-14"/>
+            </w>
+            <w n="10214-12">
+                <text>Aegyptum</text>
+                <comment class="proiel-id">250651</comment>
+                <refs nrefs="10214-15"/>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="10215" document_id="NT:MATT_2:15">
+        <wds lnum="L1">
+            <w n="10215-1">
+                <text>καὶ</text>
+                <comment class="proiel-id">793942</comment>
+                <refs nrefs="10215-1"/>
+            </w>
+            <w n="10215-2">
+                <text>ἦν</text>
+                <comment class="proiel-id">793943</comment>
+                <refs nrefs="10215-2"/>
+            </w>
+            <w n="10215-3">
+                <text>ἐκεῖ</text>
+                <comment class="proiel-id">793944</comment>
+                <refs nrefs="10215-3"/>
+            </w>
+            <w n="10215-4">
+                <text>ἕως</text>
+                <comment class="proiel-id">793945</comment>
+                <refs nrefs="10215-4"/>
+            </w>
+            <w n="10215-5">
+                <text>τῆς</text>
+                <comment class="proiel-id">793946</comment>
+            </w>
+            <w n="10215-6">
+                <text>τελευτῆς</text>
+                <comment class="proiel-id">793947</comment>
+                <refs nrefs="10215-6"/>
+            </w>
+            <w n="10215-7">
+                <text>Ἡρώδου</text>
+                <comment class="proiel-id">793948</comment>
+                <refs nrefs="10215-7"/>
+            </w>
+            <w n="10215-8">
+                <text>·</text>
+            </w>
+            <w n="10215-9">
+                <text>ἵνα</text>
+                <comment class="proiel-id">793949</comment>
+                <refs nrefs="10215-8"/>
+            </w>
+            <w n="10215-10">
+                <text>πληρωθῇ</text>
+                <comment class="proiel-id">793950</comment>
+                <refs nrefs="10215-9"/>
+            </w>
+            <w n="10215-11">
+                <text>τὸ</text>
+                <comment class="proiel-id">793951</comment>
+            </w>
+            <w n="10215-12">
+                <text>ῥηθὲν</text>
+                <comment class="proiel-id">793952</comment>
+                <refs nrefs="10215-11"/>
+            </w>
+            <w n="10215-13">
+                <text>ὑπὸ</text>
+                <comment class="proiel-id">793953</comment>
+                <refs nrefs="10215-13"/>
+            </w>
+            <w n="10215-14">
+                <text>κυρίου</text>
+                <comment class="proiel-id">793954</comment>
+                <refs nrefs="10215-14"/>
+            </w>
+            <w n="10215-15">
+                <text>διὰ</text>
+                <comment class="proiel-id">793955</comment>
+                <refs nrefs="10215-15"/>
+            </w>
+            <w n="10215-16">
+                <text>τοῦ</text>
+                <comment class="proiel-id">793956</comment>
+            </w>
+            <w n="10215-17">
+                <text>προφήτου</text>
+                <comment class="proiel-id">793957</comment>
+                <refs nrefs="10215-16"/>
+            </w>
+            <w n="10215-18">
+                <text>λέγοντος</text>
+                <comment class="proiel-id">793958</comment>
+                <refs nrefs="10215-17"/>
+            </w>
+            <w n="10215-19">
+                <text>,</text>
+            </w>
+            <w n="10215-20">
+                <text>ἐξ</text>
+                <comment class="proiel-id">793959</comment>
+                <refs nrefs="10215-18"/>
+            </w>
+            <w n="10215-21">
+                <text>Αἰγύπτου</text>
+                <comment class="proiel-id">793960</comment>
+                <refs nrefs="10215-19"/>
+            </w>
+            <w n="10215-22">
+                <text>ἐκάλεσα</text>
+                <comment class="proiel-id">793961</comment>
+                <refs nrefs="10215-20"/>
+            </w>
+            <w n="10215-23">
+                <text>τὸν</text>
+                <comment class="proiel-id">793962</comment>
+            </w>
+            <w n="10215-24">
+                <text>υἱόν</text>
+                <comment class="proiel-id">793963</comment>
+                <refs nrefs="10215-21"/>
+            </w>
+            <w n="10215-25">
+                <text>μου</text>
+                <comment class="proiel-id">793964</comment>
+                <refs nrefs="10215-22"/>
+            </w>
+            <w n="10215-26">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="10215-1">
+                <text>et</text>
+                <comment class="proiel-id">250652</comment>
+                <refs nrefs="10215-1"/>
+            </w>
+            <w n="10215-2">
+                <text>erat</text>
+                <comment class="proiel-id">250653</comment>
+                <refs nrefs="10215-2"/>
+            </w>
+            <w n="10215-3">
+                <text>ibi</text>
+                <comment class="proiel-id">250654</comment>
+                <refs nrefs="10215-3"/>
+            </w>
+            <w n="10215-4">
+                <text>usque</text>
+                <comment class="proiel-id">250655</comment>
+                <refs nrefs="10215-4"/>
+            </w>
+            <w n="10215-5">
+                <text>ad</text>
+                <comment class="proiel-id">250656</comment>
+            </w>
+            <w n="10215-6">
+                <text>obitum</text>
+                <comment class="proiel-id">250657</comment>
+                <refs nrefs="10215-6"/>
+            </w>
+            <w n="10215-7">
+                <text>Herodis</text>
+                <comment class="proiel-id">250658</comment>
+                <refs nrefs="10215-7"/>
+            </w>
+            <w n="10215-8">
+                <text>ut</text>
+                <comment class="proiel-id">250659</comment>
+                <refs nrefs="10215-9"/>
+            </w>
+            <w n="10215-9">
+                <text>adimpleretur</text>
+                <comment class="proiel-id">250660</comment>
+                <refs nrefs="10215-10"/>
+            </w>
+            <w n="10215-10">
+                <text>quod</text>
+                <comment class="proiel-id">250661</comment>
+            </w>
+            <w n="10215-11">
+                <text>dictum</text>
+                <comment class="proiel-id">250662</comment>
+                <refs nrefs="10215-12"/>
+            </w>
+            <w n="10215-12">
+                <text>est</text>
+                <comment class="proiel-id">250663</comment>
+            </w>
+            <w n="10215-13">
+                <text>a</text>
+                <comment class="proiel-id">250664</comment>
+                <refs nrefs="10215-13"/>
+            </w>
+            <w n="10215-14">
+                <text>Domino</text>
+                <comment class="proiel-id">250665</comment>
+                <refs nrefs="10215-14"/>
+            </w>
+            <w n="10215-15">
+                <text>per</text>
+                <comment class="proiel-id">250666</comment>
+                <refs nrefs="10215-15"/>
+            </w>
+            <w n="10215-16">
+                <text>prophetam</text>
+                <comment class="proiel-id">250667</comment>
+                <refs nrefs="10215-17"/>
+            </w>
+            <w n="10215-17">
+                <text>dicentem</text>
+                <comment class="proiel-id">250668</comment>
+                <refs nrefs="10215-18"/>
+            </w>
+            <w n="10215-18">
+                <text>ex</text>
+                <comment class="proiel-id">250669</comment>
+                <refs nrefs="10215-20"/>
+            </w>
+            <w n="10215-19">
+                <text>Aegypto</text>
+                <comment class="proiel-id">250670</comment>
+                <refs nrefs="10215-21"/>
+            </w>
+            <w n="10215-20">
+                <text>vocavi</text>
+                <comment class="proiel-id">250671</comment>
+                <refs nrefs="10215-22"/>
+            </w>
+            <w n="10215-21">
+                <text>filium</text>
+                <comment class="proiel-id">250672</comment>
+                <refs nrefs="10215-24"/>
+            </w>
+            <w n="10215-22">
+                <text>meum</text>
+                <comment class="proiel-id">250673</comment>
+                <refs nrefs="10215-25"/>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="10216" document_id="NT:MATT_2:16">
+        <wds lnum="L1">
+            <w n="10216-1">
+                <text>Τότε</text>
+                <comment class="proiel-id">267523</comment>
+                <refs nrefs="10216-1"/>
+            </w>
+            <w n="10216-2">
+                <text>Ἡρώδης</text>
+                <comment class="proiel-id">267524</comment>
+                <refs nrefs="10216-2"/>
+            </w>
+            <w n="10216-3">
+                <text>ἰδὼν</text>
+                <comment class="proiel-id">267525</comment>
+                <refs nrefs="10216-3"/>
+            </w>
+            <w n="10216-4">
+                <text>ὅτι</text>
+                <comment class="proiel-id">267526</comment>
+                <refs nrefs="10216-4"/>
+            </w>
+            <w n="10216-5">
+                <text>ἐνεπαίχθη</text>
+                <comment class="proiel-id">267527</comment>
+                <refs nrefs="10216-5 10216-6"/>
+            </w>
+            <w n="10216-6">
+                <text>ὑπὸ</text>
+                <comment class="proiel-id">267528</comment>
+                <refs nrefs="10216-7"/>
+            </w>
+            <w n="10216-7">
+                <text>τῶν</text>
+                <comment class="proiel-id">267529</comment>
+            </w>
+            <w n="10216-8">
+                <text>μάγων</text>
+                <comment class="proiel-id">267530</comment>
+                <refs nrefs="10216-8"/>
+            </w>
+            <w n="10216-9">
+                <text>ἐθυμώθη</text>
+                <comment class="proiel-id">267531</comment>
+                <refs nrefs="10216-9 10216-10"/>
+            </w>
+            <w n="10216-10">
+                <text>λίαν</text>
+                <comment class="proiel-id">267532</comment>
+                <refs nrefs="10216-11"/>
+            </w>
+            <w n="10216-11">
+                <text>,</text>
+            </w>
+            <w n="10216-12">
+                <text>καὶ</text>
+                <comment class="proiel-id">267534</comment>
+                <refs nrefs="10216-12"/>
+            </w>
+            <w n="10216-13">
+                <text>ἀποστείλας</text>
+                <comment class="proiel-id">267535</comment>
+                <refs nrefs="10216-13"/>
+            </w>
+            <w n="10216-14">
+                <text>ἀνεῖλεν</text>
+                <comment class="proiel-id">267536</comment>
+                <refs nrefs="10216-14"/>
+            </w>
+            <w n="10216-15">
+                <text>πάντας</text>
+                <comment class="proiel-id">267537</comment>
+                <refs nrefs="10216-15"/>
+            </w>
+            <w n="10216-16">
+                <text>τοὺς</text>
+                <comment class="proiel-id">267538</comment>
+            </w>
+            <w n="10216-17">
+                <text>παῖδας</text>
+                <comment class="proiel-id">267539</comment>
+                <refs nrefs="10216-16"/>
+            </w>
+            <w n="10216-18">
+                <text>τοὺς</text>
+                <comment class="proiel-id">267540</comment>
+            </w>
+            <w n="10216-19">
+                <text>ἐν</text>
+                <comment class="proiel-id">267541</comment>
+                <refs nrefs="10216-19"/>
+            </w>
+            <w n="10216-20">
+                <text>Βηθλεὲμ</text>
+                <comment class="proiel-id">267542</comment>
+                <refs nrefs="10216-20"/>
+            </w>
+            <w n="10216-21">
+                <text>καὶ</text>
+                <comment class="proiel-id">267543</comment>
+                <refs nrefs="10216-21"/>
+            </w>
+            <w n="10216-22">
+                <text>ἐν</text>
+                <comment class="proiel-id">267544</comment>
+                <refs nrefs="10216-22"/>
+            </w>
+            <w n="10216-23">
+                <text>πᾶσι</text>
+                <comment class="proiel-id">267545</comment>
+                <refs nrefs="10216-23"/>
+            </w>
+            <w n="10216-24">
+                <text>τοῖς</text>
+                <comment class="proiel-id">267546</comment>
+            </w>
+            <w n="10216-25">
+                <text>ὁρίοις</text>
+                <comment class="proiel-id">267547</comment>
+                <refs nrefs="10216-24"/>
+            </w>
+            <w n="10216-26">
+                <text>αὐτῆς</text>
+                <comment class="proiel-id">267548</comment>
+                <refs nrefs="10216-25"/>
+            </w>
+            <w n="10216-27">
+                <text>ἀπὸ</text>
+                <comment class="proiel-id">267549</comment>
+                <refs nrefs="10216-26"/>
+            </w>
+            <w n="10216-28">
+                <text>διετοῦς</text>
+                <comment class="proiel-id">267550</comment>
+                <refs nrefs="10216-27"/>
+            </w>
+            <w n="10216-29">
+                <text>καὶ</text>
+                <comment class="proiel-id">267551</comment>
+                <refs nrefs="10216-28"/>
+            </w>
+            <w n="10216-30">
+                <text>κατωτέρω</text>
+                <comment class="proiel-id">267552</comment>
+                <refs nrefs="10216-29"/>
+            </w>
+            <w n="10216-31">
+                <text>,</text>
+            </w>
+            <w n="10216-32">
+                <text>κατὰ</text>
+                <comment class="proiel-id">267554</comment>
+                <refs nrefs="10216-30"/>
+            </w>
+            <w n="10216-33">
+                <text>τὸν</text>
+                <comment class="proiel-id">267555</comment>
+            </w>
+            <w n="10216-34">
+                <text>χρόνον</text>
+                <comment class="proiel-id">267556</comment>
+                <refs nrefs="10216-31"/>
+            </w>
+            <w n="10216-35">
+                <text>ὃν</text>
+                <comment class="proiel-id">267557</comment>
+                <refs nrefs="10216-32"/>
+            </w>
+            <w n="10216-36">
+                <text>ἠκρίβωσεν</text>
+                <comment class="proiel-id">267558</comment>
+                <refs nrefs="10216-33"/>
+            </w>
+            <w n="10216-37">
+                <text>παρὰ</text>
+                <comment class="proiel-id">267559</comment>
+                <refs nrefs="10216-34"/>
+            </w>
+            <w n="10216-38">
+                <text>τῶν</text>
+                <comment class="proiel-id">267560</comment>
+            </w>
+            <w n="10216-39">
+                <text>μάγων</text>
+                <comment class="proiel-id">267561</comment>
+                <refs nrefs="10216-35"/>
+            </w>
+            <w n="10216-40">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="10216-1">
+                <text>tunc</text>
+                <comment class="proiel-id">250674</comment>
+                <refs nrefs="10216-1"/>
+            </w>
+            <w n="10216-2">
+                <text>Herodes</text>
+                <comment class="proiel-id">250675</comment>
+                <refs nrefs="10216-2"/>
+            </w>
+            <w n="10216-3">
+                <text>videns</text>
+                <comment class="proiel-id">250676</comment>
+                <refs nrefs="10216-3"/>
+            </w>
+            <w n="10216-4">
+                <text>quoniam</text>
+                <comment class="proiel-id">250677</comment>
+                <refs nrefs="10216-4"/>
+            </w>
+            <w n="10216-5">
+                <text>inlusus</text>
+                <comment class="proiel-id">250678</comment>
+                <refs nrefs="10216-5"/>
+            </w>
+            <w n="10216-6">
+                <text>esset</text>
+                <comment class="proiel-id">250679</comment>
+                <refs nrefs="10216-5"/>
+            </w>
+            <w n="10216-7">
+                <text>a</text>
+                <comment class="proiel-id">250680</comment>
+                <refs nrefs="10216-6"/>
+            </w>
+            <w n="10216-8">
+                <text>magis</text>
+                <comment class="proiel-id">250681</comment>
+                <refs nrefs="10216-8"/>
+            </w>
+            <w n="10216-9">
+                <text>iratus</text>
+                <comment class="proiel-id">250682</comment>
+                <refs nrefs="10216-9"/>
+            </w>
+            <w n="10216-10">
+                <text>est</text>
+                <comment class="proiel-id">250683</comment>
+                <refs nrefs="10216-9"/>
+            </w>
+            <w n="10216-11">
+                <text>valde</text>
+                <comment class="proiel-id">250684</comment>
+                <refs nrefs="10216-10"/>
+            </w>
+            <w n="10216-12">
+                <text>et</text>
+                <comment class="proiel-id">250685</comment>
+                <refs nrefs="10216-12"/>
+            </w>
+            <w n="10216-13">
+                <text>mittens</text>
+                <comment class="proiel-id">250686</comment>
+                <refs nrefs="10216-13"/>
+            </w>
+            <w n="10216-14">
+                <text>occidit</text>
+                <comment class="proiel-id">250687</comment>
+                <refs nrefs="10216-14"/>
+            </w>
+            <w n="10216-15">
+                <text>omnes</text>
+                <comment class="proiel-id">250688</comment>
+                <refs nrefs="10216-15"/>
+            </w>
+            <w n="10216-16">
+                <text>pueros</text>
+                <comment class="proiel-id">250689</comment>
+                <refs nrefs="10216-17"/>
+            </w>
+            <w n="10216-17">
+                <text>qui</text>
+                <comment class="proiel-id">250690</comment>
+            </w>
+            <w n="10216-18">
+                <text>erant</text>
+                <comment class="proiel-id">250691</comment>
+            </w>
+            <w n="10216-19">
+                <text>in</text>
+                <comment class="proiel-id">250692</comment>
+                <refs nrefs="10216-19"/>
+            </w>
+            <w n="10216-20">
+                <text>Bethleem</text>
+                <comment class="proiel-id">250693</comment>
+                <refs nrefs="10216-20"/>
+            </w>
+            <w n="10216-21">
+                <text>et</text>
+                <comment class="proiel-id">250694</comment>
+                <refs nrefs="10216-21"/>
+            </w>
+            <w n="10216-22">
+                <text>in</text>
+                <comment class="proiel-id">250695</comment>
+                <refs nrefs="10216-22"/>
+            </w>
+            <w n="10216-23">
+                <text>omnibus</text>
+                <comment class="proiel-id">250696</comment>
+                <refs nrefs="10216-23"/>
+            </w>
+            <w n="10216-24">
+                <text>finibus</text>
+                <comment class="proiel-id">250697</comment>
+                <refs nrefs="10216-25"/>
+            </w>
+            <w n="10216-25">
+                <text>eius</text>
+                <comment class="proiel-id">250698</comment>
+                <refs nrefs="10216-26"/>
+            </w>
+            <w n="10216-26">
+                <text>a</text>
+                <comment class="proiel-id">250699</comment>
+                <refs nrefs="10216-27"/>
+            </w>
+            <w n="10216-27">
+                <text>bimatu</text>
+                <comment class="proiel-id">250700</comment>
+                <refs nrefs="10216-28"/>
+            </w>
+            <w n="10216-28">
+                <text>et</text>
+                <comment class="proiel-id">250701</comment>
+                <refs nrefs="10216-29"/>
+            </w>
+            <w n="10216-29">
+                <text>infra</text>
+                <comment class="proiel-id">250702</comment>
+                <refs nrefs="10216-30"/>
+            </w>
+            <w n="10216-30">
+                <text>secundum</text>
+                <comment class="proiel-id">250703</comment>
+                <refs nrefs="10216-32"/>
+            </w>
+            <w n="10216-31">
+                <text>tempus</text>
+                <comment class="proiel-id">250704</comment>
+                <refs nrefs="10216-34"/>
+            </w>
+            <w n="10216-32">
+                <text>quod</text>
+                <comment class="proiel-id">250705</comment>
+                <refs nrefs="10216-35"/>
+            </w>
+            <w n="10216-33">
+                <text>exquisierat</text>
+                <comment class="proiel-id">250706</comment>
+                <refs nrefs="10216-36"/>
+            </w>
+            <w n="10216-34">
+                <text>a</text>
+                <comment class="proiel-id">250707</comment>
+                <refs nrefs="10216-37"/>
+            </w>
+            <w n="10216-35">
+                <text>magis</text>
+                <comment class="proiel-id">250708</comment>
+                <refs nrefs="10216-39"/>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="10217" document_id="NT:MATT_2:17">
+        <wds lnum="L1">
+            <w n="10217-1">
+                <text>τότε</text>
+                <comment class="proiel-id">267563</comment>
+                <refs nrefs="10217-1"/>
+            </w>
+            <w n="10217-2">
+                <text>ἐπληρώθη</text>
+                <comment class="proiel-id">267564</comment>
+                <refs nrefs="10217-2 10217-3"/>
+            </w>
+            <w n="10217-3">
+                <text>τὸ</text>
+                <comment class="proiel-id">267565</comment>
+            </w>
+            <w n="10217-4">
+                <text>ῥηθὲν</text>
+                <comment class="proiel-id">267566</comment>
+                <refs nrefs="10217-5"/>
+            </w>
+            <w n="10217-5">
+                <text>διὰ</text>
+                <comment class="proiel-id">267567</comment>
+                <refs nrefs="10217-7"/>
+            </w>
+            <w n="10217-6">
+                <text>Ἰερεμίου</text>
+                <comment class="proiel-id">267568</comment>
+                <refs nrefs="10217-8"/>
+            </w>
+            <w n="10217-7">
+                <text>τοῦ</text>
+                <comment class="proiel-id">267569</comment>
+            </w>
+            <w n="10217-8">
+                <text>προφήτου</text>
+                <comment class="proiel-id">267570</comment>
+                <refs nrefs="10217-9"/>
+            </w>
+            <w n="10217-9">
+                <text>λέγοντος</text>
+                <comment class="proiel-id">267571</comment>
+                <refs nrefs="10217-10"/>
+            </w>
+            <w n="10217-10">
+                <text>,</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="10217-1">
+                <text>tunc</text>
+                <comment class="proiel-id">250709</comment>
+                <refs nrefs="10217-1"/>
+            </w>
+            <w n="10217-2">
+                <text>adimpletum</text>
+                <comment class="proiel-id">250710</comment>
+                <refs nrefs="10217-2"/>
+            </w>
+            <w n="10217-3">
+                <text>est</text>
+                <comment class="proiel-id">250711</comment>
+                <refs nrefs="10217-2"/>
+            </w>
+            <w n="10217-4">
+                <text>quod</text>
+                <comment class="proiel-id">250712</comment>
+            </w>
+            <w n="10217-5">
+                <text>dictum</text>
+                <comment class="proiel-id">250713</comment>
+                <refs nrefs="10217-4"/>
+            </w>
+            <w n="10217-6">
+                <text>est</text>
+                <comment class="proiel-id">250714</comment>
+            </w>
+            <w n="10217-7">
+                <text>per</text>
+                <comment class="proiel-id">250715</comment>
+                <refs nrefs="10217-5"/>
+            </w>
+            <w n="10217-8">
+                <text>Hieremiam</text>
+                <comment class="proiel-id">250716</comment>
+                <refs nrefs="10217-6"/>
+            </w>
+            <w n="10217-9">
+                <text>prophetam</text>
+                <comment class="proiel-id">250717</comment>
+                <refs nrefs="10217-8"/>
+            </w>
+            <w n="10217-10">
+                <text>dicentem</text>
+                <comment class="proiel-id">250718</comment>
+                <refs nrefs="10217-9"/>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="10218" document_id="NT:MATT_2:18">
+        <wds lnum="L1">
+            <w n="10218-1">
+                <text>φωνὴ</text>
+                <comment class="proiel-id">267573</comment>
+                <refs nrefs="10218-1"/>
+            </w>
+            <w n="10218-2">
+                <text>ἐν</text>
+                <comment class="proiel-id">267574</comment>
+                <refs nrefs="10218-2"/>
+            </w>
+            <w n="10218-3">
+                <text>Ῥαμὰ</text>
+                <comment class="proiel-id">267575</comment>
+                <refs nrefs="10218-3"/>
+            </w>
+            <w n="10218-4">
+                <text>ἠκούσθη</text>
+                <comment class="proiel-id">267576</comment>
+                <refs nrefs="10218-4 10218-5"/>
+            </w>
+            <w n="10218-5">
+                <text>,</text>
+            </w>
+            <w n="10218-6">
+                <text>κλαυθμὸς</text>
+                <comment class="proiel-id">267578</comment>
+                <refs nrefs="10218-6"/>
+            </w>
+            <w n="10218-7">
+                <text>καὶ</text>
+                <comment class="proiel-id">267579</comment>
+                <refs nrefs="10218-7"/>
+            </w>
+            <w n="10218-8">
+                <text>ὀδυρμὸς</text>
+                <comment class="proiel-id">267580</comment>
+                <refs nrefs="10218-8"/>
+            </w>
+            <w n="10218-9">
+                <text>πολύς</text>
+                <comment class="proiel-id">267581</comment>
+                <refs nrefs="10218-9"/>
+            </w>
+            <w n="10218-10">
+                <text>·</text>
+            </w>
+            <w n="10218-11">
+                <text>Ῥαχὴλ</text>
+                <comment class="proiel-id">267583</comment>
+                <refs nrefs="10218-10"/>
+            </w>
+            <w n="10218-12">
+                <text>κλαίουσα</text>
+                <comment class="proiel-id">267584</comment>
+                <refs nrefs="10218-11"/>
+            </w>
+            <w n="10218-13">
+                <text>τὰ</text>
+                <comment class="proiel-id">267585</comment>
+            </w>
+            <w n="10218-14">
+                <text>τέκνα</text>
+                <comment class="proiel-id">267586</comment>
+                <refs nrefs="10218-12"/>
+            </w>
+            <w n="10218-15">
+                <text>αὐτῆς</text>
+                <comment class="proiel-id">267587</comment>
+                <refs nrefs="10218-13"/>
+            </w>
+            <w n="10218-16">
+                <text>,</text>
+            </w>
+            <w n="10218-17">
+                <text>καὶ</text>
+                <comment class="proiel-id">267589</comment>
+                <refs nrefs="10218-14"/>
+            </w>
+            <w n="10218-18">
+                <text>οὐκ</text>
+                <comment class="proiel-id">267590</comment>
+                <refs nrefs="10218-15"/>
+            </w>
+            <w n="10218-19">
+                <text>ἤθελεν</text>
+                <comment class="proiel-id">267591</comment>
+                <refs nrefs="10218-15"/>
+            </w>
+            <w n="10218-20">
+                <text>παρακληθῆναι</text>
+                <comment class="proiel-id">267592</comment>
+                <refs nrefs="10218-16"/>
+            </w>
+            <w n="10218-21">
+                <text>,</text>
+            </w>
+            <w n="10218-22">
+                <text>ὅτι</text>
+                <comment class="proiel-id">267594</comment>
+                <refs nrefs="10218-17"/>
+            </w>
+            <w n="10218-23">
+                <text>οὐκ</text>
+                <comment class="proiel-id">267595</comment>
+                <refs nrefs="10218-18"/>
+            </w>
+            <w n="10218-24">
+                <text>εἰσίν</text>
+                <comment class="proiel-id">267596</comment>
+                <refs nrefs="10218-19"/>
+            </w>
+            <w n="10218-25">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="10218-1">
+                <text>vox</text>
+                <comment class="proiel-id">250719</comment>
+                <refs nrefs="10218-1"/>
+            </w>
+            <w n="10218-2">
+                <text>in</text>
+                <comment class="proiel-id">250720</comment>
+                <refs nrefs="10218-2"/>
+            </w>
+            <w n="10218-3">
+                <text>Rama</text>
+                <comment class="proiel-id">250721</comment>
+                <refs nrefs="10218-3"/>
+            </w>
+            <w n="10218-4">
+                <text>audita</text>
+                <comment class="proiel-id">250722</comment>
+                <refs nrefs="10218-4"/>
+            </w>
+            <w n="10218-5">
+                <text>est</text>
+                <comment class="proiel-id">250723</comment>
+                <refs nrefs="10218-4"/>
+            </w>
+            <w n="10218-6">
+                <text>ploratus</text>
+                <comment class="proiel-id">250724</comment>
+                <refs nrefs="10218-6"/>
+            </w>
+            <w n="10218-7">
+                <text>et</text>
+                <comment class="proiel-id">250725</comment>
+                <refs nrefs="10218-7"/>
+            </w>
+            <w n="10218-8">
+                <text>ululatus</text>
+                <comment class="proiel-id">250726</comment>
+                <refs nrefs="10218-8"/>
+            </w>
+            <w n="10218-9">
+                <text>multus</text>
+                <comment class="proiel-id">250727</comment>
+                <refs nrefs="10218-9"/>
+            </w>
+            <w n="10218-10">
+                <text>Rachel</text>
+                <comment class="proiel-id">250728</comment>
+                <refs nrefs="10218-11"/>
+            </w>
+            <w n="10218-11">
+                <text>plorans</text>
+                <comment class="proiel-id">250729</comment>
+                <refs nrefs="10218-12"/>
+            </w>
+            <w n="10218-12">
+                <text>filios</text>
+                <comment class="proiel-id">250730</comment>
+                <refs nrefs="10218-14"/>
+            </w>
+            <w n="10218-13">
+                <text>suos</text>
+                <comment class="proiel-id">250731</comment>
+                <refs nrefs="10218-15"/>
+            </w>
+            <w n="10218-14">
+                <text>et</text>
+                <comment class="proiel-id">250732</comment>
+                <refs nrefs="10218-17"/>
+            </w>
+            <w n="10218-15">
+                <text>noluit</text>
+                <comment class="proiel-id">250733</comment>
+                <refs nrefs="10218-18 10218-19"/>
+            </w>
+            <w n="10218-16">
+                <text>consolari</text>
+                <comment class="proiel-id">250734</comment>
+                <refs nrefs="10218-20"/>
+            </w>
+            <w n="10218-17">
+                <text>quia</text>
+                <comment class="proiel-id">250735</comment>
+                <refs nrefs="10218-22"/>
+            </w>
+            <w n="10218-18">
+                <text>non</text>
+                <comment class="proiel-id">250736</comment>
+                <refs nrefs="10218-23"/>
+            </w>
+            <w n="10218-19">
+                <text>sunt</text>
+                <comment class="proiel-id">250737</comment>
+                <refs nrefs="10218-24"/>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="10219" document_id="NT:MATT_2:19">
+        <wds lnum="L1">
+            <w n="10219-1">
+                <comment class="proiel-id">267598</comment>
+                <refs nrefs="10219-1"/>
+                <text>Τελευτήσαντος</text>
+            </w>
+            <w n="10219-2">
+                <comment class="proiel-id">267599</comment>
+                <refs nrefs="10219-2"/>
+                <text>δὲ</text>
+            </w>
+            <w n="10219-3">
+                <comment class="proiel-id">267600</comment>
+                <text>τοῦ</text>
+            </w>
+            <w n="10219-4">
+                <comment class="proiel-id">267601</comment>
+                <refs nrefs="10219-3"/>
+                <text>Ἡρῴδου</text>
+            </w>
+            <w n="10219-5">
+                <comment class="proiel-id">267602</comment>
+                <refs nrefs="10219-4"/>
+                <text>ἰδοὺ</text>
+            </w>
+            <w n="10219-6">
+                <comment class="proiel-id">267603</comment>
+                <refs nrefs="10219-6"/>
+                <text>ἄγγελος</text>
+            </w>
+            <w n="10219-7">
+                <comment class="proiel-id">267604</comment>
+                <refs nrefs="10219-7"/>
+                <text>κυρίου</text>
+            </w>
+            <w n="10219-8">
+                <comment class="proiel-id">267605</comment>
+                <refs nrefs="10219-5"/>
+                <text>φαίνεται</text>
+            </w>
+            <w n="10219-9">
+                <comment class="proiel-id">267606</comment>
+                <refs nrefs="10219-8"/>
+                <text>κατ’</text>
+            </w>
+            <w n="10219-10">
+                <comment class="proiel-id">267607</comment>
+                <refs nrefs="10219-9"/>
+                <text>ὄναρ</text>
+            </w>
+            <w n="10219-11">
+                <comment class="proiel-id">267608</comment>
+                <text>τῷ</text>
+            </w>
+            <w n="10219-12">
+                <comment class="proiel-id">267609</comment>
+                <refs nrefs="10219-10"/>
+                <text>Ἰωσὴφ</text>
+            </w>
+            <w n="10219-13">
+                <comment class="proiel-id">267610</comment>
+                <refs nrefs="10219-11"/>
+                <text>ἐν</text>
+            </w>
+            <w n="10219-14">
+                <comment class="proiel-id">267611</comment>
+                <refs nrefs="10219-12"/>
+                <text>Αἰγύπτῳ</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="10219-1">
+                <comment class="proiel-id">250738</comment>
+                <refs nrefs="10219-1"/>
+                <text>defuncto</text>
+            </w>
+            <w n="10219-2">
+                <comment class="proiel-id">250739</comment>
+                <refs nrefs="10219-2"/>
+                <text>autem</text>
+            </w>
+            <w n="10219-3">
+                <comment class="proiel-id">250740</comment>
+                <refs nrefs="10219-4"/>
+                <text>Herode</text>
+            </w>
+            <w n="10219-4">
+                <comment class="proiel-id">250741</comment>
+                <refs nrefs="10219-5"/>
+                <text>ecce</text>
+            </w>
+            <w n="10219-5">
+                <comment class="proiel-id">250742</comment>
+                <refs nrefs="10219-8"/>
+                <text>apparuit</text>
+            </w>
+            <w n="10219-6">
+                <comment class="proiel-id">250743</comment>
+                <refs nrefs="10219-6"/>
+                <text>angelus</text>
+            </w>
+            <w n="10219-7">
+                <comment class="proiel-id">250744</comment>
+                <refs nrefs="10219-7"/>
+                <text>Domini</text>
+            </w>
+            <w n="10219-8">
+                <comment class="proiel-id">250745</comment>
+                <refs nrefs="10219-9"/>
+                <text>in</text>
+            </w>
+            <w n="10219-9">
+                <comment class="proiel-id">250746</comment>
+                <refs nrefs="10219-10"/>
+                <text>somnis</text>
+            </w>
+            <w n="10219-10">
+                <comment class="proiel-id">250747</comment>
+                <refs nrefs="10219-12"/>
+                <text>Ioseph</text>
+            </w>
+            <w n="10219-11">
+                <comment class="proiel-id">250748</comment>
+                <refs nrefs="10219-13"/>
+                <text>in</text>
+            </w>
+            <w n="10219-12">
+                <comment class="proiel-id">250749</comment>
+                <refs nrefs="10219-14"/>
+                <text>Aegypto</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="10220" document_id="NT:MATT_2:20">
+        <wds lnum="L1">
+            <w n="10220-1">
+                <text>λέγων</text>
+                <comment class="proiel-id">267612</comment>
+                <refs nrefs="10220-1"/>
+            </w>
+            <w n="10220-2">
+                <text>,</text>
+            </w>
+            <w n="10220-3">
+                <text>ἐγερθεὶς</text>
+                <comment class="proiel-id">267614</comment>
+                <refs nrefs="10220-2"/>
+            </w>
+            <w n="10220-4">
+                <text>παράλαβε</text>
+                <comment class="proiel-id">267615</comment>
+                <refs nrefs="10220-4"/>
+            </w>
+            <w n="10220-5">
+                <text>τὸ</text>
+                <comment class="proiel-id">267616</comment>
+            </w>
+            <w n="10220-6">
+                <text>παιδίον</text>
+                <comment class="proiel-id">267617</comment>
+                <refs nrefs="10220-5"/>
+            </w>
+            <w n="10220-7">
+                <text>καὶ</text>
+                <comment class="proiel-id">267618</comment>
+                <refs nrefs="10220-6"/>
+            </w>
+            <w n="10220-8">
+                <text>τὴν</text>
+                <comment class="proiel-id">267619</comment>
+            </w>
+            <w n="10220-9">
+                <text>μητέρα</text>
+                <comment class="proiel-id">267620</comment>
+                <refs nrefs="10220-7"/>
+            </w>
+            <w n="10220-10">
+                <text>αὐτοῦ</text>
+                <comment class="proiel-id">267621</comment>
+                <refs nrefs="10220-8"/>
+            </w>
+            <w n="10220-11">
+                <text>καὶ</text>
+                <comment class="proiel-id">267622</comment>
+                <refs nrefs="10220-9"/>
+            </w>
+            <w n="10220-12">
+                <text>πορεύου</text>
+                <comment class="proiel-id">267623</comment>
+                <refs nrefs="10220-10"/>
+            </w>
+            <w n="10220-13">
+                <text>εἰς</text>
+                <comment class="proiel-id">267624</comment>
+                <refs nrefs="10220-11"/>
+            </w>
+            <w n="10220-14">
+                <text>γῆν</text>
+                <comment class="proiel-id">267625</comment>
+                <refs nrefs="10220-12"/>
+            </w>
+            <w n="10220-15">
+                <text>Ἰσραήλ</text>
+                <comment class="proiel-id">267626</comment>
+                <refs nrefs="10220-13"/>
+            </w>
+            <w n="10220-16">
+                <text>,</text>
+            </w>
+            <w n="10220-17">
+                <text>τεθνήκασιν</text>
+                <comment class="proiel-id">267628</comment>
+                <refs nrefs="10220-14 10220-15"/>
+            </w>
+            <w n="10220-18">
+                <text>γὰρ</text>
+                <comment class="proiel-id">267629</comment>
+                <refs nrefs="10220-16"/>
+            </w>
+            <w n="10220-19">
+                <text>οἱ</text>
+                <comment class="proiel-id">267630</comment>
+            </w>
+            <w n="10220-20">
+                <text>ζητοῦντες</text>
+                <comment class="proiel-id">267631</comment>
+                <refs nrefs="10220-18"/>
+            </w>
+            <w n="10220-21">
+                <text>τὴν</text>
+                <comment class="proiel-id">267632</comment>
+            </w>
+            <w n="10220-22">
+                <text>ψυχὴν</text>
+                <comment class="proiel-id">267633</comment>
+                <refs nrefs="10220-19"/>
+            </w>
+            <w n="10220-23">
+                <text>τοῦ</text>
+                <comment class="proiel-id">267634</comment>
+            </w>
+            <w n="10220-24">
+                <text>παιδίου</text>
+                <comment class="proiel-id">267635</comment>
+                <refs nrefs="10220-20"/>
+            </w>
+            <w n="10220-25">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="10220-1">
+                <text>dicens</text>
+                <comment class="proiel-id">250750</comment>
+                <refs nrefs="10220-1"/>
+            </w>
+            <w n="10220-2">
+                <text>surge</text>
+                <comment class="proiel-id">250751</comment>
+                <refs nrefs="10220-3"/>
+            </w>
+            <w n="10220-3">
+                <text>et</text>
+                <comment class="proiel-id">250752</comment>
+            </w>
+            <w n="10220-4">
+                <text>accipe</text>
+                <comment class="proiel-id">250753</comment>
+                <refs nrefs="10220-4"/>
+            </w>
+            <w n="10220-5">
+                <text>puerum</text>
+                <comment class="proiel-id">250754</comment>
+                <refs nrefs="10220-6"/>
+            </w>
+            <w n="10220-6">
+                <text>et</text>
+                <comment class="proiel-id">250755</comment>
+                <refs nrefs="10220-7"/>
+            </w>
+            <w n="10220-7">
+                <text>matrem</text>
+                <comment class="proiel-id">250756</comment>
+                <refs nrefs="10220-9"/>
+            </w>
+            <w n="10220-8">
+                <text>eius</text>
+                <comment class="proiel-id">250757</comment>
+                <refs nrefs="10220-10"/>
+            </w>
+            <w n="10220-9">
+                <text>et</text>
+                <comment class="proiel-id">250758</comment>
+                <refs nrefs="10220-11"/>
+            </w>
+            <w n="10220-10">
+                <text>vade</text>
+                <comment class="proiel-id">250759</comment>
+                <refs nrefs="10220-12"/>
+            </w>
+            <w n="10220-11">
+                <text>in</text>
+                <comment class="proiel-id">250760</comment>
+                <refs nrefs="10220-13"/>
+            </w>
+            <w n="10220-12">
+                <text>terram</text>
+                <comment class="proiel-id">250761</comment>
+                <refs nrefs="10220-14"/>
+            </w>
+            <w n="10220-13">
+                <text>Israhel</text>
+                <comment class="proiel-id">250762</comment>
+                <refs nrefs="10220-15"/>
+            </w>
+            <w n="10220-14">
+                <text>defuncti</text>
+                <comment class="proiel-id">250763</comment>
+                <refs nrefs="10220-17"/>
+            </w>
+            <w n="10220-15">
+                <text>sunt</text>
+                <comment class="proiel-id">250764</comment>
+                <refs nrefs="10220-17"/>
+            </w>
+            <w n="10220-16">
+                <text>enim</text>
+                <comment class="proiel-id">250765</comment>
+                <refs nrefs="10220-18"/>
+            </w>
+            <w n="10220-17">
+                <text>qui</text>
+                <comment class="proiel-id">250766</comment>
+            </w>
+            <w n="10220-18">
+                <text>quaerebant</text>
+                <comment class="proiel-id">250767</comment>
+                <refs nrefs="10220-20"/>
+            </w>
+            <w n="10220-19">
+                <text>animam</text>
+                <comment class="proiel-id">250768</comment>
+                <refs nrefs="10220-22"/>
+            </w>
+            <w n="10220-20">
+                <text>pueri</text>
+                <comment class="proiel-id">250769</comment>
+                <refs nrefs="10220-24"/>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="10221" document_id="NT:MATT_2:21">
+        <wds lnum="L1">
+            <w n="10221-1">
+                <text>ὁ</text>
+                <comment class="proiel-id">267637</comment>
+                <refs nrefs="10221-1"/>
+            </w>
+            <w n="10221-2">
+                <text>δὲ</text>
+                <comment class="proiel-id">267638</comment>
+            </w>
+            <w n="10221-3">
+                <text>ἐγερθεὶς</text>
+                <comment class="proiel-id">267639</comment>
+                <refs nrefs="10221-2"/>
+            </w>
+            <w n="10221-4">
+                <text>παρέλαβεν</text>
+                <comment class="proiel-id">267640</comment>
+                <refs nrefs="10221-3"/>
+            </w>
+            <w n="10221-5">
+                <text>τὸ</text>
+                <comment class="proiel-id">267641</comment>
+            </w>
+            <w n="10221-6">
+                <text>παιδίον</text>
+                <comment class="proiel-id">267642</comment>
+                <refs nrefs="10221-4"/>
+            </w>
+            <w n="10221-7">
+                <text>καὶ</text>
+                <comment class="proiel-id">267643</comment>
+                <refs nrefs="10221-5"/>
+            </w>
+            <w n="10221-8">
+                <text>τὴν</text>
+                <comment class="proiel-id">267644</comment>
+            </w>
+            <w n="10221-9">
+                <text>μητέρα</text>
+                <comment class="proiel-id">267645</comment>
+                <refs nrefs="10221-6"/>
+            </w>
+            <w n="10221-10">
+                <text>αὐτοῦ</text>
+                <comment class="proiel-id">267646</comment>
+                <refs nrefs="10221-7"/>
+            </w>
+            <w n="10221-11">
+                <text>καὶ</text>
+                <comment class="proiel-id">267647</comment>
+                <refs nrefs="10221-8"/>
+            </w>
+            <w n="10221-12">
+                <text>εἰσῆλθεν</text>
+                <comment class="proiel-id">267648</comment>
+                <refs nrefs="10221-9"/>
+            </w>
+            <w n="10221-13">
+                <text>εἰς</text>
+                <comment class="proiel-id">267649</comment>
+                <refs nrefs="10221-10"/>
+            </w>
+            <w n="10221-14">
+                <text>γῆν</text>
+                <comment class="proiel-id">267650</comment>
+                <refs nrefs="10221-11"/>
+            </w>
+            <w n="10221-15">
+                <text>Ἰσραήλ</text>
+                <comment class="proiel-id">267651</comment>
+                <refs nrefs="10221-12"/>
+            </w>
+            <w n="10221-16">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="10221-1">
+                <text>qui</text>
+                <comment class="proiel-id">250770</comment>
+                <refs nrefs="10221-1"/>
+            </w>
+            <w n="10221-2">
+                <text>surgens</text>
+                <comment class="proiel-id">250771</comment>
+                <refs nrefs="10221-3"/>
+            </w>
+            <w n="10221-3">
+                <text>accepit</text>
+                <comment class="proiel-id">250772</comment>
+                <refs nrefs="10221-4"/>
+            </w>
+            <w n="10221-4">
+                <text>puerum</text>
+                <comment class="proiel-id">250773</comment>
+                <refs nrefs="10221-6"/>
+            </w>
+            <w n="10221-5">
+                <text>et</text>
+                <comment class="proiel-id">250774</comment>
+                <refs nrefs="10221-7"/>
+            </w>
+            <w n="10221-6">
+                <text>matrem</text>
+                <comment class="proiel-id">250775</comment>
+                <refs nrefs="10221-9"/>
+            </w>
+            <w n="10221-7">
+                <text>eius</text>
+                <comment class="proiel-id">250776</comment>
+                <refs nrefs="10221-10"/>
+            </w>
+            <w n="10221-8">
+                <text>et</text>
+                <comment class="proiel-id">250777</comment>
+                <refs nrefs="10221-11"/>
+            </w>
+            <w n="10221-9">
+                <text>venit</text>
+                <comment class="proiel-id">250778</comment>
+                <refs nrefs="10221-12"/>
+            </w>
+            <w n="10221-10">
+                <text>in</text>
+                <comment class="proiel-id">250779</comment>
+                <refs nrefs="10221-13"/>
+            </w>
+            <w n="10221-11">
+                <text>terram</text>
+                <comment class="proiel-id">250780</comment>
+                <refs nrefs="10221-14"/>
+            </w>
+            <w n="10221-12">
+                <text>Israhel</text>
+                <comment class="proiel-id">250781</comment>
+                <refs nrefs="10221-15"/>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="10222" document_id="NT:MATT_2:22">
+        <wds lnum="L1">
+            <w n="10222-1">
+                <comment class="proiel-id">267653</comment>
+                <refs nrefs="10222-1"/>
+                <text>ἀκούσας</text>
+            </w>
+            <w n="10222-2">
+                <comment class="proiel-id">267654</comment>
+                <refs nrefs="10222-2"/>
+                <text>δὲ</text>
+            </w>
+            <w n="10222-3">
+                <comment class="proiel-id">267655</comment>
+                <refs nrefs="10222-3"/>
+                <text>ὅτι</text>
+            </w>
+            <w n="10222-4">
+                <comment class="proiel-id">267656</comment>
+                <refs nrefs="10222-4"/>
+                <text>Ἀρχέλαος</text>
+            </w>
+            <w n="10222-5">
+                <comment class="proiel-id">267657</comment>
+                <refs nrefs="10222-5"/>
+                <text>βασιλεύει</text>
+            </w>
+            <w n="10222-6">
+                <comment class="proiel-id">267658</comment>
+                <text>τῆς</text>
+            </w>
+            <w n="10222-7">
+                <comment class="proiel-id">267659</comment>
+                <refs nrefs="10222-7"/>
+                <text>Ἰουδαίας</text>
+            </w>
+            <w n="10222-8">
+                <comment class="proiel-id">267660</comment>
+                <refs nrefs="10222-8"/>
+                <text>ἀντὶ</text>
+            </w>
+            <w n="10222-9">
+                <comment class="proiel-id">267661</comment>
+                <text>τοῦ</text>
+            </w>
+            <w n="10222-10">
+                <comment class="proiel-id">267662</comment>
+                <refs nrefs="10222-10"/>
+                <text>πατρὸς</text>
+            </w>
+            <w n="10222-11">
+                <comment class="proiel-id">267663</comment>
+                <refs nrefs="10222-11"/>
+                <text>αὐτοῦ</text>
+            </w>
+            <w n="10222-12">
+                <comment class="proiel-id">267664</comment>
+                <refs nrefs="10222-9"/>
+                <text>Ἡρῴδου</text>
+            </w>
+            <w n="10222-13">
+                <comment class="proiel-id">267665</comment>
+                <refs nrefs="10222-12"/>
+                <text>ἐφοβήθη</text>
+            </w>
+            <w n="10222-14">
+                <comment class="proiel-id">267666</comment>
+                <refs nrefs="10222-13"/>
+                <text>ἐκεῖ</text>
+            </w>
+            <w n="10222-15">
+                <comment class="proiel-id">267667</comment>
+                <refs nrefs="10222-14"/>
+                <text>ἀπελθεῖν</text>
+            </w>
+            <w n="10222-16">
+                <text>·</text>
+            </w>
+            <w n="10222-17">
+                <comment class="proiel-id">267669</comment>
+                <refs nrefs="10222-16"/>
+                <text>χρηματισθεὶς</text>
+            </w>
+            <w n="10222-18">
+                <comment class="proiel-id">267670</comment>
+                <refs nrefs="10222-15"/>
+                <text>δὲ</text>
+            </w>
+            <w n="10222-19">
+                <comment class="proiel-id">267671</comment>
+                <refs nrefs="10222-17"/>
+                <text>κατ’</text>
+            </w>
+            <w n="10222-20">
+                <comment class="proiel-id">267672</comment>
+                <refs nrefs="10222-18"/>
+                <text>ὄναρ</text>
+            </w>
+            <w n="10222-21">
+                <comment class="proiel-id">267673</comment>
+                <refs nrefs="10222-19"/>
+                <text>ἀνεχώρησεν</text>
+            </w>
+            <w n="10222-22">
+                <comment class="proiel-id">267674</comment>
+                <refs nrefs="10222-20"/>
+                <text>εἰς</text>
+            </w>
+            <w n="10222-23">
+                <comment class="proiel-id">267675</comment>
+                <text>τὰ</text>
+            </w>
+            <w n="10222-24">
+                <comment class="proiel-id">267676</comment>
+                <refs nrefs="10222-21"/>
+                <text>μέρη</text>
+            </w>
+            <w n="10222-25">
+                <comment class="proiel-id">267677</comment>
+                <text>τῆς</text>
+            </w>
+            <w n="10222-26">
+                <comment class="proiel-id">267678</comment>
+                <refs nrefs="10222-22"/>
+                <text>Γαλιλαίας</text>
+            </w>
+            <w n="10222-27">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="10222-1">
+                <comment class="proiel-id">250782</comment>
+                <refs nrefs="10222-1"/>
+                <text>audiens</text>
+            </w>
+            <w n="10222-2">
+                <comment class="proiel-id">250783</comment>
+                <refs nrefs="10222-2"/>
+                <text>autem</text>
+            </w>
+            <w n="10222-3">
+                <comment class="proiel-id">250784</comment>
+                <refs nrefs="10222-3"/>
+                <text>quod</text>
+            </w>
+            <w n="10222-4">
+                <comment class="proiel-id">250785</comment>
+                <refs nrefs="10222-4"/>
+                <text>Archelaus</text>
+            </w>
+            <w n="10222-5">
+                <comment class="proiel-id">250786</comment>
+                <refs nrefs="10222-5"/>
+                <text>regnaret</text>
+            </w>
+            <w n="10222-6">
+                <comment class="proiel-id">250787</comment>
+                <text>in</text>
+            </w>
+            <w n="10222-7">
+                <comment class="proiel-id">250788</comment>
+                <refs nrefs="10222-7"/>
+                <text>Iudaea</text>
+            </w>
+            <w n="10222-8">
+                <comment class="proiel-id">250789</comment>
+                <refs nrefs="10222-8"/>
+                <text>pro</text>
+            </w>
+            <w n="10222-9">
+                <comment class="proiel-id">250790</comment>
+                <refs nrefs="10222-12"/>
+                <text>Herode</text>
+            </w>
+            <w n="10222-10">
+                <comment class="proiel-id">250791</comment>
+                <refs nrefs="10222-10"/>
+                <text>patre</text>
+            </w>
+            <w n="10222-11">
+                <comment class="proiel-id">250792</comment>
+                <refs nrefs="10222-11"/>
+                <text>suo</text>
+            </w>
+            <w n="10222-12">
+                <comment class="proiel-id">250793</comment>
+                <refs nrefs="10222-13"/>
+                <text>timuit</text>
+            </w>
+            <w n="10222-13">
+                <comment class="proiel-id">250794</comment>
+                <refs nrefs="10222-14"/>
+                <text>illo</text>
+            </w>
+            <w n="10222-14">
+                <comment class="proiel-id">250795</comment>
+                <refs nrefs="10222-15"/>
+                <text>ire</text>
+            </w>
+            <w n="10222-15">
+                <comment class="proiel-id">250796</comment>
+                <refs nrefs="10222-18"/>
+                <text>et</text>
+            </w>
+            <w n="10222-16">
+                <comment class="proiel-id">250797</comment>
+                <refs nrefs="10222-17"/>
+                <text>admonitus</text>
+            </w>
+            <w n="10222-17">
+                <comment class="proiel-id">250798</comment>
+                <refs nrefs="10222-19"/>
+                <text>in</text>
+            </w>
+            <w n="10222-18">
+                <comment class="proiel-id">250799</comment>
+                <refs nrefs="10222-20"/>
+                <text>somnis</text>
+            </w>
+            <w n="10222-19">
+                <comment class="proiel-id">250800</comment>
+                <refs nrefs="10222-21"/>
+                <text>secessit</text>
+            </w>
+            <w n="10222-20">
+                <comment class="proiel-id">250801</comment>
+                <refs nrefs="10222-22"/>
+                <text>in</text>
+            </w>
+            <w n="10222-21">
+                <comment class="proiel-id">250802</comment>
+                <refs nrefs="10222-24"/>
+                <text>partes</text>
+            </w>
+            <w n="10222-22">
+                <comment class="proiel-id">250803</comment>
+                <refs nrefs="10222-26"/>
+                <text>Galilaeae</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="10223" document_id="NT:MATT_2:23">
+        <wds lnum="L1">
+            <w n="10223-1">
+                <comment class="proiel-id">267680</comment>
+                <refs nrefs="10223-1"/>
+                <text>καὶ</text>
+            </w>
+            <w n="10223-2">
+                <comment class="proiel-id">267681</comment>
+                <refs nrefs="10223-2"/>
+                <text>ἐλθὼν</text>
+            </w>
+            <w n="10223-3">
+                <comment class="proiel-id">267682</comment>
+                <refs nrefs="10223-3"/>
+                <text>κατῴκησεν</text>
+            </w>
+            <w n="10223-4">
+                <comment class="proiel-id">267683</comment>
+                <refs nrefs="10223-4"/>
+                <text>εἰς</text>
+            </w>
+            <w n="10223-5">
+                <comment class="proiel-id">267684</comment>
+                <refs nrefs="10223-5"/>
+                <text>πόλιν</text>
+            </w>
+            <w n="10223-6">
+                <comment class="proiel-id">267685</comment>
+                <refs nrefs="10223-7"/>
+                <text>λεγομένην</text>
+            </w>
+            <w n="10223-7">
+                <comment class="proiel-id">267686</comment>
+                <refs nrefs="10223-8"/>
+                <text>Ναζαρέθ</text>
+            </w>
+            <w n="10223-8">
+                <text>,</text>
+            </w>
+            <w n="10223-9">
+                <comment class="proiel-id">267688</comment>
+                <refs nrefs="10223-9"/>
+                <text>ὅπως</text>
+            </w>
+            <w n="10223-10">
+                <comment class="proiel-id">267689</comment>
+                <refs nrefs="10223-10"/>
+                <text>πληρωθῇ</text>
+            </w>
+            <w n="10223-11">
+                <comment class="proiel-id">267690</comment>
+                <text>τὸ</text>
+            </w>
+            <w n="10223-12">
+                <comment class="proiel-id">267691</comment>
+                <refs nrefs="10223-12"/>
+                <text>ῥηθὲν</text>
+            </w>
+            <w n="10223-13">
+                <comment class="proiel-id">267692</comment>
+                <refs nrefs="10223-14"/>
+                <text>διὰ</text>
+            </w>
+            <w n="10223-14">
+                <comment class="proiel-id">267693</comment>
+                <text>τῶν</text>
+            </w>
+            <w n="10223-15">
+                <comment class="proiel-id">267694</comment>
+                <refs nrefs="10223-15"/>
+                <text>προφητῶν</text>
+            </w>
+            <w n="10223-16">
+                <comment class="proiel-id">267695</comment>
+                <refs nrefs="10223-16"/>
+                <text>ὅτι</text>
+            </w>
+            <w n="10223-17">
+                <comment class="proiel-id">267696</comment>
+                <refs nrefs="10223-17"/>
+                <text>Ναζωραῖος</text>
+            </w>
+            <w n="10223-18">
+                <comment class="proiel-id">267697</comment>
+                <refs nrefs="10223-18"/>
+                <text>κληθήσεται</text>
+            </w>
+            <w n="10223-19">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="10223-1">
+                <comment class="proiel-id">250804</comment>
+                <refs nrefs="10223-1"/>
+                <text>et</text>
+            </w>
+            <w n="10223-2">
+                <comment class="proiel-id">250805</comment>
+                <refs nrefs="10223-2"/>
+                <text>veniens</text>
+            </w>
+            <w n="10223-3">
+                <comment class="proiel-id">250806</comment>
+                <refs nrefs="10223-3"/>
+                <text>habitavit</text>
+            </w>
+            <w n="10223-4">
+                <comment class="proiel-id">250807</comment>
+                <refs nrefs="10223-4"/>
+                <text>in</text>
+            </w>
+            <w n="10223-5">
+                <comment class="proiel-id">250808</comment>
+                <refs nrefs="10223-5"/>
+                <text>civitate</text>
+            </w>
+            <w n="10223-6">
+                <comment class="proiel-id">250809</comment>
+                <text>quae</text>
+            </w>
+            <w n="10223-7">
+                <comment class="proiel-id">250810</comment>
+                <refs nrefs="10223-6"/>
+                <text>vocatur</text>
+            </w>
+            <w n="10223-8">
+                <comment class="proiel-id">250811</comment>
+                <refs nrefs="10223-7"/>
+                <text>Nazareth</text>
+            </w>
+            <w n="10223-9">
+                <comment class="proiel-id">250812</comment>
+                <refs nrefs="10223-9"/>
+                <text>ut</text>
+            </w>
+            <w n="10223-10">
+                <comment class="proiel-id">250813</comment>
+                <refs nrefs="10223-10"/>
+                <text>adimpleretur</text>
+            </w>
+            <w n="10223-11">
+                <comment class="proiel-id">250814</comment>
+                <text>quod</text>
+            </w>
+            <w n="10223-12">
+                <comment class="proiel-id">250815</comment>
+                <refs nrefs="10223-12"/>
+                <text>dictum</text>
+            </w>
+            <w n="10223-13">
+                <comment class="proiel-id">250816</comment>
+                <text>est</text>
+            </w>
+            <w n="10223-14">
+                <comment class="proiel-id">250817</comment>
+                <refs nrefs="10223-13"/>
+                <text>per</text>
+            </w>
+            <w n="10223-15">
+                <comment class="proiel-id">250818</comment>
+                <refs nrefs="10223-15"/>
+                <text>prophetas</text>
+            </w>
+            <w n="10223-16">
+                <comment class="proiel-id">250819</comment>
+                <refs nrefs="10223-16"/>
+                <text>quoniam</text>
+            </w>
+            <w n="10223-17">
+                <comment class="proiel-id">250820</comment>
+                <refs nrefs="10223-17"/>
+                <text>Nazareus</text>
+            </w>
+            <w n="10223-18">
+                <comment class="proiel-id">250821</comment>
+                <refs nrefs="10223-18"/>
+                <text>vocabitur</text>
+            </w>
+        </wds>
+    </sentence>
+</aligned-text>

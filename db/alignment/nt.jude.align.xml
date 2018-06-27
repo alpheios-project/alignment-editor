@@ -1,0 +1,3001 @@
+<aligned-text xmlns="http://alpheios.net/namespaces/aligned/text">
+    <language xml:lang="grc" lnum="L1"/>
+    <language xml:lang="lat" lnum="L2"/>
+    <sentence id="260101" document_id="NT:JUDE_1:1">
+        <wds lnum="L1">
+            <w n="260101-1">
+                <text>Ἰούδας</text>
+            </w>
+            <w n="260101-2">
+                <text>Ἰησοῦ</text>
+            </w>
+            <w n="260101-3">
+                <text>Χριστοῦ</text>
+            </w>
+            <w n="260101-4">
+                <text>δοῦλος</text>
+            </w>
+            <w n="260101-5">
+                <text>,</text>
+            </w>
+            <w n="260101-6">
+                <text>ἀδελφὸς</text>
+            </w>
+            <w n="260101-7">
+                <text>δὲ</text>
+            </w>
+            <w n="260101-8">
+                <text>Ἰακώβου</text>
+            </w>
+            <w n="260101-9">
+                <text>,</text>
+            </w>
+            <w n="260101-10">
+                <text>τοῖς</text>
+            </w>
+            <w n="260101-11">
+                <text>ἐν</text>
+            </w>
+            <w n="260101-12">
+                <text>θεῷ</text>
+            </w>
+            <w n="260101-13">
+                <text>πατρὶ</text>
+            </w>
+            <w n="260101-14">
+                <text>ἠγαπημένοις</text>
+            </w>
+            <w n="260101-15">
+                <text>καὶ</text>
+            </w>
+            <w n="260101-16">
+                <text>Ἰησοῦ</text>
+            </w>
+            <w n="260101-17">
+                <text>Χριστῷ</text>
+            </w>
+            <w n="260101-18">
+                <text>τετηρημένοις</text>
+            </w>
+            <w n="260101-19">
+                <text>κλητοῖς</text>
+            </w>
+            <w n="260101-20">
+                <text>·</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="260101-1">
+                <text>Iudas</text>
+            </w>
+            <w n="260101-2">
+                <text>Iesu</text>
+            </w>
+            <w n="260101-3">
+                <text>Christi</text>
+            </w>
+            <w n="260101-4">
+                <text>servus</text>
+            </w>
+            <w n="260101-5">
+                <text>frater</text>
+            </w>
+            <w n="260101-6">
+                <text>autem</text>
+            </w>
+            <w n="260101-7">
+                <text>Iacobi</text>
+            </w>
+            <w n="260101-8">
+                <text>his</text>
+            </w>
+            <w n="260101-9">
+                <text>qui</text>
+            </w>
+            <w n="260101-10">
+                <text>in</text>
+            </w>
+            <w n="260101-11">
+                <text>Deo</text>
+            </w>
+            <w n="260101-12">
+                <text>Patre</text>
+            </w>
+            <w n="260101-13">
+                <text>dilectis</text>
+            </w>
+            <w n="260101-14">
+                <text>et</text>
+            </w>
+            <w n="260101-15">
+                <text>Iesu</text>
+            </w>
+            <w n="260101-16">
+                <text>Christo</text>
+            </w>
+            <w n="260101-17">
+                <text>conservatis</text>
+            </w>
+            <w n="260101-18">
+                <text>vocatis</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="260102" document_id="NT:JUDE_1:2">
+        <wds lnum="L1">
+            <w n="260102-1">
+                <text>ἔλεος</text>
+            </w>
+            <w n="260102-2">
+                <text>ὑμῖν</text>
+            </w>
+            <w n="260102-3">
+                <text>καὶ</text>
+            </w>
+            <w n="260102-4">
+                <text>εἰρήνη</text>
+            </w>
+            <w n="260102-5">
+                <text>καὶ</text>
+            </w>
+            <w n="260102-6">
+                <text>ἀγάπη</text>
+            </w>
+            <w n="260102-7">
+                <text>πληθυνθείη</text>
+            </w>
+            <w n="260102-8">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="260102-1">
+                <text>misericordia</text>
+            </w>
+            <w n="260102-2">
+                <text>vobis</text>
+            </w>
+            <w n="260102-3">
+                <text>et</text>
+            </w>
+            <w n="260102-4">
+                <text>pax</text>
+            </w>
+            <w n="260102-5">
+                <text>et</text>
+            </w>
+            <w n="260102-6">
+                <text>caritas</text>
+            </w>
+            <w n="260102-7">
+                <text>adimpleatur</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="260103" document_id="NT:JUDE_1:3">
+        <wds lnum="L1">
+            <w n="260103-1">
+                <text>Ἀγαπητοί</text>
+            </w>
+            <w n="260103-2">
+                <text>,</text>
+            </w>
+            <w n="260103-3">
+                <text>πᾶσαν</text>
+            </w>
+            <w n="260103-4">
+                <text>σπουδὴν</text>
+            </w>
+            <w n="260103-5">
+                <text>ποιούμενος</text>
+            </w>
+            <w n="260103-6">
+                <text>γράφειν</text>
+            </w>
+            <w n="260103-7">
+                <text>ὑμῖν</text>
+            </w>
+            <w n="260103-8">
+                <text>περὶ</text>
+            </w>
+            <w n="260103-9">
+                <text>τῆς</text>
+            </w>
+            <w n="260103-10">
+                <text>κοινῆς</text>
+            </w>
+            <w n="260103-11">
+                <text>ἡμῶν</text>
+            </w>
+            <w n="260103-12">
+                <text>σωτηρίας</text>
+            </w>
+            <w n="260103-13">
+                <text>ἀνάγκην</text>
+            </w>
+            <w n="260103-14">
+                <text>ἔσχον</text>
+            </w>
+            <w n="260103-15">
+                <text>γράψαι</text>
+            </w>
+            <w n="260103-16">
+                <text>ὑμῖν</text>
+            </w>
+            <w n="260103-17">
+                <text>παρακαλῶν</text>
+            </w>
+            <w n="260103-18">
+                <text>ἐπαγωνίζεσθαι</text>
+            </w>
+            <w n="260103-19">
+                <text>τῇ</text>
+            </w>
+            <w n="260103-20">
+                <text>ἅπαξ</text>
+            </w>
+            <w n="260103-21">
+                <text>παραδοθείσῃ</text>
+            </w>
+            <w n="260103-22">
+                <text>τοῖς</text>
+            </w>
+            <w n="260103-23">
+                <text>ἁγίοις</text>
+            </w>
+            <w n="260103-24">
+                <text>πίστει</text>
+            </w>
+            <w n="260103-25">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="260103-1">
+                <text>carissimi</text>
+            </w>
+            <w n="260103-2">
+                <text>omnem</text>
+            </w>
+            <w n="260103-3">
+                <text>sollicitudinem</text>
+            </w>
+            <w n="260103-4">
+                <text>faciens</text>
+            </w>
+            <w n="260103-5">
+                <text>scribendi</text>
+            </w>
+            <w n="260103-6">
+                <text>vobis</text>
+            </w>
+            <w n="260103-7">
+                <text>de</text>
+            </w>
+            <w n="260103-8">
+                <text>communi</text>
+            </w>
+            <w n="260103-9">
+                <text>vestra</text>
+            </w>
+            <w n="260103-10">
+                <text>salute</text>
+            </w>
+            <w n="260103-11">
+                <text>necesse</text>
+            </w>
+            <w n="260103-12">
+                <text>habui</text>
+            </w>
+            <w n="260103-13">
+                <text>scribere</text>
+            </w>
+            <w n="260103-14">
+                <text>vobis</text>
+            </w>
+            <w n="260103-15">
+                <text>deprecans</text>
+            </w>
+            <w n="260103-16">
+                <text>supercertari</text>
+            </w>
+            <w n="260103-17">
+                <text>semel</text>
+            </w>
+            <w n="260103-18">
+                <text>traditae</text>
+            </w>
+            <w n="260103-19">
+                <text>sanctis</text>
+            </w>
+            <w n="260103-20">
+                <text>fidei</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="260104" document_id="NT:JUDE_1:4">
+        <wds lnum="L1">
+            <w n="260104-1">
+                <text>παρεισέδυσαν</text>
+            </w>
+            <w n="260104-2">
+                <text>γάρ</text>
+            </w>
+            <w n="260104-3">
+                <text>τινες</text>
+            </w>
+            <w n="260104-4">
+                <text>ἄνθρωποι</text>
+            </w>
+            <w n="260104-5">
+                <text>,</text>
+            </w>
+            <w n="260104-6">
+                <text>οἱ</text>
+            </w>
+            <w n="260104-7">
+                <text>πάλαι</text>
+            </w>
+            <w n="260104-8">
+                <text>προγεγραμμένοι</text>
+            </w>
+            <w n="260104-9">
+                <text>εἰς</text>
+            </w>
+            <w n="260104-10">
+                <text>τοῦτο</text>
+            </w>
+            <w n="260104-11">
+                <text>τὸ</text>
+            </w>
+            <w n="260104-12">
+                <text>κρίμα</text>
+            </w>
+            <w n="260104-13">
+                <text>,</text>
+            </w>
+            <w n="260104-14">
+                <text>ἀσεβεῖς</text>
+            </w>
+            <w n="260104-15">
+                <text>,</text>
+            </w>
+            <w n="260104-16">
+                <text>τὴν</text>
+            </w>
+            <w n="260104-17">
+                <text>τοῦ</text>
+            </w>
+            <w n="260104-18">
+                <text>θεοῦ</text>
+            </w>
+            <w n="260104-19">
+                <text>ἡμῶν</text>
+            </w>
+            <w n="260104-20">
+                <text>χάριτα</text>
+            </w>
+            <w n="260104-21">
+                <text>μετατιθέντες</text>
+            </w>
+            <w n="260104-22">
+                <text>εἰς</text>
+            </w>
+            <w n="260104-23">
+                <text>ἀσέλγειαν</text>
+            </w>
+            <w n="260104-24">
+                <text>καὶ</text>
+            </w>
+            <w n="260104-25">
+                <text>τὸν</text>
+            </w>
+            <w n="260104-26">
+                <text>μόνον</text>
+            </w>
+            <w n="260104-27">
+                <text>δεσπότην</text>
+            </w>
+            <w n="260104-28">
+                <text>καὶ</text>
+            </w>
+            <w n="260104-29">
+                <text>κύριον</text>
+            </w>
+            <w n="260104-30">
+                <text>ἡμῶν</text>
+            </w>
+            <w n="260104-31">
+                <text>Ἰησοῦν</text>
+            </w>
+            <w n="260104-32">
+                <text>Χριστὸν</text>
+            </w>
+            <w n="260104-33">
+                <text>ἀρνούμενοι</text>
+            </w>
+            <w n="260104-34">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="260104-1">
+                <text>subintroierunt</text>
+            </w>
+            <w n="260104-2">
+                <text>enim</text>
+            </w>
+            <w n="260104-3">
+                <text>quidam</text>
+            </w>
+            <w n="260104-4">
+                <text>homines</text>
+            </w>
+            <w n="260104-5">
+                <text>qui</text>
+            </w>
+            <w n="260104-6">
+                <text>olim</text>
+            </w>
+            <w n="260104-7">
+                <text>praescripti</text>
+            </w>
+            <w n="260104-8">
+                <text>sunt</text>
+            </w>
+            <w n="260104-9">
+                <text>in</text>
+            </w>
+            <w n="260104-10">
+                <text>hoc</text>
+            </w>
+            <w n="260104-11">
+                <text>iudicium</text>
+            </w>
+            <w n="260104-12">
+                <text>impii</text>
+            </w>
+            <w n="260104-13">
+                <text>Dei</text>
+            </w>
+            <w n="260104-14">
+                <text>nostri</text>
+            </w>
+            <w n="260104-15">
+                <text>gratiam</text>
+            </w>
+            <w n="260104-16">
+                <text>transferentes</text>
+            </w>
+            <w n="260104-17">
+                <text>in</text>
+            </w>
+            <w n="260104-18">
+                <text>luxuriam</text>
+            </w>
+            <w n="260104-19">
+                <text>et</text>
+            </w>
+            <w n="260104-20">
+                <text>solum</text>
+            </w>
+            <w n="260104-21">
+                <text>Dominatorem</text>
+            </w>
+            <w n="260104-22">
+                <text>et</text>
+            </w>
+            <w n="260104-23">
+                <text>Dominum</text>
+            </w>
+            <w n="260104-24">
+                <text>nostrum</text>
+            </w>
+            <w n="260104-25">
+                <text>Iesum</text>
+            </w>
+            <w n="260104-26">
+                <text>Christum</text>
+            </w>
+            <w n="260104-27">
+                <text>negantes</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="260105" document_id="NT:JUDE_1:5">
+        <wds lnum="L1">
+            <w n="260105-1">
+                <text>Ὑπομνῆσαι</text>
+            </w>
+            <w n="260105-2">
+                <text>δὲ</text>
+            </w>
+            <w n="260105-3">
+                <text>ὑμᾶς</text>
+            </w>
+            <w n="260105-4">
+                <text>βούλομαι</text>
+            </w>
+            <w n="260105-5">
+                <text>,</text>
+            </w>
+            <w n="260105-6">
+                <text>εἰδότας</text>
+            </w>
+            <w n="260105-7">
+                <text>ἅπαξ</text>
+            </w>
+            <w n="260105-8">
+                <text>πάντα</text>
+            </w>
+            <w n="260105-9">
+                <text>,</text>
+            </w>
+            <w n="260105-10">
+                <text>ὅτι</text>
+            </w>
+            <w n="260105-11">
+                <text>κύριος</text>
+            </w>
+            <w n="260105-12">
+                <text>λαὸν</text>
+            </w>
+            <w n="260105-13">
+                <text>ἐκ</text>
+            </w>
+            <w n="260105-14">
+                <text>γῆς</text>
+            </w>
+            <w n="260105-15">
+                <text>Αἰγύπτου</text>
+            </w>
+            <w n="260105-16">
+                <text>σώσας</text>
+            </w>
+            <w n="260105-17">
+                <text>τὸ</text>
+            </w>
+            <w n="260105-18">
+                <text>δεύτερον</text>
+            </w>
+            <w n="260105-19">
+                <text>τοὺς</text>
+            </w>
+            <w n="260105-20">
+                <text>μὴ</text>
+            </w>
+            <w n="260105-21">
+                <text>πιστεύσαντες</text>
+            </w>
+            <w n="260105-22">
+                <text>ἀπώλεσεν</text>
+            </w>
+            <w n="260105-23">
+                <text>,</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="260105-1">
+                <text>commonere</text>
+            </w>
+            <w n="260105-2">
+                <text>autem</text>
+            </w>
+            <w n="260105-3">
+                <text>vos</text>
+            </w>
+            <w n="260105-4">
+                <text>volo</text>
+            </w>
+            <w n="260105-5">
+                <text>scientes</text>
+            </w>
+            <w n="260105-6">
+                <text>semel</text>
+            </w>
+            <w n="260105-7">
+                <text>omnia</text>
+            </w>
+            <w n="260105-8">
+                <text>quoniam</text>
+            </w>
+            <w n="260105-9">
+                <text>Iesus</text>
+            </w>
+            <w n="260105-10">
+                <text>populum</text>
+            </w>
+            <w n="260105-11">
+                <text>de</text>
+            </w>
+            <w n="260105-12">
+                <text>terra</text>
+            </w>
+            <w n="260105-13">
+                <text>Aegypti</text>
+            </w>
+            <w n="260105-14">
+                <text>salvans</text>
+            </w>
+            <w n="260105-15">
+                <text>secundo</text>
+            </w>
+            <w n="260105-16">
+                <text>eos</text>
+            </w>
+            <w n="260105-17">
+                <text>qui</text>
+            </w>
+            <w n="260105-18">
+                <text>non</text>
+            </w>
+            <w n="260105-19">
+                <text>crediderunt</text>
+            </w>
+            <w n="260105-20">
+                <text>perdidit</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="260106" document_id="NT:JUDE_1:6">
+        <wds lnum="L1">
+            <w n="260106-1">
+                <text>ἀγγέλους</text>
+            </w>
+            <w n="260106-2">
+                <text>τε</text>
+            </w>
+            <w n="260106-3">
+                <text>τοὺς</text>
+            </w>
+            <w n="260106-4">
+                <text>μὴ</text>
+            </w>
+            <w n="260106-5">
+                <text>τηρήσαντας</text>
+            </w>
+            <w n="260106-6">
+                <text>τὴν</text>
+            </w>
+            <w n="260106-7">
+                <text>ἑαυτῶν</text>
+            </w>
+            <w n="260106-8">
+                <text>ἀρχὴν</text>
+            </w>
+            <w n="260106-9">
+                <text>ἀλλὰ</text>
+            </w>
+            <w n="260106-10">
+                <text>ἀπολιπόντας</text>
+            </w>
+            <w n="260106-11">
+                <text>τὸ</text>
+            </w>
+            <w n="260106-12">
+                <text>ἴδιον</text>
+            </w>
+            <w n="260106-13">
+                <text>οἰκητήριον</text>
+            </w>
+            <w n="260106-14">
+                <text>εἰς</text>
+            </w>
+            <w n="260106-15">
+                <text>κρίσιν</text>
+            </w>
+            <w n="260106-16">
+                <text>μεγάλης</text>
+            </w>
+            <w n="260106-17">
+                <text>ἡμέρας</text>
+            </w>
+            <w n="260106-18">
+                <text>δεσμοῖς</text>
+            </w>
+            <w n="260106-19">
+                <text>ἀϊδίοις</text>
+            </w>
+            <w n="260106-20">
+                <text>ὑπὸ</text>
+            </w>
+            <w n="260106-21">
+                <text>ζόφον</text>
+            </w>
+            <w n="260106-22">
+                <text>τετήρηκεν</text>
+            </w>
+            <w n="260106-23">
+                <text>·</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="260106-1">
+                <text>angelos</text>
+            </w>
+            <w n="260106-2">
+                <text>vero</text>
+            </w>
+            <w n="260106-3">
+                <text>qui</text>
+            </w>
+            <w n="260106-4">
+                <text>non</text>
+            </w>
+            <w n="260106-5">
+                <text>servaverunt</text>
+            </w>
+            <w n="260106-6">
+                <text>suum</text>
+            </w>
+            <w n="260106-7">
+                <text>principatum</text>
+            </w>
+            <w n="260106-8">
+                <text>sed</text>
+            </w>
+            <w n="260106-9">
+                <text>dereliquerunt</text>
+            </w>
+            <w n="260106-10">
+                <text>suum</text>
+            </w>
+            <w n="260106-11">
+                <text>domicilium</text>
+            </w>
+            <w n="260106-12">
+                <text>in</text>
+            </w>
+            <w n="260106-13">
+                <text>iudicium</text>
+            </w>
+            <w n="260106-14">
+                <text>magni</text>
+            </w>
+            <w n="260106-15">
+                <text>diei</text>
+            </w>
+            <w n="260106-16">
+                <text>vinculis</text>
+            </w>
+            <w n="260106-17">
+                <text>aeternis</text>
+            </w>
+            <w n="260106-18">
+                <text>sub</text>
+            </w>
+            <w n="260106-19">
+                <text>caligine</text>
+            </w>
+            <w n="260106-20">
+                <text>reservavit</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="260107" document_id="NT:JUDE_1:7">
+        <wds lnum="L1">
+            <w n="260107-1">
+                <text>ὡς</text>
+            </w>
+            <w n="260107-2">
+                <text>Σόδομα</text>
+            </w>
+            <w n="260107-3">
+                <text>καὶ</text>
+            </w>
+            <w n="260107-4">
+                <text>Γόμορρα</text>
+            </w>
+            <w n="260107-5">
+                <text>καὶ</text>
+            </w>
+            <w n="260107-6">
+                <text>αἱ</text>
+            </w>
+            <w n="260107-7">
+                <text>περὶ</text>
+            </w>
+            <w n="260107-8">
+                <text>αὐτὰς</text>
+            </w>
+            <w n="260107-9">
+                <text>πόλεις</text>
+            </w>
+            <w n="260107-10">
+                <text>,</text>
+            </w>
+            <w n="260107-11">
+                <text>τὸν</text>
+            </w>
+            <w n="260107-12">
+                <text>ὅμοιον</text>
+            </w>
+            <w n="260107-13">
+                <text>τρόπον</text>
+            </w>
+            <w n="260107-14">
+                <text>τούτοις</text>
+            </w>
+            <w n="260107-15">
+                <text>ἐκπορνεύσασαι</text>
+            </w>
+            <w n="260107-16">
+                <text>καὶ</text>
+            </w>
+            <w n="260107-17">
+                <text>ἀπελθοῦσαι</text>
+            </w>
+            <w n="260107-18">
+                <text>ὀπίσω</text>
+            </w>
+            <w n="260107-19">
+                <text>σαρκὸς</text>
+            </w>
+            <w n="260107-20">
+                <text>ἑτέρας</text>
+            </w>
+            <w n="260107-21">
+                <text>,</text>
+            </w>
+            <w n="260107-22">
+                <text>πρόκεινται</text>
+            </w>
+            <w n="260107-23">
+                <text>δεῖγμα</text>
+            </w>
+            <w n="260107-24">
+                <text>πυρὸς</text>
+            </w>
+            <w n="260107-25">
+                <text>αἰωνίου</text>
+            </w>
+            <w n="260107-26">
+                <text>δίκην</text>
+            </w>
+            <w n="260107-27">
+                <text>ὑπέχουσαι</text>
+            </w>
+            <w n="260107-28">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="260107-1">
+                <text>sicut</text>
+            </w>
+            <w n="260107-2">
+                <text>Sodoma</text>
+            </w>
+            <w n="260107-3">
+                <text>et</text>
+            </w>
+            <w n="260107-4">
+                <text>Gomorra</text>
+            </w>
+            <w n="260107-5">
+                <text>et</text>
+            </w>
+            <w n="260107-6">
+                <text>finitimae</text>
+            </w>
+            <w n="260107-7">
+                <text>civitates</text>
+            </w>
+            <w n="260107-8">
+                <text>simili</text>
+            </w>
+            <w n="260107-9">
+                <text>modo</text>
+            </w>
+            <w n="260107-10">
+                <text>exfornicatae</text>
+            </w>
+            <w n="260107-11">
+                <text>et</text>
+            </w>
+            <w n="260107-12">
+                <text>abeuntes</text>
+            </w>
+            <w n="260107-13">
+                <text>post</text>
+            </w>
+            <w n="260107-14">
+                <text>carnem</text>
+            </w>
+            <w n="260107-15">
+                <text>alteram</text>
+            </w>
+            <w n="260107-16">
+                <text>factae</text>
+            </w>
+            <w n="260107-17">
+                <text>sunt</text>
+            </w>
+            <w n="260107-18">
+                <text>exemplum</text>
+            </w>
+            <w n="260107-19">
+                <text>ignis</text>
+            </w>
+            <w n="260107-20">
+                <text>aeterni</text>
+            </w>
+            <w n="260107-21">
+                <text>poenam</text>
+            </w>
+            <w n="260107-22">
+                <text>sustinentes</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="260108" document_id="NT:JUDE_1:8">
+        <wds lnum="L1">
+            <w n="260108-1">
+                <text>ὁμοίως</text>
+            </w>
+            <w n="260108-2">
+                <text>μέντοι</text>
+            </w>
+            <w n="260108-3">
+                <text>καὶ</text>
+            </w>
+            <w n="260108-4">
+                <text>οὗτοι</text>
+            </w>
+            <w n="260108-5">
+                <text>ἐνυπνιαζόμενοι</text>
+            </w>
+            <w n="260108-6">
+                <text>σάρκα</text>
+            </w>
+            <w n="260108-7">
+                <text>μὲν</text>
+            </w>
+            <w n="260108-8">
+                <text>μιαίνουσιν</text>
+            </w>
+            <w n="260108-9">
+                <text>,</text>
+            </w>
+            <w n="260108-10">
+                <text>κυριότητα</text>
+            </w>
+            <w n="260108-11">
+                <text>δὲ</text>
+            </w>
+            <w n="260108-12">
+                <text>ἀθετοῦσιν</text>
+            </w>
+            <w n="260108-13">
+                <text>,</text>
+            </w>
+            <w n="260108-14">
+                <text>δόξας</text>
+            </w>
+            <w n="260108-15">
+                <text>δὲ</text>
+            </w>
+            <w n="260108-16">
+                <text>βλασφημοῦσιν</text>
+            </w>
+            <w n="260108-17">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="260108-1">
+                <text>similiter</text>
+            </w>
+            <w n="260108-2">
+                <text>et</text>
+            </w>
+            <w n="260108-3">
+                <text>hii</text>
+            </w>
+            <w n="260108-4">
+                <text>carnem</text>
+            </w>
+            <w n="260108-5">
+                <text>quidem</text>
+            </w>
+            <w n="260108-6">
+                <text>maculant</text>
+            </w>
+            <w n="260108-7">
+                <text>dominationem</text>
+            </w>
+            <w n="260108-8">
+                <text>autem</text>
+            </w>
+            <w n="260108-9">
+                <text>spernunt</text>
+            </w>
+            <w n="260108-10">
+                <text>maiestates</text>
+            </w>
+            <w n="260108-11">
+                <text>autem</text>
+            </w>
+            <w n="260108-12">
+                <text>blasphemant</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="260109" document_id="NT:JUDE_1:9">
+        <wds lnum="L1">
+            <w n="260109-1">
+                <text>ὁ</text>
+            </w>
+            <w n="260109-2">
+                <text>δὲ</text>
+            </w>
+            <w n="260109-3">
+                <text>Μιχαὴλ</text>
+            </w>
+            <w n="260109-4">
+                <text>ὁ</text>
+            </w>
+            <w n="260109-5">
+                <text>ἀρχάγγελος</text>
+            </w>
+            <w n="260109-6">
+                <text>,</text>
+            </w>
+            <w n="260109-7">
+                <text>ὅτε</text>
+            </w>
+            <w n="260109-8">
+                <text>τῷ</text>
+            </w>
+            <w n="260109-9">
+                <text>διαβόλῳ</text>
+            </w>
+            <w n="260109-10">
+                <text>διακρινόμενος</text>
+            </w>
+            <w n="260109-11">
+                <text>διελέγετο</text>
+            </w>
+            <w n="260109-12">
+                <text>περὶ</text>
+            </w>
+            <w n="260109-13">
+                <text>τοῦ</text>
+            </w>
+            <w n="260109-14">
+                <text>Μωϋσέως</text>
+            </w>
+            <w n="260109-15">
+                <text>σώματος</text>
+            </w>
+            <w n="260109-16">
+                <text>,</text>
+            </w>
+            <w n="260109-17">
+                <text>οὐκ</text>
+            </w>
+            <w n="260109-18">
+                <text>ἐτόλμησεν</text>
+            </w>
+            <w n="260109-19">
+                <text>κρίσιν</text>
+            </w>
+            <w n="260109-20">
+                <text>ἐπενεγκεῖν</text>
+            </w>
+            <w n="260109-21">
+                <text>βλασφημίας</text>
+            </w>
+            <w n="260109-22">
+                <text>,</text>
+            </w>
+            <w n="260109-23">
+                <text>ἀλλὰ</text>
+            </w>
+            <w n="260109-24">
+                <text>εἶπεν</text>
+            </w>
+            <w n="260109-25">
+                <text>,</text>
+            </w>
+            <w n="260109-26">
+                <text>ἐπιτιμήσαι</text>
+            </w>
+            <w n="260109-27">
+                <text>σοι</text>
+            </w>
+            <w n="260109-28">
+                <text>κύριος</text>
+            </w>
+            <w n="260109-29">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="260109-1">
+                <text>cum</text>
+            </w>
+            <w n="260109-2">
+                <text>Michahel</text>
+            </w>
+            <w n="260109-3">
+                <text>archangelus</text>
+            </w>
+            <w n="260109-4">
+                <text>cum</text>
+            </w>
+            <w n="260109-5">
+                <text>diabolo</text>
+            </w>
+            <w n="260109-6">
+                <text>disputans</text>
+            </w>
+            <w n="260109-7">
+                <text>altercaretur</text>
+            </w>
+            <w n="260109-8">
+                <text>de</text>
+            </w>
+            <w n="260109-9">
+                <text>Mosi</text>
+            </w>
+            <w n="260109-10">
+                <text>corpore</text>
+            </w>
+            <w n="260109-11">
+                <text>non</text>
+            </w>
+            <w n="260109-12">
+                <text>est</text>
+            </w>
+            <w n="260109-13">
+                <text>ausus</text>
+            </w>
+            <w n="260109-14">
+                <text>iudicium</text>
+            </w>
+            <w n="260109-15">
+                <text>inferre</text>
+            </w>
+            <w n="260109-16">
+                <text>blasphemiae</text>
+            </w>
+            <w n="260109-17">
+                <text>sed</text>
+            </w>
+            <w n="260109-18">
+                <text>dixit</text>
+            </w>
+            <w n="260109-19">
+                <text>imperet</text>
+            </w>
+            <w n="260109-20">
+                <text>tibi</text>
+            </w>
+            <w n="260109-21">
+                <text>Dominus</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="260110" document_id="NT:JUDE_1:10">
+        <wds lnum="L1">
+            <w n="260110-1">
+                <text>οὗτοι</text>
+            </w>
+            <w n="260110-2">
+                <text>δὲ</text>
+            </w>
+            <w n="260110-3">
+                <text>ὅσα</text>
+            </w>
+            <w n="260110-4">
+                <text>μὲν</text>
+            </w>
+            <w n="260110-5">
+                <text>οὐκ</text>
+            </w>
+            <w n="260110-6">
+                <text>οἴδασιν</text>
+            </w>
+            <w n="260110-7">
+                <text>βλασφημοῦσιν</text>
+            </w>
+            <w n="260110-8">
+                <text>,</text>
+            </w>
+            <w n="260110-9">
+                <text>ὅσα</text>
+            </w>
+            <w n="260110-10">
+                <text>δὲ</text>
+            </w>
+            <w n="260110-11">
+                <text>φυσικῶς</text>
+            </w>
+            <w n="260110-12">
+                <text>ὡς</text>
+            </w>
+            <w n="260110-13">
+                <text>τὰ</text>
+            </w>
+            <w n="260110-14">
+                <text>ἄλογα</text>
+            </w>
+            <w n="260110-15">
+                <text>ζῷα</text>
+            </w>
+            <w n="260110-16">
+                <text>ἐπίστανται</text>
+            </w>
+            <w n="260110-17">
+                <text>,</text>
+            </w>
+            <w n="260110-18">
+                <text>ἐν</text>
+            </w>
+            <w n="260110-19">
+                <text>τούτοις</text>
+            </w>
+            <w n="260110-20">
+                <text>φθείρονται</text>
+            </w>
+            <w n="260110-21">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="260110-1">
+                <text>hii</text>
+            </w>
+            <w n="260110-2">
+                <text>autem</text>
+            </w>
+            <w n="260110-3">
+                <text>quaecumque</text>
+            </w>
+            <w n="260110-4">
+                <text>quidem</text>
+            </w>
+            <w n="260110-5">
+                <text>ignorant</text>
+            </w>
+            <w n="260110-6">
+                <text>blasphemant</text>
+            </w>
+            <w n="260110-7">
+                <text>quaecumque</text>
+            </w>
+            <w n="260110-8">
+                <text>autem</text>
+            </w>
+            <w n="260110-9">
+                <text>naturaliter</text>
+            </w>
+            <w n="260110-10">
+                <text>tamquam</text>
+            </w>
+            <w n="260110-11">
+                <text>muta</text>
+            </w>
+            <w n="260110-12">
+                <text>animalia</text>
+            </w>
+            <w n="260110-13">
+                <text>norunt</text>
+            </w>
+            <w n="260110-14">
+                <text>in</text>
+            </w>
+            <w n="260110-15">
+                <text>his</text>
+            </w>
+            <w n="260110-16">
+                <text>corrumpuntur</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="260111" document_id="NT:JUDE_1:11">
+        <wds lnum="L1">
+            <w n="260111-1">
+                <text>οὐαὶ</text>
+            </w>
+            <w n="260111-2">
+                <text>αὐτοῖς</text>
+            </w>
+            <w n="260111-3">
+                <text>,</text>
+            </w>
+            <w n="260111-4">
+                <text>ὅτι</text>
+            </w>
+            <w n="260111-5">
+                <text>τῇ</text>
+            </w>
+            <w n="260111-6">
+                <text>ὁδῷ</text>
+            </w>
+            <w n="260111-7">
+                <text>τοῦ</text>
+            </w>
+            <w n="260111-8">
+                <text>Κάϊν</text>
+            </w>
+            <w n="260111-9">
+                <text>ἐπορεύθησαν</text>
+            </w>
+            <w n="260111-10">
+                <text>,</text>
+            </w>
+            <w n="260111-11">
+                <text>καὶ</text>
+            </w>
+            <w n="260111-12">
+                <text>τῇ</text>
+            </w>
+            <w n="260111-13">
+                <text>πλάνῃ</text>
+            </w>
+            <w n="260111-14">
+                <text>τοῦ</text>
+            </w>
+            <w n="260111-15">
+                <text>Βαλαὰμ</text>
+            </w>
+            <w n="260111-16">
+                <text>μισθοῦ</text>
+            </w>
+            <w n="260111-17">
+                <text>ἐξεχύθησαν</text>
+            </w>
+            <w n="260111-18">
+                <text>,</text>
+            </w>
+            <w n="260111-19">
+                <text>καὶ</text>
+            </w>
+            <w n="260111-20">
+                <text>τῇ</text>
+            </w>
+            <w n="260111-21">
+                <text>ἀντιλογίᾳ</text>
+            </w>
+            <w n="260111-22">
+                <text>τοῦ</text>
+            </w>
+            <w n="260111-23">
+                <text>Κόρε</text>
+            </w>
+            <w n="260111-24">
+                <text>ἀπώλοντο</text>
+            </w>
+            <w n="260111-25">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="260111-1">
+                <text>vae</text>
+            </w>
+            <w n="260111-2">
+                <text>illis</text>
+            </w>
+            <w n="260111-3">
+                <text>quia</text>
+            </w>
+            <w n="260111-4">
+                <text>via</text>
+            </w>
+            <w n="260111-5">
+                <text>Cain</text>
+            </w>
+            <w n="260111-6">
+                <text>abierunt</text>
+            </w>
+            <w n="260111-7">
+                <text>et</text>
+            </w>
+            <w n="260111-8">
+                <text>errore</text>
+            </w>
+            <w n="260111-9">
+                <text>Balaam</text>
+            </w>
+            <w n="260111-10">
+                <text>mercede</text>
+            </w>
+            <w n="260111-11">
+                <text>effusi</text>
+            </w>
+            <w n="260111-12">
+                <text>sunt</text>
+            </w>
+            <w n="260111-13">
+                <text>et</text>
+            </w>
+            <w n="260111-14">
+                <text>contradictione</text>
+            </w>
+            <w n="260111-15">
+                <text>Core</text>
+            </w>
+            <w n="260111-16">
+                <text>perierunt</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="260112" document_id="NT:JUDE_1:12">
+        <wds lnum="L1">
+            <w n="260112-1">
+                <text>Οὗτοί</text>
+            </w>
+            <w n="260112-2">
+                <text>εἰσιν</text>
+            </w>
+            <w n="260112-3">
+                <text>οἱ</text>
+            </w>
+            <w n="260112-4">
+                <text>ἐν</text>
+            </w>
+            <w n="260112-5">
+                <text>ταῖς</text>
+            </w>
+            <w n="260112-6">
+                <text>ἀγάπαις</text>
+            </w>
+            <w n="260112-7">
+                <text>ὑμῶν</text>
+            </w>
+            <w n="260112-8">
+                <text>σπιλάδες</text>
+            </w>
+            <w n="260112-9">
+                <text>συνευωχούμενοι</text>
+            </w>
+            <w n="260112-10">
+                <text>ἀφόβως</text>
+            </w>
+            <w n="260112-11">
+                <text>,</text>
+            </w>
+            <w n="260112-12">
+                <text>ἑαυτοὺς</text>
+            </w>
+            <w n="260112-13">
+                <text>ποιμαίνοντες</text>
+            </w>
+            <w n="260112-14">
+                <text>,</text>
+            </w>
+            <w n="260112-15">
+                <text>νεφέλαι</text>
+            </w>
+            <w n="260112-16">
+                <text>ἄνυδροι</text>
+            </w>
+            <w n="260112-17">
+                <text>ὑπὸ</text>
+            </w>
+            <w n="260112-18">
+                <text>ἀνέμων</text>
+            </w>
+            <w n="260112-19">
+                <text>παραφερόμεναι</text>
+            </w>
+            <w n="260112-20">
+                <text>,</text>
+            </w>
+            <w n="260112-21">
+                <text>δένδρα</text>
+            </w>
+            <w n="260112-22">
+                <text>φθινοπωρινὰ</text>
+            </w>
+            <w n="260112-23">
+                <text>ἄκαρπα</text>
+            </w>
+            <w n="260112-24">
+                <text>δὶς</text>
+            </w>
+            <w n="260112-25">
+                <text>ἀποθανόντα</text>
+            </w>
+            <w n="260112-26">
+                <text>ἐκριζωθέντα</text>
+            </w>
+            <w n="260112-27">
+                <text>,</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="260112-1">
+                <text>hii</text>
+            </w>
+            <w n="260112-2">
+                <text>sunt</text>
+            </w>
+            <w n="260112-3">
+                <text>in</text>
+            </w>
+            <w n="260112-4">
+                <text>epulis</text>
+            </w>
+            <w n="260112-5">
+                <text>suis</text>
+            </w>
+            <w n="260112-6">
+                <text>maculae</text>
+            </w>
+            <w n="260112-7">
+                <text>convivantes</text>
+            </w>
+            <w n="260112-8">
+                <text>sine</text>
+            </w>
+            <w n="260112-9">
+                <text>timore</text>
+            </w>
+            <w n="260112-10">
+                <text>se</text>
+            </w>
+            <w n="260112-11">
+                <text>met</text>
+            </w>
+            <w n="260112-12">
+                <text>ipsos</text>
+            </w>
+            <w n="260112-13">
+                <text>pascentes</text>
+            </w>
+            <w n="260112-14">
+                <text>nubes</text>
+            </w>
+            <w n="260112-15">
+                <text>sine</text>
+            </w>
+            <w n="260112-16">
+                <text>aqua</text>
+            </w>
+            <w n="260112-17">
+                <text>quae</text>
+            </w>
+            <w n="260112-18">
+                <text>a</text>
+            </w>
+            <w n="260112-19">
+                <text>ventis</text>
+            </w>
+            <w n="260112-20">
+                <text>circumferuntur</text>
+            </w>
+            <w n="260112-21">
+                <text>arbores</text>
+            </w>
+            <w n="260112-22">
+                <text>autumnales</text>
+            </w>
+            <w n="260112-23">
+                <text>infructuosae</text>
+            </w>
+            <w n="260112-24">
+                <text>bis</text>
+            </w>
+            <w n="260112-25">
+                <text>mortuae</text>
+            </w>
+            <w n="260112-26">
+                <text>eradicatae</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="260113" document_id="NT:JUDE_1:13">
+        <wds lnum="L1">
+            <w n="260113-1">
+                <text>κύματα</text>
+            </w>
+            <w n="260113-2">
+                <text>ἄγρια</text>
+            </w>
+            <w n="260113-3">
+                <text>θαλάσσης</text>
+            </w>
+            <w n="260113-4">
+                <text>ἐπαφρίζοντα</text>
+            </w>
+            <w n="260113-5">
+                <text>τὰς</text>
+            </w>
+            <w n="260113-6">
+                <text>ἑαυτῶν</text>
+            </w>
+            <w n="260113-7">
+                <text>αἰσχύνας</text>
+            </w>
+            <w n="260113-8">
+                <text>,</text>
+            </w>
+            <w n="260113-9">
+                <text>ἀστέρες</text>
+            </w>
+            <w n="260113-10">
+                <text>πλανῆται</text>
+            </w>
+            <w n="260113-11">
+                <text>οἷς</text>
+            </w>
+            <w n="260113-12">
+                <text>ὁ</text>
+            </w>
+            <w n="260113-13">
+                <text>ζόφος</text>
+            </w>
+            <w n="260113-14">
+                <text>τοῦ</text>
+            </w>
+            <w n="260113-15">
+                <text>σκότους</text>
+            </w>
+            <w n="260113-16">
+                <text>εἰς</text>
+            </w>
+            <w n="260113-17">
+                <text>αἰῶνα</text>
+            </w>
+            <w n="260113-18">
+                <text>τετήρηται</text>
+            </w>
+            <w n="260113-19">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="260113-1">
+                <text>fluctus</text>
+            </w>
+            <w n="260113-2">
+                <text>feri</text>
+            </w>
+            <w n="260113-3">
+                <text>maris</text>
+            </w>
+            <w n="260113-4">
+                <text>despumantes</text>
+            </w>
+            <w n="260113-5">
+                <text>suas</text>
+            </w>
+            <w n="260113-6">
+                <text>confusiones</text>
+            </w>
+            <w n="260113-7">
+                <text>sidera</text>
+            </w>
+            <w n="260113-8">
+                <text>errantia</text>
+            </w>
+            <w n="260113-9">
+                <text>quibus</text>
+            </w>
+            <w n="260113-10">
+                <text>procella</text>
+            </w>
+            <w n="260113-11">
+                <text>tenebrarum</text>
+            </w>
+            <w n="260113-12">
+                <text>in</text>
+            </w>
+            <w n="260113-13">
+                <text>aeternum</text>
+            </w>
+            <w n="260113-14">
+                <text>servata</text>
+            </w>
+            <w n="260113-15">
+                <text>est</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="260114" document_id="NT:JUDE_1:14">
+        <wds lnum="L1">
+            <w n="260114-1">
+                <text>ἐπροφήτευσεν</text>
+            </w>
+            <w n="260114-2">
+                <text>δὲ</text>
+            </w>
+            <w n="260114-3">
+                <text>καὶ</text>
+            </w>
+            <w n="260114-4">
+                <text>τούτοις</text>
+            </w>
+            <w n="260114-5">
+                <text>ἕβδομος</text>
+            </w>
+            <w n="260114-6">
+                <text>ἀπὸ</text>
+            </w>
+            <w n="260114-7">
+                <text>Ἀδὰμ</text>
+            </w>
+            <w n="260114-8">
+                <text>Ἑνὼχ</text>
+            </w>
+            <w n="260114-9">
+                <text>λέγων</text>
+            </w>
+            <w n="260114-10">
+                <text>,</text>
+            </w>
+            <w n="260114-11">
+                <text>ἰδοὺ</text>
+            </w>
+            <w n="260114-12">
+                <text>ἦλθεν</text>
+            </w>
+            <w n="260114-13">
+                <text>κύριος</text>
+            </w>
+            <w n="260114-14">
+                <text>ἐν</text>
+            </w>
+            <w n="260114-15">
+                <text>ἁγίαις</text>
+            </w>
+            <w n="260114-16">
+                <text>μυριάσιν</text>
+            </w>
+            <w n="260114-17">
+                <text>αὐτοῦ</text>
+            </w>
+            <w n="260114-18">
+                <text>,</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="260114-1">
+                <text>prophetavit</text>
+            </w>
+            <w n="260114-2">
+                <text>autem</text>
+            </w>
+            <w n="260114-3">
+                <text>et</text>
+            </w>
+            <w n="260114-4">
+                <text>his</text>
+            </w>
+            <w n="260114-5">
+                <text>septimus</text>
+            </w>
+            <w n="260114-6">
+                <text>ab</text>
+            </w>
+            <w n="260114-7">
+                <text>Adam</text>
+            </w>
+            <w n="260114-8">
+                <text>Enoc</text>
+            </w>
+            <w n="260114-9">
+                <text>dicens</text>
+            </w>
+            <w n="260114-10">
+                <text>ecce</text>
+            </w>
+            <w n="260114-11">
+                <text>venit</text>
+            </w>
+            <w n="260114-12">
+                <text>Dominus</text>
+            </w>
+            <w n="260114-13">
+                <text>in</text>
+            </w>
+            <w n="260114-14">
+                <text>sanctis</text>
+            </w>
+            <w n="260114-15">
+                <text>milibus</text>
+            </w>
+            <w n="260114-16">
+                <text>suis</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="260115" document_id="NT:JUDE_1:15">
+        <wds lnum="L1">
+            <w n="260115-1">
+                <text>ποιῆσαι</text>
+            </w>
+            <w n="260115-2">
+                <text>κρίσιν</text>
+            </w>
+            <w n="260115-3">
+                <text>κατὰ</text>
+            </w>
+            <w n="260115-4">
+                <text>πάντων</text>
+            </w>
+            <w n="260115-5">
+                <text>καὶ</text>
+            </w>
+            <w n="260115-6">
+                <text>ἐλέγξαι</text>
+            </w>
+            <w n="260115-7">
+                <text>πάντας</text>
+            </w>
+            <w n="260115-8">
+                <text>τοὺς</text>
+            </w>
+            <w n="260115-9">
+                <text>ἀσεβεῖς</text>
+            </w>
+            <w n="260115-10">
+                <text>αὐτῶν</text>
+            </w>
+            <w n="260115-11">
+                <text>περὶ</text>
+            </w>
+            <w n="260115-12">
+                <text>πάντων</text>
+            </w>
+            <w n="260115-13">
+                <text>τῶν</text>
+            </w>
+            <w n="260115-14">
+                <text>ἔργων</text>
+            </w>
+            <w n="260115-15">
+                <text>ἀσεβείας</text>
+            </w>
+            <w n="260115-16">
+                <text>αὐτῶν</text>
+            </w>
+            <w n="260115-17">
+                <text>ὧν</text>
+            </w>
+            <w n="260115-18">
+                <text>ἠσέβησαν</text>
+            </w>
+            <w n="260115-19">
+                <text>καὶ</text>
+            </w>
+            <w n="260115-20">
+                <text>περὶ</text>
+            </w>
+            <w n="260115-21">
+                <text>πάντων</text>
+            </w>
+            <w n="260115-22">
+                <text>τῶν</text>
+            </w>
+            <w n="260115-23">
+                <text>σκληρῶν</text>
+            </w>
+            <w n="260115-24">
+                <text>λόγων</text>
+            </w>
+            <w n="260115-25">
+                <text>ὧν</text>
+            </w>
+            <w n="260115-26">
+                <text>ἐλάλησαν</text>
+            </w>
+            <w n="260115-27">
+                <text>κατ’</text>
+            </w>
+            <w n="260115-28">
+                <text>αὐτοῦ</text>
+            </w>
+            <w n="260115-29">
+                <text>ἁμαρτωλοὶ</text>
+            </w>
+            <w n="260115-30">
+                <text>ἀσεβεῖς</text>
+            </w>
+            <w n="260115-31">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="260115-1">
+                <text>facere</text>
+            </w>
+            <w n="260115-2">
+                <text>iudicium</text>
+            </w>
+            <w n="260115-3">
+                <text>contra</text>
+            </w>
+            <w n="260115-4">
+                <text>omnes</text>
+            </w>
+            <w n="260115-5">
+                <text>et</text>
+            </w>
+            <w n="260115-6">
+                <text>arguere</text>
+            </w>
+            <w n="260115-7">
+                <text>omnes</text>
+            </w>
+            <w n="260115-8">
+                <text>impios</text>
+            </w>
+            <w n="260115-9">
+                <text>de</text>
+            </w>
+            <w n="260115-10">
+                <text>omnibus</text>
+            </w>
+            <w n="260115-11">
+                <text>operibus</text>
+            </w>
+            <w n="260115-12">
+                <text>impietatis</text>
+            </w>
+            <w n="260115-13">
+                <text>eorum</text>
+            </w>
+            <w n="260115-14">
+                <text>quibus</text>
+            </w>
+            <w n="260115-15">
+                <text>impie</text>
+            </w>
+            <w n="260115-16">
+                <text>egerunt</text>
+            </w>
+            <w n="260115-17">
+                <text>et</text>
+            </w>
+            <w n="260115-18">
+                <text>de</text>
+            </w>
+            <w n="260115-19">
+                <text>omnibus</text>
+            </w>
+            <w n="260115-20">
+                <text>duris</text>
+            </w>
+            <w n="260115-21">
+                <text>quae</text>
+            </w>
+            <w n="260115-22">
+                <text>locuti</text>
+            </w>
+            <w n="260115-23">
+                <text>sunt</text>
+            </w>
+            <w n="260115-24">
+                <text>contra</text>
+            </w>
+            <w n="260115-25">
+                <text>eum</text>
+            </w>
+            <w n="260115-26">
+                <text>peccatores</text>
+            </w>
+            <w n="260115-27">
+                <text>impii</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="260116" document_id="NT:JUDE_1:16">
+        <wds lnum="L1">
+            <w n="260116-1">
+                <text>οὗτοί</text>
+            </w>
+            <w n="260116-2">
+                <text>εἰσιν</text>
+            </w>
+            <w n="260116-3">
+                <text>γογγυσταί</text>
+            </w>
+            <w n="260116-4">
+                <text>,</text>
+            </w>
+            <w n="260116-5">
+                <text>μεμψίμοιροι</text>
+            </w>
+            <w n="260116-6">
+                <text>,</text>
+            </w>
+            <w n="260116-7">
+                <text>κατὰ</text>
+            </w>
+            <w n="260116-8">
+                <text>τὰς</text>
+            </w>
+            <w n="260116-9">
+                <text>ἐπιθυμίας</text>
+            </w>
+            <w n="260116-10">
+                <text>αὐτῶν</text>
+            </w>
+            <w n="260116-11">
+                <text>πορευόμενοι</text>
+            </w>
+            <w n="260116-12">
+                <text>,</text>
+            </w>
+            <w n="260116-13">
+                <text>καὶ</text>
+            </w>
+            <w n="260116-14">
+                <text>τὸ</text>
+            </w>
+            <w n="260116-15">
+                <text>στόμα</text>
+            </w>
+            <w n="260116-16">
+                <text>αὐτῶν</text>
+            </w>
+            <w n="260116-17">
+                <text>λαλεῖ</text>
+            </w>
+            <w n="260116-18">
+                <text>ὑπέρογκα</text>
+            </w>
+            <w n="260116-19">
+                <text>,</text>
+            </w>
+            <w n="260116-20">
+                <text>θαυμάζοντες</text>
+            </w>
+            <w n="260116-21">
+                <text>πρόσωπα</text>
+            </w>
+            <w n="260116-22">
+                <text>ὠφελείας</text>
+            </w>
+            <w n="260116-23">
+                <text>χάριν</text>
+            </w>
+            <w n="260116-24">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="260116-1">
+                <text>hii</text>
+            </w>
+            <w n="260116-2">
+                <text>sunt</text>
+            </w>
+            <w n="260116-3">
+                <text>murmuratores</text>
+            </w>
+            <w n="260116-4">
+                <text>querellosi</text>
+            </w>
+            <w n="260116-5">
+                <text>secundum</text>
+            </w>
+            <w n="260116-6">
+                <text>desideria</text>
+            </w>
+            <w n="260116-7">
+                <text>sua</text>
+            </w>
+            <w n="260116-8">
+                <text>ambulantes</text>
+            </w>
+            <w n="260116-9">
+                <text>et</text>
+            </w>
+            <w n="260116-10">
+                <text>os</text>
+            </w>
+            <w n="260116-11">
+                <text>illorum</text>
+            </w>
+            <w n="260116-12">
+                <text>loquitur</text>
+            </w>
+            <w n="260116-13">
+                <text>superba</text>
+            </w>
+            <w n="260116-14">
+                <text>mirantes</text>
+            </w>
+            <w n="260116-15">
+                <text>personas</text>
+            </w>
+            <w n="260116-16">
+                <text>quaestus</text>
+            </w>
+            <w n="260116-17">
+                <text>causa</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="260117" document_id="NT:JUDE_1:17">
+        <wds lnum="L1">
+            <w n="260117-1">
+                <text>Ὑμεῖς</text>
+            </w>
+            <w n="260117-2">
+                <text>δέ</text>
+            </w>
+            <w n="260117-3">
+                <text>,</text>
+            </w>
+            <w n="260117-4">
+                <text>ἀγαπητοί</text>
+            </w>
+            <w n="260117-5">
+                <text>,</text>
+            </w>
+            <w n="260117-6">
+                <text>μνήσθητε</text>
+            </w>
+            <w n="260117-7">
+                <text>τῶν</text>
+            </w>
+            <w n="260117-8">
+                <text>ῥημάτων</text>
+            </w>
+            <w n="260117-9">
+                <text>τῶν</text>
+            </w>
+            <w n="260117-10">
+                <text>προειρημένων</text>
+            </w>
+            <w n="260117-11">
+                <text>ὑπὸ</text>
+            </w>
+            <w n="260117-12">
+                <text>τῶν</text>
+            </w>
+            <w n="260117-13">
+                <text>ἀποστόλων</text>
+            </w>
+            <w n="260117-14">
+                <text>τοῦ</text>
+            </w>
+            <w n="260117-15">
+                <text>κυρίου</text>
+            </w>
+            <w n="260117-16">
+                <text>ἡμῶν</text>
+            </w>
+            <w n="260117-17">
+                <text>Ἰησοῦ</text>
+            </w>
+            <w n="260117-18">
+                <text>Χριστοῦ</text>
+            </w>
+            <w n="260117-19">
+                <text>,</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="260117-1">
+                <text>vos</text>
+            </w>
+            <w n="260117-2">
+                <text>autem</text>
+            </w>
+            <w n="260117-3">
+                <text>carissimi</text>
+            </w>
+            <w n="260117-4">
+                <text>memores</text>
+            </w>
+            <w n="260117-5">
+                <text>estote</text>
+            </w>
+            <w n="260117-6">
+                <text>verborum</text>
+            </w>
+            <w n="260117-7">
+                <text>quae</text>
+            </w>
+            <w n="260117-8">
+                <text>praedicta</text>
+            </w>
+            <w n="260117-9">
+                <text>sunt</text>
+            </w>
+            <w n="260117-10">
+                <text>ab</text>
+            </w>
+            <w n="260117-11">
+                <text>apostolis</text>
+            </w>
+            <w n="260117-12">
+                <text>Domini</text>
+            </w>
+            <w n="260117-13">
+                <text>nostri</text>
+            </w>
+            <w n="260117-14">
+                <text>Iesu</text>
+            </w>
+            <w n="260117-15">
+                <text>Christi</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="260118" document_id="NT:JUDE_1:18">
+        <wds lnum="L1">
+            <w n="260118-1">
+                <text>ὅτι</text>
+            </w>
+            <w n="260118-2">
+                <text>ἔλεγον</text>
+            </w>
+            <w n="260118-3">
+                <text>ὑμῖν</text>
+            </w>
+            <w n="260118-4">
+                <text>ἐπ’</text>
+            </w>
+            <w n="260118-5">
+                <text>ἐσχάτου</text>
+            </w>
+            <w n="260118-6">
+                <text>τοῦ</text>
+            </w>
+            <w n="260118-7">
+                <text>χρόνου</text>
+            </w>
+            <w n="260118-8">
+                <text>ἔσονται</text>
+            </w>
+            <w n="260118-9">
+                <text>ἐμπαῖκται</text>
+            </w>
+            <w n="260118-10">
+                <text>κατὰ</text>
+            </w>
+            <w n="260118-11">
+                <text>τὰς</text>
+            </w>
+            <w n="260118-12">
+                <text>ἑαυτῶν</text>
+            </w>
+            <w n="260118-13">
+                <text>ἐπιθυμίας</text>
+            </w>
+            <w n="260118-14">
+                <text>πορευόμενοι</text>
+            </w>
+            <w n="260118-15">
+                <text>τῶν</text>
+            </w>
+            <w n="260118-16">
+                <text>ἀσεβειῶν</text>
+            </w>
+            <w n="260118-17">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="260118-1">
+                <text>quia</text>
+            </w>
+            <w n="260118-2">
+                <text>dicebant</text>
+            </w>
+            <w n="260118-3">
+                <text>vobis</text>
+            </w>
+            <w n="260118-4">
+                <text>quoniam</text>
+            </w>
+            <w n="260118-5">
+                <text>in</text>
+            </w>
+            <w n="260118-6">
+                <text>novissimo</text>
+            </w>
+            <w n="260118-7">
+                <text>tempore</text>
+            </w>
+            <w n="260118-8">
+                <text>venient</text>
+            </w>
+            <w n="260118-9">
+                <text>inlusores</text>
+            </w>
+            <w n="260118-10">
+                <text>secundum</text>
+            </w>
+            <w n="260118-11">
+                <text>sua</text>
+            </w>
+            <w n="260118-12">
+                <text>desideria</text>
+            </w>
+            <w n="260118-13">
+                <text>ambulantes</text>
+            </w>
+            <w n="260118-14">
+                <text>impietatum</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="260119" document_id="NT:JUDE_1:19">
+        <wds lnum="L1">
+            <w n="260119-1">
+                <text>οὗτοί</text>
+            </w>
+            <w n="260119-2">
+                <text>εἰσιν</text>
+            </w>
+            <w n="260119-3">
+                <text>οἱ</text>
+            </w>
+            <w n="260119-4">
+                <text>ἀποδιορίζοντες</text>
+            </w>
+            <w n="260119-5">
+                <text>,</text>
+            </w>
+            <w n="260119-6">
+                <text>ψυχικοί</text>
+            </w>
+            <w n="260119-7">
+                <text>,</text>
+            </w>
+            <w n="260119-8">
+                <text>πνεῦμα</text>
+            </w>
+            <w n="260119-9">
+                <text>μὴ</text>
+            </w>
+            <w n="260119-10">
+                <text>ἔχοντες</text>
+            </w>
+            <w n="260119-11">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="260119-1">
+                <text>hii</text>
+            </w>
+            <w n="260119-2">
+                <text>sunt</text>
+            </w>
+            <w n="260119-3">
+                <text>qui</text>
+            </w>
+            <w n="260119-4">
+                <text>segregant</text>
+            </w>
+            <w n="260119-5">
+                <text>animales</text>
+            </w>
+            <w n="260119-6">
+                <text>Spiritum</text>
+            </w>
+            <w n="260119-7">
+                <text>non</text>
+            </w>
+            <w n="260119-8">
+                <text>habentes</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="260120" document_id="NT:JUDE_1:20">
+        <wds lnum="L1">
+            <w n="260120-1">
+                <text>ὑμεῖς</text>
+            </w>
+            <w n="260120-2">
+                <text>δέ</text>
+            </w>
+            <w n="260120-3">
+                <text>,</text>
+            </w>
+            <w n="260120-4">
+                <text>ἀγαπητοί</text>
+            </w>
+            <w n="260120-5">
+                <text>,</text>
+            </w>
+            <w n="260120-6">
+                <text>ἐποικοδομοῦντες</text>
+            </w>
+            <w n="260120-7">
+                <text>ἑαυτοὺς</text>
+            </w>
+            <w n="260120-8">
+                <text>τῇ</text>
+            </w>
+            <w n="260120-9">
+                <text>ἁγιωτάτῃ</text>
+            </w>
+            <w n="260120-10">
+                <text>ὑμῶν</text>
+            </w>
+            <w n="260120-11">
+                <text>πίστει</text>
+            </w>
+            <w n="260120-12">
+                <text>,</text>
+            </w>
+            <w n="260120-13">
+                <text>ἐν</text>
+            </w>
+            <w n="260120-14">
+                <text>πνεύματι</text>
+            </w>
+            <w n="260120-15">
+                <text>ἁγίῳ</text>
+            </w>
+            <w n="260120-16">
+                <text>προσευχόμενοι</text>
+            </w>
+            <w n="260120-17">
+                <text>,</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="260120-1">
+                <text>vos</text>
+            </w>
+            <w n="260120-2">
+                <text>autem</text>
+            </w>
+            <w n="260120-3">
+                <text>carissimi</text>
+            </w>
+            <w n="260120-4">
+                <text>superaedificantes</text>
+            </w>
+            <w n="260120-5">
+                <text>vos</text>
+            </w>
+            <w n="260120-6">
+                <text>met</text>
+            </w>
+            <w n="260120-7">
+                <text>ipsos</text>
+            </w>
+            <w n="260120-8">
+                <text>sanctissimae</text>
+            </w>
+            <w n="260120-9">
+                <text>vestrae</text>
+            </w>
+            <w n="260120-10">
+                <text>fidei</text>
+            </w>
+            <w n="260120-11">
+                <text>in</text>
+            </w>
+            <w n="260120-12">
+                <text>Spiritu</text>
+            </w>
+            <w n="260120-13">
+                <text>Sancto</text>
+            </w>
+            <w n="260120-14">
+                <text>orantes</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="260121" document_id="NT:JUDE_1:21">
+        <wds lnum="L1">
+            <w n="260121-1">
+                <text>ἑαυτοὺς</text>
+            </w>
+            <w n="260121-2">
+                <text>ἐν</text>
+            </w>
+            <w n="260121-3">
+                <text>ἀγάπῃ</text>
+            </w>
+            <w n="260121-4">
+                <text>θεοῦ</text>
+            </w>
+            <w n="260121-5">
+                <text>τηρήσατε</text>
+            </w>
+            <w n="260121-6">
+                <text>,</text>
+            </w>
+            <w n="260121-7">
+                <text>προσδεχόμενοι</text>
+            </w>
+            <w n="260121-8">
+                <text>τὸ</text>
+            </w>
+            <w n="260121-9">
+                <text>ἔλεος</text>
+            </w>
+            <w n="260121-10">
+                <text>τοῦ</text>
+            </w>
+            <w n="260121-11">
+                <text>κυρίου</text>
+            </w>
+            <w n="260121-12">
+                <text>ἡμῶν</text>
+            </w>
+            <w n="260121-13">
+                <text>Ἰησοῦ</text>
+            </w>
+            <w n="260121-14">
+                <text>Χριστοῦ</text>
+            </w>
+            <w n="260121-15">
+                <text>εἰς</text>
+            </w>
+            <w n="260121-16">
+                <text>ζωὴν</text>
+            </w>
+            <w n="260121-17">
+                <text>αἰώνιον</text>
+            </w>
+            <w n="260121-18">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="260121-1">
+                <text>ipsos</text>
+            </w>
+            <w n="260121-2">
+                <text>vos</text>
+            </w>
+            <w n="260121-3">
+                <text>in</text>
+            </w>
+            <w n="260121-4">
+                <text>dilectione</text>
+            </w>
+            <w n="260121-5">
+                <text>Dei</text>
+            </w>
+            <w n="260121-6">
+                <text>servate</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="260122" document_id="NT:JUDE_1:22">
+        <wds lnum="L1">
+            <w n="260122-1">
+                <text>καὶ</text>
+            </w>
+            <w n="260122-2">
+                <text>οὓς</text>
+            </w>
+            <w n="260122-3">
+                <text>μὲν</text>
+            </w>
+            <w n="260122-4">
+                <text>ἐλέγχετε</text>
+            </w>
+            <w n="260122-5">
+                <text>διακρινομένους</text>
+            </w>
+            <w n="260122-6">
+                <text>,</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="260122-1">
+                <text>et</text>
+            </w>
+            <w n="260122-2">
+                <text>hos</text>
+            </w>
+            <w n="260122-3">
+                <text>quidem</text>
+            </w>
+            <w n="260122-4">
+                <text>arguite</text>
+            </w>
+            <w n="260122-5">
+                <text>iudicatos</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="260123" document_id="NT:JUDE_1:23">
+        <wds lnum="L1">
+            <w n="260123-1">
+                <text>οὓς</text>
+            </w>
+            <w n="260123-2">
+                <text>δὲ</text>
+            </w>
+            <w n="260123-3">
+                <text>σῴζετε</text>
+            </w>
+            <w n="260123-4">
+                <text>ἐκ</text>
+            </w>
+            <w n="260123-5">
+                <text>πυρὸς</text>
+            </w>
+            <w n="260123-6">
+                <text>ἁρπάζοντες</text>
+            </w>
+            <w n="260123-7">
+                <text>,</text>
+            </w>
+            <w n="260123-8">
+                <text>οὓς</text>
+            </w>
+            <w n="260123-9">
+                <text>δὲ</text>
+            </w>
+            <w n="260123-10">
+                <text>ἐλεᾶτε</text>
+            </w>
+            <w n="260123-11">
+                <text>ἐν</text>
+            </w>
+            <w n="260123-12">
+                <text>φόβῳ</text>
+            </w>
+            <w n="260123-13">
+                <text>,</text>
+            </w>
+            <w n="260123-14">
+                <text>μισοῦντες</text>
+            </w>
+            <w n="260123-15">
+                <text>καὶ</text>
+            </w>
+            <w n="260123-16">
+                <text>τὸν</text>
+            </w>
+            <w n="260123-17">
+                <text>ἀπὸ</text>
+            </w>
+            <w n="260123-18">
+                <text>τῆς</text>
+            </w>
+            <w n="260123-19">
+                <text>σαρκὸς</text>
+            </w>
+            <w n="260123-20">
+                <text>ἐσπιλωμένον</text>
+            </w>
+            <w n="260123-21">
+                <text>χιτῶνα</text>
+            </w>
+            <w n="260123-22">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="260123-1">
+                <text>illos</text>
+            </w>
+            <w n="260123-2">
+                <text>vero</text>
+            </w>
+            <w n="260123-3">
+                <text>salvate</text>
+            </w>
+            <w n="260123-4">
+                <text>de</text>
+            </w>
+            <w n="260123-5">
+                <text>igne</text>
+            </w>
+            <w n="260123-6">
+                <text>rapientes</text>
+            </w>
+            <w n="260123-7">
+                <text>aliis</text>
+            </w>
+            <w n="260123-8">
+                <text>autem</text>
+            </w>
+            <w n="260123-9">
+                <text>miseremini</text>
+            </w>
+            <w n="260123-10">
+                <text>in</text>
+            </w>
+            <w n="260123-11">
+                <text>timore</text>
+            </w>
+            <w n="260123-12">
+                <text>odientes</text>
+            </w>
+            <w n="260123-13">
+                <text>et</text>
+            </w>
+            <w n="260123-14">
+                <text>eam</text>
+            </w>
+            <w n="260123-15">
+                <text>quae</text>
+            </w>
+            <w n="260123-16">
+                <text>carnalis</text>
+            </w>
+            <w n="260123-17">
+                <text>est</text>
+            </w>
+            <w n="260123-18">
+                <text>maculatam</text>
+            </w>
+            <w n="260123-19">
+                <text>tunicam</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="260124" document_id="NT:JUDE_1:24">
+        <wds lnum="L1">
+            <w n="260124-1">
+                <text>Τῷ</text>
+            </w>
+            <w n="260124-2">
+                <text>δὲ</text>
+            </w>
+            <w n="260124-3">
+                <text>δυναμένῳ</text>
+            </w>
+            <w n="260124-4">
+                <text>φυλάξαι</text>
+            </w>
+            <w n="260124-5">
+                <text>ὑμᾶς</text>
+            </w>
+            <w n="260124-6">
+                <text>ἀπταίστους</text>
+            </w>
+            <w n="260124-7">
+                <text>καὶ</text>
+            </w>
+            <w n="260124-8">
+                <text>στῆσαι</text>
+            </w>
+            <w n="260124-9">
+                <text>κατενώπιον</text>
+            </w>
+            <w n="260124-10">
+                <text>τῆς</text>
+            </w>
+            <w n="260124-11">
+                <text>δόξης</text>
+            </w>
+            <w n="260124-12">
+                <text>αὐτοῦ</text>
+            </w>
+            <w n="260124-13">
+                <text>ἀμώμους</text>
+            </w>
+            <w n="260124-14">
+                <text>ἐν</text>
+            </w>
+            <w n="260124-15">
+                <text>ἀγαλλιάσει</text>
+            </w>
+            <w n="260124-16">
+                <text>,</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="260124-1">
+                <text>ei</text>
+            </w>
+            <w n="260124-2">
+                <text>autem</text>
+            </w>
+            <w n="260124-3">
+                <text>qui</text>
+            </w>
+            <w n="260124-4">
+                <text>potest</text>
+            </w>
+            <w n="260124-5">
+                <text>vos</text>
+            </w>
+            <w n="260124-6">
+                <text>conservare</text>
+            </w>
+            <w n="260124-7">
+                <text>sine</text>
+            </w>
+            <w n="260124-8">
+                <text>peccato</text>
+            </w>
+            <w n="260124-9">
+                <text>et</text>
+            </w>
+            <w n="260124-10">
+                <text>constituere</text>
+            </w>
+            <w n="260124-11">
+                <text>ante</text>
+            </w>
+            <w n="260124-12">
+                <text>conspectum</text>
+            </w>
+            <w n="260124-13">
+                <text>gloriae</text>
+            </w>
+            <w n="260124-14">
+                <text>suae</text>
+            </w>
+            <w n="260124-15">
+                <text>inmaculatos</text>
+            </w>
+            <w n="260124-16">
+                <text>in</text>
+            </w>
+            <w n="260124-17">
+                <text>exultatione</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="260125" document_id="NT:JUDE_1:25">
+        <wds lnum="L1">
+            <w n="260125-1">
+                <text>μόνῳ</text>
+            </w>
+            <w n="260125-2">
+                <text>θεῷ</text>
+            </w>
+            <w n="260125-3">
+                <text>σωτῆρι</text>
+            </w>
+            <w n="260125-4">
+                <text>ἡμῶν</text>
+            </w>
+            <w n="260125-5">
+                <text>διὰ</text>
+            </w>
+            <w n="260125-6">
+                <text>Ἰησοῦ</text>
+            </w>
+            <w n="260125-7">
+                <text>Χριστοῦ</text>
+            </w>
+            <w n="260125-8">
+                <text>τοῦ</text>
+            </w>
+            <w n="260125-9">
+                <text>κυρίου</text>
+            </w>
+            <w n="260125-10">
+                <text>ἡμῶν</text>
+            </w>
+            <w n="260125-11">
+                <text>δόξα</text>
+            </w>
+            <w n="260125-12">
+                <text>μεγαλωσύνη</text>
+            </w>
+            <w n="260125-13">
+                <text>κράτος</text>
+            </w>
+            <w n="260125-14">
+                <text>καὶ</text>
+            </w>
+            <w n="260125-15">
+                <text>ἐξουσία</text>
+            </w>
+            <w n="260125-16">
+                <text>πρὸ</text>
+            </w>
+            <w n="260125-17">
+                <text>παντὸς</text>
+            </w>
+            <w n="260125-18">
+                <text>τοῦ</text>
+            </w>
+            <w n="260125-19">
+                <text>αἰῶνος</text>
+            </w>
+            <w n="260125-20">
+                <text>καὶ</text>
+            </w>
+            <w n="260125-21">
+                <text>νῦν</text>
+            </w>
+            <w n="260125-22">
+                <text>καὶ</text>
+            </w>
+            <w n="260125-23">
+                <text>εἰς</text>
+            </w>
+            <w n="260125-24">
+                <text>πάντας</text>
+            </w>
+            <w n="260125-25">
+                <text>τοὺς</text>
+            </w>
+            <w n="260125-26">
+                <text>αἰῶνας</text>
+            </w>
+            <w n="260125-27">
+                <text>·</text>
+            </w>
+            <w n="260125-28">
+                <text>ἀμήν</text>
+            </w>
+            <w n="260125-29">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="260125-1">
+                <text>soli</text>
+            </w>
+            <w n="260125-2">
+                <text>Deo</text>
+            </w>
+            <w n="260125-3">
+                <text>salvatori</text>
+            </w>
+            <w n="260125-4">
+                <text>nostro</text>
+            </w>
+            <w n="260125-5">
+                <text>per</text>
+            </w>
+            <w n="260125-6">
+                <text>Iesum</text>
+            </w>
+            <w n="260125-7">
+                <text>Christum</text>
+            </w>
+            <w n="260125-8">
+                <text>Dominum</text>
+            </w>
+            <w n="260125-9">
+                <text>nostrum</text>
+            </w>
+            <w n="260125-10">
+                <text>gloria</text>
+            </w>
+            <w n="260125-11">
+                <text>magnificentia</text>
+            </w>
+            <w n="260125-12">
+                <text>imperium</text>
+            </w>
+            <w n="260125-13">
+                <text>et</text>
+            </w>
+            <w n="260125-14">
+                <text>potestas</text>
+            </w>
+            <w n="260125-15">
+                <text>ante</text>
+            </w>
+            <w n="260125-16">
+                <text>omne</text>
+            </w>
+            <w n="260125-17">
+                <text>saeculum</text>
+            </w>
+            <w n="260125-18">
+                <text>et</text>
+            </w>
+            <w n="260125-19">
+                <text>nunc</text>
+            </w>
+            <w n="260125-20">
+                <text>et</text>
+            </w>
+            <w n="260125-21">
+                <text>in</text>
+            </w>
+            <w n="260125-22">
+                <text>omnia</text>
+            </w>
+            <w n="260125-23">
+                <text>saecula</text>
+            </w>
+            <w n="260125-24">
+                <text>amen</text>
+            </w>
+        </wds>
+    </sentence>
+</aligned-text>

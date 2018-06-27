@@ -1,0 +1,5293 @@
+<aligned-text xmlns="http://alpheios.net/namespaces/aligned/text">
+    <language xml:lang="grc" lnum="L1"/>
+    <language xml:lang="lat" lnum="L2"/>
+    <sentence id="140101" document_id="NT:2THESS_1:1">
+        <wds lnum="L1">
+            <w n="140101-1">
+                <text>Παῦλος</text>
+            </w>
+            <w n="140101-2">
+                <text>καὶ</text>
+            </w>
+            <w n="140101-3">
+                <text>Σιλουανὸς</text>
+            </w>
+            <w n="140101-4">
+                <text>καὶ</text>
+            </w>
+            <w n="140101-5">
+                <text>Τιμόθεος</text>
+            </w>
+            <w n="140101-6">
+                <text>τῇ</text>
+            </w>
+            <w n="140101-7">
+                <text>ἐκκλησίᾳ</text>
+            </w>
+            <w n="140101-8">
+                <text>Θεσσαλονικέων</text>
+            </w>
+            <w n="140101-9">
+                <text>ἐν</text>
+            </w>
+            <w n="140101-10">
+                <text>θεῷ</text>
+            </w>
+            <w n="140101-11">
+                <text>πατρὶ</text>
+            </w>
+            <w n="140101-12">
+                <text>ἡμῶν</text>
+            </w>
+            <w n="140101-13">
+                <text>καὶ</text>
+            </w>
+            <w n="140101-14">
+                <text>κυρίῳ</text>
+            </w>
+            <w n="140101-15">
+                <text>Ἰησοῦ</text>
+            </w>
+            <w n="140101-16">
+                <text>Χριστῷ</text>
+            </w>
+            <w n="140101-17">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="140101-1">
+                <text>Paulus</text>
+            </w>
+            <w n="140101-2">
+                <text>et</text>
+            </w>
+            <w n="140101-3">
+                <text>Silvanus</text>
+            </w>
+            <w n="140101-4">
+                <text>et</text>
+            </w>
+            <w n="140101-5">
+                <text>Timotheus</text>
+            </w>
+            <w n="140101-6">
+                <text>ecclesiae</text>
+            </w>
+            <w n="140101-7">
+                <text>Thessalonicensium</text>
+            </w>
+            <w n="140101-8">
+                <text>in</text>
+            </w>
+            <w n="140101-9">
+                <text>Deo</text>
+            </w>
+            <w n="140101-10">
+                <text>Patre</text>
+            </w>
+            <w n="140101-11">
+                <text>nostro</text>
+            </w>
+            <w n="140101-12">
+                <text>et</text>
+            </w>
+            <w n="140101-13">
+                <text>Domino</text>
+            </w>
+            <w n="140101-14">
+                <text>Iesu</text>
+            </w>
+            <w n="140101-15">
+                <text>Christo</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="140102" document_id="NT:2THESS_1:2">
+        <wds lnum="L1">
+            <w n="140102-1">
+                <text>χάρις</text>
+            </w>
+            <w n="140102-2">
+                <text>ὑμῖν</text>
+            </w>
+            <w n="140102-3">
+                <text>καὶ</text>
+            </w>
+            <w n="140102-4">
+                <text>εἰρήνη</text>
+            </w>
+            <w n="140102-5">
+                <text>ἀπὸ</text>
+            </w>
+            <w n="140102-6">
+                <text>θεοῦ</text>
+            </w>
+            <w n="140102-7">
+                <text>πατρὸς</text>
+            </w>
+            <w n="140102-8">
+                <text>ἡμῶν</text>
+            </w>
+            <w n="140102-9">
+                <text>καὶ</text>
+            </w>
+            <w n="140102-10">
+                <text>κυρίου</text>
+            </w>
+            <w n="140102-11">
+                <text>Ἰησοῦ</text>
+            </w>
+            <w n="140102-12">
+                <text>Χριστοῦ</text>
+            </w>
+            <w n="140102-13">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="140102-1">
+                <text>gratia</text>
+            </w>
+            <w n="140102-2">
+                <text>vobis</text>
+            </w>
+            <w n="140102-3">
+                <text>et</text>
+            </w>
+            <w n="140102-4">
+                <text>pax</text>
+            </w>
+            <w n="140102-5">
+                <text>a</text>
+            </w>
+            <w n="140102-6">
+                <text>Deo</text>
+            </w>
+            <w n="140102-7">
+                <text>Patre</text>
+            </w>
+            <w n="140102-8">
+                <text>nostro</text>
+            </w>
+            <w n="140102-9">
+                <text>et</text>
+            </w>
+            <w n="140102-10">
+                <text>Domino</text>
+            </w>
+            <w n="140102-11">
+                <text>Iesu</text>
+            </w>
+            <w n="140102-12">
+                <text>Christo</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="140103" document_id="NT:2THESS_1:3">
+        <wds lnum="L1">
+            <w n="140103-1">
+                <text>Εὐχαριστεῖν</text>
+            </w>
+            <w n="140103-2">
+                <text>ὀφείλομεν</text>
+            </w>
+            <w n="140103-3">
+                <text>τῷ</text>
+            </w>
+            <w n="140103-4">
+                <text>θεῷ</text>
+            </w>
+            <w n="140103-5">
+                <text>πάντοτε</text>
+            </w>
+            <w n="140103-6">
+                <text>περὶ</text>
+            </w>
+            <w n="140103-7">
+                <text>ὑμῶν</text>
+            </w>
+            <w n="140103-8">
+                <text>,</text>
+            </w>
+            <w n="140103-9">
+                <text>ἀδελφοί</text>
+            </w>
+            <w n="140103-10">
+                <text>,</text>
+            </w>
+            <w n="140103-11">
+                <text>καθὼς</text>
+            </w>
+            <w n="140103-12">
+                <text>ἄξιόν</text>
+            </w>
+            <w n="140103-13">
+                <text>ἐστιν</text>
+            </w>
+            <w n="140103-14">
+                <text>,</text>
+            </w>
+            <w n="140103-15">
+                <text>ὅτι</text>
+            </w>
+            <w n="140103-16">
+                <text>ὑπεραυξάνει</text>
+            </w>
+            <w n="140103-17">
+                <text>ἡ</text>
+            </w>
+            <w n="140103-18">
+                <text>πίστις</text>
+            </w>
+            <w n="140103-19">
+                <text>ὑμῶν</text>
+            </w>
+            <w n="140103-20">
+                <text>καὶ</text>
+            </w>
+            <w n="140103-21">
+                <text>πλεονάζει</text>
+            </w>
+            <w n="140103-22">
+                <text>ἡ</text>
+            </w>
+            <w n="140103-23">
+                <text>ἀγάπη</text>
+            </w>
+            <w n="140103-24">
+                <text>ἑνὸς</text>
+            </w>
+            <w n="140103-25">
+                <text>ἑκάστου</text>
+            </w>
+            <w n="140103-26">
+                <text>πάντων</text>
+            </w>
+            <w n="140103-27">
+                <text>ὑμῶν</text>
+            </w>
+            <w n="140103-28">
+                <text>εἰς</text>
+            </w>
+            <w n="140103-29">
+                <text>ἀλλήλους</text>
+            </w>
+            <w n="140103-30">
+                <text>,</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="140103-1">
+                <text>gratias</text>
+            </w>
+            <w n="140103-2">
+                <text>agere</text>
+            </w>
+            <w n="140103-3">
+                <text>debemus</text>
+            </w>
+            <w n="140103-4">
+                <text>Deo</text>
+            </w>
+            <w n="140103-5">
+                <text>semper</text>
+            </w>
+            <w n="140103-6">
+                <text>pro</text>
+            </w>
+            <w n="140103-7">
+                <text>vobis</text>
+            </w>
+            <w n="140103-8">
+                <text>fratres</text>
+            </w>
+            <w n="140103-9">
+                <text>ita</text>
+            </w>
+            <w n="140103-10">
+                <text>ut</text>
+            </w>
+            <w n="140103-11">
+                <text>dignum</text>
+            </w>
+            <w n="140103-12">
+                <text>est</text>
+            </w>
+            <w n="140103-13">
+                <text>quoniam</text>
+            </w>
+            <w n="140103-14">
+                <text>supercrescit</text>
+            </w>
+            <w n="140103-15">
+                <text>fides</text>
+            </w>
+            <w n="140103-16">
+                <text>vestra</text>
+            </w>
+            <w n="140103-17">
+                <text>et</text>
+            </w>
+            <w n="140103-18">
+                <text>abundat</text>
+            </w>
+            <w n="140103-19">
+                <text>caritas</text>
+            </w>
+            <w n="140103-20">
+                <text>uniuscuiusque</text>
+            </w>
+            <w n="140103-21">
+                <text>omnium</text>
+            </w>
+            <w n="140103-22">
+                <text>vestrum</text>
+            </w>
+            <w n="140103-23">
+                <text>in</text>
+            </w>
+            <w n="140103-24">
+                <text>invicem</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="140104" document_id="NT:2THESS_1:4">
+        <wds lnum="L1">
+            <w n="140104-1">
+                <text>ὥστε</text>
+            </w>
+            <w n="140104-2">
+                <text>αὐτοὺς</text>
+            </w>
+            <w n="140104-3">
+                <text>ἡμᾶς</text>
+            </w>
+            <w n="140104-4">
+                <text>ἐν</text>
+            </w>
+            <w n="140104-5">
+                <text>ὑμῖν</text>
+            </w>
+            <w n="140104-6">
+                <text>ἐνκαυχᾶσθαι</text>
+            </w>
+            <w n="140104-7">
+                <text>ἐν</text>
+            </w>
+            <w n="140104-8">
+                <text>ταῖς</text>
+            </w>
+            <w n="140104-9">
+                <text>ἐκκλησίαις</text>
+            </w>
+            <w n="140104-10">
+                <text>τοῦ</text>
+            </w>
+            <w n="140104-11">
+                <text>θεοῦ</text>
+            </w>
+            <w n="140104-12">
+                <text>ὑπὲρ</text>
+            </w>
+            <w n="140104-13">
+                <text>τῆς</text>
+            </w>
+            <w n="140104-14">
+                <text>ὑπομονῆς</text>
+            </w>
+            <w n="140104-15">
+                <text>ὑμῶν</text>
+            </w>
+            <w n="140104-16">
+                <text>καὶ</text>
+            </w>
+            <w n="140104-17">
+                <text>πίστεως</text>
+            </w>
+            <w n="140104-18">
+                <text>ἐν</text>
+            </w>
+            <w n="140104-19">
+                <text>πᾶσιν</text>
+            </w>
+            <w n="140104-20">
+                <text>τοῖς</text>
+            </w>
+            <w n="140104-21">
+                <text>διωγμοῖς</text>
+            </w>
+            <w n="140104-22">
+                <text>ὑμῶν</text>
+            </w>
+            <w n="140104-23">
+                <text>καὶ</text>
+            </w>
+            <w n="140104-24">
+                <text>ταῖς</text>
+            </w>
+            <w n="140104-25">
+                <text>θλίψεσιν</text>
+            </w>
+            <w n="140104-26">
+                <text>αἷς</text>
+            </w>
+            <w n="140104-27">
+                <text>ἀνέχεσθε</text>
+            </w>
+            <w n="140104-28">
+                <text>,</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="140104-1">
+                <text>ita</text>
+            </w>
+            <w n="140104-2">
+                <text>ut</text>
+            </w>
+            <w n="140104-3">
+                <text>et</text>
+            </w>
+            <w n="140104-4">
+                <text>nos</text>
+            </w>
+            <w n="140104-5">
+                <text>ipsi</text>
+            </w>
+            <w n="140104-6">
+                <text>in</text>
+            </w>
+            <w n="140104-7">
+                <text>vobis</text>
+            </w>
+            <w n="140104-8">
+                <text>gloriemur</text>
+            </w>
+            <w n="140104-9">
+                <text>in</text>
+            </w>
+            <w n="140104-10">
+                <text>ecclesiis</text>
+            </w>
+            <w n="140104-11">
+                <text>Dei</text>
+            </w>
+            <w n="140104-12">
+                <text>pro</text>
+            </w>
+            <w n="140104-13">
+                <text>patientia</text>
+            </w>
+            <w n="140104-14">
+                <text>vestra</text>
+            </w>
+            <w n="140104-15">
+                <text>et</text>
+            </w>
+            <w n="140104-16">
+                <text>fide</text>
+            </w>
+            <w n="140104-17">
+                <text>in</text>
+            </w>
+            <w n="140104-18">
+                <text>omnibus</text>
+            </w>
+            <w n="140104-19">
+                <text>persecutionibus</text>
+            </w>
+            <w n="140104-20">
+                <text>vestris</text>
+            </w>
+            <w n="140104-21">
+                <text>et</text>
+            </w>
+            <w n="140104-22">
+                <text>tribulationibus</text>
+            </w>
+            <w n="140104-23">
+                <text>quas</text>
+            </w>
+            <w n="140104-24">
+                <text>sustinetis</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="140105" document_id="NT:2THESS_1:5">
+        <wds lnum="L1">
+            <w n="140105-1">
+                <text>ἔνδειγμα</text>
+            </w>
+            <w n="140105-2">
+                <text>τῆς</text>
+            </w>
+            <w n="140105-3">
+                <text>δικαίας</text>
+            </w>
+            <w n="140105-4">
+                <text>κρίσεως</text>
+            </w>
+            <w n="140105-5">
+                <text>τοῦ</text>
+            </w>
+            <w n="140105-6">
+                <text>θεοῦ</text>
+            </w>
+            <w n="140105-7">
+                <text>,</text>
+            </w>
+            <w n="140105-8">
+                <text>εἰς</text>
+            </w>
+            <w n="140105-9">
+                <text>τὸ</text>
+            </w>
+            <w n="140105-10">
+                <text>καταξιωθῆναι</text>
+            </w>
+            <w n="140105-11">
+                <text>ὑμᾶς</text>
+            </w>
+            <w n="140105-12">
+                <text>τῆς</text>
+            </w>
+            <w n="140105-13">
+                <text>βασιλείας</text>
+            </w>
+            <w n="140105-14">
+                <text>τοῦ</text>
+            </w>
+            <w n="140105-15">
+                <text>θεοῦ</text>
+            </w>
+            <w n="140105-16">
+                <text>,</text>
+            </w>
+            <w n="140105-17">
+                <text>ὑπὲρ</text>
+            </w>
+            <w n="140105-18">
+                <text>ἧς</text>
+            </w>
+            <w n="140105-19">
+                <text>καὶ</text>
+            </w>
+            <w n="140105-20">
+                <text>πάσχετε</text>
+            </w>
+            <w n="140105-21">
+                <text>,</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="140105-1">
+                <text>in</text>
+            </w>
+            <w n="140105-2">
+                <text>exemplum</text>
+            </w>
+            <w n="140105-3">
+                <text>iusti</text>
+            </w>
+            <w n="140105-4">
+                <text>iudicii</text>
+            </w>
+            <w n="140105-5">
+                <text>Dei</text>
+            </w>
+            <w n="140105-6">
+                <text>ut</text>
+            </w>
+            <w n="140105-7">
+                <text>digni</text>
+            </w>
+            <w n="140105-8">
+                <text>habeamini</text>
+            </w>
+            <w n="140105-9">
+                <text>regno</text>
+            </w>
+            <w n="140105-10">
+                <text>Dei</text>
+            </w>
+            <w n="140105-11">
+                <text>pro</text>
+            </w>
+            <w n="140105-12">
+                <text>quo</text>
+            </w>
+            <w n="140105-13">
+                <text>et</text>
+            </w>
+            <w n="140105-14">
+                <text>patimini</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="140106" document_id="NT:2THESS_1:6">
+        <wds lnum="L1">
+            <w n="140106-1">
+                <text>εἴπερ</text>
+            </w>
+            <w n="140106-2">
+                <text>δίκαιον</text>
+            </w>
+            <w n="140106-3">
+                <text>παρὰ</text>
+            </w>
+            <w n="140106-4">
+                <text>θεῷ</text>
+            </w>
+            <w n="140106-5">
+                <text>ἀνταποδοῦναι</text>
+            </w>
+            <w n="140106-6">
+                <text>τοῖς</text>
+            </w>
+            <w n="140106-7">
+                <text>θλίβουσιν</text>
+            </w>
+            <w n="140106-8">
+                <text>ὑμᾶς</text>
+            </w>
+            <w n="140106-9">
+                <text>θλῖψιν</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="140106-1">
+                <text>si</text>
+            </w>
+            <w n="140106-2">
+                <text>tamen</text>
+            </w>
+            <w n="140106-3">
+                <text>iustum</text>
+            </w>
+            <w n="140106-4">
+                <text>est</text>
+            </w>
+            <w n="140106-5">
+                <text>apud</text>
+            </w>
+            <w n="140106-6">
+                <text>Deum</text>
+            </w>
+            <w n="140106-7">
+                <text>retribuere</text>
+            </w>
+            <w n="140106-8">
+                <text>tribulationem</text>
+            </w>
+            <w n="140106-9">
+                <text>his</text>
+            </w>
+            <w n="140106-10">
+                <text>qui</text>
+            </w>
+            <w n="140106-11">
+                <text>vos</text>
+            </w>
+            <w n="140106-12">
+                <text>tribulant</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="140107" document_id="NT:2THESS_1:7">
+        <wds lnum="L1">
+            <w n="140107-1">
+                <text>καὶ</text>
+            </w>
+            <w n="140107-2">
+                <text>ὑμῖν</text>
+            </w>
+            <w n="140107-3">
+                <text>τοῖς</text>
+            </w>
+            <w n="140107-4">
+                <text>θλιβομένοις</text>
+            </w>
+            <w n="140107-5">
+                <text>ἄνεσιν</text>
+            </w>
+            <w n="140107-6">
+                <text>μεθ’</text>
+            </w>
+            <w n="140107-7">
+                <text>ἡμῶν</text>
+            </w>
+            <w n="140107-8">
+                <text>ἐν</text>
+            </w>
+            <w n="140107-9">
+                <text>τῇ</text>
+            </w>
+            <w n="140107-10">
+                <text>ἀποκαλύψει</text>
+            </w>
+            <w n="140107-11">
+                <text>τοῦ</text>
+            </w>
+            <w n="140107-12">
+                <text>κυρίου</text>
+            </w>
+            <w n="140107-13">
+                <text>Ἰησοῦ</text>
+            </w>
+            <w n="140107-14">
+                <text>ἀπ’</text>
+            </w>
+            <w n="140107-15">
+                <text>οὐρανοῦ</text>
+            </w>
+            <w n="140107-16">
+                <text>μετ’</text>
+            </w>
+            <w n="140107-17">
+                <text>ἀγγέλων</text>
+            </w>
+            <w n="140107-18">
+                <text>δυνάμεως</text>
+            </w>
+            <w n="140107-19">
+                <text>αὐτοῦ</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="140107-1">
+                <text>et</text>
+            </w>
+            <w n="140107-2">
+                <text>vobis</text>
+            </w>
+            <w n="140107-3">
+                <text>qui</text>
+            </w>
+            <w n="140107-4">
+                <text>tribulamini</text>
+            </w>
+            <w n="140107-5">
+                <text>requiem</text>
+            </w>
+            <w n="140107-6">
+                <text>nobis</text>
+            </w>
+            <w n="140107-7">
+                <text>cum</text>
+            </w>
+            <w n="140107-8">
+                <text>in</text>
+            </w>
+            <w n="140107-9">
+                <text>revelatione</text>
+            </w>
+            <w n="140107-10">
+                <text>Domini</text>
+            </w>
+            <w n="140107-11">
+                <text>Iesu</text>
+            </w>
+            <w n="140107-12">
+                <text>de</text>
+            </w>
+            <w n="140107-13">
+                <text>caelo</text>
+            </w>
+            <w n="140107-14">
+                <text>cum</text>
+            </w>
+            <w n="140107-15">
+                <text>angelis</text>
+            </w>
+            <w n="140107-16">
+                <text>virtutis</text>
+            </w>
+            <w n="140107-17">
+                <text>eius</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="140108" document_id="NT:2THESS_1:8">
+        <wds lnum="L1">
+            <w n="140108-1">
+                <text>ἐν</text>
+            </w>
+            <w n="140108-2">
+                <text>πυρὶ</text>
+            </w>
+            <w n="140108-3">
+                <text>φλογός</text>
+            </w>
+            <w n="140108-4">
+                <text>,</text>
+            </w>
+            <w n="140108-5">
+                <text>διδόντος</text>
+            </w>
+            <w n="140108-6">
+                <text>ἐκδίκησιν</text>
+            </w>
+            <w n="140108-7">
+                <text>τοῖς</text>
+            </w>
+            <w n="140108-8">
+                <text>μὴ</text>
+            </w>
+            <w n="140108-9">
+                <text>εἰδόσιν</text>
+            </w>
+            <w n="140108-10">
+                <text>θεὸν</text>
+            </w>
+            <w n="140108-11">
+                <text>καὶ</text>
+            </w>
+            <w n="140108-12">
+                <text>τοῖς</text>
+            </w>
+            <w n="140108-13">
+                <text>μὴ</text>
+            </w>
+            <w n="140108-14">
+                <text>ὑπακούουσιν</text>
+            </w>
+            <w n="140108-15">
+                <text>τῷ</text>
+            </w>
+            <w n="140108-16">
+                <text>εὐαγγελίῳ</text>
+            </w>
+            <w n="140108-17">
+                <text>τοῦ</text>
+            </w>
+            <w n="140108-18">
+                <text>κυρίου</text>
+            </w>
+            <w n="140108-19">
+                <text>ἡμῶν</text>
+            </w>
+            <w n="140108-20">
+                <text>Ἰησοῦ</text>
+            </w>
+            <w n="140108-21">
+                <text>,</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="140108-1">
+                <text>in</text>
+            </w>
+            <w n="140108-2">
+                <text>flamma</text>
+            </w>
+            <w n="140108-3">
+                <text>ignis</text>
+            </w>
+            <w n="140108-4">
+                <text>dantis</text>
+            </w>
+            <w n="140108-5">
+                <text>vindictam</text>
+            </w>
+            <w n="140108-6">
+                <text>his</text>
+            </w>
+            <w n="140108-7">
+                <text>qui</text>
+            </w>
+            <w n="140108-8">
+                <text>non</text>
+            </w>
+            <w n="140108-9">
+                <text>noverunt</text>
+            </w>
+            <w n="140108-10">
+                <text>Deum</text>
+            </w>
+            <w n="140108-11">
+                <text>et</text>
+            </w>
+            <w n="140108-12">
+                <text>qui</text>
+            </w>
+            <w n="140108-13">
+                <text>non</text>
+            </w>
+            <w n="140108-14">
+                <text>oboediunt</text>
+            </w>
+            <w n="140108-15">
+                <text>evangelio</text>
+            </w>
+            <w n="140108-16">
+                <text>Domini</text>
+            </w>
+            <w n="140108-17">
+                <text>nostri</text>
+            </w>
+            <w n="140108-18">
+                <text>Iesu</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="140109" document_id="NT:2THESS_1:9">
+        <wds lnum="L1">
+            <w n="140109-1">
+                <text>οἵτινες</text>
+            </w>
+            <w n="140109-2">
+                <text>δίκην</text>
+            </w>
+            <w n="140109-3">
+                <text>τίσουσιν</text>
+            </w>
+            <w n="140109-4">
+                <text>ὄλεθρον</text>
+            </w>
+            <w n="140109-5">
+                <text>αἰώνιον</text>
+            </w>
+            <w n="140109-6">
+                <text>ἀπὸ</text>
+            </w>
+            <w n="140109-7">
+                <text>προσώπου</text>
+            </w>
+            <w n="140109-8">
+                <text>τοῦ</text>
+            </w>
+            <w n="140109-9">
+                <text>κυρίου</text>
+            </w>
+            <w n="140109-10">
+                <text>καὶ</text>
+            </w>
+            <w n="140109-11">
+                <text>ἀπὸ</text>
+            </w>
+            <w n="140109-12">
+                <text>τῆς</text>
+            </w>
+            <w n="140109-13">
+                <text>δόξης</text>
+            </w>
+            <w n="140109-14">
+                <text>τῆς</text>
+            </w>
+            <w n="140109-15">
+                <text>ἰσχύος</text>
+            </w>
+            <w n="140109-16">
+                <text>αὐτοῦ</text>
+            </w>
+            <w n="140109-17">
+                <text>,</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="140109-1">
+                <text>qui</text>
+            </w>
+            <w n="140109-2">
+                <text>poenas</text>
+            </w>
+            <w n="140109-3">
+                <text>dabunt</text>
+            </w>
+            <w n="140109-4">
+                <text>in</text>
+            </w>
+            <w n="140109-5">
+                <text>interitu</text>
+            </w>
+            <w n="140109-6">
+                <text>aeternas</text>
+            </w>
+            <w n="140109-7">
+                <text>a</text>
+            </w>
+            <w n="140109-8">
+                <text>facie</text>
+            </w>
+            <w n="140109-9">
+                <text>Domini</text>
+            </w>
+            <w n="140109-10">
+                <text>et</text>
+            </w>
+            <w n="140109-11">
+                <text>a</text>
+            </w>
+            <w n="140109-12">
+                <text>gloria</text>
+            </w>
+            <w n="140109-13">
+                <text>virtutis</text>
+            </w>
+            <w n="140109-14">
+                <text>eius</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="140110" document_id="NT:2THESS_1:10">
+        <wds lnum="L1">
+            <w n="140110-1">
+                <text>ὅταν</text>
+            </w>
+            <w n="140110-2">
+                <text>ἔλθῃ</text>
+            </w>
+            <w n="140110-3">
+                <text>ἐνδοξασθῆναι</text>
+            </w>
+            <w n="140110-4">
+                <text>ἐν</text>
+            </w>
+            <w n="140110-5">
+                <text>τοῖς</text>
+            </w>
+            <w n="140110-6">
+                <text>ἁγίοις</text>
+            </w>
+            <w n="140110-7">
+                <text>αὐτοῦ</text>
+            </w>
+            <w n="140110-8">
+                <text>καὶ</text>
+            </w>
+            <w n="140110-9">
+                <text>θαυμασθῆναι</text>
+            </w>
+            <w n="140110-10">
+                <text>ἐν</text>
+            </w>
+            <w n="140110-11">
+                <text>πᾶσιν</text>
+            </w>
+            <w n="140110-12">
+                <text>τοῖς</text>
+            </w>
+            <w n="140110-13">
+                <text>πιστεύσασιν</text>
+            </w>
+            <w n="140110-14">
+                <text>,</text>
+            </w>
+            <w n="140110-15">
+                <text>ὅτι</text>
+            </w>
+            <w n="140110-16">
+                <text>ἐπιστεύθη</text>
+            </w>
+            <w n="140110-17">
+                <text>τὸ</text>
+            </w>
+            <w n="140110-18">
+                <text>μαρτύριον</text>
+            </w>
+            <w n="140110-19">
+                <text>ἡμῶν</text>
+            </w>
+            <w n="140110-20">
+                <text>ἐφ’</text>
+            </w>
+            <w n="140110-21">
+                <text>ὑμᾶς</text>
+            </w>
+            <w n="140110-22">
+                <text>,</text>
+            </w>
+            <w n="140110-23">
+                <text>ἐν</text>
+            </w>
+            <w n="140110-24">
+                <text>τῇ</text>
+            </w>
+            <w n="140110-25">
+                <text>ἡμέρᾳ</text>
+            </w>
+            <w n="140110-26">
+                <text>ἐκείνῃ</text>
+            </w>
+            <w n="140110-27">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="140110-1">
+                <text>cum</text>
+            </w>
+            <w n="140110-2">
+                <text>venerit</text>
+            </w>
+            <w n="140110-3">
+                <text>glorificari</text>
+            </w>
+            <w n="140110-4">
+                <text>in</text>
+            </w>
+            <w n="140110-5">
+                <text>sanctis</text>
+            </w>
+            <w n="140110-6">
+                <text>suis</text>
+            </w>
+            <w n="140110-7">
+                <text>et</text>
+            </w>
+            <w n="140110-8">
+                <text>admirabilis</text>
+            </w>
+            <w n="140110-9">
+                <text>fieri</text>
+            </w>
+            <w n="140110-10">
+                <text>in</text>
+            </w>
+            <w n="140110-11">
+                <text>omnibus</text>
+            </w>
+            <w n="140110-12">
+                <text>qui</text>
+            </w>
+            <w n="140110-13">
+                <text>crediderunt</text>
+            </w>
+            <w n="140110-14">
+                <text>quia</text>
+            </w>
+            <w n="140110-15">
+                <text>creditum</text>
+            </w>
+            <w n="140110-16">
+                <text>est</text>
+            </w>
+            <w n="140110-17">
+                <text>testimonium</text>
+            </w>
+            <w n="140110-18">
+                <text>nostrum</text>
+            </w>
+            <w n="140110-19">
+                <text>super</text>
+            </w>
+            <w n="140110-20">
+                <text>vos</text>
+            </w>
+            <w n="140110-21">
+                <text>in</text>
+            </w>
+            <w n="140110-22">
+                <text>die</text>
+            </w>
+            <w n="140110-23">
+                <text>illo</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="140111" document_id="NT:2THESS_1:11">
+        <wds lnum="L1">
+            <w n="140111-1">
+                <text>Εἰς</text>
+            </w>
+            <w n="140111-2">
+                <text>ὃ</text>
+            </w>
+            <w n="140111-3">
+                <text>καὶ</text>
+            </w>
+            <w n="140111-4">
+                <text>προσευχόμεθα</text>
+            </w>
+            <w n="140111-5">
+                <text>πάντοτε</text>
+            </w>
+            <w n="140111-6">
+                <text>περὶ</text>
+            </w>
+            <w n="140111-7">
+                <text>ὑμῶν</text>
+            </w>
+            <w n="140111-8">
+                <text>,</text>
+            </w>
+            <w n="140111-9">
+                <text>ἵνα</text>
+            </w>
+            <w n="140111-10">
+                <text>ὑμᾶς</text>
+            </w>
+            <w n="140111-11">
+                <text>ἀξιώσῃ</text>
+            </w>
+            <w n="140111-12">
+                <text>τῆς</text>
+            </w>
+            <w n="140111-13">
+                <text>κλήσεως</text>
+            </w>
+            <w n="140111-14">
+                <text>ὁ</text>
+            </w>
+            <w n="140111-15">
+                <text>θεὸς</text>
+            </w>
+            <w n="140111-16">
+                <text>ἡμῶν</text>
+            </w>
+            <w n="140111-17">
+                <text>καὶ</text>
+            </w>
+            <w n="140111-18">
+                <text>πληρώσῃ</text>
+            </w>
+            <w n="140111-19">
+                <text>πᾶσαν</text>
+            </w>
+            <w n="140111-20">
+                <text>εὐδοκίαν</text>
+            </w>
+            <w n="140111-21">
+                <text>ἀγαθωσύνης</text>
+            </w>
+            <w n="140111-22">
+                <text>καὶ</text>
+            </w>
+            <w n="140111-23">
+                <text>ἔργον</text>
+            </w>
+            <w n="140111-24">
+                <text>πίστεως</text>
+            </w>
+            <w n="140111-25">
+                <text>ἐν</text>
+            </w>
+            <w n="140111-26">
+                <text>δυνάμει</text>
+            </w>
+            <w n="140111-27">
+                <text>,</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="140111-1">
+                <text>in</text>
+            </w>
+            <w n="140111-2">
+                <text>quo</text>
+            </w>
+            <w n="140111-3">
+                <text>etiam</text>
+            </w>
+            <w n="140111-4">
+                <text>oramus</text>
+            </w>
+            <w n="140111-5">
+                <text>semper</text>
+            </w>
+            <w n="140111-6">
+                <text>pro</text>
+            </w>
+            <w n="140111-7">
+                <text>vobis</text>
+            </w>
+            <w n="140111-8">
+                <text>ut</text>
+            </w>
+            <w n="140111-9">
+                <text>dignetur</text>
+            </w>
+            <w n="140111-10">
+                <text>vos</text>
+            </w>
+            <w n="140111-11">
+                <text>vocatione</text>
+            </w>
+            <w n="140111-12">
+                <text>sua</text>
+            </w>
+            <w n="140111-13">
+                <text>Deus</text>
+            </w>
+            <w n="140111-14">
+                <text>et</text>
+            </w>
+            <w n="140111-15">
+                <text>impleat</text>
+            </w>
+            <w n="140111-16">
+                <text>omnem</text>
+            </w>
+            <w n="140111-17">
+                <text>voluntatem</text>
+            </w>
+            <w n="140111-18">
+                <text>bonitatis</text>
+            </w>
+            <w n="140111-19">
+                <text>et</text>
+            </w>
+            <w n="140111-20">
+                <text>opus</text>
+            </w>
+            <w n="140111-21">
+                <text>fidei</text>
+            </w>
+            <w n="140111-22">
+                <text>in</text>
+            </w>
+            <w n="140111-23">
+                <text>virtute</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="140112" document_id="NT:2THESS_1:12">
+        <wds lnum="L1">
+            <w n="140112-1">
+                <text>ὅπως</text>
+            </w>
+            <w n="140112-2">
+                <text>ἐνδοξασθῇ</text>
+            </w>
+            <w n="140112-3">
+                <text>τὸ</text>
+            </w>
+            <w n="140112-4">
+                <text>ὄνομα</text>
+            </w>
+            <w n="140112-5">
+                <text>τοῦ</text>
+            </w>
+            <w n="140112-6">
+                <text>κυρίου</text>
+            </w>
+            <w n="140112-7">
+                <text>ἡμῶν</text>
+            </w>
+            <w n="140112-8">
+                <text>Ἰησοῦ</text>
+            </w>
+            <w n="140112-9">
+                <text>ἐν</text>
+            </w>
+            <w n="140112-10">
+                <text>ὑμῖν</text>
+            </w>
+            <w n="140112-11">
+                <text>,</text>
+            </w>
+            <w n="140112-12">
+                <text>καὶ</text>
+            </w>
+            <w n="140112-13">
+                <text>ὑμεῖς</text>
+            </w>
+            <w n="140112-14">
+                <text>ἐν</text>
+            </w>
+            <w n="140112-15">
+                <text>αὐτῷ</text>
+            </w>
+            <w n="140112-16">
+                <text>,</text>
+            </w>
+            <w n="140112-17">
+                <text>κατὰ</text>
+            </w>
+            <w n="140112-18">
+                <text>τὴν</text>
+            </w>
+            <w n="140112-19">
+                <text>χάριν</text>
+            </w>
+            <w n="140112-20">
+                <text>τοῦ</text>
+            </w>
+            <w n="140112-21">
+                <text>θεοῦ</text>
+            </w>
+            <w n="140112-22">
+                <text>ἡμῶν</text>
+            </w>
+            <w n="140112-23">
+                <text>καὶ</text>
+            </w>
+            <w n="140112-24">
+                <text>κυρίου</text>
+            </w>
+            <w n="140112-25">
+                <text>Ἰησοῦ</text>
+            </w>
+            <w n="140112-26">
+                <text>Χριστοῦ</text>
+            </w>
+            <w n="140112-27">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="140112-1">
+                <text>ut</text>
+            </w>
+            <w n="140112-2">
+                <text>clarificetur</text>
+            </w>
+            <w n="140112-3">
+                <text>nomen</text>
+            </w>
+            <w n="140112-4">
+                <text>Domini</text>
+            </w>
+            <w n="140112-5">
+                <text>nostri</text>
+            </w>
+            <w n="140112-6">
+                <text>Iesu</text>
+            </w>
+            <w n="140112-7">
+                <text>Christi</text>
+            </w>
+            <w n="140112-8">
+                <text>in</text>
+            </w>
+            <w n="140112-9">
+                <text>vobis</text>
+            </w>
+            <w n="140112-10">
+                <text>et</text>
+            </w>
+            <w n="140112-11">
+                <text>vos</text>
+            </w>
+            <w n="140112-12">
+                <text>in</text>
+            </w>
+            <w n="140112-13">
+                <text>illo</text>
+            </w>
+            <w n="140112-14">
+                <text>secundum</text>
+            </w>
+            <w n="140112-15">
+                <text>gratiam</text>
+            </w>
+            <w n="140112-16">
+                <text>Dei</text>
+            </w>
+            <w n="140112-17">
+                <text>nostri</text>
+            </w>
+            <w n="140112-18">
+                <text>et</text>
+            </w>
+            <w n="140112-19">
+                <text>Domini</text>
+            </w>
+            <w n="140112-20">
+                <text>Iesu</text>
+            </w>
+            <w n="140112-21">
+                <text>Christi</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="140201" document_id="NT:2THESS_2:1">
+        <wds lnum="L1">
+            <w n="140201-1">
+                <text>Ἐρωτῶμεν</text>
+            </w>
+            <w n="140201-2">
+                <text>δὲ</text>
+            </w>
+            <w n="140201-3">
+                <text>ὑμᾶς</text>
+            </w>
+            <w n="140201-4">
+                <text>,</text>
+            </w>
+            <w n="140201-5">
+                <text>ἀδελφοί</text>
+            </w>
+            <w n="140201-6">
+                <text>,</text>
+            </w>
+            <w n="140201-7">
+                <text>ὑπὲρ</text>
+            </w>
+            <w n="140201-8">
+                <text>τῆς</text>
+            </w>
+            <w n="140201-9">
+                <text>παρουσίας</text>
+            </w>
+            <w n="140201-10">
+                <text>τοῦ</text>
+            </w>
+            <w n="140201-11">
+                <text>κυρίου</text>
+            </w>
+            <w n="140201-12">
+                <text>ἡμῶν</text>
+            </w>
+            <w n="140201-13">
+                <text>Ἰησοῦ</text>
+            </w>
+            <w n="140201-14">
+                <text>Χριστοῦ</text>
+            </w>
+            <w n="140201-15">
+                <text>καὶ</text>
+            </w>
+            <w n="140201-16">
+                <text>ἡμῶν</text>
+            </w>
+            <w n="140201-17">
+                <text>ἐπισυναγωγῆς</text>
+            </w>
+            <w n="140201-18">
+                <text>ἐπ’</text>
+            </w>
+            <w n="140201-19">
+                <text>αὐτόν</text>
+            </w>
+            <w n="140201-20">
+                <text>,</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="140201-1">
+                <text>rogamus</text>
+            </w>
+            <w n="140201-2">
+                <text>autem</text>
+            </w>
+            <w n="140201-3">
+                <text>vos</text>
+            </w>
+            <w n="140201-4">
+                <text>fratres</text>
+            </w>
+            <w n="140201-5">
+                <text>per</text>
+            </w>
+            <w n="140201-6">
+                <text>adventum</text>
+            </w>
+            <w n="140201-7">
+                <text>Domini</text>
+            </w>
+            <w n="140201-8">
+                <text>nostri</text>
+            </w>
+            <w n="140201-9">
+                <text>Iesu</text>
+            </w>
+            <w n="140201-10">
+                <text>Christi</text>
+            </w>
+            <w n="140201-11">
+                <text>et</text>
+            </w>
+            <w n="140201-12">
+                <text>nostrae</text>
+            </w>
+            <w n="140201-13">
+                <text>congregationis</text>
+            </w>
+            <w n="140201-14">
+                <text>in</text>
+            </w>
+            <w n="140201-15">
+                <text>ipsum</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="140202" document_id="NT:2THESS_2:2">
+        <wds lnum="L1">
+            <w n="140202-1">
+                <text>εἰς</text>
+            </w>
+            <w n="140202-2">
+                <text>τὸ</text>
+            </w>
+            <w n="140202-3">
+                <text>μὴ</text>
+            </w>
+            <w n="140202-4">
+                <text>ταχέως</text>
+            </w>
+            <w n="140202-5">
+                <text>σαλευθῆναι</text>
+            </w>
+            <w n="140202-6">
+                <text>ὑμᾶς</text>
+            </w>
+            <w n="140202-7">
+                <text>ἀπὸ</text>
+            </w>
+            <w n="140202-8">
+                <text>τοῦ</text>
+            </w>
+            <w n="140202-9">
+                <text>νοὸς</text>
+            </w>
+            <w n="140202-10">
+                <text>μηδὲ</text>
+            </w>
+            <w n="140202-11">
+                <text>θροεῖσθαι</text>
+            </w>
+            <w n="140202-12">
+                <text>μήτε</text>
+            </w>
+            <w n="140202-13">
+                <text>διὰ</text>
+            </w>
+            <w n="140202-14">
+                <text>πνεύματος</text>
+            </w>
+            <w n="140202-15">
+                <text>μήτε</text>
+            </w>
+            <w n="140202-16">
+                <text>διὰ</text>
+            </w>
+            <w n="140202-17">
+                <text>λόγου</text>
+            </w>
+            <w n="140202-18">
+                <text>μήτε</text>
+            </w>
+            <w n="140202-19">
+                <text>δι’</text>
+            </w>
+            <w n="140202-20">
+                <text>ἐπιστολῆς</text>
+            </w>
+            <w n="140202-21">
+                <text>ὡς</text>
+            </w>
+            <w n="140202-22">
+                <text>δι’</text>
+            </w>
+            <w n="140202-23">
+                <text>ἡμῶν</text>
+            </w>
+            <w n="140202-24">
+                <text>,</text>
+            </w>
+            <w n="140202-25">
+                <text>ὡς</text>
+            </w>
+            <w n="140202-26">
+                <text>ὅτι</text>
+            </w>
+            <w n="140202-27">
+                <text>ἐνέστηκεν</text>
+            </w>
+            <w n="140202-28">
+                <text>ἡ</text>
+            </w>
+            <w n="140202-29">
+                <text>ἡμέρα</text>
+            </w>
+            <w n="140202-30">
+                <text>τοῦ</text>
+            </w>
+            <w n="140202-31">
+                <text>κυρίου</text>
+            </w>
+            <w n="140202-32">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="140202-1">
+                <text>ut</text>
+            </w>
+            <w n="140202-2">
+                <text>non</text>
+            </w>
+            <w n="140202-3">
+                <text>cito</text>
+            </w>
+            <w n="140202-4">
+                <text>moveamini</text>
+            </w>
+            <w n="140202-5">
+                <text>a</text>
+            </w>
+            <w n="140202-6">
+                <text>sensu</text>
+            </w>
+            <w n="140202-7">
+                <text>ne</text>
+            </w>
+            <w n="140202-8">
+                <text>que</text>
+            </w>
+            <w n="140202-9">
+                <text>terreamini</text>
+            </w>
+            <w n="140202-10">
+                <text>ne</text>
+            </w>
+            <w n="140202-11">
+                <text>que</text>
+            </w>
+            <w n="140202-12">
+                <text>per</text>
+            </w>
+            <w n="140202-13">
+                <text>spiritum</text>
+            </w>
+            <w n="140202-14">
+                <text>ne</text>
+            </w>
+            <w n="140202-15">
+                <text>que</text>
+            </w>
+            <w n="140202-16">
+                <text>per</text>
+            </w>
+            <w n="140202-17">
+                <text>sermonem</text>
+            </w>
+            <w n="140202-18">
+                <text>ne</text>
+            </w>
+            <w n="140202-19">
+                <text>que</text>
+            </w>
+            <w n="140202-20">
+                <text>per</text>
+            </w>
+            <w n="140202-21">
+                <text>epistulam</text>
+            </w>
+            <w n="140202-22">
+                <text>tamquam</text>
+            </w>
+            <w n="140202-23">
+                <text>per</text>
+            </w>
+            <w n="140202-24">
+                <text>nos</text>
+            </w>
+            <w n="140202-25">
+                <text>quasi</text>
+            </w>
+            <w n="140202-26">
+                <text>instet</text>
+            </w>
+            <w n="140202-27">
+                <text>dies</text>
+            </w>
+            <w n="140202-28">
+                <text>Domini</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="140203" document_id="NT:2THESS_2:3">
+        <wds lnum="L1">
+            <w n="140203-1">
+                <text>μή</text>
+            </w>
+            <w n="140203-2">
+                <text>τις</text>
+            </w>
+            <w n="140203-3">
+                <text>ὑμᾶς</text>
+            </w>
+            <w n="140203-4">
+                <text>ἐξαπατήσῃ</text>
+            </w>
+            <w n="140203-5">
+                <text>κατὰ</text>
+            </w>
+            <w n="140203-6">
+                <text>μηδένα</text>
+            </w>
+            <w n="140203-7">
+                <text>τρόπον</text>
+            </w>
+            <w n="140203-8">
+                <text>·</text>
+            </w>
+            <w n="140203-9">
+                <text>ὅτι</text>
+            </w>
+            <w n="140203-10">
+                <text>ἐὰν</text>
+            </w>
+            <w n="140203-11">
+                <text>μὴ</text>
+            </w>
+            <w n="140203-12">
+                <text>ἔλθῃ</text>
+            </w>
+            <w n="140203-13">
+                <text>ἡ</text>
+            </w>
+            <w n="140203-14">
+                <text>ἀποστασία</text>
+            </w>
+            <w n="140203-15">
+                <text>πρῶτον</text>
+            </w>
+            <w n="140203-16">
+                <text>καὶ</text>
+            </w>
+            <w n="140203-17">
+                <text>ἀποκαλυφθῇ</text>
+            </w>
+            <w n="140203-18">
+                <text>ὁ</text>
+            </w>
+            <w n="140203-19">
+                <text>ἄνθρωπος</text>
+            </w>
+            <w n="140203-20">
+                <text>τῆς</text>
+            </w>
+            <w n="140203-21">
+                <text>ἀνομίας</text>
+            </w>
+            <w n="140203-22">
+                <text>,</text>
+            </w>
+            <w n="140203-23">
+                <text>ὁ</text>
+            </w>
+            <w n="140203-24">
+                <text>υἱὸς</text>
+            </w>
+            <w n="140203-25">
+                <text>τῆς</text>
+            </w>
+            <w n="140203-26">
+                <text>ἀπωλείας</text>
+            </w>
+            <w n="140203-27">
+                <text>,</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="140203-1">
+                <text>ne</text>
+            </w>
+            <w n="140203-2">
+                <text>quis</text>
+            </w>
+            <w n="140203-3">
+                <text>vos</text>
+            </w>
+            <w n="140203-4">
+                <text>seducat</text>
+            </w>
+            <w n="140203-5">
+                <text>ullo</text>
+            </w>
+            <w n="140203-6">
+                <text>modo</text>
+            </w>
+            <w n="140203-7">
+                <text>quoniam</text>
+            </w>
+            <w n="140203-8">
+                <text>nisi</text>
+            </w>
+            <w n="140203-9">
+                <text>venerit</text>
+            </w>
+            <w n="140203-10">
+                <text>discessio</text>
+            </w>
+            <w n="140203-11">
+                <text>primum</text>
+            </w>
+            <w n="140203-12">
+                <text>et</text>
+            </w>
+            <w n="140203-13">
+                <text>revelatus</text>
+            </w>
+            <w n="140203-14">
+                <text>fuerit</text>
+            </w>
+            <w n="140203-15">
+                <text>homo</text>
+            </w>
+            <w n="140203-16">
+                <text>peccati</text>
+            </w>
+            <w n="140203-17">
+                <text>filius</text>
+            </w>
+            <w n="140203-18">
+                <text>perditionis</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="140204" document_id="NT:2THESS_2:4">
+        <wds lnum="L1">
+            <w n="140204-1">
+                <text>ὁ</text>
+            </w>
+            <w n="140204-2">
+                <text>ἀντικείμενος</text>
+            </w>
+            <w n="140204-3">
+                <text>καὶ</text>
+            </w>
+            <w n="140204-4">
+                <text>ὑπεραιρόμενος</text>
+            </w>
+            <w n="140204-5">
+                <text>ἐπὶ</text>
+            </w>
+            <w n="140204-6">
+                <text>πάντα</text>
+            </w>
+            <w n="140204-7">
+                <text>λεγόμενον</text>
+            </w>
+            <w n="140204-8">
+                <text>θεὸν</text>
+            </w>
+            <w n="140204-9">
+                <text>ἢ</text>
+            </w>
+            <w n="140204-10">
+                <text>σέβασμα</text>
+            </w>
+            <w n="140204-11">
+                <text>,</text>
+            </w>
+            <w n="140204-12">
+                <text>ὥστε</text>
+            </w>
+            <w n="140204-13">
+                <text>αὐτὸν</text>
+            </w>
+            <w n="140204-14">
+                <text>εἰς</text>
+            </w>
+            <w n="140204-15">
+                <text>τὸν</text>
+            </w>
+            <w n="140204-16">
+                <text>ναὸν</text>
+            </w>
+            <w n="140204-17">
+                <text>τοῦ</text>
+            </w>
+            <w n="140204-18">
+                <text>θεοῦ</text>
+            </w>
+            <w n="140204-19">
+                <text>καθίσαι</text>
+            </w>
+            <w n="140204-20">
+                <text>,</text>
+            </w>
+            <w n="140204-21">
+                <text>ἀποδεικνύντα</text>
+            </w>
+            <w n="140204-22">
+                <text>ἑαυτὸν</text>
+            </w>
+            <w n="140204-23">
+                <text>ὅτι</text>
+            </w>
+            <w n="140204-24">
+                <text>ἔστιν</text>
+            </w>
+            <w n="140204-25">
+                <text>θεός</text>
+            </w>
+            <w n="140204-26">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="140204-1">
+                <text>qui</text>
+            </w>
+            <w n="140204-2">
+                <text>adversatur</text>
+            </w>
+            <w n="140204-3">
+                <text>et</text>
+            </w>
+            <w n="140204-4">
+                <text>extollitur</text>
+            </w>
+            <w n="140204-5">
+                <text>supra</text>
+            </w>
+            <w n="140204-6">
+                <text>omne</text>
+            </w>
+            <w n="140204-7">
+                <text>quod</text>
+            </w>
+            <w n="140204-8">
+                <text>dicitur</text>
+            </w>
+            <w n="140204-9">
+                <text>Deus</text>
+            </w>
+            <w n="140204-10">
+                <text>aut</text>
+            </w>
+            <w n="140204-11">
+                <text>quod</text>
+            </w>
+            <w n="140204-12">
+                <text>colitur</text>
+            </w>
+            <w n="140204-13">
+                <text>ita</text>
+            </w>
+            <w n="140204-14">
+                <text>ut</text>
+            </w>
+            <w n="140204-15">
+                <text>in</text>
+            </w>
+            <w n="140204-16">
+                <text>templo</text>
+            </w>
+            <w n="140204-17">
+                <text>Dei</text>
+            </w>
+            <w n="140204-18">
+                <text>sedeat</text>
+            </w>
+            <w n="140204-19">
+                <text>ostendens</text>
+            </w>
+            <w n="140204-20">
+                <text>se</text>
+            </w>
+            <w n="140204-21">
+                <text>quia</text>
+            </w>
+            <w n="140204-22">
+                <text>sit</text>
+            </w>
+            <w n="140204-23">
+                <text>Deus</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="140205" document_id="NT:2THESS_2:5">
+        <wds lnum="L1">
+            <w n="140205-1">
+                <text>Οὐ</text>
+            </w>
+            <w n="140205-2">
+                <text>μνημονεύετε</text>
+            </w>
+            <w n="140205-3">
+                <text>ὅτι</text>
+            </w>
+            <w n="140205-4">
+                <text>ἔτι</text>
+            </w>
+            <w n="140205-5">
+                <text>ὢν</text>
+            </w>
+            <w n="140205-6">
+                <text>πρὸς</text>
+            </w>
+            <w n="140205-7">
+                <text>ὑμᾶς</text>
+            </w>
+            <w n="140205-8">
+                <text>ταῦτα</text>
+            </w>
+            <w n="140205-9">
+                <text>ἔλεγον</text>
+            </w>
+            <w n="140205-10">
+                <text>ὑμῖν</text>
+            </w>
+            <w n="140205-11">
+                <text>;</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="140205-1">
+                <text>non</text>
+            </w>
+            <w n="140205-2">
+                <text>retinetis</text>
+            </w>
+            <w n="140205-3">
+                <text>quod</text>
+            </w>
+            <w n="140205-4">
+                <text>cum</text>
+            </w>
+            <w n="140205-5">
+                <text>adhuc</text>
+            </w>
+            <w n="140205-6">
+                <text>essem</text>
+            </w>
+            <w n="140205-7">
+                <text>apud</text>
+            </w>
+            <w n="140205-8">
+                <text>vos</text>
+            </w>
+            <w n="140205-9">
+                <text>haec</text>
+            </w>
+            <w n="140205-10">
+                <text>dicebam</text>
+            </w>
+            <w n="140205-11">
+                <text>vobis</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="140206" document_id="NT:2THESS_2:6">
+        <wds lnum="L1">
+            <w n="140206-1">
+                <text>καὶ</text>
+            </w>
+            <w n="140206-2">
+                <text>νῦν</text>
+            </w>
+            <w n="140206-3">
+                <text>τὸ</text>
+            </w>
+            <w n="140206-4">
+                <text>κατέχον</text>
+            </w>
+            <w n="140206-5">
+                <text>οἴδατε</text>
+            </w>
+            <w n="140206-6">
+                <text>,</text>
+            </w>
+            <w n="140206-7">
+                <text>εἰς</text>
+            </w>
+            <w n="140206-8">
+                <text>τὸ</text>
+            </w>
+            <w n="140206-9">
+                <text>ἀποκαλυφθῆναι</text>
+            </w>
+            <w n="140206-10">
+                <text>αὐτὸν</text>
+            </w>
+            <w n="140206-11">
+                <text>ἐν</text>
+            </w>
+            <w n="140206-12">
+                <text>τῷ</text>
+            </w>
+            <w n="140206-13">
+                <text>αὐτοῦ</text>
+            </w>
+            <w n="140206-14">
+                <text>καιρῷ</text>
+            </w>
+            <w n="140206-15">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="140206-1">
+                <text>et</text>
+            </w>
+            <w n="140206-2">
+                <text>nunc</text>
+            </w>
+            <w n="140206-3">
+                <text>quid</text>
+            </w>
+            <w n="140206-4">
+                <text>detineat</text>
+            </w>
+            <w n="140206-5">
+                <text>scitis</text>
+            </w>
+            <w n="140206-6">
+                <text>ut</text>
+            </w>
+            <w n="140206-7">
+                <text>reveletur</text>
+            </w>
+            <w n="140206-8">
+                <text>in</text>
+            </w>
+            <w n="140206-9">
+                <text>suo</text>
+            </w>
+            <w n="140206-10">
+                <text>tempore</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="140207" document_id="NT:2THESS_2:7">
+        <wds lnum="L1">
+            <w n="140207-1">
+                <text>τὸ</text>
+            </w>
+            <w n="140207-2">
+                <text>γὰρ</text>
+            </w>
+            <w n="140207-3">
+                <text>μυστήριον</text>
+            </w>
+            <w n="140207-4">
+                <text>ἤδη</text>
+            </w>
+            <w n="140207-5">
+                <text>ἐνεργεῖται</text>
+            </w>
+            <w n="140207-6">
+                <text>τῆς</text>
+            </w>
+            <w n="140207-7">
+                <text>ἀνομίας</text>
+            </w>
+            <w n="140207-8">
+                <text>·</text>
+            </w>
+            <w n="140207-9">
+                <text>μόνον</text>
+            </w>
+            <w n="140207-10">
+                <text>ὁ</text>
+            </w>
+            <w n="140207-11">
+                <text>κατέχων</text>
+            </w>
+            <w n="140207-12">
+                <text>ἄρτι</text>
+            </w>
+            <w n="140207-13">
+                <text>ἕως</text>
+            </w>
+            <w n="140207-14">
+                <text>ἐκ</text>
+            </w>
+            <w n="140207-15">
+                <text>μέσου</text>
+            </w>
+            <w n="140207-16">
+                <text>γένηται</text>
+            </w>
+            <w n="140207-17">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="140207-1">
+                <text>nam</text>
+            </w>
+            <w n="140207-2">
+                <text>mysterium</text>
+            </w>
+            <w n="140207-3">
+                <text>iam</text>
+            </w>
+            <w n="140207-4">
+                <text>operatur</text>
+            </w>
+            <w n="140207-5">
+                <text>iniquitatis</text>
+            </w>
+            <w n="140207-6">
+                <text>tantum</text>
+            </w>
+            <w n="140207-7">
+                <text>ut</text>
+            </w>
+            <w n="140207-8">
+                <text>qui</text>
+            </w>
+            <w n="140207-9">
+                <text>tenet</text>
+            </w>
+            <w n="140207-10">
+                <text>nunc</text>
+            </w>
+            <w n="140207-11">
+                <text>donec</text>
+            </w>
+            <w n="140207-12">
+                <text>de</text>
+            </w>
+            <w n="140207-13">
+                <text>medio</text>
+            </w>
+            <w n="140207-14">
+                <text>fiat</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="140208" document_id="NT:2THESS_2:8">
+        <wds lnum="L1">
+            <w n="140208-1">
+                <text>καὶ</text>
+            </w>
+            <w n="140208-2">
+                <text>τότε</text>
+            </w>
+            <w n="140208-3">
+                <text>ἀποκαλυφθήσεται</text>
+            </w>
+            <w n="140208-4">
+                <text>ὁ</text>
+            </w>
+            <w n="140208-5">
+                <text>ἄνομος</text>
+            </w>
+            <w n="140208-6">
+                <text>,</text>
+            </w>
+            <w n="140208-7">
+                <text>ὃν</text>
+            </w>
+            <w n="140208-8">
+                <text>ὁ</text>
+            </w>
+            <w n="140208-9">
+                <text>κύριος</text>
+            </w>
+            <w n="140208-10">
+                <text>Ἰησοῦς</text>
+            </w>
+            <w n="140208-11">
+                <text>ἀνελεῖ</text>
+            </w>
+            <w n="140208-12">
+                <text>τῷ</text>
+            </w>
+            <w n="140208-13">
+                <text>πνεύματι</text>
+            </w>
+            <w n="140208-14">
+                <text>τοῦ</text>
+            </w>
+            <w n="140208-15">
+                <text>στόματος</text>
+            </w>
+            <w n="140208-16">
+                <text>αὐτοῦ</text>
+            </w>
+            <w n="140208-17">
+                <text>καὶ</text>
+            </w>
+            <w n="140208-18">
+                <text>καταργήσει</text>
+            </w>
+            <w n="140208-19">
+                <text>τῇ</text>
+            </w>
+            <w n="140208-20">
+                <text>ἐπιφανείᾳ</text>
+            </w>
+            <w n="140208-21">
+                <text>τῆς</text>
+            </w>
+            <w n="140208-22">
+                <text>παρουσίας</text>
+            </w>
+            <w n="140208-23">
+                <text>αὐτοῦ</text>
+            </w>
+            <w n="140208-24">
+                <text>,</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="140208-1">
+                <text>et</text>
+            </w>
+            <w n="140208-2">
+                <text>tunc</text>
+            </w>
+            <w n="140208-3">
+                <text>revelabitur</text>
+            </w>
+            <w n="140208-4">
+                <text>ille</text>
+            </w>
+            <w n="140208-5">
+                <text>iniquus</text>
+            </w>
+            <w n="140208-6">
+                <text>quem</text>
+            </w>
+            <w n="140208-7">
+                <text>Dominus</text>
+            </w>
+            <w n="140208-8">
+                <text>Iesus</text>
+            </w>
+            <w n="140208-9">
+                <text>interficiet</text>
+            </w>
+            <w n="140208-10">
+                <text>spiritu</text>
+            </w>
+            <w n="140208-11">
+                <text>oris</text>
+            </w>
+            <w n="140208-12">
+                <text>sui</text>
+            </w>
+            <w n="140208-13">
+                <text>et</text>
+            </w>
+            <w n="140208-14">
+                <text>destruet</text>
+            </w>
+            <w n="140208-15">
+                <text>inlustratione</text>
+            </w>
+            <w n="140208-16">
+                <text>adventus</text>
+            </w>
+            <w n="140208-17">
+                <text>sui</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="140209" document_id="NT:2THESS_2:9">
+        <wds lnum="L1">
+            <w n="140209-1">
+                <text>οὗ</text>
+            </w>
+            <w n="140209-2">
+                <text>ἐστιν</text>
+            </w>
+            <w n="140209-3">
+                <text>ἡ</text>
+            </w>
+            <w n="140209-4">
+                <text>παρουσία</text>
+            </w>
+            <w n="140209-5">
+                <text>κατ’</text>
+            </w>
+            <w n="140209-6">
+                <text>ἐνέργειαν</text>
+            </w>
+            <w n="140209-7">
+                <text>τοῦ</text>
+            </w>
+            <w n="140209-8">
+                <text>σατανᾶ</text>
+            </w>
+            <w n="140209-9">
+                <text>ἐν</text>
+            </w>
+            <w n="140209-10">
+                <text>πάσῃ</text>
+            </w>
+            <w n="140209-11">
+                <text>δυνάμει</text>
+            </w>
+            <w n="140209-12">
+                <text>καὶ</text>
+            </w>
+            <w n="140209-13">
+                <text>σημείοις</text>
+            </w>
+            <w n="140209-14">
+                <text>καὶ</text>
+            </w>
+            <w n="140209-15">
+                <text>τέρασιν</text>
+            </w>
+            <w n="140209-16">
+                <text>ψεύδους</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="140209-1">
+                <text>eum</text>
+            </w>
+            <w n="140209-2">
+                <text>cuius</text>
+            </w>
+            <w n="140209-3">
+                <text>est</text>
+            </w>
+            <w n="140209-4">
+                <text>adventus</text>
+            </w>
+            <w n="140209-5">
+                <text>secundum</text>
+            </w>
+            <w n="140209-6">
+                <text>operationem</text>
+            </w>
+            <w n="140209-7">
+                <text>Satanae</text>
+            </w>
+            <w n="140209-8">
+                <text>in</text>
+            </w>
+            <w n="140209-9">
+                <text>omni</text>
+            </w>
+            <w n="140209-10">
+                <text>virtute</text>
+            </w>
+            <w n="140209-11">
+                <text>et</text>
+            </w>
+            <w n="140209-12">
+                <text>signis</text>
+            </w>
+            <w n="140209-13">
+                <text>et</text>
+            </w>
+            <w n="140209-14">
+                <text>prodigiis</text>
+            </w>
+            <w n="140209-15">
+                <text>mendacibus</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="140210" document_id="NT:2THESS_2:10">
+        <wds lnum="L1">
+            <w n="140210-1">
+                <text>καὶ</text>
+            </w>
+            <w n="140210-2">
+                <text>ἐν</text>
+            </w>
+            <w n="140210-3">
+                <text>πάσῃ</text>
+            </w>
+            <w n="140210-4">
+                <text>ἀπάτῃ</text>
+            </w>
+            <w n="140210-5">
+                <text>ἀδικίας</text>
+            </w>
+            <w n="140210-6">
+                <text>τοῖς</text>
+            </w>
+            <w n="140210-7">
+                <text>ἀπολλυμένοις</text>
+            </w>
+            <w n="140210-8">
+                <text>,</text>
+            </w>
+            <w n="140210-9">
+                <text>ἀνθ’</text>
+            </w>
+            <w n="140210-10">
+                <text>ὧν</text>
+            </w>
+            <w n="140210-11">
+                <text>τὴν</text>
+            </w>
+            <w n="140210-12">
+                <text>ἀγάπην</text>
+            </w>
+            <w n="140210-13">
+                <text>τῆς</text>
+            </w>
+            <w n="140210-14">
+                <text>ἀληθείας</text>
+            </w>
+            <w n="140210-15">
+                <text>οὐκ</text>
+            </w>
+            <w n="140210-16">
+                <text>ἐδέξαντο</text>
+            </w>
+            <w n="140210-17">
+                <text>εἰς</text>
+            </w>
+            <w n="140210-18">
+                <text>τὸ</text>
+            </w>
+            <w n="140210-19">
+                <text>σωθῆναι</text>
+            </w>
+            <w n="140210-20">
+                <text>αὐτούς</text>
+            </w>
+            <w n="140210-21">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="140210-1">
+                <text>et</text>
+            </w>
+            <w n="140210-2">
+                <text>in</text>
+            </w>
+            <w n="140210-3">
+                <text>omni</text>
+            </w>
+            <w n="140210-4">
+                <text>seductione</text>
+            </w>
+            <w n="140210-5">
+                <text>iniquitatis</text>
+            </w>
+            <w n="140210-6">
+                <text>his</text>
+            </w>
+            <w n="140210-7">
+                <text>qui</text>
+            </w>
+            <w n="140210-8">
+                <text>pereunt</text>
+            </w>
+            <w n="140210-9">
+                <text>eo</text>
+            </w>
+            <w n="140210-10">
+                <text>quod</text>
+            </w>
+            <w n="140210-11">
+                <text>caritatem</text>
+            </w>
+            <w n="140210-12">
+                <text>veritatis</text>
+            </w>
+            <w n="140210-13">
+                <text>non</text>
+            </w>
+            <w n="140210-14">
+                <text>receperunt</text>
+            </w>
+            <w n="140210-15">
+                <text>ut</text>
+            </w>
+            <w n="140210-16">
+                <text>salvi</text>
+            </w>
+            <w n="140210-17">
+                <text>fierent</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="140211" document_id="NT:2THESS_2:11">
+        <wds lnum="L1">
+            <w n="140211-1">
+                <text>καὶ</text>
+            </w>
+            <w n="140211-2">
+                <text>διὰ</text>
+            </w>
+            <w n="140211-3">
+                <text>τοῦτο</text>
+            </w>
+            <w n="140211-4">
+                <text>πέμπει</text>
+            </w>
+            <w n="140211-5">
+                <text>αὐτοῖς</text>
+            </w>
+            <w n="140211-6">
+                <text>ὁ</text>
+            </w>
+            <w n="140211-7">
+                <text>θεὸς</text>
+            </w>
+            <w n="140211-8">
+                <text>ἐνέργειαν</text>
+            </w>
+            <w n="140211-9">
+                <text>πλάνης</text>
+            </w>
+            <w n="140211-10">
+                <text>εἰς</text>
+            </w>
+            <w n="140211-11">
+                <text>τὸ</text>
+            </w>
+            <w n="140211-12">
+                <text>πιστεῦσαι</text>
+            </w>
+            <w n="140211-13">
+                <text>αὐτοὺς</text>
+            </w>
+            <w n="140211-14">
+                <text>τῷ</text>
+            </w>
+            <w n="140211-15">
+                <text>ψεύδει</text>
+            </w>
+            <w n="140211-16">
+                <text>,</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="140211-1">
+                <text>ideo</text>
+            </w>
+            <w n="140211-2">
+                <text>mittit</text>
+            </w>
+            <w n="140211-3">
+                <text>illis</text>
+            </w>
+            <w n="140211-4">
+                <text>Deus</text>
+            </w>
+            <w n="140211-5">
+                <text>operationem</text>
+            </w>
+            <w n="140211-6">
+                <text>erroris</text>
+            </w>
+            <w n="140211-7">
+                <text>ut</text>
+            </w>
+            <w n="140211-8">
+                <text>credant</text>
+            </w>
+            <w n="140211-9">
+                <text>mendacio</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="140212" document_id="NT:2THESS_2:12">
+        <wds lnum="L1">
+            <w n="140212-1">
+                <text>ἵνα</text>
+            </w>
+            <w n="140212-2">
+                <text>κριθῶσιν</text>
+            </w>
+            <w n="140212-3">
+                <text>ἅπαντες</text>
+            </w>
+            <w n="140212-4">
+                <text>οἱ</text>
+            </w>
+            <w n="140212-5">
+                <text>μὴ</text>
+            </w>
+            <w n="140212-6">
+                <text>πιστεύσαντες</text>
+            </w>
+            <w n="140212-7">
+                <text>τῇ</text>
+            </w>
+            <w n="140212-8">
+                <text>ἀληθείᾳ</text>
+            </w>
+            <w n="140212-9">
+                <text>ἀλλὰ</text>
+            </w>
+            <w n="140212-10">
+                <text>εὐδοκήσαντες</text>
+            </w>
+            <w n="140212-11">
+                <text>τῇ</text>
+            </w>
+            <w n="140212-12">
+                <text>ἀδικίᾳ</text>
+            </w>
+            <w n="140212-13">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="140212-1">
+                <text>ut</text>
+            </w>
+            <w n="140212-2">
+                <text>iudicentur</text>
+            </w>
+            <w n="140212-3">
+                <text>omnes</text>
+            </w>
+            <w n="140212-4">
+                <text>qui</text>
+            </w>
+            <w n="140212-5">
+                <text>non</text>
+            </w>
+            <w n="140212-6">
+                <text>crediderunt</text>
+            </w>
+            <w n="140212-7">
+                <text>veritati</text>
+            </w>
+            <w n="140212-8">
+                <text>sed</text>
+            </w>
+            <w n="140212-9">
+                <text>consenserunt</text>
+            </w>
+            <w n="140212-10">
+                <text>iniquitati</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="140213" document_id="NT:2THESS_2:13">
+        <wds lnum="L1">
+            <w n="140213-1">
+                <text>Ἡμεῖς</text>
+            </w>
+            <w n="140213-2">
+                <text>δὲ</text>
+            </w>
+            <w n="140213-3">
+                <text>ὀφείλομεν</text>
+            </w>
+            <w n="140213-4">
+                <text>εὐχαριστεῖν</text>
+            </w>
+            <w n="140213-5">
+                <text>τῷ</text>
+            </w>
+            <w n="140213-6">
+                <text>θεῷ</text>
+            </w>
+            <w n="140213-7">
+                <text>πάντοτε</text>
+            </w>
+            <w n="140213-8">
+                <text>περὶ</text>
+            </w>
+            <w n="140213-9">
+                <text>ὑμῶν</text>
+            </w>
+            <w n="140213-10">
+                <text>,</text>
+            </w>
+            <w n="140213-11">
+                <text>ἀδελφοὶ</text>
+            </w>
+            <w n="140213-12">
+                <text>ἠγαπημένοι</text>
+            </w>
+            <w n="140213-13">
+                <text>ὑπὸ</text>
+            </w>
+            <w n="140213-14">
+                <text>κυρίου</text>
+            </w>
+            <w n="140213-15">
+                <text>,</text>
+            </w>
+            <w n="140213-16">
+                <text>ὅτι</text>
+            </w>
+            <w n="140213-17">
+                <text>εἵλατο</text>
+            </w>
+            <w n="140213-18">
+                <text>ὑμᾶς</text>
+            </w>
+            <w n="140213-19">
+                <text>ὁ</text>
+            </w>
+            <w n="140213-20">
+                <text>θεὸς</text>
+            </w>
+            <w n="140213-21">
+                <text>ἀπ’</text>
+            </w>
+            <w n="140213-22">
+                <text>ἀρχῆς</text>
+            </w>
+            <w n="140213-23">
+                <text>εἰς</text>
+            </w>
+            <w n="140213-24">
+                <text>σωτηρίαν</text>
+            </w>
+            <w n="140213-25">
+                <text>ἐν</text>
+            </w>
+            <w n="140213-26">
+                <text>ἁγιασμῷ</text>
+            </w>
+            <w n="140213-27">
+                <text>πνεύματος</text>
+            </w>
+            <w n="140213-28">
+                <text>καὶ</text>
+            </w>
+            <w n="140213-29">
+                <text>πίστει</text>
+            </w>
+            <w n="140213-30">
+                <text>ἀληθείας</text>
+            </w>
+            <w n="140213-31">
+                <text>,</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="140213-1">
+                <text>nos</text>
+            </w>
+            <w n="140213-2">
+                <text>autem</text>
+            </w>
+            <w n="140213-3">
+                <text>debemus</text>
+            </w>
+            <w n="140213-4">
+                <text>gratias</text>
+            </w>
+            <w n="140213-5">
+                <text>agere</text>
+            </w>
+            <w n="140213-6">
+                <text>Deo</text>
+            </w>
+            <w n="140213-7">
+                <text>semper</text>
+            </w>
+            <w n="140213-8">
+                <text>pro</text>
+            </w>
+            <w n="140213-9">
+                <text>vobis</text>
+            </w>
+            <w n="140213-10">
+                <text>fratres</text>
+            </w>
+            <w n="140213-11">
+                <text>dilecti</text>
+            </w>
+            <w n="140213-12">
+                <text>a</text>
+            </w>
+            <w n="140213-13">
+                <text>Deo</text>
+            </w>
+            <w n="140213-14">
+                <text>quod</text>
+            </w>
+            <w n="140213-15">
+                <text>elegerit</text>
+            </w>
+            <w n="140213-16">
+                <text>nos</text>
+            </w>
+            <w n="140213-17">
+                <text>Deus</text>
+            </w>
+            <w n="140213-18">
+                <text>primitias</text>
+            </w>
+            <w n="140213-19">
+                <text>in</text>
+            </w>
+            <w n="140213-20">
+                <text>salutem</text>
+            </w>
+            <w n="140213-21">
+                <text>in</text>
+            </w>
+            <w n="140213-22">
+                <text>sanctificatione</text>
+            </w>
+            <w n="140213-23">
+                <text>Spiritus</text>
+            </w>
+            <w n="140213-24">
+                <text>et</text>
+            </w>
+            <w n="140213-25">
+                <text>fide</text>
+            </w>
+            <w n="140213-26">
+                <text>veritatis</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="140214" document_id="NT:2THESS_2:14">
+        <wds lnum="L1">
+            <w n="140214-1">
+                <text>εἰς</text>
+            </w>
+            <w n="140214-2">
+                <text>ὃ</text>
+            </w>
+            <w n="140214-3">
+                <text>καὶ</text>
+            </w>
+            <w n="140214-4">
+                <text>ἐκάλεσεν</text>
+            </w>
+            <w n="140214-5">
+                <text>ὑμᾶς</text>
+            </w>
+            <w n="140214-6">
+                <text>διὰ</text>
+            </w>
+            <w n="140214-7">
+                <text>τοῦ</text>
+            </w>
+            <w n="140214-8">
+                <text>εὐαγγελίου</text>
+            </w>
+            <w n="140214-9">
+                <text>ἡμῶν</text>
+            </w>
+            <w n="140214-10">
+                <text>,</text>
+            </w>
+            <w n="140214-11">
+                <text>εἰς</text>
+            </w>
+            <w n="140214-12">
+                <text>περιποίησιν</text>
+            </w>
+            <w n="140214-13">
+                <text>δόξης</text>
+            </w>
+            <w n="140214-14">
+                <text>τοῦ</text>
+            </w>
+            <w n="140214-15">
+                <text>κυρίου</text>
+            </w>
+            <w n="140214-16">
+                <text>ἡμῶν</text>
+            </w>
+            <w n="140214-17">
+                <text>Ἰησοῦ</text>
+            </w>
+            <w n="140214-18">
+                <text>Χριστοῦ</text>
+            </w>
+            <w n="140214-19">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="140214-1">
+                <text>ad</text>
+            </w>
+            <w n="140214-2">
+                <text>quod</text>
+            </w>
+            <w n="140214-3">
+                <text>et</text>
+            </w>
+            <w n="140214-4">
+                <text>vocavit</text>
+            </w>
+            <w n="140214-5">
+                <text>vos</text>
+            </w>
+            <w n="140214-6">
+                <text>per</text>
+            </w>
+            <w n="140214-7">
+                <text>evangelium</text>
+            </w>
+            <w n="140214-8">
+                <text>nostrum</text>
+            </w>
+            <w n="140214-9">
+                <text>in</text>
+            </w>
+            <w n="140214-10">
+                <text>adquisitionem</text>
+            </w>
+            <w n="140214-11">
+                <text>gloriae</text>
+            </w>
+            <w n="140214-12">
+                <text>Domini</text>
+            </w>
+            <w n="140214-13">
+                <text>nostri</text>
+            </w>
+            <w n="140214-14">
+                <text>Iesu</text>
+            </w>
+            <w n="140214-15">
+                <text>Christi</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="140215" document_id="NT:2THESS_2:15">
+        <wds lnum="L1">
+            <w n="140215-1">
+                <text>ἄρα</text>
+            </w>
+            <w n="140215-2">
+                <text>οὖν</text>
+            </w>
+            <w n="140215-3">
+                <text>,</text>
+            </w>
+            <w n="140215-4">
+                <text>ἀδελφοί</text>
+            </w>
+            <w n="140215-5">
+                <text>,</text>
+            </w>
+            <w n="140215-6">
+                <text>στήκετε</text>
+            </w>
+            <w n="140215-7">
+                <text>,</text>
+            </w>
+            <w n="140215-8">
+                <text>καὶ</text>
+            </w>
+            <w n="140215-9">
+                <text>κρατεῖτε</text>
+            </w>
+            <w n="140215-10">
+                <text>τὰς</text>
+            </w>
+            <w n="140215-11">
+                <text>παραδόσεις</text>
+            </w>
+            <w n="140215-12">
+                <text>ἃς</text>
+            </w>
+            <w n="140215-13">
+                <text>ἐδιδάχθητε</text>
+            </w>
+            <w n="140215-14">
+                <text>εἴτε</text>
+            </w>
+            <w n="140215-15">
+                <text>διὰ</text>
+            </w>
+            <w n="140215-16">
+                <text>λόγου</text>
+            </w>
+            <w n="140215-17">
+                <text>εἴτε</text>
+            </w>
+            <w n="140215-18">
+                <text>δι’</text>
+            </w>
+            <w n="140215-19">
+                <text>ἐπιστολῆς</text>
+            </w>
+            <w n="140215-20">
+                <text>ἡμῶν</text>
+            </w>
+            <w n="140215-21">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="140215-1">
+                <text>itaque</text>
+            </w>
+            <w n="140215-2">
+                <text>fratres</text>
+            </w>
+            <w n="140215-3">
+                <text>state</text>
+            </w>
+            <w n="140215-4">
+                <text>et</text>
+            </w>
+            <w n="140215-5">
+                <text>tenete</text>
+            </w>
+            <w n="140215-6">
+                <text>traditiones</text>
+            </w>
+            <w n="140215-7">
+                <text>quas</text>
+            </w>
+            <w n="140215-8">
+                <text>didicistis</text>
+            </w>
+            <w n="140215-9">
+                <text>sive</text>
+            </w>
+            <w n="140215-10">
+                <text>per</text>
+            </w>
+            <w n="140215-11">
+                <text>sermonem</text>
+            </w>
+            <w n="140215-12">
+                <text>sive</text>
+            </w>
+            <w n="140215-13">
+                <text>per</text>
+            </w>
+            <w n="140215-14">
+                <text>epistulam</text>
+            </w>
+            <w n="140215-15">
+                <text>nostram</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="140216" document_id="NT:2THESS_2:16">
+        <wds lnum="L1">
+            <w n="140216-1">
+                <text>αὐτὸς</text>
+            </w>
+            <w n="140216-2">
+                <text>δὲ</text>
+            </w>
+            <w n="140216-3">
+                <text>ὁ</text>
+            </w>
+            <w n="140216-4">
+                <text>κύριος</text>
+            </w>
+            <w n="140216-5">
+                <text>ἡμῶν</text>
+            </w>
+            <w n="140216-6">
+                <text>Ἰησοῦς</text>
+            </w>
+            <w n="140216-7">
+                <text>Χριστὸς</text>
+            </w>
+            <w n="140216-8">
+                <text>καὶ</text>
+            </w>
+            <w n="140216-9">
+                <text>ὁ</text>
+            </w>
+            <w n="140216-10">
+                <text>θεὸς</text>
+            </w>
+            <w n="140216-11">
+                <text>ὁ</text>
+            </w>
+            <w n="140216-12">
+                <text>πατὴρ</text>
+            </w>
+            <w n="140216-13">
+                <text>ἡμῶν</text>
+            </w>
+            <w n="140216-14">
+                <text>,</text>
+            </w>
+            <w n="140216-15">
+                <text>ὁ</text>
+            </w>
+            <w n="140216-16">
+                <text>ἀγαπήσας</text>
+            </w>
+            <w n="140216-17">
+                <text>ἡμᾶς</text>
+            </w>
+            <w n="140216-18">
+                <text>καὶ</text>
+            </w>
+            <w n="140216-19">
+                <text>δοὺς</text>
+            </w>
+            <w n="140216-20">
+                <text>παράκλησιν</text>
+            </w>
+            <w n="140216-21">
+                <text>αἰωνίαν</text>
+            </w>
+            <w n="140216-22">
+                <text>καὶ</text>
+            </w>
+            <w n="140216-23">
+                <text>ἐλπίδα</text>
+            </w>
+            <w n="140216-24">
+                <text>ἀγαθὴν</text>
+            </w>
+            <w n="140216-25">
+                <text>ἐν</text>
+            </w>
+            <w n="140216-26">
+                <text>χάριτι</text>
+            </w>
+            <w n="140216-27">
+                <text>,</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="140216-1">
+                <text>ipse</text>
+            </w>
+            <w n="140216-2">
+                <text>autem</text>
+            </w>
+            <w n="140216-3">
+                <text>Dominus</text>
+            </w>
+            <w n="140216-4">
+                <text>noster</text>
+            </w>
+            <w n="140216-5">
+                <text>Iesus</text>
+            </w>
+            <w n="140216-6">
+                <text>Christus</text>
+            </w>
+            <w n="140216-7">
+                <text>et</text>
+            </w>
+            <w n="140216-8">
+                <text>Deus</text>
+            </w>
+            <w n="140216-9">
+                <text>et</text>
+            </w>
+            <w n="140216-10">
+                <text>Pater</text>
+            </w>
+            <w n="140216-11">
+                <text>noster</text>
+            </w>
+            <w n="140216-12">
+                <text>qui</text>
+            </w>
+            <w n="140216-13">
+                <text>dilexit</text>
+            </w>
+            <w n="140216-14">
+                <text>nos</text>
+            </w>
+            <w n="140216-15">
+                <text>et</text>
+            </w>
+            <w n="140216-16">
+                <text>dedit</text>
+            </w>
+            <w n="140216-17">
+                <text>consolationem</text>
+            </w>
+            <w n="140216-18">
+                <text>aeternam</text>
+            </w>
+            <w n="140216-19">
+                <text>et</text>
+            </w>
+            <w n="140216-20">
+                <text>spem</text>
+            </w>
+            <w n="140216-21">
+                <text>bonam</text>
+            </w>
+            <w n="140216-22">
+                <text>in</text>
+            </w>
+            <w n="140216-23">
+                <text>gratia</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="140217" document_id="NT:2THESS_2:17">
+        <wds lnum="L1">
+            <w n="140217-1">
+                <text>παρακαλέσαι</text>
+            </w>
+            <w n="140217-2">
+                <text>ὑμῶν</text>
+            </w>
+            <w n="140217-3">
+                <text>τὰς</text>
+            </w>
+            <w n="140217-4">
+                <text>καρδίας</text>
+            </w>
+            <w n="140217-5">
+                <text>καὶ</text>
+            </w>
+            <w n="140217-6">
+                <text>στηρίξαι</text>
+            </w>
+            <w n="140217-7">
+                <text>ἐν</text>
+            </w>
+            <w n="140217-8">
+                <text>παντὶ</text>
+            </w>
+            <w n="140217-9">
+                <text>ἔργῳ</text>
+            </w>
+            <w n="140217-10">
+                <text>καὶ</text>
+            </w>
+            <w n="140217-11">
+                <text>λόγῳ</text>
+            </w>
+            <w n="140217-12">
+                <text>ἀγαθῷ</text>
+            </w>
+            <w n="140217-13">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="140217-1">
+                <text>exhortetur</text>
+            </w>
+            <w n="140217-2">
+                <text>corda</text>
+            </w>
+            <w n="140217-3">
+                <text>vestra</text>
+            </w>
+            <w n="140217-4">
+                <text>et</text>
+            </w>
+            <w n="140217-5">
+                <text>confirmet</text>
+            </w>
+            <w n="140217-6">
+                <text>in</text>
+            </w>
+            <w n="140217-7">
+                <text>omni</text>
+            </w>
+            <w n="140217-8">
+                <text>opere</text>
+            </w>
+            <w n="140217-9">
+                <text>et</text>
+            </w>
+            <w n="140217-10">
+                <text>sermone</text>
+            </w>
+            <w n="140217-11">
+                <text>bono</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="140301" document_id="NT:2THESS_3:1">
+        <wds lnum="L1">
+            <w n="140301-1">
+                <text>Τὸ</text>
+            </w>
+            <w n="140301-2">
+                <text>λοιπὸν</text>
+            </w>
+            <w n="140301-3">
+                <text>προσεύχεσθε</text>
+            </w>
+            <w n="140301-4">
+                <text>,</text>
+            </w>
+            <w n="140301-5">
+                <text>ἀδελφοί</text>
+            </w>
+            <w n="140301-6">
+                <text>,</text>
+            </w>
+            <w n="140301-7">
+                <text>περὶ</text>
+            </w>
+            <w n="140301-8">
+                <text>ἡμῶν</text>
+            </w>
+            <w n="140301-9">
+                <text>,</text>
+            </w>
+            <w n="140301-10">
+                <text>ἵνα</text>
+            </w>
+            <w n="140301-11">
+                <text>ὁ</text>
+            </w>
+            <w n="140301-12">
+                <text>λόγος</text>
+            </w>
+            <w n="140301-13">
+                <text>τοῦ</text>
+            </w>
+            <w n="140301-14">
+                <text>κυρίου</text>
+            </w>
+            <w n="140301-15">
+                <text>τρέχῃ</text>
+            </w>
+            <w n="140301-16">
+                <text>καὶ</text>
+            </w>
+            <w n="140301-17">
+                <text>δοξάζηται</text>
+            </w>
+            <w n="140301-18">
+                <text>καθὼς</text>
+            </w>
+            <w n="140301-19">
+                <text>καὶ</text>
+            </w>
+            <w n="140301-20">
+                <text>πρὸς</text>
+            </w>
+            <w n="140301-21">
+                <text>ὑμᾶς</text>
+            </w>
+            <w n="140301-22">
+                <text>,</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="140301-1">
+                <text>de</text>
+            </w>
+            <w n="140301-2">
+                <text>cetero</text>
+            </w>
+            <w n="140301-3">
+                <text>fratres</text>
+            </w>
+            <w n="140301-4">
+                <text>orate</text>
+            </w>
+            <w n="140301-5">
+                <text>pro</text>
+            </w>
+            <w n="140301-6">
+                <text>nobis</text>
+            </w>
+            <w n="140301-7">
+                <text>ut</text>
+            </w>
+            <w n="140301-8">
+                <text>sermo</text>
+            </w>
+            <w n="140301-9">
+                <text>Domini</text>
+            </w>
+            <w n="140301-10">
+                <text>currat</text>
+            </w>
+            <w n="140301-11">
+                <text>et</text>
+            </w>
+            <w n="140301-12">
+                <text>clarificetur</text>
+            </w>
+            <w n="140301-13">
+                <text>sicut</text>
+            </w>
+            <w n="140301-14">
+                <text>et</text>
+            </w>
+            <w n="140301-15">
+                <text>apud</text>
+            </w>
+            <w n="140301-16">
+                <text>vos</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="140302" document_id="NT:2THESS_3:2">
+        <wds lnum="L1">
+            <w n="140302-1">
+                <text>καὶ</text>
+            </w>
+            <w n="140302-2">
+                <text>ἵνα</text>
+            </w>
+            <w n="140302-3">
+                <text>ῥυσθῶμεν</text>
+            </w>
+            <w n="140302-4">
+                <text>ἀπὸ</text>
+            </w>
+            <w n="140302-5">
+                <text>τῶν</text>
+            </w>
+            <w n="140302-6">
+                <text>ἀτόπων</text>
+            </w>
+            <w n="140302-7">
+                <text>καὶ</text>
+            </w>
+            <w n="140302-8">
+                <text>πονηρῶν</text>
+            </w>
+            <w n="140302-9">
+                <text>ἀνθρώπων</text>
+            </w>
+            <w n="140302-10">
+                <text>·</text>
+            </w>
+            <w n="140302-11">
+                <text>οὐ</text>
+            </w>
+            <w n="140302-12">
+                <text>γὰρ</text>
+            </w>
+            <w n="140302-13">
+                <text>πάντων</text>
+            </w>
+            <w n="140302-14">
+                <text>ἡ</text>
+            </w>
+            <w n="140302-15">
+                <text>πίστις</text>
+            </w>
+            <w n="140302-16">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="140302-1">
+                <text>et</text>
+            </w>
+            <w n="140302-2">
+                <text>ut</text>
+            </w>
+            <w n="140302-3">
+                <text>liberemur</text>
+            </w>
+            <w n="140302-4">
+                <text>ab</text>
+            </w>
+            <w n="140302-5">
+                <text>inportunis</text>
+            </w>
+            <w n="140302-6">
+                <text>et</text>
+            </w>
+            <w n="140302-7">
+                <text>malis</text>
+            </w>
+            <w n="140302-8">
+                <text>hominibus</text>
+            </w>
+            <w n="140302-9">
+                <text>non</text>
+            </w>
+            <w n="140302-10">
+                <text>enim</text>
+            </w>
+            <w n="140302-11">
+                <text>omnium</text>
+            </w>
+            <w n="140302-12">
+                <text>est</text>
+            </w>
+            <w n="140302-13">
+                <text>fides</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="140303" document_id="NT:2THESS_3:3">
+        <wds lnum="L1">
+            <w n="140303-1">
+                <text>πιστὸς</text>
+            </w>
+            <w n="140303-2">
+                <text>δέ</text>
+            </w>
+            <w n="140303-3">
+                <text>ἐστιν</text>
+            </w>
+            <w n="140303-4">
+                <text>ὁ</text>
+            </w>
+            <w n="140303-5">
+                <text>κύριος</text>
+            </w>
+            <w n="140303-6">
+                <text>,</text>
+            </w>
+            <w n="140303-7">
+                <text>ὃς</text>
+            </w>
+            <w n="140303-8">
+                <text>στηρίξει</text>
+            </w>
+            <w n="140303-9">
+                <text>ὑμᾶς</text>
+            </w>
+            <w n="140303-10">
+                <text>καὶ</text>
+            </w>
+            <w n="140303-11">
+                <text>φυλάξει</text>
+            </w>
+            <w n="140303-12">
+                <text>ἀπὸ</text>
+            </w>
+            <w n="140303-13">
+                <text>τοῦ</text>
+            </w>
+            <w n="140303-14">
+                <text>πονηροῦ</text>
+            </w>
+            <w n="140303-15">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="140303-1">
+                <text>fidelis</text>
+            </w>
+            <w n="140303-2">
+                <text>autem</text>
+            </w>
+            <w n="140303-3">
+                <text>Dominus</text>
+            </w>
+            <w n="140303-4">
+                <text>est</text>
+            </w>
+            <w n="140303-5">
+                <text>qui</text>
+            </w>
+            <w n="140303-6">
+                <text>confirmabit</text>
+            </w>
+            <w n="140303-7">
+                <text>vos</text>
+            </w>
+            <w n="140303-8">
+                <text>et</text>
+            </w>
+            <w n="140303-9">
+                <text>custodiet</text>
+            </w>
+            <w n="140303-10">
+                <text>a</text>
+            </w>
+            <w n="140303-11">
+                <text>malo</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="140304" document_id="NT:2THESS_3:4">
+        <wds lnum="L1">
+            <w n="140304-1">
+                <text>πεποίθαμεν</text>
+            </w>
+            <w n="140304-2">
+                <text>δὲ</text>
+            </w>
+            <w n="140304-3">
+                <text>ἐν</text>
+            </w>
+            <w n="140304-4">
+                <text>κυρίῳ</text>
+            </w>
+            <w n="140304-5">
+                <text>ἐφ’</text>
+            </w>
+            <w n="140304-6">
+                <text>ὑμᾶς</text>
+            </w>
+            <w n="140304-7">
+                <text>,</text>
+            </w>
+            <w n="140304-8">
+                <text>ὅτι</text>
+            </w>
+            <w n="140304-9">
+                <text>ἃ</text>
+            </w>
+            <w n="140304-10">
+                <text>παραγγέλλομεν</text>
+            </w>
+            <w n="140304-11">
+                <text>ποιεῖτε</text>
+            </w>
+            <w n="140304-12">
+                <text>καὶ</text>
+            </w>
+            <w n="140304-13">
+                <text>ποιήσετε</text>
+            </w>
+            <w n="140304-14">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="140304-1">
+                <text>confidimus</text>
+            </w>
+            <w n="140304-2">
+                <text>autem</text>
+            </w>
+            <w n="140304-3">
+                <text>de</text>
+            </w>
+            <w n="140304-4">
+                <text>vobis</text>
+            </w>
+            <w n="140304-5">
+                <text>in</text>
+            </w>
+            <w n="140304-6">
+                <text>Domino</text>
+            </w>
+            <w n="140304-7">
+                <text>quoniam</text>
+            </w>
+            <w n="140304-8">
+                <text>quae</text>
+            </w>
+            <w n="140304-9">
+                <text>praecipimus</text>
+            </w>
+            <w n="140304-10">
+                <text>et</text>
+            </w>
+            <w n="140304-11">
+                <text>facitis</text>
+            </w>
+            <w n="140304-12">
+                <text>et</text>
+            </w>
+            <w n="140304-13">
+                <text>facietis</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="140305" document_id="NT:2THESS_3:5">
+        <wds lnum="L1">
+            <w n="140305-1">
+                <text>ὁ</text>
+            </w>
+            <w n="140305-2">
+                <text>δὲ</text>
+            </w>
+            <w n="140305-3">
+                <text>κύριος</text>
+            </w>
+            <w n="140305-4">
+                <text>κατευθύναι</text>
+            </w>
+            <w n="140305-5">
+                <text>ὑμῶν</text>
+            </w>
+            <w n="140305-6">
+                <text>τὰς</text>
+            </w>
+            <w n="140305-7">
+                <text>καρδίας</text>
+            </w>
+            <w n="140305-8">
+                <text>εἰς</text>
+            </w>
+            <w n="140305-9">
+                <text>τὴν</text>
+            </w>
+            <w n="140305-10">
+                <text>ἀγάπην</text>
+            </w>
+            <w n="140305-11">
+                <text>τοῦ</text>
+            </w>
+            <w n="140305-12">
+                <text>θεοῦ</text>
+            </w>
+            <w n="140305-13">
+                <text>καὶ</text>
+            </w>
+            <w n="140305-14">
+                <text>εἰς</text>
+            </w>
+            <w n="140305-15">
+                <text>τὴν</text>
+            </w>
+            <w n="140305-16">
+                <text>ὑπομονὴν</text>
+            </w>
+            <w n="140305-17">
+                <text>τοῦ</text>
+            </w>
+            <w n="140305-18">
+                <text>Χριστοῦ</text>
+            </w>
+            <w n="140305-19">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="140305-1">
+                <text>Dominus</text>
+            </w>
+            <w n="140305-2">
+                <text>autem</text>
+            </w>
+            <w n="140305-3">
+                <text>dirigat</text>
+            </w>
+            <w n="140305-4">
+                <text>corda</text>
+            </w>
+            <w n="140305-5">
+                <text>vestra</text>
+            </w>
+            <w n="140305-6">
+                <text>in</text>
+            </w>
+            <w n="140305-7">
+                <text>caritate</text>
+            </w>
+            <w n="140305-8">
+                <text>Dei</text>
+            </w>
+            <w n="140305-9">
+                <text>et</text>
+            </w>
+            <w n="140305-10">
+                <text>patientia</text>
+            </w>
+            <w n="140305-11">
+                <text>Christi</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="140306" document_id="NT:2THESS_3:6">
+        <wds lnum="L1">
+            <w n="140306-1">
+                <text>Παραγγέλλομεν</text>
+            </w>
+            <w n="140306-2">
+                <text>δὲ</text>
+            </w>
+            <w n="140306-3">
+                <text>ὑμῖν</text>
+            </w>
+            <w n="140306-4">
+                <text>,</text>
+            </w>
+            <w n="140306-5">
+                <text>ἀδελφοί</text>
+            </w>
+            <w n="140306-6">
+                <text>,</text>
+            </w>
+            <w n="140306-7">
+                <text>ἐν</text>
+            </w>
+            <w n="140306-8">
+                <text>ὀνόματι</text>
+            </w>
+            <w n="140306-9">
+                <text>τοῦ</text>
+            </w>
+            <w n="140306-10">
+                <text>κυρίου</text>
+            </w>
+            <w n="140306-11">
+                <text>ἡμῶν</text>
+            </w>
+            <w n="140306-12">
+                <text>Ἰησοῦ</text>
+            </w>
+            <w n="140306-13">
+                <text>Χριστοῦ</text>
+            </w>
+            <w n="140306-14">
+                <text>,</text>
+            </w>
+            <w n="140306-15">
+                <text>στέλλεσθαι</text>
+            </w>
+            <w n="140306-16">
+                <text>ὑμᾶς</text>
+            </w>
+            <w n="140306-17">
+                <text>ἀπὸ</text>
+            </w>
+            <w n="140306-18">
+                <text>παντὸς</text>
+            </w>
+            <w n="140306-19">
+                <text>ἀδελφοῦ</text>
+            </w>
+            <w n="140306-20">
+                <text>ἀτάκτως</text>
+            </w>
+            <w n="140306-21">
+                <text>περιπατοῦντος</text>
+            </w>
+            <w n="140306-22">
+                <text>καὶ</text>
+            </w>
+            <w n="140306-23">
+                <text>μὴ</text>
+            </w>
+            <w n="140306-24">
+                <text>κατὰ</text>
+            </w>
+            <w n="140306-25">
+                <text>τὴν</text>
+            </w>
+            <w n="140306-26">
+                <text>παράδοσιν</text>
+            </w>
+            <w n="140306-27">
+                <text>ἣν</text>
+            </w>
+            <w n="140306-28">
+                <text>παρελάβοσαν</text>
+            </w>
+            <w n="140306-29">
+                <text>παρ’</text>
+            </w>
+            <w n="140306-30">
+                <text>ἡμῶν</text>
+            </w>
+            <w n="140306-31">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="140306-1">
+                <text>denuntiamus</text>
+            </w>
+            <w n="140306-2">
+                <text>autem</text>
+            </w>
+            <w n="140306-3">
+                <text>vobis</text>
+            </w>
+            <w n="140306-4">
+                <text>fratres</text>
+            </w>
+            <w n="140306-5">
+                <text>in</text>
+            </w>
+            <w n="140306-6">
+                <text>nomine</text>
+            </w>
+            <w n="140306-7">
+                <text>Domini</text>
+            </w>
+            <w n="140306-8">
+                <text>nostri</text>
+            </w>
+            <w n="140306-9">
+                <text>Iesu</text>
+            </w>
+            <w n="140306-10">
+                <text>Christi</text>
+            </w>
+            <w n="140306-11">
+                <text>ut</text>
+            </w>
+            <w n="140306-12">
+                <text>subtrahatis</text>
+            </w>
+            <w n="140306-13">
+                <text>vos</text>
+            </w>
+            <w n="140306-14">
+                <text>ab</text>
+            </w>
+            <w n="140306-15">
+                <text>omni</text>
+            </w>
+            <w n="140306-16">
+                <text>fratre</text>
+            </w>
+            <w n="140306-17">
+                <text>ambulante</text>
+            </w>
+            <w n="140306-18">
+                <text>inordinate</text>
+            </w>
+            <w n="140306-19">
+                <text>et</text>
+            </w>
+            <w n="140306-20">
+                <text>non</text>
+            </w>
+            <w n="140306-21">
+                <text>secundum</text>
+            </w>
+            <w n="140306-22">
+                <text>traditionem</text>
+            </w>
+            <w n="140306-23">
+                <text>quam</text>
+            </w>
+            <w n="140306-24">
+                <text>acceperunt</text>
+            </w>
+            <w n="140306-25">
+                <text>a</text>
+            </w>
+            <w n="140306-26">
+                <text>nobis</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="140307" document_id="NT:2THESS_3:7">
+        <wds lnum="L1">
+            <w n="140307-1">
+                <text>αὐτοὶ</text>
+            </w>
+            <w n="140307-2">
+                <text>γὰρ</text>
+            </w>
+            <w n="140307-3">
+                <text>οἴδατε</text>
+            </w>
+            <w n="140307-4">
+                <text>πῶς</text>
+            </w>
+            <w n="140307-5">
+                <text>δεῖ</text>
+            </w>
+            <w n="140307-6">
+                <text>μιμεῖσθαι</text>
+            </w>
+            <w n="140307-7">
+                <text>ἡμᾶς</text>
+            </w>
+            <w n="140307-8">
+                <text>,</text>
+            </w>
+            <w n="140307-9">
+                <text>ὅτι</text>
+            </w>
+            <w n="140307-10">
+                <text>οὐκ</text>
+            </w>
+            <w n="140307-11">
+                <text>ἠτακτήσαμεν</text>
+            </w>
+            <w n="140307-12">
+                <text>ἐν</text>
+            </w>
+            <w n="140307-13">
+                <text>ὑμῖν</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="140307-1">
+                <text>ipsi</text>
+            </w>
+            <w n="140307-2">
+                <text>enim</text>
+            </w>
+            <w n="140307-3">
+                <text>scitis</text>
+            </w>
+            <w n="140307-4">
+                <text>quemadmodum</text>
+            </w>
+            <w n="140307-5">
+                <text>oporteat</text>
+            </w>
+            <w n="140307-6">
+                <text>imitari</text>
+            </w>
+            <w n="140307-7">
+                <text>nos</text>
+            </w>
+            <w n="140307-8">
+                <text>quoniam</text>
+            </w>
+            <w n="140307-9">
+                <text>non</text>
+            </w>
+            <w n="140307-10">
+                <text>inquieti</text>
+            </w>
+            <w n="140307-11">
+                <text>fuimus</text>
+            </w>
+            <w n="140307-12">
+                <text>inter</text>
+            </w>
+            <w n="140307-13">
+                <text>vos</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="140308" document_id="NT:2THESS_3:8">
+        <wds lnum="L1">
+            <w n="140308-1">
+                <text>οὐδὲ</text>
+            </w>
+            <w n="140308-2">
+                <text>δωρεὰν</text>
+            </w>
+            <w n="140308-3">
+                <text>ἄρτον</text>
+            </w>
+            <w n="140308-4">
+                <text>ἐφάγομεν</text>
+            </w>
+            <w n="140308-5">
+                <text>παρά</text>
+            </w>
+            <w n="140308-6">
+                <text>τινος</text>
+            </w>
+            <w n="140308-7">
+                <text>,</text>
+            </w>
+            <w n="140308-8">
+                <text>ἀλλ’</text>
+            </w>
+            <w n="140308-9">
+                <text>ἐν</text>
+            </w>
+            <w n="140308-10">
+                <text>κόπῳ</text>
+            </w>
+            <w n="140308-11">
+                <text>καὶ</text>
+            </w>
+            <w n="140308-12">
+                <text>μόχθῳ</text>
+            </w>
+            <w n="140308-13">
+                <text>νυκτὸς</text>
+            </w>
+            <w n="140308-14">
+                <text>καὶ</text>
+            </w>
+            <w n="140308-15">
+                <text>ἡμέρας</text>
+            </w>
+            <w n="140308-16">
+                <text>ἐργαζόμενοι</text>
+            </w>
+            <w n="140308-17">
+                <text>πρὸς</text>
+            </w>
+            <w n="140308-18">
+                <text>τὸ</text>
+            </w>
+            <w n="140308-19">
+                <text>μὴ</text>
+            </w>
+            <w n="140308-20">
+                <text>ἐπιβαρῆσαί</text>
+            </w>
+            <w n="140308-21">
+                <text>τινα</text>
+            </w>
+            <w n="140308-22">
+                <text>ὑμῶν</text>
+            </w>
+            <w n="140308-23">
+                <text>·</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="140308-1">
+                <text>ne</text>
+            </w>
+            <w n="140308-2">
+                <text>que</text>
+            </w>
+            <w n="140308-3">
+                <text>gratis</text>
+            </w>
+            <w n="140308-4">
+                <text>panem</text>
+            </w>
+            <w n="140308-5">
+                <text>manducavimus</text>
+            </w>
+            <w n="140308-6">
+                <text>ab</text>
+            </w>
+            <w n="140308-7">
+                <text>aliquo</text>
+            </w>
+            <w n="140308-8">
+                <text>sed</text>
+            </w>
+            <w n="140308-9">
+                <text>in</text>
+            </w>
+            <w n="140308-10">
+                <text>labore</text>
+            </w>
+            <w n="140308-11">
+                <text>et</text>
+            </w>
+            <w n="140308-12">
+                <text>fatigatione</text>
+            </w>
+            <w n="140308-13">
+                <text>nocte</text>
+            </w>
+            <w n="140308-14">
+                <text>et</text>
+            </w>
+            <w n="140308-15">
+                <text>die</text>
+            </w>
+            <w n="140308-16">
+                <text>operantes</text>
+            </w>
+            <w n="140308-17">
+                <text>ne</text>
+            </w>
+            <w n="140308-18">
+                <text>quem</text>
+            </w>
+            <w n="140308-19">
+                <text>vestrum</text>
+            </w>
+            <w n="140308-20">
+                <text>gravaremus</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="140309" document_id="NT:2THESS_3:9">
+        <wds lnum="L1">
+            <w n="140309-1">
+                <text>οὐχ</text>
+            </w>
+            <w n="140309-2">
+                <text>ὅτι</text>
+            </w>
+            <w n="140309-3">
+                <text>οὐκ</text>
+            </w>
+            <w n="140309-4">
+                <text>ἔχομεν</text>
+            </w>
+            <w n="140309-5">
+                <text>ἐξουσίαν</text>
+            </w>
+            <w n="140309-6">
+                <text>,</text>
+            </w>
+            <w n="140309-7">
+                <text>ἀλλ’</text>
+            </w>
+            <w n="140309-8">
+                <text>ἵνα</text>
+            </w>
+            <w n="140309-9">
+                <text>ἑαυτοὺς</text>
+            </w>
+            <w n="140309-10">
+                <text>τύπον</text>
+            </w>
+            <w n="140309-11">
+                <text>δῶμεν</text>
+            </w>
+            <w n="140309-12">
+                <text>ὑμῖν</text>
+            </w>
+            <w n="140309-13">
+                <text>εἰς</text>
+            </w>
+            <w n="140309-14">
+                <text>τὸ</text>
+            </w>
+            <w n="140309-15">
+                <text>μιμεῖσθαι</text>
+            </w>
+            <w n="140309-16">
+                <text>ἡμᾶς</text>
+            </w>
+            <w n="140309-17">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="140309-1">
+                <text>non</text>
+            </w>
+            <w n="140309-2">
+                <text>quasi</text>
+            </w>
+            <w n="140309-3">
+                <text>non</text>
+            </w>
+            <w n="140309-4">
+                <text>habuerimus</text>
+            </w>
+            <w n="140309-5">
+                <text>potestatem</text>
+            </w>
+            <w n="140309-6">
+                <text>sed</text>
+            </w>
+            <w n="140309-7">
+                <text>ut</text>
+            </w>
+            <w n="140309-8">
+                <text>nos</text>
+            </w>
+            <w n="140309-9">
+                <text>met</text>
+            </w>
+            <w n="140309-10">
+                <text>ipsos</text>
+            </w>
+            <w n="140309-11">
+                <text>formam</text>
+            </w>
+            <w n="140309-12">
+                <text>daremus</text>
+            </w>
+            <w n="140309-13">
+                <text>vobis</text>
+            </w>
+            <w n="140309-14">
+                <text>ad</text>
+            </w>
+            <w n="140309-15">
+                <text>imitandum</text>
+            </w>
+            <w n="140309-16">
+                <text>nos</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="140310" document_id="NT:2THESS_3:10">
+        <wds lnum="L1">
+            <w n="140310-1">
+                <text>καὶ</text>
+            </w>
+            <w n="140310-2">
+                <text>γὰρ</text>
+            </w>
+            <w n="140310-3">
+                <text>ὅτε</text>
+            </w>
+            <w n="140310-4">
+                <text>ἦμεν</text>
+            </w>
+            <w n="140310-5">
+                <text>πρὸς</text>
+            </w>
+            <w n="140310-6">
+                <text>ὑμᾶς</text>
+            </w>
+            <w n="140310-7">
+                <text>,</text>
+            </w>
+            <w n="140310-8">
+                <text>τοῦτο</text>
+            </w>
+            <w n="140310-9">
+                <text>παρηγγέλλομεν</text>
+            </w>
+            <w n="140310-10">
+                <text>ὑμῖν</text>
+            </w>
+            <w n="140310-11">
+                <text>,</text>
+            </w>
+            <w n="140310-12">
+                <text>ὅτι</text>
+            </w>
+            <w n="140310-13">
+                <text>εἴ</text>
+            </w>
+            <w n="140310-14">
+                <text>τις</text>
+            </w>
+            <w n="140310-15">
+                <text>οὐ</text>
+            </w>
+            <w n="140310-16">
+                <text>θέλει</text>
+            </w>
+            <w n="140310-17">
+                <text>ἐργάζεσθαι</text>
+            </w>
+            <w n="140310-18">
+                <text>μηδὲ</text>
+            </w>
+            <w n="140310-19">
+                <text>ἐσθιέτω</text>
+            </w>
+            <w n="140310-20">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="140310-1">
+                <text>nam</text>
+            </w>
+            <w n="140310-2">
+                <text>et</text>
+            </w>
+            <w n="140310-3">
+                <text>cum</text>
+            </w>
+            <w n="140310-4">
+                <text>essemus</text>
+            </w>
+            <w n="140310-5">
+                <text>apud</text>
+            </w>
+            <w n="140310-6">
+                <text>vos</text>
+            </w>
+            <w n="140310-7">
+                <text>hoc</text>
+            </w>
+            <w n="140310-8">
+                <text>denuntiabamus</text>
+            </w>
+            <w n="140310-9">
+                <text>vobis</text>
+            </w>
+            <w n="140310-10">
+                <text>quoniam</text>
+            </w>
+            <w n="140310-11">
+                <text>si</text>
+            </w>
+            <w n="140310-12">
+                <text>quis</text>
+            </w>
+            <w n="140310-13">
+                <text>non</text>
+            </w>
+            <w n="140310-14">
+                <text>vult</text>
+            </w>
+            <w n="140310-15">
+                <text>operari</text>
+            </w>
+            <w n="140310-16">
+                <text>ne</text>
+            </w>
+            <w n="140310-17">
+                <text>c</text>
+            </w>
+            <w n="140310-18">
+                <text>manducet</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="140311" document_id="NT:2THESS_3:11">
+        <wds lnum="L1">
+            <w n="140311-1">
+                <text>ἀκούομεν</text>
+            </w>
+            <w n="140311-2">
+                <text>γάρ</text>
+            </w>
+            <w n="140311-3">
+                <text>τινας</text>
+            </w>
+            <w n="140311-4">
+                <text>περιπατοῦντας</text>
+            </w>
+            <w n="140311-5">
+                <text>ἐν</text>
+            </w>
+            <w n="140311-6">
+                <text>ὑμῖν</text>
+            </w>
+            <w n="140311-7">
+                <text>ἀτάκτως</text>
+            </w>
+            <w n="140311-8">
+                <text>,</text>
+            </w>
+            <w n="140311-9">
+                <text>μηδὲν</text>
+            </w>
+            <w n="140311-10">
+                <text>ἐργαζομένους</text>
+            </w>
+            <w n="140311-11">
+                <text>ἀλλὰ</text>
+            </w>
+            <w n="140311-12">
+                <text>περιεργαζομένους</text>
+            </w>
+            <w n="140311-13">
+                <text>·</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="140311-1">
+                <text>audimus</text>
+            </w>
+            <w n="140311-2">
+                <text>enim</text>
+            </w>
+            <w n="140311-3">
+                <text>inter</text>
+            </w>
+            <w n="140311-4">
+                <text>vos</text>
+            </w>
+            <w n="140311-5">
+                <text>quosdam</text>
+            </w>
+            <w n="140311-6">
+                <text>ambulare</text>
+            </w>
+            <w n="140311-7">
+                <text>inquiete</text>
+            </w>
+            <w n="140311-8">
+                <text>nihil</text>
+            </w>
+            <w n="140311-9">
+                <text>operantes</text>
+            </w>
+            <w n="140311-10">
+                <text>sed</text>
+            </w>
+            <w n="140311-11">
+                <text>curiose</text>
+            </w>
+            <w n="140311-12">
+                <text>agentes</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="140312" document_id="NT:2THESS_3:12">
+        <wds lnum="L1">
+            <w n="140312-1">
+                <text>τοῖς</text>
+            </w>
+            <w n="140312-2">
+                <text>δὲ</text>
+            </w>
+            <w n="140312-3">
+                <text>τοιούτοις</text>
+            </w>
+            <w n="140312-4">
+                <text>παραγγέλλομεν</text>
+            </w>
+            <w n="140312-5">
+                <text>καὶ</text>
+            </w>
+            <w n="140312-6">
+                <text>παρακαλοῦμεν</text>
+            </w>
+            <w n="140312-7">
+                <text>ἐν</text>
+            </w>
+            <w n="140312-8">
+                <text>κυρίῳ</text>
+            </w>
+            <w n="140312-9">
+                <text>Ἰησοῦ</text>
+            </w>
+            <w n="140312-10">
+                <text>Χριστῷ</text>
+            </w>
+            <w n="140312-11">
+                <text>ἵνα</text>
+            </w>
+            <w n="140312-12">
+                <text>μετὰ</text>
+            </w>
+            <w n="140312-13">
+                <text>ἡσυχίας</text>
+            </w>
+            <w n="140312-14">
+                <text>ἐργαζόμενοι</text>
+            </w>
+            <w n="140312-15">
+                <text>τὸν</text>
+            </w>
+            <w n="140312-16">
+                <text>ἑαυτῶν</text>
+            </w>
+            <w n="140312-17">
+                <text>ἄρτον</text>
+            </w>
+            <w n="140312-18">
+                <text>ἐσθίωσιν</text>
+            </w>
+            <w n="140312-19">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="140312-1">
+                <text>his</text>
+            </w>
+            <w n="140312-2">
+                <text>autem</text>
+            </w>
+            <w n="140312-3">
+                <text>qui</text>
+            </w>
+            <w n="140312-4">
+                <text>eiusmodi</text>
+            </w>
+            <w n="140312-5">
+                <text>sunt</text>
+            </w>
+            <w n="140312-6">
+                <text>denuntiamus</text>
+            </w>
+            <w n="140312-7">
+                <text>et</text>
+            </w>
+            <w n="140312-8">
+                <text>obsecramus</text>
+            </w>
+            <w n="140312-9">
+                <text>in</text>
+            </w>
+            <w n="140312-10">
+                <text>Domino</text>
+            </w>
+            <w n="140312-11">
+                <text>Iesu</text>
+            </w>
+            <w n="140312-12">
+                <text>Christo</text>
+            </w>
+            <w n="140312-13">
+                <text>ut</text>
+            </w>
+            <w n="140312-14">
+                <text>cum</text>
+            </w>
+            <w n="140312-15">
+                <text>silentio</text>
+            </w>
+            <w n="140312-16">
+                <text>operantes</text>
+            </w>
+            <w n="140312-17">
+                <text>suum</text>
+            </w>
+            <w n="140312-18">
+                <text>panem</text>
+            </w>
+            <w n="140312-19">
+                <text>manducent</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="140313" document_id="NT:2THESS_3:13">
+        <wds lnum="L1">
+            <w n="140313-1">
+                <text>ὑμεῖς</text>
+            </w>
+            <w n="140313-2">
+                <text>δέ</text>
+            </w>
+            <w n="140313-3">
+                <text>,</text>
+            </w>
+            <w n="140313-4">
+                <text>ἀδελφοί</text>
+            </w>
+            <w n="140313-5">
+                <text>,</text>
+            </w>
+            <w n="140313-6">
+                <text>μὴ</text>
+            </w>
+            <w n="140313-7">
+                <text>ἐγκακήσητε</text>
+            </w>
+            <w n="140313-8">
+                <text>καλοποιοῦντες</text>
+            </w>
+            <w n="140313-9">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="140313-1">
+                <text>vos</text>
+            </w>
+            <w n="140313-2">
+                <text>autem</text>
+            </w>
+            <w n="140313-3">
+                <text>fratres</text>
+            </w>
+            <w n="140313-4">
+                <text>nolite</text>
+            </w>
+            <w n="140313-5">
+                <text>deficere</text>
+            </w>
+            <w n="140313-6">
+                <text>benefacientes</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="140314" document_id="NT:2THESS_3:14">
+        <wds lnum="L1">
+            <w n="140314-1">
+                <text>εἰ</text>
+            </w>
+            <w n="140314-2">
+                <text>δέ</text>
+            </w>
+            <w n="140314-3">
+                <text>τις</text>
+            </w>
+            <w n="140314-4">
+                <text>οὐχ</text>
+            </w>
+            <w n="140314-5">
+                <text>ὑπακούει</text>
+            </w>
+            <w n="140314-6">
+                <text>τῷ</text>
+            </w>
+            <w n="140314-7">
+                <text>λόγῳ</text>
+            </w>
+            <w n="140314-8">
+                <text>ἡμῶν</text>
+            </w>
+            <w n="140314-9">
+                <text>διὰ</text>
+            </w>
+            <w n="140314-10">
+                <text>τῆς</text>
+            </w>
+            <w n="140314-11">
+                <text>ἐπιστολῆς</text>
+            </w>
+            <w n="140314-12">
+                <text>,</text>
+            </w>
+            <w n="140314-13">
+                <text>τοῦτον</text>
+            </w>
+            <w n="140314-14">
+                <text>σημειοῦσθε</text>
+            </w>
+            <w n="140314-15">
+                <text>,</text>
+            </w>
+            <w n="140314-16">
+                <text>μὴ</text>
+            </w>
+            <w n="140314-17">
+                <text>συναναμίγνυσθε</text>
+            </w>
+            <w n="140314-18">
+                <text>αὐτῷ</text>
+            </w>
+            <w n="140314-19">
+                <text>,</text>
+            </w>
+            <w n="140314-20">
+                <text>ἵνα</text>
+            </w>
+            <w n="140314-21">
+                <text>ἐντραπῇ</text>
+            </w>
+            <w n="140314-22">
+                <text>·</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="140314-1">
+                <text>quod</text>
+            </w>
+            <w n="140314-2">
+                <text>si</text>
+            </w>
+            <w n="140314-3">
+                <text>quis</text>
+            </w>
+            <w n="140314-4">
+                <text>non</text>
+            </w>
+            <w n="140314-5">
+                <text>oboedit</text>
+            </w>
+            <w n="140314-6">
+                <text>verbo</text>
+            </w>
+            <w n="140314-7">
+                <text>nostro</text>
+            </w>
+            <w n="140314-8">
+                <text>per</text>
+            </w>
+            <w n="140314-9">
+                <text>epistulam</text>
+            </w>
+            <w n="140314-10">
+                <text>hunc</text>
+            </w>
+            <w n="140314-11">
+                <text>notate</text>
+            </w>
+            <w n="140314-12">
+                <text>et</text>
+            </w>
+            <w n="140314-13">
+                <text>non</text>
+            </w>
+            <w n="140314-14">
+                <text>commisceamini</text>
+            </w>
+            <w n="140314-15">
+                <text>cum</text>
+            </w>
+            <w n="140314-16">
+                <text>illo</text>
+            </w>
+            <w n="140314-17">
+                <text>ut</text>
+            </w>
+            <w n="140314-18">
+                <text>confundatur</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="140315" document_id="NT:2THESS_3:15">
+        <wds lnum="L1">
+            <w n="140315-1">
+                <text>καὶ</text>
+            </w>
+            <w n="140315-2">
+                <text>μὴ</text>
+            </w>
+            <w n="140315-3">
+                <text>ὡς</text>
+            </w>
+            <w n="140315-4">
+                <text>ἐχθρὸν</text>
+            </w>
+            <w n="140315-5">
+                <text>ἡγεῖσθε</text>
+            </w>
+            <w n="140315-6">
+                <text>,</text>
+            </w>
+            <w n="140315-7">
+                <text>ἀλλὰ</text>
+            </w>
+            <w n="140315-8">
+                <text>νουθετεῖτε</text>
+            </w>
+            <w n="140315-9">
+                <text>ὡς</text>
+            </w>
+            <w n="140315-10">
+                <text>ἀδελφόν</text>
+            </w>
+            <w n="140315-11">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="140315-1">
+                <text>et</text>
+            </w>
+            <w n="140315-2">
+                <text>nolite</text>
+            </w>
+            <w n="140315-3">
+                <text>quasi</text>
+            </w>
+            <w n="140315-4">
+                <text>inimicum</text>
+            </w>
+            <w n="140315-5">
+                <text>existimare</text>
+            </w>
+            <w n="140315-6">
+                <text>sed</text>
+            </w>
+            <w n="140315-7">
+                <text>corripite</text>
+            </w>
+            <w n="140315-8">
+                <text>ut</text>
+            </w>
+            <w n="140315-9">
+                <text>fratrem</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="140316" document_id="NT:2THESS_3:16">
+        <wds lnum="L1">
+            <w n="140316-1">
+                <text>αὐτὸς</text>
+            </w>
+            <w n="140316-2">
+                <text>δὲ</text>
+            </w>
+            <w n="140316-3">
+                <text>ὁ</text>
+            </w>
+            <w n="140316-4">
+                <text>κύριος</text>
+            </w>
+            <w n="140316-5">
+                <text>τῆς</text>
+            </w>
+            <w n="140316-6">
+                <text>εἰρήνης</text>
+            </w>
+            <w n="140316-7">
+                <text>δῴη</text>
+            </w>
+            <w n="140316-8">
+                <text>ὑμῖν</text>
+            </w>
+            <w n="140316-9">
+                <text>τὴν</text>
+            </w>
+            <w n="140316-10">
+                <text>εἰρήνην</text>
+            </w>
+            <w n="140316-11">
+                <text>διαπαντὸς</text>
+            </w>
+            <w n="140316-12">
+                <text>ἐν</text>
+            </w>
+            <w n="140316-13">
+                <text>παντὶ</text>
+            </w>
+            <w n="140316-14">
+                <text>τρόπῳ</text>
+            </w>
+            <w n="140316-15">
+                <text>.</text>
+            </w>
+            <w n="140316-16">
+                <text>ὁ</text>
+            </w>
+            <w n="140316-17">
+                <text>κύριος</text>
+            </w>
+            <w n="140316-18">
+                <text>μετὰ</text>
+            </w>
+            <w n="140316-19">
+                <text>πάντων</text>
+            </w>
+            <w n="140316-20">
+                <text>ὑμῶν</text>
+            </w>
+            <w n="140316-21">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="140316-1">
+                <text>ipse</text>
+            </w>
+            <w n="140316-2">
+                <text>autem</text>
+            </w>
+            <w n="140316-3">
+                <text>Dominus</text>
+            </w>
+            <w n="140316-4">
+                <text>pacis</text>
+            </w>
+            <w n="140316-5">
+                <text>det</text>
+            </w>
+            <w n="140316-6">
+                <text>vobis</text>
+            </w>
+            <w n="140316-7">
+                <text>pacem</text>
+            </w>
+            <w n="140316-8">
+                <text>sempiternam</text>
+            </w>
+            <w n="140316-9">
+                <text>in</text>
+            </w>
+            <w n="140316-10">
+                <text>omni</text>
+            </w>
+            <w n="140316-11">
+                <text>loco</text>
+            </w>
+            <w n="140316-12">
+                <text>Dominus</text>
+            </w>
+            <w n="140316-13">
+                <text>cum</text>
+            </w>
+            <w n="140316-14">
+                <text>omnibus</text>
+            </w>
+            <w n="140316-15">
+                <text>vobis</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="140317" document_id="NT:2THESS_3:17">
+        <wds lnum="L1">
+            <w n="140317-1">
+                <text>Ὁ</text>
+            </w>
+            <w n="140317-2">
+                <text>ἀσπασμὸς</text>
+            </w>
+            <w n="140317-3">
+                <text>τῇ</text>
+            </w>
+            <w n="140317-4">
+                <text>ἐμῇ</text>
+            </w>
+            <w n="140317-5">
+                <text>χειρὶ</text>
+            </w>
+            <w n="140317-6">
+                <text>Παύλου</text>
+            </w>
+            <w n="140317-7">
+                <text>,</text>
+            </w>
+            <w n="140317-8">
+                <text>ὅ</text>
+            </w>
+            <w n="140317-9">
+                <text>ἐστιν</text>
+            </w>
+            <w n="140317-10">
+                <text>σημεῖον</text>
+            </w>
+            <w n="140317-11">
+                <text>ἐν</text>
+            </w>
+            <w n="140317-12">
+                <text>πάσῃ</text>
+            </w>
+            <w n="140317-13">
+                <text>ἐπιστολῇ</text>
+            </w>
+            <w n="140317-14">
+                <text>·</text>
+            </w>
+            <w n="140317-15">
+                <text>οὕτως</text>
+            </w>
+            <w n="140317-16">
+                <text>γράφω</text>
+            </w>
+            <w n="140317-17">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="140317-1">
+                <text>salutatio</text>
+            </w>
+            <w n="140317-2">
+                <text>mea</text>
+            </w>
+            <w n="140317-3">
+                <text>manu</text>
+            </w>
+            <w n="140317-4">
+                <text>Pauli</text>
+            </w>
+            <w n="140317-5">
+                <text>quod</text>
+            </w>
+            <w n="140317-6">
+                <text>est</text>
+            </w>
+            <w n="140317-7">
+                <text>signum</text>
+            </w>
+            <w n="140317-8">
+                <text>in</text>
+            </w>
+            <w n="140317-9">
+                <text>omni</text>
+            </w>
+            <w n="140317-10">
+                <text>epistula</text>
+            </w>
+            <w n="140317-11">
+                <text>ita</text>
+            </w>
+            <w n="140317-12">
+                <text>scribo</text>
+            </w>
+        </wds>
+    </sentence>
+    <sentence id="140318" document_id="NT:2THESS_3:18">
+        <wds lnum="L1">
+            <w n="140318-1">
+                <text>ἡ</text>
+            </w>
+            <w n="140318-2">
+                <text>χάρις</text>
+            </w>
+            <w n="140318-3">
+                <text>τοῦ</text>
+            </w>
+            <w n="140318-4">
+                <text>κυρίου</text>
+            </w>
+            <w n="140318-5">
+                <text>ἡμῶν</text>
+            </w>
+            <w n="140318-6">
+                <text>Ἰησοῦ</text>
+            </w>
+            <w n="140318-7">
+                <text>Χριστοῦ</text>
+            </w>
+            <w n="140318-8">
+                <text>μετὰ</text>
+            </w>
+            <w n="140318-9">
+                <text>πάντων</text>
+            </w>
+            <w n="140318-10">
+                <text>ὑμῶν</text>
+            </w>
+            <w n="140318-11">
+                <text>.</text>
+            </w>
+        </wds>
+        <wds lnum="L2">
+            <w n="140318-1">
+                <text>gratia</text>
+            </w>
+            <w n="140318-2">
+                <text>Domini</text>
+            </w>
+            <w n="140318-3">
+                <text>nostri</text>
+            </w>
+            <w n="140318-4">
+                <text>Iesu</text>
+            </w>
+            <w n="140318-5">
+                <text>Christi</text>
+            </w>
+            <w n="140318-6">
+                <text>cum</text>
+            </w>
+            <w n="140318-7">
+                <text>omnibus</text>
+            </w>
+            <w n="140318-8">
+                <text>vobis</text>
+            </w>
+            <w n="140318-9">
+                <text>amen</text>
+            </w>
+        </wds>
+    </sentence>
+</aligned-text>
