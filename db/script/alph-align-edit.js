@@ -366,6 +366,8 @@ function InitNewSentence(a_load)
     $("svg",document).click(Click);
     $("svg",document).mouseover(EnterLeave);
     $("svg",document).mouseout(EnterLeave);
+    $("g[title]").mouseover(ShowComment);
+    $("g[title]").mouseout(HideComment);
     
     // now position the pieces
     DisplayInterlinear(s_displayInterlinear);
@@ -376,6 +378,14 @@ function InitNewSentence(a_load)
 // event handlers
 //****************************************************************************
 
+// event handler for showing comment
+function ShowComment(a_evt) {
+    $("#alpheios-comment").html($(this).attr('title'));
+}
+// event handler for hiding comment
+function HideComment(a_evt) {
+    $("#alpheios-comment").html("");
+}
 // event handler for mouseover/out
 function EnterLeave(a_evt)
 {
@@ -1399,6 +1409,8 @@ function ToggleMark(a_word, a_comment)
             rect.setAttribute("rx", s_fontSize / 2);
         }
         rect.setAttribute("ry", s_fontSize / 2);
+        $(a_word).mouseover(ShowComment);
+        $(a_word).mouseout(HideComment);
     }
     else
     {

@@ -206,6 +206,9 @@ g rect.selected {   /* background color when an unaligned word is selected to be
     stroke: black;
 }
 
+g[title] {
+    cursor: pointer;
+}
 
 .sentence_title {
     margin-top: -1em;
@@ -216,7 +219,7 @@ g rect.selected {   /* background color when an unaligned word is selected to be
 }
 
 #alpheios-put-notice {
-    text-align:center;
+    text-align: center;
     font-weight: bold;
     color:#90a959;
 }
@@ -229,5 +232,14 @@ g rect.selected {   /* background color when an unaligned word is selected to be
     font-style: italic;
     font-size: smaller;
 
+}
+
+#alpheios-comment {
+    text-align: center;
+    font-weight: bold;
+    color:#90a959;
+    visibility: visible;
+    min-height: 1em;
+    margin-bottom: .5em;
 }
 
