@@ -150,14 +150,14 @@
 				<button id="comment-button" onclick="ClickOnComment(event)">Add Comment</button>
             
                 <form method="post" action="../xq/align-export.xq" id="exportform">
-                      <button id="export-xml-button"
+                      <button id="export-xml-button" title="Export XML For Data Reuse"
                           onclick="ClickOnExport(event)">Export XML</button>
                     <input type="hidden" name="doc" value=""/>
                     <input type="hidden" name="sentenceForExport" id="sentenceForExport"/>
                 </form>
                 <form method="post" action="../xq/align-display.xq" id="exportdisplayform" style="display:inline;">
                       <button id="export-display-button"
-                          onclick="return ClickOnExportDisplay(event);">Export Display</button>
+                          onclick="return ClickOnExportDisplay(event);" title="Export HTML For Display">Export HTML</button>
                       <input type="hidden" name="doc" value=""/>
                       <input type="hidden" name="sentenceForDisplay" id="sentenceForDisplay"/>
                       <input type="hidden" name="baseResUrl" value=""/>
